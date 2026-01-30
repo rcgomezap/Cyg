@@ -1,0 +1,16 @@
+vesselCount = 0
+UT = 50.960000000002367
+gameMode = CAREER
+gameNull = False
+kspVersion = 1.12.5
+funds = 15000
+science = 0
+reputationPercent = 0
+ongoingContracts = 0
+missionCurrentScore = 0
+missionIsStarted = False
+missionIsEnded = False
+missionHistoryId = 00000000-0000-0000-0000-000000000000
+missionExpansionVersion = 
+saveMD5 = 
+lastWriteTime = 639054097412034066

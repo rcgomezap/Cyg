@@ -1,0 +1,115 @@
+{
+    "spec_version": "v1.6",
+    "identifier": "Cyg",
+    "name": "Cyg",
+    "abstract": "Modules for Cyg universe",
+    "author": "Roberto Gomez",
+    "version": "2026.01.30.12.57.15",
+    "ksp_version_min": "1.8",
+    "ksp_version_max": "1.12",
+    "license": "unknown",
+    "depends": [
+        {
+            "name": "KSPBurst",
+            "version": "v1.5.5.2",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "ParallaxContinued",
+            "version": "1.0.2",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "ParallaxContinued-Planet-Textures",
+            "version": "1.0.0",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "ParallaxContinued-Scatter-Textures",
+            "version": "1.0.1",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "ParallaxContinued-Terrain-Textures",
+            "version": "1.0.0",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "EnvironmentalVisualEnhancements",
+            "version": "3:1.11.7.2",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "AstronomersVisualPack",
+            "version": "3:v4.13",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "AVP-8kTextures",
+            "version": "v1.13",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "KcalbelohSystem",
+            "version": "v1.1.8",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "KcalbelohSystem-Textures-8k",
+            "version": "v1.1.8",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "Deferred",
+            "version": "1.3.3.0",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "EasyVesselSwitch",
+            "version": "2.3",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "KAS",
+            "version": "1.12",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "KIS",
+            "version": "1.29",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "KerbalPlanetaryBaseSystems",
+            "version": "v1.6.16",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "MechJeb2",
+            "version": "2.15.1.0",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "Scatterer-sunflare",
+            "version": "3:v0.0878",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "Shaddy",
+            "version": "v2.5",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "TACLS",
+            "version": "1:v0.18.0.0",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "TexturesUnlimited",
+            "version": "1.6.4.30",
+            "suppress_recommendations": true
+        }
+    ],
+    "release_date": "2026-01-30T00:57:15.9540921Z",
+    "kind": "metapackage"
+}
