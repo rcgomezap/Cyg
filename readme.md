@@ -1,6 +1,12 @@
 # Cyg
 A KSP Game configuration and saves for Giorgio and Symbiotic
 
+- KSP Version: 1.12
+
+
+## Instructions
+- Install mods/.cyg.ckan from CKAN
+
 
 
 ## Modlist
