@@ -18,7 +18,7 @@ GAME
 	envInfo =  - Environment Info - Win32NT 7FFFFFFFFFFFFFFF  Args: KSP_x64.exe  - 
 	versionFull = 1.12.5.3190 (WindowsPlayer x64)
 	versionCreated = 1.12.5.3190 (WindowsPlayer x64)
-	persistentTimestamp = 2026-01-30T22:42:21.2024069Z
+	persistentTimestamp = 2026-01-30T23:48:55.9956748Z
 	CometNames
 	{
 	}
@@ -92,7 +92,7 @@ GAME
 		}
 		CAREER
 		{
-			TechTreeUrl = GameData\ModuleManager.TechTree
+			TechTreeUrl = GameData\HideEmptyTechTreeNodes\Resources\HETTN.TechTree
 			StartingFunds = 15000
 			StartingScience = 0
 			StartingReputation = 0
@@ -102,6 +102,15 @@ GAME
 			FundsLossMultiplier = 1.5
 			RepLossMultiplier = 1.5
 			RepLossDeclined = 2
+		}
+		HETTNCustomParams_Zoom
+		{
+			zoomMaxParam = 100
+			zoomMinParam = 60
+			zoomSpeedParam = 5
+			zoomMax = 1
+			zoomMin = 0.6
+			zoomSpeed = 0.05
 		}
 		TUGameSettings
 		{
@@ -163,9 +172,31 @@ GAME
 			displayWasteWaterProductionRate = 0.30775
 			WasteWaterProductionRate = 1.4247684567062943E-05
 		}
+		HETTNCustomParams_Nodes
+		{
+			researchRequirements = Default
+			forceHideUnresearchable = False
+			forceHideEmpty = True
+			forceHideManual = False
+			propagateScience = Default
+			shiftVertically = False
+			shiftHorizontally = False
+		}
+		HETTNCustomParams_Misc
+		{
+			debugging = False
+		}
 		KPBSSettings
 		{
 			functionFilter = False
+		}
+		Settings
+		{
+			hideUnpurchased = True
+			setAdvanced = True
+			replaceFbM = True
+			categoryDefault = 
+			subCategoryDefault = 
 		}
 		CommNetParams
 		{
@@ -176,6 +207,13 @@ GAME
 			occlusionMultiplierVac = 1
 			occlusionMultiplierAtm = 0.85
 			enableGroundStations = True
+		}
+		CTB
+		{
+			showPopup = False
+			focusFollowsclick = False
+			global = True
+			cleanupDelay = 0.5
 		}
 		BackgroundResources_SettingsParms
 		{
@@ -236,6 +274,29 @@ GAME
 			facilityLevelTS = 2
 			facilityLevelVAB = 2
 		}
+		PM
+		{
+			EnabledForSave = True
+		}
+		TC
+		{
+			showStockTooltips = True
+			hoverTimeout = 0.5
+			allowAllToolbarButtonsHidden = False
+			debugMode = False
+			oldDebugMode = False
+		}
+		BM
+		{
+			debugMode = False
+		}
+		EL
+		{
+			lightFadeCoefficient = 1
+			lightPower = 1
+			lightRange = 1
+			useKSPskin = False
+		}
 	}
 	SCENARIO
 	{
@@ -280,8 +341,8 @@ GAME
 		scene = 7, 8, 5, 6, 21
 		RESOURCE_SETTINGS
 		{
-			GameSeed = 1357199110
-			ROCMissionSeed = 1357199110
+			GameSeed = 83883868
+			ROCMissionSeed = 83883868
 			MaxDeltaTime = 21600
 		}
 	}
@@ -317,6 +378,8 @@ GAME
 			id = start
 			state = Available
 			cost = 0
+			part = Engineer7500
+			part = EngineerChip
 			part = basicFin
 			part = evaJetpack
 			part = evaChute
@@ -611,13 +674,13 @@ GAME
 	{
 		name = ScenarioContractEvents
 		scene = 7, 8, 5
-		id = 235773104
+		id = 270610966
 	}
 	SCENARIO
 	{
 		name = ContractSystem
 		scene = 7, 8, 5, 6
-		update = 50.120000000002236
+		update = 20.09999999999966
 		version = 1.12.5
 		WEIGHTS
 		{
@@ -694,43 +757,18 @@ GAME
 		{
 			CONTRACT
 			{
-				guid = 1f05fcaa-b7f8-4c41-89ef-c4bdb869c526
+				guid = 358ce40f-0662-40db-8bb9-dfa8cf372b9f
 				type = ExplorationContract
 				prestige = 0
-				seed = 313453068
+				seed = 394900618
 				state = Offered
-				viewed = Read
+				viewed = Unseen
 				agent = Kerbin World-Firsts Record-Keeping Society
 				agentName = Kerbin World-Firsts Record-Keeping Society
 				deadlineType = None
 				expiryType = Floating
 				ignoresWeight = True
-				values = 64800,0,2016,3744,2016,1,2,0,64800.06,0,0,0
-				targetBody = 1
-				bodyRatio = 0
-				PARAM
-				{
-					name = ProgressTrackingParameter
-					state = Incomplete
-					values = 5760,0,1,2,0
-					targetBody = 1
-					targetType = SCIENCE
-				}
-			}
-			CONTRACT
-			{
-				guid = 46719a8b-901b-4dd3-b68f-0798839eab0a
-				type = ExplorationContract
-				prestige = 0
-				seed = 313453050
-				state = Offered
-				viewed = Read
-				agent = Kerbin World-Firsts Record-Keeping Society
-				agentName = Kerbin World-Firsts Record-Keeping Society
-				deadlineType = None
-				expiryType = Floating
-				ignoresWeight = True
-				values = 43200,0,1008,1872,1008,1,1,0,43200.06,0,0,0
+				values = 21600,0,1008,1872,1008,1,1,0,21600.06,0,0,0
 				targetBody = 1
 				bodyRatio = 0
 				PARAM
@@ -744,12 +782,37 @@ GAME
 			}
 			CONTRACT
 			{
-				guid = 82f9a76b-f532-42f2-a0b9-c7a9aa0bb0f6
+				guid = 3aa7d351-4dfe-4f43-9da8-31ce9a35ac2b
+				type = ExplorationContract
+				prestige = 0
+				seed = 394900633
+				state = Offered
+				viewed = Unseen
+				agent = Kerbin World-Firsts Record-Keeping Society
+				agentName = Kerbin World-Firsts Record-Keeping Society
+				deadlineType = None
+				expiryType = Floating
+				ignoresWeight = True
+				values = 86400,0,2016,3744,2016,1,2,0,86400.06,0,0,0
+				targetBody = 1
+				bodyRatio = 0
+				PARAM
+				{
+					name = ProgressTrackingParameter
+					state = Incomplete
+					values = 5760,0,1,2,0
+					targetBody = 1
+					targetType = SCIENCE
+				}
+			}
+			CONTRACT
+			{
+				guid = c57d1240-56b0-4258-9cac-85d8f5bb9e50
 				type = ExplorationContract
 				prestige = 1
-				seed = 313453081
+				seed = 394900675
 				state = Offered
-				viewed = Read
+				viewed = Unseen
 				agent = Kerbin World-Firsts Record-Keeping Society
 				agentName = Kerbin World-Firsts Record-Keeping Society
 				deadlineType = None
@@ -769,18 +832,18 @@ GAME
 			}
 			CONTRACT
 			{
-				guid = 2fcffd26-ea1f-4826-bbb5-b66985373017
+				guid = cf2c6156-b5e2-4ceb-8943-acb197eb63a0
 				type = ExplorationContract
 				prestige = 2
-				seed = 449834765
+				seed = 502681141
 				state = Offered
-				viewed = Read
+				viewed = Unseen
 				agent = Kerbin World-Firsts Record-Keeping Society
 				agentName = Kerbin World-Firsts Record-Keeping Society
 				deadlineType = None
 				expiryType = Floating
 				ignoresWeight = True
-				values = 64800,0,15120,28080,15120,5,9,0,64810.08,0,0,0
+				values = 43200,0,15120,28080,15120,5,9,0,43210.08,0,0,0
 				targetBody = 1
 				bodyRatio = 0
 				PARAM
@@ -798,7 +861,7 @@ GAME
 	{
 		name = SentinelScenario
 		scene = 7, 8, 5
-		NextSpawnTime = 16907.411358030684
+		NextSpawnTime = 19359.828865822768
 	}
 	SCENARIO
 	{
@@ -809,6 +872,11 @@ GAME
 	{
 		name = DiscoverableObjects
 		scene = 7, 8, 5
+	}
+	SCENARIO
+	{
+		name = PhotonSailBackgroundProcessing
+		scene = 5, 8, 7, 6
 	}
 	SCENARIO
 	{
@@ -842,7 +910,7 @@ GAME
 		LifeSupportMonitoring
 		{
 			visible = False
-			x = 1121
+			x = 1130
 			y = 75
 			width = 300
 			height = 300
@@ -850,8 +918,8 @@ GAME
 		LifeSupportCrewRoster
 		{
 			visible = False
-			x = 1086
-			y = 596.5
+			x = 1095
+			y = 620
 			width = 370
 			height = 200
 		}
@@ -859,7 +927,7 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.12.5
-		UT = 50.960000000002367
+		UT = 21.379999999999633
 		activeVessel = 0
 		mapViewFiltering = 0
 		commNetUIModeTracking = Network
@@ -867,7 +935,11 @@ GAME
 	}
 	LoaderInfo
 	{
+		Scale_Redist v1.0.0.0 / v2.4.8.6 = True
+		Interstellar_Redist v1.4.0.0 = True
 		ModuleManager v4.2.3.0 = True
+		ClickThroughBlocker v2.1.10.22 = True
+		FilterExtensions v3.2.9.1 = True
 		0Harmony v2.2.1.0 = True
 		HarmonyInstallChecker v2.2.1.0 = True
 		KSPBurst v1.5.5.2 = True
@@ -892,11 +964,24 @@ GAME
 		BlendshapeModelLoader v1.6.4.30 = True
 		TexturesUnlimited v1.6.4.30 = True
 		VertexColorMapEmissive v1.0.0.0 = True
+		ToolbarControl v0.1.9.14 = True
+		KSPe.Light.Recall v2.5.2.0 = True
+		Attached v0.5.0.2 = True
+		AttachedOnEditor v0.5.0.2 = True
+		ChillingOut v0.5.0.2 = True
+		Driftless v0.5.0.2 = True
+		KSP-Recall v0.5.0.2 = True
+		Refunding v0.5.0.2 = True
+		Resourceful v0.5.0.2 = True
 		Sigma88LoadingScreens v0.5.0.0 = True
 		SigmaReplacementsSkyBox v1.0.0.0 = True
+		B9PartSwitch v2.21.0.4 = True
+		BetterBurnTime v1.0.0.0 = True
 		CCK v5.1.0.0 / v5.1.0.0 for KSP v1 = True
+		DecouplerShroud v0.9.0.0 / v0.9.0 = True
 		EasyVesselSwitch v2.3.7852.41352 / v2.3 for KSP v1.11+ = True
 		KSPDev_Utils.2.6-EVS v2.6.0.0 / v2.6 for KSP v1 - EVS build = True
+		EngineLightRelit v1.6.3.4 = True
 		Atmosphere v1.11.7.2 = True
 		CelestialShadows v1.11.7.2 = True
 		CityLights v1.11.7.2 = True
@@ -908,9 +993,13 @@ GAME
 		TextureConfig v1.11.7.2 = True
 		Utils v1.11.7.2 = True
 		_BuildManager v1.11.7.2 = True
+		HideEmptyTechTreeNodes v1.0.0.0 = True
+		InterstellarFuelSwitch v3.30.0.0 = True
 		KAS-API-v2 v2.0.7239.35367 / vKAS API v2 = True
 		KAS v1.12.8285.34332 / v1.12 for KSP v1 = True
 		KSPDev_Utils.2.7 v2.7.0.0 / v2.7 for KSP v1 = True
+		KerbalEngineer.Unity v1.0.0.0 = True
+		KerbalEngineer v1.1.9.5 = True
 		KIS v1.29.8039.40483 / v1.29 for KSP v1.12+ = True
 		KSPDev_Utils.2.6 v2.6.7847.1936 / v2.6 for KSP v1 = True
 		MiniAVC-V2 v2.0.0.0 = True
@@ -929,26 +1018,65 @@ GAME
 		MechJebLib v1.0.0.0 = True
 		MechJebLibBindings v1.0.0.0 = True
 		ParallaxContinued v1.0.0.0 / v1.0.0+529966d19bf4b0d3b8b6eb00a10f30522ad9afa7 = True
+		PatchManager v0.0.17.7 = True
+		PersistentRotation v1.3.1.0 = True
+		PhotonSail v1.7.4.0 = True
 		PlanetarySurfaceStructures v1.6.16.0 = True
 		BackgroundResources v1.12.0.0 = True
 		scatterer v0.878.0.0 = True
 		Shabby v0.0.0.0 / v0.4.2 / v0.4.2.0 = True
 		Singularity v0.991.7804.33947 = True
+		KSP_Log v1.2.0.1 = True
+		ButtonManager v1.0.2.0 / v1.0.2 = True
+		KSP_ColorPicker v1.1.1.0 / v1.1.1 = True
+		KSP_PartHighlighter v1.1.1.0 / v1.1.1 = True
+		SpaceTuxUtility v1.0.2.0 / v1.0.2 = True
+		VesselModuleSave v1.0.2.0 / v1.0.2 = True
 		TacLifeSupport v0.18.0.0 / v0.18.0 = True
+		KSPe.Light.TweakScale v2.5.4.4 = True
+		Scale v2.4.8.6 = True
+		TweakScale.WatchDog v2.4.8.6 = True
+		TweakScaleCompanion v2025.12.12.1 = True
+		TweakScaleCompanion_Frameworks v0.4.0.7 = True
+		TweakScalerTestFlightCore v0.4.0.7 = True
+		TweakScalerWaterfallFX v0.4.0.7 = True
+		TweakScaleCompanion_FS v1.3.0.1 = True
+		TweakScalerFSBuoyancy v1.3.0.1 = True
+		TweakScaleCompanion_KIAS v1.1.0.0 = True
+		TweakScalerKISInventory v1.1.0.0 = True
+		TweakScaleCompanion_PKMC v2.2.1.2 = True
+		Interstellar v1.29.6.0 / v1.29.6 = True
+		Waterfall v0.10.2.0 / v0.10.2 = True
 		Deferred v1.3.3.0 = True
+		000_ClickThroughBlocker = True
+		000_FilterExtensions = True
+		000_FilterExtensions_Configs = True
 		000_Harmony = True
 		000_KSPBurst = True
 		000_NiakoUtils = True
 		000_TexturesUnlimited = True
 		001_DuckweedUtils = True
+		001_ToolbarControl = True
+		999_KSP-Recall = True
 		AstronomersVisualPack = True
+		B9PartSwitch = True
+		BetterBurnTime = True
 		CommunityCategoryKit = True
 		CommunityResourcePack = True
+		CommunityTechTree = True
+		DecouplerShroud = True
 		EasyVesselSwitch = True
+		EngineLightRelit = True
 		EnvironmentalVisualEnhancements = True
+		HeatControl = True
+		HideEmptyTechTreeNodes = True
+		ImprovedTreeEnginePlacement = True
+		InterstellarFuelSwitch = True
+		InterstellarTechnologies = True
 		KAS = True
 		KcalbelohSystem = True
 		KcalbelohTextures = True
+		KerbalEngineer = True
 		KIS = True
 		Kopernicus = True
 		KopernicusExpansion = True
@@ -960,6 +1088,9 @@ GAME
 		Parallax_StockPlanetTextures = True
 		Parallax_StockScatterTextures = True
 		Parallax_StockTerrainTextures = True
+		PatchManager = True
+		PersistentRotation = True
+		PhotonSail = True
 		PlanetaryBaseInc = True
 		REPOSoftTech = True
 		Scatterer = True
@@ -968,9 +1099,16 @@ GAME
 		Shaddy = True
 		Sigma = True
 		Singularity = True
+		SpaceTuxLibrary = True
 		StockScattererConfigs = True
 		ThunderAerospace = True
+		TweakScale = True
+		TweakScaleCompanion = True
+		WarpPlugin = True
+		Waterfall = True
 		zzz_Deferred = True
+		999_Scale_Redist.dll = True
+		Interstellar_Redist.dll = True
 		ModuleManager.4.2.3.dll = True
 		ModuleManager.ConfigCache = True
 		ModuleManager.ConfigSHA = True
@@ -1022,7 +1160,7 @@ GAME
 						PART
 						{
 							name = evaChute
-							cid = 4294843844
+							cid = 4294703510
 							uid = 0
 							mid = 0
 							persistentId = 0
@@ -1124,6 +1262,60 @@ GAME
 								{
 								}
 							}
+							MODULE
+							{
+								name = FundsKeeper
+								isEnabled = True
+								OriginalCost = 0
+								OriginalResourcesCost = 0
+								OriginalModulesCost = 0
+								stagingEnabled = True
+								EVENTS
+								{
+								}
+								ACTIONS
+								{
+								}
+								UPGRADESAPPLIED
+								{
+								}
+							}
+							MODULE
+							{
+								name = StealBackMyFunds
+								isEnabled = True
+								active = True
+								stagingEnabled = True
+								EVENTS
+								{
+								}
+								ACTIONS
+								{
+								}
+								UPGRADESAPPLIED
+								{
+								}
+							}
+							MODULE
+							{
+								name = AttachedOnEditor
+								isEnabled = True
+								active = True
+								originalPos = (0, 0, 0)
+								originalRotation = (0, 0, 0, 1)
+								moduleVersion = 6
+								stagingEnabled = True
+								userReallyDeactivatedIt = False
+								EVENTS
+								{
+								}
+								ACTIONS
+								{
+								}
+								UPGRADESAPPLIED
+								{
+								}
+							}
 						}
 					}
 					STOREDPART
@@ -1136,7 +1328,7 @@ GAME
 						PART
 						{
 							name = evaJetpack
-							cid = 4294843908
+							cid = 4294703586
 							uid = 0
 							mid = 0
 							persistentId = 0
@@ -1228,6 +1420,60 @@ GAME
 								beingSettled = False
 								reinitResourcesOnStoreInVessel = True
 								stagingEnabled = True
+								EVENTS
+								{
+								}
+								ACTIONS
+								{
+								}
+								UPGRADESAPPLIED
+								{
+								}
+							}
+							MODULE
+							{
+								name = FundsKeeper
+								isEnabled = True
+								OriginalCost = 0
+								OriginalResourcesCost = 0
+								OriginalModulesCost = 0
+								stagingEnabled = True
+								EVENTS
+								{
+								}
+								ACTIONS
+								{
+								}
+								UPGRADESAPPLIED
+								{
+								}
+							}
+							MODULE
+							{
+								name = StealBackMyFunds
+								isEnabled = True
+								active = True
+								stagingEnabled = True
+								EVENTS
+								{
+								}
+								ACTIONS
+								{
+								}
+								UPGRADESAPPLIED
+								{
+								}
+							}
+							MODULE
+							{
+								name = AttachedOnEditor
+								isEnabled = True
+								active = True
+								originalPos = (0, 0, 0)
+								originalRotation = (0, 0, 0, 1)
+								moduleVersion = 6
+								stagingEnabled = True
+								userReallyDeactivatedIt = False
 								EVENTS
 								{
 								}
@@ -1305,7 +1551,7 @@ GAME
 						PART
 						{
 							name = evaChute
-							cid = 4294843844
+							cid = 4294703510
 							uid = 0
 							mid = 0
 							persistentId = 0
@@ -1407,6 +1653,60 @@ GAME
 								{
 								}
 							}
+							MODULE
+							{
+								name = FundsKeeper
+								isEnabled = True
+								OriginalCost = 0
+								OriginalResourcesCost = 0
+								OriginalModulesCost = 0
+								stagingEnabled = True
+								EVENTS
+								{
+								}
+								ACTIONS
+								{
+								}
+								UPGRADESAPPLIED
+								{
+								}
+							}
+							MODULE
+							{
+								name = StealBackMyFunds
+								isEnabled = True
+								active = True
+								stagingEnabled = True
+								EVENTS
+								{
+								}
+								ACTIONS
+								{
+								}
+								UPGRADESAPPLIED
+								{
+								}
+							}
+							MODULE
+							{
+								name = AttachedOnEditor
+								isEnabled = True
+								active = True
+								originalPos = (0, 0, 0)
+								originalRotation = (0, 0, 0, 1)
+								moduleVersion = 6
+								stagingEnabled = True
+								userReallyDeactivatedIt = False
+								EVENTS
+								{
+								}
+								ACTIONS
+								{
+								}
+								UPGRADESAPPLIED
+								{
+								}
+							}
 						}
 					}
 					STOREDPART
@@ -1419,7 +1719,7 @@ GAME
 						PART
 						{
 							name = evaJetpack
-							cid = 4294843908
+							cid = 4294703586
 							uid = 0
 							mid = 0
 							persistentId = 0
@@ -1511,6 +1811,60 @@ GAME
 								beingSettled = False
 								reinitResourcesOnStoreInVessel = True
 								stagingEnabled = True
+								EVENTS
+								{
+								}
+								ACTIONS
+								{
+								}
+								UPGRADESAPPLIED
+								{
+								}
+							}
+							MODULE
+							{
+								name = FundsKeeper
+								isEnabled = True
+								OriginalCost = 0
+								OriginalResourcesCost = 0
+								OriginalModulesCost = 0
+								stagingEnabled = True
+								EVENTS
+								{
+								}
+								ACTIONS
+								{
+								}
+								UPGRADESAPPLIED
+								{
+								}
+							}
+							MODULE
+							{
+								name = StealBackMyFunds
+								isEnabled = True
+								active = True
+								stagingEnabled = True
+								EVENTS
+								{
+								}
+								ACTIONS
+								{
+								}
+								UPGRADESAPPLIED
+								{
+								}
+							}
+							MODULE
+							{
+								name = AttachedOnEditor
+								isEnabled = True
+								active = True
+								originalPos = (0, 0, 0)
+								originalRotation = (0, 0, 0, 1)
+								moduleVersion = 6
+								stagingEnabled = True
+								userReallyDeactivatedIt = False
 								EVENTS
 								{
 								}
@@ -1588,7 +1942,7 @@ GAME
 						PART
 						{
 							name = evaChute
-							cid = 4294843844
+							cid = 4294703510
 							uid = 0
 							mid = 0
 							persistentId = 0
@@ -1690,6 +2044,60 @@ GAME
 								{
 								}
 							}
+							MODULE
+							{
+								name = FundsKeeper
+								isEnabled = True
+								OriginalCost = 0
+								OriginalResourcesCost = 0
+								OriginalModulesCost = 0
+								stagingEnabled = True
+								EVENTS
+								{
+								}
+								ACTIONS
+								{
+								}
+								UPGRADESAPPLIED
+								{
+								}
+							}
+							MODULE
+							{
+								name = StealBackMyFunds
+								isEnabled = True
+								active = True
+								stagingEnabled = True
+								EVENTS
+								{
+								}
+								ACTIONS
+								{
+								}
+								UPGRADESAPPLIED
+								{
+								}
+							}
+							MODULE
+							{
+								name = AttachedOnEditor
+								isEnabled = True
+								active = True
+								originalPos = (0, 0, 0)
+								originalRotation = (0, 0, 0, 1)
+								moduleVersion = 6
+								stagingEnabled = True
+								userReallyDeactivatedIt = False
+								EVENTS
+								{
+								}
+								ACTIONS
+								{
+								}
+								UPGRADESAPPLIED
+								{
+								}
+							}
 						}
 					}
 					STOREDPART
@@ -1702,7 +2110,7 @@ GAME
 						PART
 						{
 							name = evaJetpack
-							cid = 4294843908
+							cid = 4294703586
 							uid = 0
 							mid = 0
 							persistentId = 0
@@ -1794,6 +2202,60 @@ GAME
 								beingSettled = False
 								reinitResourcesOnStoreInVessel = True
 								stagingEnabled = True
+								EVENTS
+								{
+								}
+								ACTIONS
+								{
+								}
+								UPGRADESAPPLIED
+								{
+								}
+							}
+							MODULE
+							{
+								name = FundsKeeper
+								isEnabled = True
+								OriginalCost = 0
+								OriginalResourcesCost = 0
+								OriginalModulesCost = 0
+								stagingEnabled = True
+								EVENTS
+								{
+								}
+								ACTIONS
+								{
+								}
+								UPGRADESAPPLIED
+								{
+								}
+							}
+							MODULE
+							{
+								name = StealBackMyFunds
+								isEnabled = True
+								active = True
+								stagingEnabled = True
+								EVENTS
+								{
+								}
+								ACTIONS
+								{
+								}
+								UPGRADESAPPLIED
+								{
+								}
+							}
+							MODULE
+							{
+								name = AttachedOnEditor
+								isEnabled = True
+								active = True
+								originalPos = (0, 0, 0)
+								originalRotation = (0, 0, 0, 1)
+								moduleVersion = 6
+								stagingEnabled = True
+								userReallyDeactivatedIt = False
 								EVENTS
 								{
 								}
@@ -1871,7 +2333,7 @@ GAME
 						PART
 						{
 							name = evaChute
-							cid = 4294843844
+							cid = 4294703510
 							uid = 0
 							mid = 0
 							persistentId = 0
@@ -1973,6 +2435,60 @@ GAME
 								{
 								}
 							}
+							MODULE
+							{
+								name = FundsKeeper
+								isEnabled = True
+								OriginalCost = 0
+								OriginalResourcesCost = 0
+								OriginalModulesCost = 0
+								stagingEnabled = True
+								EVENTS
+								{
+								}
+								ACTIONS
+								{
+								}
+								UPGRADESAPPLIED
+								{
+								}
+							}
+							MODULE
+							{
+								name = StealBackMyFunds
+								isEnabled = True
+								active = True
+								stagingEnabled = True
+								EVENTS
+								{
+								}
+								ACTIONS
+								{
+								}
+								UPGRADESAPPLIED
+								{
+								}
+							}
+							MODULE
+							{
+								name = AttachedOnEditor
+								isEnabled = True
+								active = True
+								originalPos = (0, 0, 0)
+								originalRotation = (0, 0, 0, 1)
+								moduleVersion = 6
+								stagingEnabled = True
+								userReallyDeactivatedIt = False
+								EVENTS
+								{
+								}
+								ACTIONS
+								{
+								}
+								UPGRADESAPPLIED
+								{
+								}
+							}
 						}
 					}
 					STOREDPART
@@ -1985,7 +2501,7 @@ GAME
 						PART
 						{
 							name = evaJetpack
-							cid = 4294843908
+							cid = 4294703586
 							uid = 0
 							mid = 0
 							persistentId = 0
@@ -2087,164 +2603,13 @@ GAME
 								{
 								}
 							}
-							RESOURCE
-							{
-								name = EVA Propellant
-								amount = 5
-								maxAmount = 5
-								flowState = True
-								isTweakable = False
-								hideFlow = False
-								isVisible = True
-								flowMode = Both
-							}
-						}
-					}
-				}
-			}
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-			}
-		}
-		KERBAL
-		{
-			name = Maxzon Kerman
-			gender = Female
-			type = Applicant
-			trait = Pilot
-			brave = 0.993559897
-			dumb = 0.358102769
-			badS = False
-			veteran = False
-			tour = False
-			state = Available
-			inactive = False
-			inactiveTimeEnd = 0
-			gExperienced = 0
-			outDueToG = False
-			ToD = 210002.3799243164
-			idx = -1
-			extraXP = 0
-			hasHelmetOn = False
-			hasNeckRingOn = False
-			hasVisorDown = False
-			lightR = 1
-			lightG = 0.5176
-			lightB = 0
-			completedFirstEVA = False
-			suit = Default
-			hero = False
-			INVENTORY
-			{
-				inventory = evaChute,evaJetpack
-				STOREDPARTS
-				{
-					STOREDPART
-					{
-						slotIndex = 0
-						partName = evaChute
-						quantity = 1
-						stackCapacity = 1
-						variantName = 
-						PART
-						{
-							name = evaChute
-							cid = 4294843844
-							uid = 0
-							mid = 0
-							persistentId = 0
-							launchID = 0
-							parent = 0
-							position = 0,0,0
-							rotation = 0,0,0,0
-							mirror = 1,1,1
-							symMethod = Radial
-							istg = 0
-							resPri = 0
-							dstg = 0
-							sqor = -1
-							sepI = 0
-							sidx = -1
-							attm = 0
-							sameVesselCollision = False
-							srfN = None, -1
-							mass = 0.00400000019
-							shielded = False
-							temp = -1
-							tempExt = 0
-							tempExtUnexp = 0
-							staticPressureAtm = 0
-							expt = 0.5
-							state = 0
-							attached = True
-							autostrutMode = Off
-							rigidAttachment = False
-							flag = 
-							rTrf = evaChute
-							modCost = 0
-							modMass = 0
-							moduleVariantName = 
-							moduleCargoStackableQuantity = 1
-							EVENTS
-							{
-							}
-							ACTIONS
-							{
-								ToggleSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								SetSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								RemoveSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								AutostrutOff
-								{
-									actionGroup = None
-								}
-								AutostrutRoot
-								{
-									actionGroup = None
-								}
-								AutostrutHeaviest
-								{
-									actionGroup = None
-								}
-								AutostrutGrandparent
-								{
-									actionGroup = None
-								}
-								ResourcesEnableFlow
-								{
-									actionGroup = None
-									active = False
-								}
-								ResourcesDisableFlow
-								{
-									actionGroup = None
-									active = False
-								}
-							}
-							PARTDATA
-							{
-							}
 							MODULE
 							{
-								name = ModuleCargoPart
+								name = FundsKeeper
 								isEnabled = True
-								packedVolume = 10
-								beingAttached = False
-								beingSettled = False
-								reinitResourcesOnStoreInVessel = False
+								OriginalCost = 0
+								OriginalResourcesCost = 0
+								OriginalModulesCost = 0
 								stagingEnabled = True
 								EVENTS
 								{
@@ -2256,109 +2621,11 @@ GAME
 								{
 								}
 							}
-						}
-					}
-					STOREDPART
-					{
-						slotIndex = 1
-						partName = evaJetpack
-						quantity = 1
-						stackCapacity = 1
-						variantName = 
-						PART
-						{
-							name = evaJetpack
-							cid = 4294843908
-							uid = 0
-							mid = 0
-							persistentId = 0
-							launchID = 0
-							parent = 0
-							position = 0,0,0
-							rotation = 0,0,0,0
-							mirror = 1,1,1
-							symMethod = Radial
-							istg = 0
-							resPri = 2
-							dstg = 0
-							sqor = -1
-							sepI = 0
-							sidx = -1
-							attm = 0
-							sameVesselCollision = False
-							srfN = None, -1
-							mass = 0.0199999996
-							shielded = False
-							temp = -1
-							tempExt = 0
-							tempExtUnexp = 0
-							staticPressureAtm = 0
-							expt = 0.5
-							state = 0
-							attached = True
-							autostrutMode = Off
-							rigidAttachment = False
-							flag = 
-							rTrf = evaJetpack
-							modCost = 0
-							modMass = 0
-							moduleVariantName = 
-							moduleCargoStackableQuantity = 1
-							EVENTS
-							{
-							}
-							ACTIONS
-							{
-								ToggleSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								SetSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								RemoveSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								AutostrutOff
-								{
-									actionGroup = None
-								}
-								AutostrutRoot
-								{
-									actionGroup = None
-								}
-								AutostrutHeaviest
-								{
-									actionGroup = None
-								}
-								AutostrutGrandparent
-								{
-									actionGroup = None
-								}
-								ResourcesEnableFlow
-								{
-									actionGroup = None
-									active = False
-								}
-								ResourcesDisableFlow
-								{
-									actionGroup = None
-									active = False
-								}
-							}
-							PARTDATA
-							{
-							}
 							MODULE
 							{
-								name = ModuleCargoPart
+								name = StealBackMyFunds
 								isEnabled = True
-								packedVolume = 17
-								beingAttached = False
-								beingSettled = False
-								reinitResourcesOnStoreInVessel = True
+								active = True
 								stagingEnabled = True
 								EVENTS
 								{
@@ -2370,3109 +2637,16 @@ GAME
 								{
 								}
 							}
-							RESOURCE
-							{
-								name = EVA Propellant
-								amount = 5
-								maxAmount = 5
-								flowState = True
-								isTweakable = False
-								hideFlow = False
-								isVisible = True
-								flowMode = Both
-							}
-						}
-					}
-				}
-			}
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-			}
-		}
-		KERBAL
-		{
-			name = Frobal Kerman
-			gender = Male
-			type = Applicant
-			trait = Pilot
-			brave = 0.801605999
-			dumb = 0.259488314
-			badS = False
-			veteran = False
-			tour = False
-			state = Available
-			inactive = False
-			inactiveTimeEnd = 0
-			gExperienced = 0
-			outDueToG = False
-			ToD = 258524.26713134765
-			idx = -1
-			extraXP = 0
-			hasHelmetOn = False
-			hasNeckRingOn = False
-			hasVisorDown = False
-			lightR = 1
-			lightG = 0.5176
-			lightB = 0
-			completedFirstEVA = False
-			suit = Default
-			hero = False
-			INVENTORY
-			{
-				inventory = evaChute,evaJetpack
-				STOREDPARTS
-				{
-					STOREDPART
-					{
-						slotIndex = 0
-						partName = evaChute
-						quantity = 1
-						stackCapacity = 1
-						variantName = 
-						PART
-						{
-							name = evaChute
-							cid = 4294843844
-							uid = 0
-							mid = 0
-							persistentId = 0
-							launchID = 0
-							parent = 0
-							position = 0,0,0
-							rotation = 0,0,0,0
-							mirror = 1,1,1
-							symMethod = Radial
-							istg = 0
-							resPri = 0
-							dstg = 0
-							sqor = -1
-							sepI = 0
-							sidx = -1
-							attm = 0
-							sameVesselCollision = False
-							srfN = None, -1
-							mass = 0.00400000019
-							shielded = False
-							temp = -1
-							tempExt = 0
-							tempExtUnexp = 0
-							staticPressureAtm = 0
-							expt = 0.5
-							state = 0
-							attached = True
-							autostrutMode = Off
-							rigidAttachment = False
-							flag = 
-							rTrf = evaChute
-							modCost = 0
-							modMass = 0
-							moduleVariantName = 
-							moduleCargoStackableQuantity = 1
-							EVENTS
-							{
-							}
-							ACTIONS
-							{
-								ToggleSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								SetSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								RemoveSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								AutostrutOff
-								{
-									actionGroup = None
-								}
-								AutostrutRoot
-								{
-									actionGroup = None
-								}
-								AutostrutHeaviest
-								{
-									actionGroup = None
-								}
-								AutostrutGrandparent
-								{
-									actionGroup = None
-								}
-								ResourcesEnableFlow
-								{
-									actionGroup = None
-									active = False
-								}
-								ResourcesDisableFlow
-								{
-									actionGroup = None
-									active = False
-								}
-							}
-							PARTDATA
-							{
-							}
 							MODULE
 							{
-								name = ModuleCargoPart
+								name = AttachedOnEditor
 								isEnabled = True
-								packedVolume = 10
-								beingAttached = False
-								beingSettled = False
-								reinitResourcesOnStoreInVessel = False
+								active = True
+								originalPos = (0, 0, 0)
+								originalRotation = (0, 0, 0, 1)
+								moduleVersion = 6
 								stagingEnabled = True
-								EVENTS
-								{
-								}
-								ACTIONS
-								{
-								}
-								UPGRADESAPPLIED
-								{
-								}
-							}
-						}
-					}
-					STOREDPART
-					{
-						slotIndex = 1
-						partName = evaJetpack
-						quantity = 1
-						stackCapacity = 1
-						variantName = 
-						PART
-						{
-							name = evaJetpack
-							cid = 4294843908
-							uid = 0
-							mid = 0
-							persistentId = 0
-							launchID = 0
-							parent = 0
-							position = 0,0,0
-							rotation = 0,0,0,0
-							mirror = 1,1,1
-							symMethod = Radial
-							istg = 0
-							resPri = 2
-							dstg = 0
-							sqor = -1
-							sepI = 0
-							sidx = -1
-							attm = 0
-							sameVesselCollision = False
-							srfN = None, -1
-							mass = 0.0199999996
-							shielded = False
-							temp = -1
-							tempExt = 0
-							tempExtUnexp = 0
-							staticPressureAtm = 0
-							expt = 0.5
-							state = 0
-							attached = True
-							autostrutMode = Off
-							rigidAttachment = False
-							flag = 
-							rTrf = evaJetpack
-							modCost = 0
-							modMass = 0
-							moduleVariantName = 
-							moduleCargoStackableQuantity = 1
-							EVENTS
-							{
-							}
-							ACTIONS
-							{
-								ToggleSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								SetSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								RemoveSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								AutostrutOff
-								{
-									actionGroup = None
-								}
-								AutostrutRoot
-								{
-									actionGroup = None
-								}
-								AutostrutHeaviest
-								{
-									actionGroup = None
-								}
-								AutostrutGrandparent
-								{
-									actionGroup = None
-								}
-								ResourcesEnableFlow
-								{
-									actionGroup = None
-									active = False
-								}
-								ResourcesDisableFlow
-								{
-									actionGroup = None
-									active = False
-								}
-							}
-							PARTDATA
-							{
-							}
-							MODULE
-							{
-								name = ModuleCargoPart
-								isEnabled = True
-								packedVolume = 17
-								beingAttached = False
-								beingSettled = False
-								reinitResourcesOnStoreInVessel = True
-								stagingEnabled = True
-								EVENTS
-								{
-								}
-								ACTIONS
-								{
-								}
-								UPGRADESAPPLIED
-								{
-								}
-							}
-							RESOURCE
-							{
-								name = EVA Propellant
-								amount = 5
-								maxAmount = 5
-								flowState = True
-								isTweakable = False
-								hideFlow = False
-								isVisible = True
-								flowMode = Both
-							}
-						}
-					}
-				}
-			}
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-			}
-		}
-		KERBAL
-		{
-			name = Cernie Kerman
-			gender = Female
-			type = Applicant
-			trait = Scientist
-			brave = 0.638623536
-			dumb = 0.925747812
-			badS = False
-			veteran = False
-			tour = False
-			state = Available
-			inactive = False
-			inactiveTimeEnd = 0
-			gExperienced = 0
-			outDueToG = False
-			ToD = 241208.77030517577
-			idx = -1
-			extraXP = 0
-			hasHelmetOn = False
-			hasNeckRingOn = False
-			hasVisorDown = False
-			lightR = 1
-			lightG = 0.5176
-			lightB = 0
-			completedFirstEVA = False
-			suit = Default
-			hero = False
-			INVENTORY
-			{
-				inventory = evaChute,evaJetpack
-				STOREDPARTS
-				{
-					STOREDPART
-					{
-						slotIndex = 0
-						partName = evaChute
-						quantity = 1
-						stackCapacity = 1
-						variantName = 
-						PART
-						{
-							name = evaChute
-							cid = 4294843844
-							uid = 0
-							mid = 0
-							persistentId = 0
-							launchID = 0
-							parent = 0
-							position = 0,0,0
-							rotation = 0,0,0,0
-							mirror = 1,1,1
-							symMethod = Radial
-							istg = 0
-							resPri = 0
-							dstg = 0
-							sqor = -1
-							sepI = 0
-							sidx = -1
-							attm = 0
-							sameVesselCollision = False
-							srfN = None, -1
-							mass = 0.00400000019
-							shielded = False
-							temp = -1
-							tempExt = 0
-							tempExtUnexp = 0
-							staticPressureAtm = 0
-							expt = 0.5
-							state = 0
-							attached = True
-							autostrutMode = Off
-							rigidAttachment = False
-							flag = 
-							rTrf = evaChute
-							modCost = 0
-							modMass = 0
-							moduleVariantName = 
-							moduleCargoStackableQuantity = 1
-							EVENTS
-							{
-							}
-							ACTIONS
-							{
-								ToggleSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								SetSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								RemoveSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								AutostrutOff
-								{
-									actionGroup = None
-								}
-								AutostrutRoot
-								{
-									actionGroup = None
-								}
-								AutostrutHeaviest
-								{
-									actionGroup = None
-								}
-								AutostrutGrandparent
-								{
-									actionGroup = None
-								}
-								ResourcesEnableFlow
-								{
-									actionGroup = None
-									active = False
-								}
-								ResourcesDisableFlow
-								{
-									actionGroup = None
-									active = False
-								}
-							}
-							PARTDATA
-							{
-							}
-							MODULE
-							{
-								name = ModuleCargoPart
-								isEnabled = True
-								packedVolume = 10
-								beingAttached = False
-								beingSettled = False
-								reinitResourcesOnStoreInVessel = False
-								stagingEnabled = True
-								EVENTS
-								{
-								}
-								ACTIONS
-								{
-								}
-								UPGRADESAPPLIED
-								{
-								}
-							}
-						}
-					}
-					STOREDPART
-					{
-						slotIndex = 1
-						partName = evaJetpack
-						quantity = 1
-						stackCapacity = 1
-						variantName = 
-						PART
-						{
-							name = evaJetpack
-							cid = 4294843908
-							uid = 0
-							mid = 0
-							persistentId = 0
-							launchID = 0
-							parent = 0
-							position = 0,0,0
-							rotation = 0,0,0,0
-							mirror = 1,1,1
-							symMethod = Radial
-							istg = 0
-							resPri = 2
-							dstg = 0
-							sqor = -1
-							sepI = 0
-							sidx = -1
-							attm = 0
-							sameVesselCollision = False
-							srfN = None, -1
-							mass = 0.0199999996
-							shielded = False
-							temp = -1
-							tempExt = 0
-							tempExtUnexp = 0
-							staticPressureAtm = 0
-							expt = 0.5
-							state = 0
-							attached = True
-							autostrutMode = Off
-							rigidAttachment = False
-							flag = 
-							rTrf = evaJetpack
-							modCost = 0
-							modMass = 0
-							moduleVariantName = 
-							moduleCargoStackableQuantity = 1
-							EVENTS
-							{
-							}
-							ACTIONS
-							{
-								ToggleSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								SetSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								RemoveSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								AutostrutOff
-								{
-									actionGroup = None
-								}
-								AutostrutRoot
-								{
-									actionGroup = None
-								}
-								AutostrutHeaviest
-								{
-									actionGroup = None
-								}
-								AutostrutGrandparent
-								{
-									actionGroup = None
-								}
-								ResourcesEnableFlow
-								{
-									actionGroup = None
-									active = False
-								}
-								ResourcesDisableFlow
-								{
-									actionGroup = None
-									active = False
-								}
-							}
-							PARTDATA
-							{
-							}
-							MODULE
-							{
-								name = ModuleCargoPart
-								isEnabled = True
-								packedVolume = 17
-								beingAttached = False
-								beingSettled = False
-								reinitResourcesOnStoreInVessel = True
-								stagingEnabled = True
-								EVENTS
-								{
-								}
-								ACTIONS
-								{
-								}
-								UPGRADESAPPLIED
-								{
-								}
-							}
-							RESOURCE
-							{
-								name = EVA Propellant
-								amount = 5
-								maxAmount = 5
-								flowState = True
-								isTweakable = False
-								hideFlow = False
-								isVisible = True
-								flowMode = Both
-							}
-						}
-					}
-				}
-			}
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-			}
-		}
-		KERBAL
-		{
-			name = Geneton Kerman
-			gender = Male
-			type = Applicant
-			trait = Scientist
-			brave = 0.865826249
-			dumb = 0.460436463
-			badS = False
-			veteran = False
-			tour = False
-			state = Available
-			inactive = False
-			inactiveTimeEnd = 0
-			gExperienced = 0
-			outDueToG = False
-			ToD = 244789.51676513671
-			idx = -1
-			extraXP = 0
-			hasHelmetOn = False
-			hasNeckRingOn = False
-			hasVisorDown = False
-			lightR = 1
-			lightG = 0.5176
-			lightB = 0
-			completedFirstEVA = False
-			suit = Default
-			hero = False
-			INVENTORY
-			{
-				inventory = evaChute,evaJetpack
-				STOREDPARTS
-				{
-					STOREDPART
-					{
-						slotIndex = 0
-						partName = evaChute
-						quantity = 1
-						stackCapacity = 1
-						variantName = 
-						PART
-						{
-							name = evaChute
-							cid = 4294843844
-							uid = 0
-							mid = 0
-							persistentId = 0
-							launchID = 0
-							parent = 0
-							position = 0,0,0
-							rotation = 0,0,0,0
-							mirror = 1,1,1
-							symMethod = Radial
-							istg = 0
-							resPri = 0
-							dstg = 0
-							sqor = -1
-							sepI = 0
-							sidx = -1
-							attm = 0
-							sameVesselCollision = False
-							srfN = None, -1
-							mass = 0.00400000019
-							shielded = False
-							temp = -1
-							tempExt = 0
-							tempExtUnexp = 0
-							staticPressureAtm = 0
-							expt = 0.5
-							state = 0
-							attached = True
-							autostrutMode = Off
-							rigidAttachment = False
-							flag = 
-							rTrf = evaChute
-							modCost = 0
-							modMass = 0
-							moduleVariantName = 
-							moduleCargoStackableQuantity = 1
-							EVENTS
-							{
-							}
-							ACTIONS
-							{
-								ToggleSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								SetSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								RemoveSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								AutostrutOff
-								{
-									actionGroup = None
-								}
-								AutostrutRoot
-								{
-									actionGroup = None
-								}
-								AutostrutHeaviest
-								{
-									actionGroup = None
-								}
-								AutostrutGrandparent
-								{
-									actionGroup = None
-								}
-								ResourcesEnableFlow
-								{
-									actionGroup = None
-									active = False
-								}
-								ResourcesDisableFlow
-								{
-									actionGroup = None
-									active = False
-								}
-							}
-							PARTDATA
-							{
-							}
-							MODULE
-							{
-								name = ModuleCargoPart
-								isEnabled = True
-								packedVolume = 10
-								beingAttached = False
-								beingSettled = False
-								reinitResourcesOnStoreInVessel = False
-								stagingEnabled = True
-								EVENTS
-								{
-								}
-								ACTIONS
-								{
-								}
-								UPGRADESAPPLIED
-								{
-								}
-							}
-						}
-					}
-					STOREDPART
-					{
-						slotIndex = 1
-						partName = evaJetpack
-						quantity = 1
-						stackCapacity = 1
-						variantName = 
-						PART
-						{
-							name = evaJetpack
-							cid = 4294843908
-							uid = 0
-							mid = 0
-							persistentId = 0
-							launchID = 0
-							parent = 0
-							position = 0,0,0
-							rotation = 0,0,0,0
-							mirror = 1,1,1
-							symMethod = Radial
-							istg = 0
-							resPri = 2
-							dstg = 0
-							sqor = -1
-							sepI = 0
-							sidx = -1
-							attm = 0
-							sameVesselCollision = False
-							srfN = None, -1
-							mass = 0.0199999996
-							shielded = False
-							temp = -1
-							tempExt = 0
-							tempExtUnexp = 0
-							staticPressureAtm = 0
-							expt = 0.5
-							state = 0
-							attached = True
-							autostrutMode = Off
-							rigidAttachment = False
-							flag = 
-							rTrf = evaJetpack
-							modCost = 0
-							modMass = 0
-							moduleVariantName = 
-							moduleCargoStackableQuantity = 1
-							EVENTS
-							{
-							}
-							ACTIONS
-							{
-								ToggleSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								SetSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								RemoveSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								AutostrutOff
-								{
-									actionGroup = None
-								}
-								AutostrutRoot
-								{
-									actionGroup = None
-								}
-								AutostrutHeaviest
-								{
-									actionGroup = None
-								}
-								AutostrutGrandparent
-								{
-									actionGroup = None
-								}
-								ResourcesEnableFlow
-								{
-									actionGroup = None
-									active = False
-								}
-								ResourcesDisableFlow
-								{
-									actionGroup = None
-									active = False
-								}
-							}
-							PARTDATA
-							{
-							}
-							MODULE
-							{
-								name = ModuleCargoPart
-								isEnabled = True
-								packedVolume = 17
-								beingAttached = False
-								beingSettled = False
-								reinitResourcesOnStoreInVessel = True
-								stagingEnabled = True
-								EVENTS
-								{
-								}
-								ACTIONS
-								{
-								}
-								UPGRADESAPPLIED
-								{
-								}
-							}
-							RESOURCE
-							{
-								name = EVA Propellant
-								amount = 5
-								maxAmount = 5
-								flowState = True
-								isTweakable = False
-								hideFlow = False
-								isVisible = True
-								flowMode = Both
-							}
-						}
-					}
-				}
-			}
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-			}
-		}
-		KERBAL
-		{
-			name = Nagee Kerman
-			gender = Female
-			type = Applicant
-			trait = Engineer
-			brave = 0.437132299
-			dumb = 0.322391689
-			badS = False
-			veteran = False
-			tour = False
-			state = Available
-			inactive = False
-			inactiveTimeEnd = 0
-			gExperienced = 0
-			outDueToG = False
-			ToD = 117866.75446655274
-			idx = -1
-			extraXP = 0
-			hasHelmetOn = False
-			hasNeckRingOn = False
-			hasVisorDown = False
-			lightR = 1
-			lightG = 0.5176
-			lightB = 0
-			completedFirstEVA = False
-			suit = Default
-			hero = False
-			INVENTORY
-			{
-				inventory = evaChute,evaJetpack
-				STOREDPARTS
-				{
-					STOREDPART
-					{
-						slotIndex = 0
-						partName = evaChute
-						quantity = 1
-						stackCapacity = 1
-						variantName = 
-						PART
-						{
-							name = evaChute
-							cid = 4294843844
-							uid = 0
-							mid = 0
-							persistentId = 0
-							launchID = 0
-							parent = 0
-							position = 0,0,0
-							rotation = 0,0,0,0
-							mirror = 1,1,1
-							symMethod = Radial
-							istg = 0
-							resPri = 0
-							dstg = 0
-							sqor = -1
-							sepI = 0
-							sidx = -1
-							attm = 0
-							sameVesselCollision = False
-							srfN = None, -1
-							mass = 0.00400000019
-							shielded = False
-							temp = -1
-							tempExt = 0
-							tempExtUnexp = 0
-							staticPressureAtm = 0
-							expt = 0.5
-							state = 0
-							attached = True
-							autostrutMode = Off
-							rigidAttachment = False
-							flag = 
-							rTrf = evaChute
-							modCost = 0
-							modMass = 0
-							moduleVariantName = 
-							moduleCargoStackableQuantity = 1
-							EVENTS
-							{
-							}
-							ACTIONS
-							{
-								ToggleSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								SetSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								RemoveSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								AutostrutOff
-								{
-									actionGroup = None
-								}
-								AutostrutRoot
-								{
-									actionGroup = None
-								}
-								AutostrutHeaviest
-								{
-									actionGroup = None
-								}
-								AutostrutGrandparent
-								{
-									actionGroup = None
-								}
-								ResourcesEnableFlow
-								{
-									actionGroup = None
-									active = False
-								}
-								ResourcesDisableFlow
-								{
-									actionGroup = None
-									active = False
-								}
-							}
-							PARTDATA
-							{
-							}
-							MODULE
-							{
-								name = ModuleCargoPart
-								isEnabled = True
-								packedVolume = 10
-								beingAttached = False
-								beingSettled = False
-								reinitResourcesOnStoreInVessel = False
-								stagingEnabled = True
-								EVENTS
-								{
-								}
-								ACTIONS
-								{
-								}
-								UPGRADESAPPLIED
-								{
-								}
-							}
-						}
-					}
-					STOREDPART
-					{
-						slotIndex = 1
-						partName = evaJetpack
-						quantity = 1
-						stackCapacity = 1
-						variantName = 
-						PART
-						{
-							name = evaJetpack
-							cid = 4294843908
-							uid = 0
-							mid = 0
-							persistentId = 0
-							launchID = 0
-							parent = 0
-							position = 0,0,0
-							rotation = 0,0,0,0
-							mirror = 1,1,1
-							symMethod = Radial
-							istg = 0
-							resPri = 2
-							dstg = 0
-							sqor = -1
-							sepI = 0
-							sidx = -1
-							attm = 0
-							sameVesselCollision = False
-							srfN = None, -1
-							mass = 0.0199999996
-							shielded = False
-							temp = -1
-							tempExt = 0
-							tempExtUnexp = 0
-							staticPressureAtm = 0
-							expt = 0.5
-							state = 0
-							attached = True
-							autostrutMode = Off
-							rigidAttachment = False
-							flag = 
-							rTrf = evaJetpack
-							modCost = 0
-							modMass = 0
-							moduleVariantName = 
-							moduleCargoStackableQuantity = 1
-							EVENTS
-							{
-							}
-							ACTIONS
-							{
-								ToggleSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								SetSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								RemoveSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								AutostrutOff
-								{
-									actionGroup = None
-								}
-								AutostrutRoot
-								{
-									actionGroup = None
-								}
-								AutostrutHeaviest
-								{
-									actionGroup = None
-								}
-								AutostrutGrandparent
-								{
-									actionGroup = None
-								}
-								ResourcesEnableFlow
-								{
-									actionGroup = None
-									active = False
-								}
-								ResourcesDisableFlow
-								{
-									actionGroup = None
-									active = False
-								}
-							}
-							PARTDATA
-							{
-							}
-							MODULE
-							{
-								name = ModuleCargoPart
-								isEnabled = True
-								packedVolume = 17
-								beingAttached = False
-								beingSettled = False
-								reinitResourcesOnStoreInVessel = True
-								stagingEnabled = True
-								EVENTS
-								{
-								}
-								ACTIONS
-								{
-								}
-								UPGRADESAPPLIED
-								{
-								}
-							}
-							RESOURCE
-							{
-								name = EVA Propellant
-								amount = 5
-								maxAmount = 5
-								flowState = True
-								isTweakable = False
-								hideFlow = False
-								isVisible = True
-								flowMode = Both
-							}
-						}
-					}
-				}
-			}
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-			}
-		}
-		KERBAL
-		{
-			name = Dudfield Kerman
-			gender = Male
-			type = Applicant
-			trait = Pilot
-			brave = 0.833901167
-			dumb = 0.695248902
-			badS = True
-			veteran = False
-			tour = False
-			state = Available
-			inactive = False
-			inactiveTimeEnd = 0
-			gExperienced = 0
-			outDueToG = False
-			ToD = 200647.61078979491
-			idx = -1
-			extraXP = 0
-			hasHelmetOn = False
-			hasNeckRingOn = False
-			hasVisorDown = False
-			lightR = 1
-			lightG = 0.5176
-			lightB = 0
-			completedFirstEVA = False
-			suit = Default
-			hero = False
-			INVENTORY
-			{
-				inventory = evaChute,evaJetpack
-				STOREDPARTS
-				{
-					STOREDPART
-					{
-						slotIndex = 0
-						partName = evaChute
-						quantity = 1
-						stackCapacity = 1
-						variantName = 
-						PART
-						{
-							name = evaChute
-							cid = 4294843844
-							uid = 0
-							mid = 0
-							persistentId = 0
-							launchID = 0
-							parent = 0
-							position = 0,0,0
-							rotation = 0,0,0,0
-							mirror = 1,1,1
-							symMethod = Radial
-							istg = 0
-							resPri = 0
-							dstg = 0
-							sqor = -1
-							sepI = 0
-							sidx = -1
-							attm = 0
-							sameVesselCollision = False
-							srfN = None, -1
-							mass = 0.00400000019
-							shielded = False
-							temp = -1
-							tempExt = 0
-							tempExtUnexp = 0
-							staticPressureAtm = 0
-							expt = 0.5
-							state = 0
-							attached = True
-							autostrutMode = Off
-							rigidAttachment = False
-							flag = 
-							rTrf = evaChute
-							modCost = 0
-							modMass = 0
-							moduleVariantName = 
-							moduleCargoStackableQuantity = 1
-							EVENTS
-							{
-							}
-							ACTIONS
-							{
-								ToggleSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								SetSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								RemoveSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								AutostrutOff
-								{
-									actionGroup = None
-								}
-								AutostrutRoot
-								{
-									actionGroup = None
-								}
-								AutostrutHeaviest
-								{
-									actionGroup = None
-								}
-								AutostrutGrandparent
-								{
-									actionGroup = None
-								}
-								ResourcesEnableFlow
-								{
-									actionGroup = None
-									active = False
-								}
-								ResourcesDisableFlow
-								{
-									actionGroup = None
-									active = False
-								}
-							}
-							PARTDATA
-							{
-							}
-							MODULE
-							{
-								name = ModuleCargoPart
-								isEnabled = True
-								packedVolume = 10
-								beingAttached = False
-								beingSettled = False
-								reinitResourcesOnStoreInVessel = False
-								stagingEnabled = True
-								EVENTS
-								{
-								}
-								ACTIONS
-								{
-								}
-								UPGRADESAPPLIED
-								{
-								}
-							}
-						}
-					}
-					STOREDPART
-					{
-						slotIndex = 1
-						partName = evaJetpack
-						quantity = 1
-						stackCapacity = 1
-						variantName = 
-						PART
-						{
-							name = evaJetpack
-							cid = 4294843908
-							uid = 0
-							mid = 0
-							persistentId = 0
-							launchID = 0
-							parent = 0
-							position = 0,0,0
-							rotation = 0,0,0,0
-							mirror = 1,1,1
-							symMethod = Radial
-							istg = 0
-							resPri = 2
-							dstg = 0
-							sqor = -1
-							sepI = 0
-							sidx = -1
-							attm = 0
-							sameVesselCollision = False
-							srfN = None, -1
-							mass = 0.0199999996
-							shielded = False
-							temp = -1
-							tempExt = 0
-							tempExtUnexp = 0
-							staticPressureAtm = 0
-							expt = 0.5
-							state = 0
-							attached = True
-							autostrutMode = Off
-							rigidAttachment = False
-							flag = 
-							rTrf = evaJetpack
-							modCost = 0
-							modMass = 0
-							moduleVariantName = 
-							moduleCargoStackableQuantity = 1
-							EVENTS
-							{
-							}
-							ACTIONS
-							{
-								ToggleSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								SetSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								RemoveSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								AutostrutOff
-								{
-									actionGroup = None
-								}
-								AutostrutRoot
-								{
-									actionGroup = None
-								}
-								AutostrutHeaviest
-								{
-									actionGroup = None
-								}
-								AutostrutGrandparent
-								{
-									actionGroup = None
-								}
-								ResourcesEnableFlow
-								{
-									actionGroup = None
-									active = False
-								}
-								ResourcesDisableFlow
-								{
-									actionGroup = None
-									active = False
-								}
-							}
-							PARTDATA
-							{
-							}
-							MODULE
-							{
-								name = ModuleCargoPart
-								isEnabled = True
-								packedVolume = 17
-								beingAttached = False
-								beingSettled = False
-								reinitResourcesOnStoreInVessel = True
-								stagingEnabled = True
-								EVENTS
-								{
-								}
-								ACTIONS
-								{
-								}
-								UPGRADESAPPLIED
-								{
-								}
-							}
-							RESOURCE
-							{
-								name = EVA Propellant
-								amount = 5
-								maxAmount = 5
-								flowState = True
-								isTweakable = False
-								hideFlow = False
-								isVisible = True
-								flowMode = Both
-							}
-						}
-					}
-				}
-			}
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-			}
-		}
-		KERBAL
-		{
-			name = Lury Kerman
-			gender = Male
-			type = Applicant
-			trait = Engineer
-			brave = 0.496980757
-			dumb = 0.769351959
-			badS = False
-			veteran = False
-			tour = False
-			state = Available
-			inactive = False
-			inactiveTimeEnd = 0
-			gExperienced = 0
-			outDueToG = False
-			ToD = 179442.99500610351
-			idx = -1
-			extraXP = 0
-			hasHelmetOn = False
-			hasNeckRingOn = False
-			hasVisorDown = False
-			lightR = 1
-			lightG = 0.5176
-			lightB = 0
-			completedFirstEVA = False
-			suit = Default
-			hero = False
-			INVENTORY
-			{
-				inventory = evaChute,evaJetpack
-				STOREDPARTS
-				{
-					STOREDPART
-					{
-						slotIndex = 0
-						partName = evaChute
-						quantity = 1
-						stackCapacity = 1
-						variantName = 
-						PART
-						{
-							name = evaChute
-							cid = 4294843844
-							uid = 0
-							mid = 0
-							persistentId = 0
-							launchID = 0
-							parent = 0
-							position = 0,0,0
-							rotation = 0,0,0,0
-							mirror = 1,1,1
-							symMethod = Radial
-							istg = 0
-							resPri = 0
-							dstg = 0
-							sqor = -1
-							sepI = 0
-							sidx = -1
-							attm = 0
-							sameVesselCollision = False
-							srfN = None, -1
-							mass = 0.00400000019
-							shielded = False
-							temp = -1
-							tempExt = 0
-							tempExtUnexp = 0
-							staticPressureAtm = 0
-							expt = 0.5
-							state = 0
-							attached = True
-							autostrutMode = Off
-							rigidAttachment = False
-							flag = 
-							rTrf = evaChute
-							modCost = 0
-							modMass = 0
-							moduleVariantName = 
-							moduleCargoStackableQuantity = 1
-							EVENTS
-							{
-							}
-							ACTIONS
-							{
-								ToggleSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								SetSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								RemoveSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								AutostrutOff
-								{
-									actionGroup = None
-								}
-								AutostrutRoot
-								{
-									actionGroup = None
-								}
-								AutostrutHeaviest
-								{
-									actionGroup = None
-								}
-								AutostrutGrandparent
-								{
-									actionGroup = None
-								}
-								ResourcesEnableFlow
-								{
-									actionGroup = None
-									active = False
-								}
-								ResourcesDisableFlow
-								{
-									actionGroup = None
-									active = False
-								}
-							}
-							PARTDATA
-							{
-							}
-							MODULE
-							{
-								name = ModuleCargoPart
-								isEnabled = True
-								packedVolume = 10
-								beingAttached = False
-								beingSettled = False
-								reinitResourcesOnStoreInVessel = False
-								stagingEnabled = True
-								EVENTS
-								{
-								}
-								ACTIONS
-								{
-								}
-								UPGRADESAPPLIED
-								{
-								}
-							}
-						}
-					}
-					STOREDPART
-					{
-						slotIndex = 1
-						partName = evaJetpack
-						quantity = 1
-						stackCapacity = 1
-						variantName = 
-						PART
-						{
-							name = evaJetpack
-							cid = 4294843908
-							uid = 0
-							mid = 0
-							persistentId = 0
-							launchID = 0
-							parent = 0
-							position = 0,0,0
-							rotation = 0,0,0,0
-							mirror = 1,1,1
-							symMethod = Radial
-							istg = 0
-							resPri = 2
-							dstg = 0
-							sqor = -1
-							sepI = 0
-							sidx = -1
-							attm = 0
-							sameVesselCollision = False
-							srfN = None, -1
-							mass = 0.0199999996
-							shielded = False
-							temp = -1
-							tempExt = 0
-							tempExtUnexp = 0
-							staticPressureAtm = 0
-							expt = 0.5
-							state = 0
-							attached = True
-							autostrutMode = Off
-							rigidAttachment = False
-							flag = 
-							rTrf = evaJetpack
-							modCost = 0
-							modMass = 0
-							moduleVariantName = 
-							moduleCargoStackableQuantity = 1
-							EVENTS
-							{
-							}
-							ACTIONS
-							{
-								ToggleSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								SetSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								RemoveSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								AutostrutOff
-								{
-									actionGroup = None
-								}
-								AutostrutRoot
-								{
-									actionGroup = None
-								}
-								AutostrutHeaviest
-								{
-									actionGroup = None
-								}
-								AutostrutGrandparent
-								{
-									actionGroup = None
-								}
-								ResourcesEnableFlow
-								{
-									actionGroup = None
-									active = False
-								}
-								ResourcesDisableFlow
-								{
-									actionGroup = None
-									active = False
-								}
-							}
-							PARTDATA
-							{
-							}
-							MODULE
-							{
-								name = ModuleCargoPart
-								isEnabled = True
-								packedVolume = 17
-								beingAttached = False
-								beingSettled = False
-								reinitResourcesOnStoreInVessel = True
-								stagingEnabled = True
-								EVENTS
-								{
-								}
-								ACTIONS
-								{
-								}
-								UPGRADESAPPLIED
-								{
-								}
-							}
-							RESOURCE
-							{
-								name = EVA Propellant
-								amount = 5
-								maxAmount = 5
-								flowState = True
-								isTweakable = False
-								hideFlow = False
-								isVisible = True
-								flowMode = Both
-							}
-						}
-					}
-				}
-			}
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-			}
-		}
-		KERBAL
-		{
-			name = Virlorf Kerman
-			gender = Female
-			type = Applicant
-			trait = Scientist
-			brave = 0.853077412
-			dumb = 0.227485135
-			badS = False
-			veteran = False
-			tour = False
-			state = Available
-			inactive = False
-			inactiveTimeEnd = 0
-			gExperienced = 0
-			outDueToG = False
-			ToD = 163765.76569702147
-			idx = -1
-			extraXP = 0
-			hasHelmetOn = False
-			hasNeckRingOn = False
-			hasVisorDown = False
-			lightR = 1
-			lightG = 0.5176
-			lightB = 0
-			completedFirstEVA = False
-			suit = Default
-			hero = False
-			INVENTORY
-			{
-				inventory = evaChute,evaJetpack
-				STOREDPARTS
-				{
-					STOREDPART
-					{
-						slotIndex = 0
-						partName = evaChute
-						quantity = 1
-						stackCapacity = 1
-						variantName = 
-						PART
-						{
-							name = evaChute
-							cid = 4294843844
-							uid = 0
-							mid = 0
-							persistentId = 0
-							launchID = 0
-							parent = 0
-							position = 0,0,0
-							rotation = 0,0,0,0
-							mirror = 1,1,1
-							symMethod = Radial
-							istg = 0
-							resPri = 0
-							dstg = 0
-							sqor = -1
-							sepI = 0
-							sidx = -1
-							attm = 0
-							sameVesselCollision = False
-							srfN = None, -1
-							mass = 0.00400000019
-							shielded = False
-							temp = -1
-							tempExt = 0
-							tempExtUnexp = 0
-							staticPressureAtm = 0
-							expt = 0.5
-							state = 0
-							attached = True
-							autostrutMode = Off
-							rigidAttachment = False
-							flag = 
-							rTrf = evaChute
-							modCost = 0
-							modMass = 0
-							moduleVariantName = 
-							moduleCargoStackableQuantity = 1
-							EVENTS
-							{
-							}
-							ACTIONS
-							{
-								ToggleSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								SetSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								RemoveSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								AutostrutOff
-								{
-									actionGroup = None
-								}
-								AutostrutRoot
-								{
-									actionGroup = None
-								}
-								AutostrutHeaviest
-								{
-									actionGroup = None
-								}
-								AutostrutGrandparent
-								{
-									actionGroup = None
-								}
-								ResourcesEnableFlow
-								{
-									actionGroup = None
-									active = False
-								}
-								ResourcesDisableFlow
-								{
-									actionGroup = None
-									active = False
-								}
-							}
-							PARTDATA
-							{
-							}
-							MODULE
-							{
-								name = ModuleCargoPart
-								isEnabled = True
-								packedVolume = 10
-								beingAttached = False
-								beingSettled = False
-								reinitResourcesOnStoreInVessel = False
-								stagingEnabled = True
-								EVENTS
-								{
-								}
-								ACTIONS
-								{
-								}
-								UPGRADESAPPLIED
-								{
-								}
-							}
-						}
-					}
-					STOREDPART
-					{
-						slotIndex = 1
-						partName = evaJetpack
-						quantity = 1
-						stackCapacity = 1
-						variantName = 
-						PART
-						{
-							name = evaJetpack
-							cid = 4294843908
-							uid = 0
-							mid = 0
-							persistentId = 0
-							launchID = 0
-							parent = 0
-							position = 0,0,0
-							rotation = 0,0,0,0
-							mirror = 1,1,1
-							symMethod = Radial
-							istg = 0
-							resPri = 2
-							dstg = 0
-							sqor = -1
-							sepI = 0
-							sidx = -1
-							attm = 0
-							sameVesselCollision = False
-							srfN = None, -1
-							mass = 0.0199999996
-							shielded = False
-							temp = -1
-							tempExt = 0
-							tempExtUnexp = 0
-							staticPressureAtm = 0
-							expt = 0.5
-							state = 0
-							attached = True
-							autostrutMode = Off
-							rigidAttachment = False
-							flag = 
-							rTrf = evaJetpack
-							modCost = 0
-							modMass = 0
-							moduleVariantName = 
-							moduleCargoStackableQuantity = 1
-							EVENTS
-							{
-							}
-							ACTIONS
-							{
-								ToggleSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								SetSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								RemoveSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								AutostrutOff
-								{
-									actionGroup = None
-								}
-								AutostrutRoot
-								{
-									actionGroup = None
-								}
-								AutostrutHeaviest
-								{
-									actionGroup = None
-								}
-								AutostrutGrandparent
-								{
-									actionGroup = None
-								}
-								ResourcesEnableFlow
-								{
-									actionGroup = None
-									active = False
-								}
-								ResourcesDisableFlow
-								{
-									actionGroup = None
-									active = False
-								}
-							}
-							PARTDATA
-							{
-							}
-							MODULE
-							{
-								name = ModuleCargoPart
-								isEnabled = True
-								packedVolume = 17
-								beingAttached = False
-								beingSettled = False
-								reinitResourcesOnStoreInVessel = True
-								stagingEnabled = True
-								EVENTS
-								{
-								}
-								ACTIONS
-								{
-								}
-								UPGRADESAPPLIED
-								{
-								}
-							}
-							RESOURCE
-							{
-								name = EVA Propellant
-								amount = 5
-								maxAmount = 5
-								flowState = True
-								isTweakable = False
-								hideFlow = False
-								isVisible = True
-								flowMode = Both
-							}
-						}
-					}
-				}
-			}
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-			}
-		}
-		KERBAL
-		{
-			name = Patvan Kerman
-			gender = Male
-			type = Applicant
-			trait = Scientist
-			brave = 0.00272449851
-			dumb = 0.607577741
-			badS = True
-			veteran = False
-			tour = False
-			state = Available
-			inactive = False
-			inactiveTimeEnd = 0
-			gExperienced = 0
-			outDueToG = False
-			ToD = 102596.28022338868
-			idx = -1
-			extraXP = 0
-			hasHelmetOn = False
-			hasNeckRingOn = False
-			hasVisorDown = False
-			lightR = 1
-			lightG = 0.5176
-			lightB = 0
-			completedFirstEVA = False
-			suit = Default
-			hero = False
-			INVENTORY
-			{
-				inventory = evaChute,evaJetpack
-				STOREDPARTS
-				{
-					STOREDPART
-					{
-						slotIndex = 0
-						partName = evaChute
-						quantity = 1
-						stackCapacity = 1
-						variantName = 
-						PART
-						{
-							name = evaChute
-							cid = 4294843844
-							uid = 0
-							mid = 0
-							persistentId = 0
-							launchID = 0
-							parent = 0
-							position = 0,0,0
-							rotation = 0,0,0,0
-							mirror = 1,1,1
-							symMethod = Radial
-							istg = 0
-							resPri = 0
-							dstg = 0
-							sqor = -1
-							sepI = 0
-							sidx = -1
-							attm = 0
-							sameVesselCollision = False
-							srfN = None, -1
-							mass = 0.00400000019
-							shielded = False
-							temp = -1
-							tempExt = 0
-							tempExtUnexp = 0
-							staticPressureAtm = 0
-							expt = 0.5
-							state = 0
-							attached = True
-							autostrutMode = Off
-							rigidAttachment = False
-							flag = 
-							rTrf = evaChute
-							modCost = 0
-							modMass = 0
-							moduleVariantName = 
-							moduleCargoStackableQuantity = 1
-							EVENTS
-							{
-							}
-							ACTIONS
-							{
-								ToggleSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								SetSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								RemoveSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								AutostrutOff
-								{
-									actionGroup = None
-								}
-								AutostrutRoot
-								{
-									actionGroup = None
-								}
-								AutostrutHeaviest
-								{
-									actionGroup = None
-								}
-								AutostrutGrandparent
-								{
-									actionGroup = None
-								}
-								ResourcesEnableFlow
-								{
-									actionGroup = None
-									active = False
-								}
-								ResourcesDisableFlow
-								{
-									actionGroup = None
-									active = False
-								}
-							}
-							PARTDATA
-							{
-							}
-							MODULE
-							{
-								name = ModuleCargoPart
-								isEnabled = True
-								packedVolume = 10
-								beingAttached = False
-								beingSettled = False
-								reinitResourcesOnStoreInVessel = False
-								stagingEnabled = True
-								EVENTS
-								{
-								}
-								ACTIONS
-								{
-								}
-								UPGRADESAPPLIED
-								{
-								}
-							}
-						}
-					}
-					STOREDPART
-					{
-						slotIndex = 1
-						partName = evaJetpack
-						quantity = 1
-						stackCapacity = 1
-						variantName = 
-						PART
-						{
-							name = evaJetpack
-							cid = 4294843908
-							uid = 0
-							mid = 0
-							persistentId = 0
-							launchID = 0
-							parent = 0
-							position = 0,0,0
-							rotation = 0,0,0,0
-							mirror = 1,1,1
-							symMethod = Radial
-							istg = 0
-							resPri = 2
-							dstg = 0
-							sqor = -1
-							sepI = 0
-							sidx = -1
-							attm = 0
-							sameVesselCollision = False
-							srfN = None, -1
-							mass = 0.0199999996
-							shielded = False
-							temp = -1
-							tempExt = 0
-							tempExtUnexp = 0
-							staticPressureAtm = 0
-							expt = 0.5
-							state = 0
-							attached = True
-							autostrutMode = Off
-							rigidAttachment = False
-							flag = 
-							rTrf = evaJetpack
-							modCost = 0
-							modMass = 0
-							moduleVariantName = 
-							moduleCargoStackableQuantity = 1
-							EVENTS
-							{
-							}
-							ACTIONS
-							{
-								ToggleSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								SetSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								RemoveSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								AutostrutOff
-								{
-									actionGroup = None
-								}
-								AutostrutRoot
-								{
-									actionGroup = None
-								}
-								AutostrutHeaviest
-								{
-									actionGroup = None
-								}
-								AutostrutGrandparent
-								{
-									actionGroup = None
-								}
-								ResourcesEnableFlow
-								{
-									actionGroup = None
-									active = False
-								}
-								ResourcesDisableFlow
-								{
-									actionGroup = None
-									active = False
-								}
-							}
-							PARTDATA
-							{
-							}
-							MODULE
-							{
-								name = ModuleCargoPart
-								isEnabled = True
-								packedVolume = 17
-								beingAttached = False
-								beingSettled = False
-								reinitResourcesOnStoreInVessel = True
-								stagingEnabled = True
-								EVENTS
-								{
-								}
-								ACTIONS
-								{
-								}
-								UPGRADESAPPLIED
-								{
-								}
-							}
-							RESOURCE
-							{
-								name = EVA Propellant
-								amount = 5
-								maxAmount = 5
-								flowState = True
-								isTweakable = False
-								hideFlow = False
-								isVisible = True
-								flowMode = Both
-							}
-						}
-					}
-				}
-			}
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-			}
-		}
-		KERBAL
-		{
-			name = Mafred Kerman
-			gender = Female
-			type = Applicant
-			trait = Scientist
-			brave = 0.141499445
-			dumb = 0.965396643
-			badS = False
-			veteran = False
-			tour = False
-			state = Available
-			inactive = False
-			inactiveTimeEnd = 0
-			gExperienced = 0
-			outDueToG = False
-			ToD = 141691.33141662597
-			idx = -1
-			extraXP = 0
-			hasHelmetOn = False
-			hasNeckRingOn = False
-			hasVisorDown = False
-			lightR = 1
-			lightG = 0.5176
-			lightB = 0
-			completedFirstEVA = False
-			suit = Default
-			hero = False
-			INVENTORY
-			{
-				inventory = evaChute,evaJetpack
-				STOREDPARTS
-				{
-					STOREDPART
-					{
-						slotIndex = 0
-						partName = evaChute
-						quantity = 1
-						stackCapacity = 1
-						variantName = 
-						PART
-						{
-							name = evaChute
-							cid = 4294843844
-							uid = 0
-							mid = 0
-							persistentId = 0
-							launchID = 0
-							parent = 0
-							position = 0,0,0
-							rotation = 0,0,0,0
-							mirror = 1,1,1
-							symMethod = Radial
-							istg = 0
-							resPri = 0
-							dstg = 0
-							sqor = -1
-							sepI = 0
-							sidx = -1
-							attm = 0
-							sameVesselCollision = False
-							srfN = None, -1
-							mass = 0.00400000019
-							shielded = False
-							temp = -1
-							tempExt = 0
-							tempExtUnexp = 0
-							staticPressureAtm = 0
-							expt = 0.5
-							state = 0
-							attached = True
-							autostrutMode = Off
-							rigidAttachment = False
-							flag = 
-							rTrf = evaChute
-							modCost = 0
-							modMass = 0
-							moduleVariantName = 
-							moduleCargoStackableQuantity = 1
-							EVENTS
-							{
-							}
-							ACTIONS
-							{
-								ToggleSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								SetSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								RemoveSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								AutostrutOff
-								{
-									actionGroup = None
-								}
-								AutostrutRoot
-								{
-									actionGroup = None
-								}
-								AutostrutHeaviest
-								{
-									actionGroup = None
-								}
-								AutostrutGrandparent
-								{
-									actionGroup = None
-								}
-								ResourcesEnableFlow
-								{
-									actionGroup = None
-									active = False
-								}
-								ResourcesDisableFlow
-								{
-									actionGroup = None
-									active = False
-								}
-							}
-							PARTDATA
-							{
-							}
-							MODULE
-							{
-								name = ModuleCargoPart
-								isEnabled = True
-								packedVolume = 10
-								beingAttached = False
-								beingSettled = False
-								reinitResourcesOnStoreInVessel = False
-								stagingEnabled = True
-								EVENTS
-								{
-								}
-								ACTIONS
-								{
-								}
-								UPGRADESAPPLIED
-								{
-								}
-							}
-						}
-					}
-					STOREDPART
-					{
-						slotIndex = 1
-						partName = evaJetpack
-						quantity = 1
-						stackCapacity = 1
-						variantName = 
-						PART
-						{
-							name = evaJetpack
-							cid = 4294843908
-							uid = 0
-							mid = 0
-							persistentId = 0
-							launchID = 0
-							parent = 0
-							position = 0,0,0
-							rotation = 0,0,0,0
-							mirror = 1,1,1
-							symMethod = Radial
-							istg = 0
-							resPri = 2
-							dstg = 0
-							sqor = -1
-							sepI = 0
-							sidx = -1
-							attm = 0
-							sameVesselCollision = False
-							srfN = None, -1
-							mass = 0.0199999996
-							shielded = False
-							temp = -1
-							tempExt = 0
-							tempExtUnexp = 0
-							staticPressureAtm = 0
-							expt = 0.5
-							state = 0
-							attached = True
-							autostrutMode = Off
-							rigidAttachment = False
-							flag = 
-							rTrf = evaJetpack
-							modCost = 0
-							modMass = 0
-							moduleVariantName = 
-							moduleCargoStackableQuantity = 1
-							EVENTS
-							{
-							}
-							ACTIONS
-							{
-								ToggleSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								SetSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								RemoveSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								AutostrutOff
-								{
-									actionGroup = None
-								}
-								AutostrutRoot
-								{
-									actionGroup = None
-								}
-								AutostrutHeaviest
-								{
-									actionGroup = None
-								}
-								AutostrutGrandparent
-								{
-									actionGroup = None
-								}
-								ResourcesEnableFlow
-								{
-									actionGroup = None
-									active = False
-								}
-								ResourcesDisableFlow
-								{
-									actionGroup = None
-									active = False
-								}
-							}
-							PARTDATA
-							{
-							}
-							MODULE
-							{
-								name = ModuleCargoPart
-								isEnabled = True
-								packedVolume = 17
-								beingAttached = False
-								beingSettled = False
-								reinitResourcesOnStoreInVessel = True
-								stagingEnabled = True
-								EVENTS
-								{
-								}
-								ACTIONS
-								{
-								}
-								UPGRADESAPPLIED
-								{
-								}
-							}
-							RESOURCE
-							{
-								name = EVA Propellant
-								amount = 5
-								maxAmount = 5
-								flowState = True
-								isTweakable = False
-								hideFlow = False
-								isVisible = True
-								flowMode = Both
-							}
-						}
-					}
-				}
-			}
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-			}
-		}
-		KERBAL
-		{
-			name = Nelbart Kerman
-			gender = Male
-			type = Applicant
-			trait = Engineer
-			brave = 0.342326313
-			dumb = 0.191315144
-			badS = False
-			veteran = False
-			tour = False
-			state = Available
-			inactive = False
-			inactiveTimeEnd = 0
-			gExperienced = 0
-			outDueToG = False
-			ToD = 110598.72162963868
-			idx = -1
-			extraXP = 0
-			hasHelmetOn = False
-			hasNeckRingOn = False
-			hasVisorDown = False
-			lightR = 1
-			lightG = 0.5176
-			lightB = 0
-			completedFirstEVA = False
-			suit = Default
-			hero = False
-			INVENTORY
-			{
-				inventory = evaChute,evaJetpack
-				STOREDPARTS
-				{
-					STOREDPART
-					{
-						slotIndex = 0
-						partName = evaChute
-						quantity = 1
-						stackCapacity = 1
-						variantName = 
-						PART
-						{
-							name = evaChute
-							cid = 4294843844
-							uid = 0
-							mid = 0
-							persistentId = 0
-							launchID = 0
-							parent = 0
-							position = 0,0,0
-							rotation = 0,0,0,0
-							mirror = 1,1,1
-							symMethod = Radial
-							istg = 0
-							resPri = 0
-							dstg = 0
-							sqor = -1
-							sepI = 0
-							sidx = -1
-							attm = 0
-							sameVesselCollision = False
-							srfN = None, -1
-							mass = 0.00400000019
-							shielded = False
-							temp = -1
-							tempExt = 0
-							tempExtUnexp = 0
-							staticPressureAtm = 0
-							expt = 0.5
-							state = 0
-							attached = True
-							autostrutMode = Off
-							rigidAttachment = False
-							flag = 
-							rTrf = evaChute
-							modCost = 0
-							modMass = 0
-							moduleVariantName = 
-							moduleCargoStackableQuantity = 1
-							EVENTS
-							{
-							}
-							ACTIONS
-							{
-								ToggleSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								SetSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								RemoveSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								AutostrutOff
-								{
-									actionGroup = None
-								}
-								AutostrutRoot
-								{
-									actionGroup = None
-								}
-								AutostrutHeaviest
-								{
-									actionGroup = None
-								}
-								AutostrutGrandparent
-								{
-									actionGroup = None
-								}
-								ResourcesEnableFlow
-								{
-									actionGroup = None
-									active = False
-								}
-								ResourcesDisableFlow
-								{
-									actionGroup = None
-									active = False
-								}
-							}
-							PARTDATA
-							{
-							}
-							MODULE
-							{
-								name = ModuleCargoPart
-								isEnabled = True
-								packedVolume = 10
-								beingAttached = False
-								beingSettled = False
-								reinitResourcesOnStoreInVessel = False
-								stagingEnabled = True
-								EVENTS
-								{
-								}
-								ACTIONS
-								{
-								}
-								UPGRADESAPPLIED
-								{
-								}
-							}
-						}
-					}
-					STOREDPART
-					{
-						slotIndex = 1
-						partName = evaJetpack
-						quantity = 1
-						stackCapacity = 1
-						variantName = 
-						PART
-						{
-							name = evaJetpack
-							cid = 4294843908
-							uid = 0
-							mid = 0
-							persistentId = 0
-							launchID = 0
-							parent = 0
-							position = 0,0,0
-							rotation = 0,0,0,0
-							mirror = 1,1,1
-							symMethod = Radial
-							istg = 0
-							resPri = 2
-							dstg = 0
-							sqor = -1
-							sepI = 0
-							sidx = -1
-							attm = 0
-							sameVesselCollision = False
-							srfN = None, -1
-							mass = 0.0199999996
-							shielded = False
-							temp = -1
-							tempExt = 0
-							tempExtUnexp = 0
-							staticPressureAtm = 0
-							expt = 0.5
-							state = 0
-							attached = True
-							autostrutMode = Off
-							rigidAttachment = False
-							flag = 
-							rTrf = evaJetpack
-							modCost = 0
-							modMass = 0
-							moduleVariantName = 
-							moduleCargoStackableQuantity = 1
-							EVENTS
-							{
-							}
-							ACTIONS
-							{
-								ToggleSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								SetSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								RemoveSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								AutostrutOff
-								{
-									actionGroup = None
-								}
-								AutostrutRoot
-								{
-									actionGroup = None
-								}
-								AutostrutHeaviest
-								{
-									actionGroup = None
-								}
-								AutostrutGrandparent
-								{
-									actionGroup = None
-								}
-								ResourcesEnableFlow
-								{
-									actionGroup = None
-									active = False
-								}
-								ResourcesDisableFlow
-								{
-									actionGroup = None
-									active = False
-								}
-							}
-							PARTDATA
-							{
-							}
-							MODULE
-							{
-								name = ModuleCargoPart
-								isEnabled = True
-								packedVolume = 17
-								beingAttached = False
-								beingSettled = False
-								reinitResourcesOnStoreInVessel = True
-								stagingEnabled = True
-								EVENTS
-								{
-								}
-								ACTIONS
-								{
-								}
-								UPGRADESAPPLIED
-								{
-								}
-							}
-							RESOURCE
-							{
-								name = EVA Propellant
-								amount = 5
-								maxAmount = 5
-								flowState = True
-								isTweakable = False
-								hideFlow = False
-								isVisible = True
-								flowMode = Both
-							}
-						}
-					}
-				}
-			}
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-			}
-		}
-		KERBAL
-		{
-			name = Genelas Kerman
-			gender = Male
-			type = Applicant
-			trait = Engineer
-			brave = 0.227391571
-			dumb = 0.766246378
-			badS = False
-			veteran = False
-			tour = False
-			state = Available
-			inactive = False
-			inactiveTimeEnd = 0
-			gExperienced = 0
-			outDueToG = False
-			ToD = 111922.68403198243
-			idx = -1
-			extraXP = 0
-			hasHelmetOn = False
-			hasNeckRingOn = False
-			hasVisorDown = False
-			lightR = 1
-			lightG = 0.5176
-			lightB = 0
-			completedFirstEVA = False
-			suit = Default
-			hero = False
-			INVENTORY
-			{
-				inventory = evaChute,evaJetpack
-				STOREDPARTS
-				{
-					STOREDPART
-					{
-						slotIndex = 0
-						partName = evaChute
-						quantity = 1
-						stackCapacity = 1
-						variantName = 
-						PART
-						{
-							name = evaChute
-							cid = 4294843844
-							uid = 0
-							mid = 0
-							persistentId = 0
-							launchID = 0
-							parent = 0
-							position = 0,0,0
-							rotation = 0,0,0,0
-							mirror = 1,1,1
-							symMethod = Radial
-							istg = 0
-							resPri = 0
-							dstg = 0
-							sqor = -1
-							sepI = 0
-							sidx = -1
-							attm = 0
-							sameVesselCollision = False
-							srfN = None, -1
-							mass = 0.00400000019
-							shielded = False
-							temp = -1
-							tempExt = 0
-							tempExtUnexp = 0
-							staticPressureAtm = 0
-							expt = 0.5
-							state = 0
-							attached = True
-							autostrutMode = Off
-							rigidAttachment = False
-							flag = 
-							rTrf = evaChute
-							modCost = 0
-							modMass = 0
-							moduleVariantName = 
-							moduleCargoStackableQuantity = 1
-							EVENTS
-							{
-							}
-							ACTIONS
-							{
-								ToggleSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								SetSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								RemoveSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								AutostrutOff
-								{
-									actionGroup = None
-								}
-								AutostrutRoot
-								{
-									actionGroup = None
-								}
-								AutostrutHeaviest
-								{
-									actionGroup = None
-								}
-								AutostrutGrandparent
-								{
-									actionGroup = None
-								}
-								ResourcesEnableFlow
-								{
-									actionGroup = None
-									active = False
-								}
-								ResourcesDisableFlow
-								{
-									actionGroup = None
-									active = False
-								}
-							}
-							PARTDATA
-							{
-							}
-							MODULE
-							{
-								name = ModuleCargoPart
-								isEnabled = True
-								packedVolume = 10
-								beingAttached = False
-								beingSettled = False
-								reinitResourcesOnStoreInVessel = False
-								stagingEnabled = True
-								EVENTS
-								{
-								}
-								ACTIONS
-								{
-								}
-								UPGRADESAPPLIED
-								{
-								}
-							}
-						}
-					}
-					STOREDPART
-					{
-						slotIndex = 1
-						partName = evaJetpack
-						quantity = 1
-						stackCapacity = 1
-						variantName = 
-						PART
-						{
-							name = evaJetpack
-							cid = 4294843908
-							uid = 0
-							mid = 0
-							persistentId = 0
-							launchID = 0
-							parent = 0
-							position = 0,0,0
-							rotation = 0,0,0,0
-							mirror = 1,1,1
-							symMethod = Radial
-							istg = 0
-							resPri = 2
-							dstg = 0
-							sqor = -1
-							sepI = 0
-							sidx = -1
-							attm = 0
-							sameVesselCollision = False
-							srfN = None, -1
-							mass = 0.0199999996
-							shielded = False
-							temp = -1
-							tempExt = 0
-							tempExtUnexp = 0
-							staticPressureAtm = 0
-							expt = 0.5
-							state = 0
-							attached = True
-							autostrutMode = Off
-							rigidAttachment = False
-							flag = 
-							rTrf = evaJetpack
-							modCost = 0
-							modMass = 0
-							moduleVariantName = 
-							moduleCargoStackableQuantity = 1
-							EVENTS
-							{
-							}
-							ACTIONS
-							{
-								ToggleSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								SetSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								RemoveSameVesselInteraction
-								{
-									actionGroup = None
-								}
-								AutostrutOff
-								{
-									actionGroup = None
-								}
-								AutostrutRoot
-								{
-									actionGroup = None
-								}
-								AutostrutHeaviest
-								{
-									actionGroup = None
-								}
-								AutostrutGrandparent
-								{
-									actionGroup = None
-								}
-								ResourcesEnableFlow
-								{
-									actionGroup = None
-									active = False
-								}
-								ResourcesDisableFlow
-								{
-									actionGroup = None
-									active = False
-								}
-							}
-							PARTDATA
-							{
-							}
-							MODULE
-							{
-								name = ModuleCargoPart
-								isEnabled = True
-								packedVolume = 17
-								beingAttached = False
-								beingSettled = False
-								reinitResourcesOnStoreInVessel = True
-								stagingEnabled = True
+								userReallyDeactivatedIt = False
 								EVENTS
 								{
 								}
@@ -5511,5 +2685,8 @@ GAME
 	MESSAGESYSTEM
 	{
 		flash = False
+	}
+	VMSNode
+	{
 	}
 }
