@@ -2,7 +2,7 @@ ship = Pulga 2
 version = 1.12.5
 description = 
 type = VAB
-size = 1.4027673,5.19851685,1.25001752
+size = 1.40276718,4.97174072,1.25001729
 steamPublishedFileId = 0
 persistentId = 103716106
 rot = 0,0,0,0
@@ -38,7 +38,6 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	link = fuelTankSmall_4293424704
 	link = longAntenna_4293419964
 	link = longAntenna_4293419702
 	link = parachuteSingle_4293417156
@@ -46,7 +45,8 @@ PART
 	link = sensorThermometer_4293415634
 	link = sensorBarometer_4293415578
 	link = sensorBarometer_4293415400
-	attN = bottom,fuelTankSmall_4293424704_0|-0.40503791|0_0|-1|0_0|-0.40503791|0_0|-1|0
+	link = Decoupler.1_4293733760
+	attN = bottom,Decoupler.1_4293733760_0|-0.40503791|0_0|-1|0_0|-0.40503791|0_0|-1|0
 	attN = top,parachuteSingle_4293417156_0|0.642375588|0_0|1|0_0|0.642375588|0_0|1|0
 	EVENTS
 	{
@@ -68,22 +68,18 @@ PART
 		AutostrutOff
 		{
 			actionGroup = None
-			active = False
 		}
 		AutostrutRoot
 		{
 			actionGroup = None
-			active = False
 		}
 		AutostrutHeaviest
 		{
 			actionGroup = None
-			active = False
 		}
 		AutostrutGrandparent
 		{
 			actionGroup = None
-			active = False
 		}
 		ResourcesEnableFlow
 		{
@@ -1261,454 +1257,6 @@ PART
 }
 PART
 {
-	part = fuelTankSmall_4293424704
-	partName = Part
-	persistentId = 1364524766
-	pos = 0,14.039712,0
-	attPos = 0,0,0
-	attPos0 = 0,-0.960288048,0
-	rot = 0,0,0,1
-	attRot = 0,0,0,1
-	attRot0 = 0,0,0,1
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = -1
-	resPri = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = -1
-	attm = 0
-	sameVesselCollision = False
-	modCost = 0
-	modMass = -2.79396772E-09
-	modSize = 0,0,0
-	link = fuelTankSmall_4293412474
-	attN = top,mk1pod.v2_4293425664_0|0.555249989|0_0|1|0_0|0.555249989|0_0|1|0
-	attN = bottom,fuelTankSmall_4293412474_0|-0.555249989|0_0|-1|0_0|-0.555249989|0_0|-1|0
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-		ToggleSameVesselInteraction
-		{
-			actionGroup = None
-		}
-		SetSameVesselInteraction
-		{
-			actionGroup = None
-		}
-		RemoveSameVesselInteraction
-		{
-			actionGroup = None
-		}
-		AutostrutOff
-		{
-			actionGroup = None
-			active = False
-		}
-		AutostrutRoot
-		{
-			actionGroup = None
-			active = False
-		}
-		AutostrutHeaviest
-		{
-			actionGroup = None
-			active = False
-		}
-		AutostrutGrandparent
-		{
-			actionGroup = None
-			active = False
-		}
-		ResourcesEnableFlow
-		{
-			actionGroup = None
-		}
-		ResourcesDisableFlow
-		{
-			actionGroup = None
-		}
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModulePartVariants
-		isEnabled = True
-		useVariantMass = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleCargoPart
-		isEnabled = True
-		packedVolume = 2000
-		beingAttached = False
-		beingSettled = False
-		reinitResourcesOnStoreInVessel = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FundsKeeper
-		isEnabled = True
-		OriginalCost = 366.80
-		OriginalResourcesCost = 91.80
-		OriginalModulesCost = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = StealBackMyFunds
-		isEnabled = True
-		active = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = TweakScale
-		isEnabled = True
-		type = stack
-		active = True
-		available = True
-		currentScale = 1.25
-		defaultScale = 1.25
-		defaultTransformScale = (0, 0, 0)
-		DryCost = 183.199997
-		OriginalCrewCapacity = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = InterstellarFuelSwitch
-		isEnabled = True
-		selectedTankSetup = 11
-		configuredAmounts = 90,110,
-		configuredFlowStates = True,True,
-		selectedTankSetupTxt = LiquidFuel+Oxidizer
-		configLoaded = True
-		initialTankSetup = LiquidFuel;Oxidizer
-		storedFactorMultiplier = 1
-		storedSurfaceMultiplier = 1
-		storedVolumeMultiplier = 1
-		baseMassMultiplier = 1
-		initialMassMultiplier = 1
-		windowPositionX = 1200
-		windowPositionY = 150
-		dryMass = 0.12499999720603228
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleSwitchWindowAction
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleStorageCryostat
-		isEnabled = True
-		storedTemp = 0
-		isDisabled = False
-		epx = 0
-		epy = 0
-		whx = 0
-		why = 0
-		tpx = 0
-		tpy = 0
-		cpx = 0
-		cpy = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleStorageCryostat
-		isEnabled = True
-		storedTemp = 0
-		isDisabled = False
-		epx = 0
-		epy = 0
-		whx = 0
-		why = 0
-		tpx = 0
-		tpy = 0
-		cpx = 0
-		cpy = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleStorageCryostat
-		isEnabled = True
-		storedTemp = 0
-		isDisabled = False
-		epx = 0
-		epy = 0
-		whx = 0
-		why = 0
-		tpx = 0
-		tpy = 0
-		cpx = 0
-		cpy = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleStorageCryostat
-		isEnabled = True
-		storedTemp = 0
-		isDisabled = False
-		epx = 0
-		epy = 0
-		whx = 0
-		why = 0
-		tpx = 0
-		tpy = 0
-		cpx = 0
-		cpy = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleStorageCryostat
-		isEnabled = True
-		storedTemp = 0
-		isDisabled = False
-		epx = 0
-		epy = 0
-		whx = 0
-		why = 0
-		tpx = 0
-		tpy = 0
-		cpx = 0
-		cpy = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleStorageCryostat
-		isEnabled = True
-		storedTemp = 0
-		isDisabled = False
-		epx = 0
-		epy = 0
-		whx = 0
-		why = 0
-		tpx = 0
-		tpy = 0
-		cpx = 0
-		cpy = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleStorageCryostat
-		isEnabled = True
-		storedTemp = 0
-		isDisabled = False
-		epx = 0
-		epy = 0
-		whx = 0
-		why = 0
-		tpx = 0
-		tpy = 0
-		cpx = 0
-		cpy = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleFuelJettison
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			FuelJettisonAction
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = AttachedOnEditor
-		isEnabled = True
-		active = True
-		originalPos = (0, 14.039712, 0)
-		originalRotation = (0, 0, 0, 1)
-		moduleVersion = 6
-		stagingEnabled = True
-		userReallyDeactivatedIt = False
-		originalAttachNodePos = (0.0, 0.6, 0.0)
-		originalAttachNodePos = (0.0, -0.6, 0.0)
-		originalAttachNodeSize = 1
-		originalAttachNodeSize = 1
-		originalAttachNodeOrientation = (0.0, 1.0, 0.0)
-		originalAttachNodeOrientation = (0.0, -1.0, 0.0)
-		originalAttachNodeOffset = (0.0, 0.0, 0.0)
-		originalAttachNodeOffset = (0.0, 0.0, 0.0)
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	RESOURCE
-	{
-		name = LiquidFuel
-		amount = 90
-		maxAmount = 90
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		isVisible = True
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = Oxidizer
-		amount = 110
-		maxAmount = 110
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		isVisible = True
-		flowMode = Both
-	}
-}
-PART
-{
 	part = longAntenna_4293419964
 	partName = Part
 	persistentId = 1892246526
@@ -2218,22 +1766,18 @@ PART
 		AutostrutOff
 		{
 			actionGroup = None
-			active = False
 		}
 		AutostrutRoot
 		{
 			actionGroup = None
-			active = False
 		}
 		AutostrutHeaviest
 		{
 			actionGroup = None
-			active = False
 		}
 		AutostrutGrandparent
 		{
 			actionGroup = None
-			active = False
 		}
 		ResourcesEnableFlow
 		{
@@ -2432,7 +1976,7 @@ PART
 	pos = -0.538151264,14.820528,0.0727062374
 	attPos = 0,0,0
 	attPos0 = -0.538151264,-0.17947197,0.0727062374
-	rot = 0.0851018727,0.785562932,-0.110906869,0.602783859
+	rot = 0.0851018503,0.785562932,-0.110906824,0.602783859
 	attRot = 0,0,0,1
 	attRot0 = 0.0851018801,0.785562932,-0.110906884,0.602783859
 	mir = 1,1,1
@@ -2608,7 +2152,7 @@ PART
 		isEnabled = True
 		active = True
 		originalPos = (-0.538151264, 14.820528, 0.0727062374)
-		originalRotation = (0.0851018727, 0.785562932, -0.110906869, 0.602783859)
+		originalRotation = (0.0851018503, 0.785562932, -0.110906824, 0.602783859)
 		moduleVersion = 6
 		stagingEnabled = True
 		userReallyDeactivatedIt = False
@@ -3222,12 +2766,12 @@ PART
 }
 PART
 {
-	part = fuelTankSmall_4293412474
+	part = Decoupler.1_4293733760
 	partName = Part
-	persistentId = 2390139836
-	pos = 0,12.9292116,0
+	persistentId = 586119737
+	pos = 0,14.5449619,0
 	attPos = 0,0,0
-	attPos0 = 0,-1.11050034,0
+	attPos0 = 0,-0.455038071,0
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
@@ -3235,20 +2779,20 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = -1
+	istg = 0
 	resPri = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = -1
+	dstg = 1
+	sidx = 1
+	sqor = 0
+	sepI = 0
 	attm = 0
 	sameVesselCollision = False
 	modCost = 0
-	modMass = -2.79396772E-09
+	modMass = 0
 	modSize = 0,0,0
-	link = liquidEngine2.v2_4293422060
-	attN = top,fuelTankSmall_4293424704_0|0.555249989|0_0|1|0_0|0.555249989|0_0|1|0
-	attN = bottom,liquidEngine2.v2_4293422060_0|-0.555249989|0_0|-1|0_0|-0.555249989|0_0|-1|0
+	link = fuelTank_4293729504
+	attN = top,mk1pod.v2_4293425664_0|0.0500000007|0_0|1|0_0|0.0500000007|0_0|1|0
+	attN = bottom,fuelTank_4293729504_0|-0.0500000007|0_0|-1|0_0|-0.0500000007|0_0|-1|0
 	EVENTS
 	{
 	}
@@ -3269,34 +2813,96 @@ PART
 		AutostrutOff
 		{
 			actionGroup = None
-			active = False
 		}
 		AutostrutRoot
 		{
 			actionGroup = None
-			active = False
 		}
 		AutostrutHeaviest
 		{
 			actionGroup = None
-			active = False
 		}
 		AutostrutGrandparent
 		{
 			actionGroup = None
-			active = False
 		}
 		ResourcesEnableFlow
 		{
 			actionGroup = None
+			active = False
 		}
 		ResourcesDisableFlow
 		{
 			actionGroup = None
+			active = False
 		}
 	}
 	PARTDATA
 	{
+	}
+	MODULE
+	{
+		name = ModuleDecouple
+		isEnabled = True
+		ejectionForcePercent = 100
+		isDecoupled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleToggleCrossfeed
+		isEnabled = True
+		crossfeedStatus = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+			EnableAction
+			{
+				actionGroup = None
+			}
+			DisableAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
 	}
 	MODULE
 	{
@@ -3318,7 +2924,7 @@ PART
 	{
 		name = ModuleCargoPart
 		isEnabled = True
-		packedVolume = 2000
+		packedVolume = 260
 		beingAttached = False
 		beingSettled = False
 		reinitResourcesOnStoreInVessel = False
@@ -3337,8 +2943,8 @@ PART
 	{
 		name = FundsKeeper
 		isEnabled = True
-		OriginalCost = 366.80
-		OriginalResourcesCost = 91.80
+		OriginalCost = 200
+		OriginalResourcesCost = 0
 		OriginalModulesCost = 0
 		stagingEnabled = True
 		EVENTS
@@ -3377,7 +2983,246 @@ PART
 		currentScale = 1.25
 		defaultScale = 1.25
 		defaultTransformScale = (0, 0, 0)
-		DryCost = 183.199997
+		DryCost = 200
+		OriginalCrewCapacity = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDecouplerShroud
+		isEnabled = True
+		nSides = 24
+		shroudEnabled = False
+		autoDetectSize = True
+		topWidth = 1.25
+		botWidth = 1.25
+		thickness = 0.100000001
+		height = 1.25
+		vertOffset = 0
+		segmentIndex = 0
+		textureName = Default
+		segments = 1
+		collPerSegment = 12
+		jettisoned = False
+		invisibleShroud = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = tjs_DecouplerLight
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = AttachedOnEditor
+		isEnabled = True
+		active = True
+		originalPos = (0, 14.5449619, 0)
+		originalRotation = (0, 0, 0, 1)
+		moduleVersion = 6
+		stagingEnabled = True
+		userReallyDeactivatedIt = False
+		originalAttachNodePos = (0.0, 0.1, 0.0)
+		originalAttachNodePos = (0.0, -0.1, 0.0)
+		originalAttachNodeSize = 1
+		originalAttachNodeSize = 1
+		originalAttachNodeOrientation = (0.0, 1.0, 0.0)
+		originalAttachNodeOrientation = (0.0, -1.0, 0.0)
+		originalAttachNodeOffset = (0.0, 0.0, 0.0)
+		originalAttachNodeOffset = (0.0, 0.0, 0.0)
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = fuelTank_4293729504
+	partName = Part
+	persistentId = 2402178496
+	pos = 0,13.513237,0
+	attPos = 0,0,0
+	attPos0 = 0,-1.03172493,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 0
+	resPri = 0
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	sameVesselCollision = False
+	modCost = 0
+	modMass = -5.58793545E-09
+	modSize = 0,0,0
+	link = liquidEngine2.v2_4293422060
+	attN = top,Decoupler.1_4293733760_0|0.981724977|0_0|1|0_0|0.981724977|0_0|1|0
+	attN = bottom,liquidEngine2.v2_4293422060_0|-0.912500024|0_0|-1|0_0|-0.912500024|0_0|-1|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		AutostrutOff
+		{
+			actionGroup = None
+		}
+		AutostrutRoot
+		{
+			actionGroup = None
+		}
+		AutostrutHeaviest
+		{
+			actionGroup = None
+		}
+		AutostrutGrandparent
+		{
+			actionGroup = None
+		}
+		ResourcesEnableFlow
+		{
+			actionGroup = None
+		}
+		ResourcesDisableFlow
+		{
+			actionGroup = None
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		packedVolume = -1
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FundsKeeper
+		isEnabled = True
+		OriginalCost = 683.60
+		OriginalResourcesCost = 183.60
+		OriginalModulesCost = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = StealBackMyFunds
+		isEnabled = True
+		active = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		type = stack
+		active = True
+		available = True
+		currentScale = 1.25
+		defaultScale = 1.25
+		defaultTransformScale = (0, 0, 0)
+		DryCost = 316.399994
 		OriginalCrewCapacity = 0
 		stagingEnabled = True
 		EVENTS
@@ -3395,7 +3240,7 @@ PART
 		name = InterstellarFuelSwitch
 		isEnabled = True
 		selectedTankSetup = 11
-		configuredAmounts = 90,110,
+		configuredAmounts = 180,220,
 		configuredFlowStates = True,True,
 		selectedTankSetupTxt = LiquidFuel+Oxidizer
 		configLoaded = True
@@ -3407,7 +3252,7 @@ PART
 		initialMassMultiplier = 1
 		windowPositionX = 1200
 		windowPositionY = 150
-		dryMass = 0.12499999720603228
+		dryMass = 0.24999999441206455
 		stagingEnabled = True
 		EVENTS
 		{
@@ -3622,13 +3467,13 @@ PART
 		name = AttachedOnEditor
 		isEnabled = True
 		active = True
-		originalPos = (0, 12.9292116, 0)
+		originalPos = (0, 13.513237, 0)
 		originalRotation = (0, 0, 0, 1)
 		moduleVersion = 6
 		stagingEnabled = True
 		userReallyDeactivatedIt = False
-		originalAttachNodePos = (0.0, 0.6, 0.0)
-		originalAttachNodePos = (0.0, -0.6, 0.0)
+		originalAttachNodePos = (0.0, 1.0, 0.0)
+		originalAttachNodePos = (0.0, -0.9, 0.0)
 		originalAttachNodeSize = 1
 		originalAttachNodeSize = 1
 		originalAttachNodeOrientation = (0.0, 1.0, 0.0)
@@ -3648,8 +3493,8 @@ PART
 	RESOURCE
 	{
 		name = LiquidFuel
-		amount = 90
-		maxAmount = 90
+		amount = 180
+		maxAmount = 180
 		flowState = True
 		isTweakable = True
 		hideFlow = False
@@ -3659,8 +3504,8 @@ PART
 	RESOURCE
 	{
 		name = Oxidizer
-		amount = 110
-		maxAmount = 110
+		amount = 220
+		maxAmount = 220
 		flowState = True
 		isTweakable = True
 		hideFlow = False
@@ -3673,9 +3518,9 @@ PART
 	part = liquidEngine2.v2_4293422060
 	partName = Part
 	persistentId = 2674265541
-	pos = 0,12.3739614,0
+	pos = 0,12.6007366,0
 	attPos = 0,0,0
-	attPos0 = 0,-0.555250168,0
+	attPos0 = 0,-0.912500381,0
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
@@ -3685,16 +3530,16 @@ PART
 	rigidAttachment = False
 	istg = 1
 	resPri = 0
-	dstg = 0
+	dstg = 2
 	sidx = 0
 	sqor = 1
-	sepI = -1
+	sepI = 0
 	attm = 0
 	sameVesselCollision = False
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	attN = top,fuelTankSmall_4293412474_0|0|0_0|1|0_0|0|0_0|1|0
+	attN = top,fuelTank_4293729504_0|0|0_0|1|0_0|0|0_0|1|0
 	attN = bottom,Null_0_0|-1.63|0_0|-1|0_0|-1.63|0_0|-1|0
 	EVENTS
 	{
@@ -3716,22 +3561,18 @@ PART
 		AutostrutOff
 		{
 			actionGroup = None
-			active = False
 		}
 		AutostrutRoot
 		{
 			actionGroup = None
-			active = False
 		}
 		AutostrutHeaviest
 		{
 			actionGroup = None
-			active = False
 		}
 		AutostrutGrandparent
 		{
 			actionGroup = None
-			active = False
 		}
 		ResourcesEnableFlow
 		{
@@ -4069,7 +3910,7 @@ PART
 		name = AttachedOnEditor
 		isEnabled = True
 		active = True
-		originalPos = (0, 12.3739614, 0)
+		originalPos = (0, 12.6007366, 0)
 		originalRotation = (0, 0, 0, 1)
 		moduleVersion = 6
 		stagingEnabled = True
