@@ -50,6 +50,11 @@
             "suppress_recommendations": true
         },
         {
+            "name": "B9PartSwitch",
+            "version": "v2.21.0.4",
+            "suppress_recommendations": true
+        },
+        {
             "name": "EnvironmentalVisualEnhancements",
             "version": "3:1.11.7.2",
             "suppress_recommendations": true
@@ -62,11 +67,6 @@
         {
             "name": "AVP-8kTextures",
             "version": "v1.13",
-            "suppress_recommendations": true
-        },
-        {
-            "name": "B9PartSwitch",
-            "version": "v2.21.0.4",
             "suppress_recommendations": true
         },
         {
@@ -105,13 +105,28 @@
             "suppress_recommendations": true
         },
         {
+            "name": "DE-IVAExtension",
+            "version": "v1.2.0",
+            "suppress_recommendations": true
+        },
+        {
             "name": "Deferred",
             "version": "1.3.3.0",
             "suppress_recommendations": true
         },
         {
+            "name": "DockingPortAlignmentIndicator",
+            "version": "6.12.0.0",
+            "suppress_recommendations": true
+        },
+        {
             "name": "EasyVesselSwitch",
             "version": "2.3",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "FreeIva",
+            "version": "0.2.20.2",
             "suppress_recommendations": true
         },
         {
@@ -170,6 +185,16 @@
             "suppress_recommendations": true
         },
         {
+            "name": "Reviva",
+            "version": "1.0.2",
+            "suppress_recommendations": true
+        },
+        {
+            "name": "SCANsat",
+            "version": "v21.1",
+            "suppress_recommendations": true
+        },
+        {
             "name": "Scatterer-sunflare",
             "version": "3:v0.0878",
             "suppress_recommendations": true
@@ -190,6 +215,6 @@
             "suppress_recommendations": true
         }
     ],
-    "release_date": "2026-01-31T04:36:59.2807643Z",
+    "release_date": "2026-02-03T02:05:15.7019616Z",
     "kind": "metapackage"
 }
