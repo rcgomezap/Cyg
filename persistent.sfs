@@ -18,7 +18,7 @@ GAME
 	envInfo =  - Environment Info - Win32NT 7FFFFFFFFFFFFFFF  Args: KSP_x64.exe  - 
 	versionFull = 1.12.5.3190 (WindowsPlayer x64)
 	versionCreated = 1.12.5.3190 (WindowsPlayer x64)
-	persistentTimestamp = 2026-02-05T04:16:55.3382951Z
+	persistentTimestamp = 2026-02-06T03:00:14.4168379Z
 	CometNames
 	{
 	}
@@ -350,7 +350,7 @@ GAME
 	{
 		name = Funding
 		scene = 7, 8, 5, 6
-		funds = 470292.06846749259
+		funds = 493198.86808144522
 	}
 	SCENARIO
 	{
@@ -625,7 +625,7 @@ GAME
 	{
 		name = ResearchAndDevelopment
 		scene = 7, 8, 5, 6
-		sci = 136.599854
+		sci = 137.22522
 		Tech
 		{
 			id = start
@@ -2092,7 +2092,7 @@ GAME
 	{
 		name = ContractSystem
 		scene = 7, 8, 5, 6
-		update = 792074.01040809124
+		update = 792183.37040819309
 		version = 1.12.5
 		WEIGHTS
 		{
@@ -2108,7 +2108,7 @@ GAME
 			TourismContract = 70
 			SurveyContract = 62
 			StationContract = 42
-			SatelliteContract = 61
+			SatelliteContract = 73
 			ISRUContract = 30
 			ExplorationContract = 30
 			CometSampleContract = 30
@@ -2161,7 +2161,7 @@ GAME
 			Eve = 30
 			Moho = 30
 			Minmus = 52
-			Mun = 73
+			Mun = 85
 			Kerbin = 66
 			Sun = 42
 		}
@@ -2298,13 +2298,13 @@ GAME
 				type = SatelliteContract
 				prestige = 0
 				seed = 1730136970
-				state = Offered
+				state = Active
 				viewed = Read
 				agent = Experimental Engineering Group
 				agentName = Experimental Engineering Group
 				deadlineType = Floating
 				expiryType = Floating
-				values = 106930.693387985,91104950.7665634,30542.3997116089,82178.1404920864,31751.9985580444,8,8.571429,8,830941.881546968,0,0,0
+				values = 106930.693387985,91104950.7665634,30542.3997116089,82178.1404920864,31751.9985580444,8,8.571429,8,830941.881546968,792084.270408101,91897035.0369715,0
 				targetBody = 2
 				deviation = 7
 				orbitType = 6
@@ -2313,18 +2313,20 @@ GAME
 				{
 					name = VesselSystemsParameter
 					state = Incomplete
+					disableOnStateChange = False
 					values = 0,0,0,0,0
 					typeString = probe
 					mannedStatus = 1
 					requireNew = True
 					checkModuleTypes = Antenna|Generator
 					checkModuleDescriptions = has an antenna|can generate power
-					launchID = 0
+					launchID = 39
 				}
 				PARAM
 				{
 					name = SpecificOrbitParameter
 					state = Incomplete
+					disableOnStateChange = False
 					values = 0,0,0,0,0
 					TargetBody = 2
 					deviationWindow = 7
@@ -2341,6 +2343,7 @@ GAME
 				{
 					name = PartRequestParameter
 					state = Incomplete
+					disableOnStateChange = False
 					values = 0,0,0,0,0
 					article = a
 					partDescription = mystery goo unit
@@ -2351,6 +2354,7 @@ GAME
 				{
 					name = StabilityParameter
 					state = Incomplete
+					disableOnStateChange = False
 					values = 0,0,0,0,0
 					holdSeconds = 10
 				}
@@ -5952,11 +5956,11 @@ GAME
 			CrewMemberInfo
 			{
 				name = Lecas Kerman
-				lastUpdate = 792080.35040809715
+				lastUpdate = 792188.2104081976
 				lastO2 = 396669.02674409037
 				lastEC = 396669.02674409037
-				lastFood = 792080.35040809715
-				lastWater = 792080.35040809715
+				lastFood = 792188.2104081976
+				lastWater = 792188.2104081976
 				vesselName = Lecas' Hulk
 				vesselId = 74315460-4753-45a5-b68d-1c034152c30f
 				vesselIsPreLaunch = False
@@ -5972,11 +5976,11 @@ GAME
 			CrewMemberInfo
 			{
 				name = Hanbro Kerman
-				lastUpdate = 792080.35040809715
+				lastUpdate = 792188.2104081976
 				lastO2 = 791737.19040777755
 				lastEC = 791737.19040777755
-				lastFood = 792080.35040809715
-				lastWater = 792080.35040809715
+				lastFood = 792188.2104081976
+				lastWater = 792188.2104081976
 				vesselName = Hanbro's Shipwreck
 				vesselId = d67ef529-1ef4-4349-9066-eb7905cf330e
 				vesselIsPreLaunch = False
@@ -5998,11 +6002,11 @@ GAME
 				numCrew = 1
 				numFrozenCrew = 0
 				numOccupiedParts = 1
-				lastUpdate = 792080.35040809715
-				lastFood = 792080.35040809715
-				lastWater = 792080.35040809715
-				lastOxygen = 792080.35040809715
-				lastElectricity = 792080.35040809715
+				lastUpdate = 792188.2104081976
+				lastFood = 792188.2104081976
+				lastWater = 792188.2104081976
+				lastOxygen = 792188.2104081976
+				lastElectricity = 792188.2104081976
 				remainingFood = 0
 				remainingWater = 0
 				remainingOxygen = 0
@@ -6029,11 +6033,11 @@ GAME
 				numCrew = 1
 				numFrozenCrew = 0
 				numOccupiedParts = 1
-				lastUpdate = 792080.35040809715
-				lastFood = 792080.35040809715
-				lastWater = 792080.35040809715
-				lastOxygen = 792080.35040809715
-				lastElectricity = 792080.35040809715
+				lastUpdate = 792188.2104081976
+				lastFood = 792188.2104081976
+				lastWater = 792188.2104081976
+				lastOxygen = 792188.2104081976
+				lastElectricity = 792188.2104081976
 				remainingFood = 0
 				remainingWater = 0
 				remainingOxygen = 0
@@ -6090,9 +6094,9 @@ GAME
 		bigMapLegend = True
 		bigMapResourceOn = False
 		bigMapProjection = Rectangular
-		bigMapType = Altimetry
+		bigMapType = Slope
 		bigMapResource = Ore
-		bigMapBody = Kerbin
+		bigMapBody = Mun
 		zoomMapVesselLock = False
 		zoomMapColor = True
 		zoomMapTerminator = False
@@ -6100,12 +6104,12 @@ GAME
 		zoomMapIcons = True
 		zoomMapLegend = True
 		zoomMapResourceOn = False
-		zoomMapType = Altimetry
+		zoomMapType = Slope
 		zoomMapResource = Ore
 		zoomMapState = 0
 		zoomMapRefresh = 0
 		zoomMapZoomPersist = False
-		zoomMapZoom = 10
+		zoomMapZoom = 2
 		overlaySelection = 0
 		overlayResource = Ore
 		Scanners
@@ -6346,7 +6350,7 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.12.5
-		UT = 792080.35040809715
+		UT = 792188.2104081976
 		activeVessel = 0
 		mapViewFiltering = 13311
 		commNetUIModeTracking = Network
@@ -33623,13 +33627,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 299999.6012161547
-				ECC = 0.99999999999999989
+				SMA = NaN
+				ECC = 1
 				INC = 89.709941780118825
 				LPE = 90.000000000000014
-				LAN = 62.443741323747759
-				MNA = 3.1415926207170166
-				EPH = 792053.97040807258
+				LAN = 62.934223084631753
+				MNA = 0
+				EPH = 792083.33040809992
 				REF = 1
 				IDENT = Squad/Kerbin
 			}
@@ -38833,11 +38837,11 @@ GAME
 			{
 				SMA = NaN
 				ECC = 1
-				INC = 90.198922377725225
-				LPE = 90.000000000000014
-				LAN = 18.672371387181443
+				INC = 90.198922377867305
+				LPE = 90
+				LAN = 18.748420222742425
 				MNA = 0
-				EPH = 792053.97040807258
+				EPH = 792083.33040809992
 				REF = 2
 				IDENT = Squad/Mun
 			}
@@ -41186,13 +41190,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = NaN
-				ECC = 1
+				SMA = 101404.06114349765
+				ECC = 0.99999999999999989
 				INC = 90.197983648253953
 				LPE = 89.999999999999986
-				LAN = 18.672251848775375
-				MNA = 0
-				EPH = 792053.97040807258
+				LAN = 18.748300684409344
+				MNA = 3.1415926864625696
+				EPH = 792083.33040809992
 				REF = 2
 				IDENT = Squad/Mun
 			}
@@ -41881,10 +41885,10 @@ GAME
 						PART
 						{
 							name = evaChute
-							cid = 4294659874
+							cid = 4294659860
 							uid = 0
 							mid = 0
-							persistentId = 3275593967
+							persistentId = 33345049
 							launchID = 0
 							parent = 0
 							position = 0,0,0
@@ -42049,10 +42053,10 @@ GAME
 						PART
 						{
 							name = evaJetpack
-							cid = 4294659948
+							cid = 4294659934
 							uid = 0
 							mid = 0
-							persistentId = 3909439002
+							persistentId = 3639920155
 							launchID = 0
 							parent = 0
 							position = 0,0,0
@@ -42391,10 +42395,10 @@ GAME
 						PART
 						{
 							name = evaChute
-							cid = 4294659874
+							cid = 4294659860
 							uid = 0
 							mid = 0
-							persistentId = 4075319135
+							persistentId = 79054097
 							launchID = 0
 							parent = 0
 							position = 0,0,0
@@ -42559,10 +42563,10 @@ GAME
 						PART
 						{
 							name = evaJetpack
-							cid = 4294659948
+							cid = 4294659934
 							uid = 0
 							mid = 0
-							persistentId = 1735949708
+							persistentId = 1534110521
 							launchID = 0
 							parent = 0
 							position = 0,0,0
