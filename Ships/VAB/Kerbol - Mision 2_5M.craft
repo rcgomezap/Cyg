@@ -1,0 +1,9416 @@
+ship = Kerbol - Mision 2.5M
+version = 1.12.5
+description = 
+type = VAB
+size = 4.47627401,12.279892,4.47627497
+steamPublishedFileId = 0
+persistentId = 351726836
+rot = 0,0,0,0
+missionFlag = Squad/FlagsOrganization/electron
+vesselType = Debris
+OverrideDefault = False,False,False,False
+OverrideActionControl = 0,0,0,0
+OverrideAxisControl = 0,0,0,0
+OverrideGroupNames = ,,,
+PART
+{
+	part = probeCoreOcto.v2_4293529908
+	partName = Part
+	persistentId = 3614739744
+	pos = 0.0362495668,16.7953148,-0.178410128
+	attPos = 0,0,0
+	attPos0 = 0.0362495668,16.7953148,-0.178410128
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 0
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = batteryBankMini_4293462558
+	link = sasModule_4293449640
+	attN = bottom,batteryBankMini_4293462558_0|-0.187081799|0_0|-1|0_0|-0.187081799|0_0|-1|0
+	attN = top,sasModule_4293449640_0|0.187081799|0_0|1|0_0|0.187081799|0_0|1|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		AutostrutOff
+		{
+			actionGroup = None
+		}
+		AutostrutRoot
+		{
+			actionGroup = None
+		}
+		AutostrutHeaviest
+		{
+			actionGroup = None
+		}
+		AutostrutGrandparent
+		{
+			actionGroup = None
+		}
+		ResourcesEnableFlow
+		{
+			actionGroup = None
+		}
+		ResourcesDisableFlow
+		{
+			actionGroup = None
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleCommand
+		isEnabled = True
+		hibernation = False
+		hibernateOnWarp = False
+		activeControlPointName = _default
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			MakeReferenceToggle
+			{
+				actionGroup = None
+			}
+			HibernateToggle
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleReactionWheel
+		isEnabled = True
+		actuatorModeCycle = 0
+		authorityLimiter = 100
+		stateString = Active
+		stagingEnabled = True
+		WheelState = Active
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			CycleAction
+			{
+				actionGroup = None
+			}
+			Activate
+			{
+				actionGroup = None
+			}
+			Deactivate
+			{
+				actionGroup = None
+			}
+			Toggle
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleSAS
+		isEnabled = True
+		standaloneToggle = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleKerbNetAccess
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OpenKerbNetAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDataTransmitter
+		isEnabled = True
+		xmitIncomplete = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			StartTransmissionAction
+			{
+				actionGroup = None
+				active = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		packedVolume = 180
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FundsKeeper
+		isEnabled = True
+		OriginalCost = 450.00020
+		OriginalResourcesCost = 0.00020
+		OriginalModulesCost = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = StealBackMyFunds
+		isEnabled = True
+		active = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = MechJebCore
+		isEnabled = True
+		running = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnOrbitProgradeAction
+			{
+				actionGroup = None
+			}
+			OnOrbitRetrogradeAction
+			{
+				actionGroup = None
+			}
+			OnOrbitNormalAction
+			{
+				actionGroup = None
+			}
+			OnOrbitAntinormalAction
+			{
+				actionGroup = None
+			}
+			OnOrbitRadialInAction
+			{
+				actionGroup = None
+			}
+			OnOrbitRadialOutAction
+			{
+				actionGroup = None
+			}
+			OnKillRotationAction
+			{
+				actionGroup = None
+			}
+			OnDeactivateSmartASSAction
+			{
+				actionGroup = None
+			}
+			OnLandsomewhereAction
+			{
+				actionGroup = None
+			}
+			OnLandTargetAction
+			{
+				actionGroup = None
+			}
+			OnPanicAction
+			{
+				actionGroup = None
+			}
+			OnTranslatronOffAction
+			{
+				actionGroup = None
+			}
+			OnTranslatronKeepVertAction
+			{
+				actionGroup = None
+			}
+			OnTranslatronZeroSpeedAction
+			{
+				actionGroup = None
+			}
+			OnTranslatronPlusOneSpeedAction
+			{
+				actionGroup = None
+			}
+			OnTranslatronMinusOneSpeedAction
+			{
+				actionGroup = None
+			}
+			OnTranslatronToggleHSAction
+			{
+				actionGroup = None
+			}
+			OnAscentAPToggleAction
+			{
+				actionGroup = None
+			}
+		}
+		MechJebLocalSettings
+		{
+			MechJebModuleMenu
+			{
+				UnlockParts = 
+				UnlockTechs = 
+			}
+			MechJebModuleAirplaneAutopilot
+			{
+				HeadingHoldEnabled = False
+				AltitudeHoldEnabled = False
+				VertSpeedHoldEnabled = False
+				RollHoldEnabled = False
+				SpeedHoldEnabled = False
+				AltitudeTarget = 0
+				HeadingTarget = 90
+				RollTarget = 0
+				SpeedTarget = 0
+				VertSpeedTarget = 0
+				BankAngle = 30
+				UnlockParts = 
+				UnlockTechs = 
+				AccKp
+				{
+					ValConfig = 0.5
+					TextConfig = 0.5
+				}
+				AccKi
+				{
+					ValConfig = 0.5
+					TextConfig = 0.5
+				}
+				AccKd
+				{
+					ValConfig = 0.0050000000000000001
+					TextConfig = 0.005
+				}
+				PitKp
+				{
+					ValConfig = 2
+					TextConfig = 2
+				}
+				PitKi
+				{
+					ValConfig = 1
+					TextConfig = 1
+				}
+				PitKd
+				{
+					ValConfig = 0.0050000000000000001
+					TextConfig = 0.005
+				}
+				RolKp
+				{
+					ValConfig = 0.5
+					TextConfig = 0.5
+				}
+				RolKi
+				{
+					ValConfig = 0.02
+					TextConfig = 0.02
+				}
+				RolKd
+				{
+					ValConfig = 0.5
+					TextConfig = 0.5
+				}
+				YawKp
+				{
+					ValConfig = 1
+					TextConfig = 1
+				}
+				YawKi
+				{
+					ValConfig = 0.25
+					TextConfig = 0.25
+				}
+				YawKd
+				{
+					ValConfig = 0.02
+					TextConfig = 0.02
+				}
+				YawLimit
+				{
+					ValConfig = 10
+					TextConfig = 10
+				}
+				RollLimit
+				{
+					ValConfig = 45
+					TextConfig = 45
+				}
+				PitchDownLimit
+				{
+					ValConfig = 15
+					TextConfig = 15
+				}
+				PitchUpLimit
+				{
+					ValConfig = 25
+					TextConfig = 25
+				}
+			}
+			MechJebModuleAirplaneGuidance
+			{
+				showpid = False
+				UnlockParts = 
+				UnlockTechs = 
+			}
+			MechJebModuleAscentClassicAutopilot
+			{
+				UnlockParts = 
+				UnlockTechs = 
+			}
+			MechJebModuleAscentClassicPathMenu
+			{
+				UnlockParts = 
+				UnlockTechs = 
+			}
+			MechJebModuleAscentMenu
+			{
+				UnlockParts = 
+				UnlockTechs = 
+			}
+			MechJebModuleAscentPVGAutopilot
+			{
+				UnlockParts = 
+				UnlockTechs = 
+			}
+			MechJebModuleAscentPVGSettingsMenu
+			{
+				UnlockParts = 
+				UnlockTechs = 
+			}
+			MechJebModuleAscentSettings
+			{
+				UnlockParts = 
+				UnlockTechs = 
+			}
+			MechJebModuleAscentSettingsMenu
+			{
+				UnlockParts = 
+				UnlockTechs = 
+			}
+			MechJebModuleAttitudeAdjustment
+			{
+				UnlockParts = 
+				UnlockTechs = 
+			}
+			MechJebModuleCustomWindowEditor
+			{
+				UnlockParts = 
+				UnlockTechs = 
+			}
+			MechJebModuleDebugArrows
+			{
+				UnlockParts = 
+				UnlockTechs = 
+			}
+			MechJebModuleDockingAutopilot
+			{
+				forceRol = False
+				overrideSafeDistance = False
+				overrideTargetSize = False
+				UnlockParts = 
+				UnlockTechs = 
+				rol
+				{
+					ValConfig = 0
+					TextConfig = 0
+				}
+			}
+			MechJebModuleDockingGuidance
+			{
+				UnlockParts = 
+				UnlockTechs = 
+			}
+			MechJebModuleInfoItems
+			{
+				UnlockParts = 
+				UnlockTechs = 
+			}
+			MechJebModuleLandingAutopilot
+			{
+				DeployGears = False
+				DeployChutes = False
+				RCSAdjustment = True
+				UnlockParts = 
+				UnlockTechs = 
+				TouchdownSpeed
+				{
+					ValConfig = 0.5
+					TextConfig = 0.5
+				}
+				LimitGearsStage
+				{
+					ValConfig = 0
+					TextConfig = 0
+				}
+				LimitChutesStage
+				{
+					ValConfig = 0
+					TextConfig = 0
+				}
+			}
+			MechJebModuleLandingGuidance
+			{
+				_landingSiteIdx = 0
+				UnlockParts = 
+				UnlockTechs = 
+			}
+			MechJebModuleLandingPredictions
+			{
+				UnlockParts = 
+				UnlockTechs = 
+			}
+			MechJebModuleManeuverPlanner
+			{
+				UnlockParts = 
+				UnlockTechs = 
+			}
+			MechJebModuleStageStats
+			{
+				UnlockParts = 
+				UnlockTechs = 
+			}
+			MechJebModuleNodeEditor
+			{
+				UnlockParts = 
+				UnlockTechs = 
+			}
+			MechJebModuleNodeExecutor
+			{
+				UnlockParts = 
+				UnlockTechs = 
+			}
+			MechJebModuleGuidanceController
+			{
+				UnlockParts = 
+				UnlockTechs = 
+			}
+			MechJebModuleRCSBalancerWindow
+			{
+				UnlockParts = 
+				UnlockTechs = 
+			}
+			MechJebModuleRendezvousAutopilot
+			{
+				UnlockParts = 
+				UnlockTechs = 
+			}
+			MechJebModuleRendezvousAutopilotWindow
+			{
+				UnlockParts = 
+				UnlockTechs = 
+			}
+			MechJebModuleRendezvousGuidance
+			{
+				UnlockParts = 
+				UnlockTechs = 
+			}
+			MechJebModuleRoverController
+			{
+				ControlHeading = False
+				ControlSpeed = False
+				BrakeOnEject = False
+				BrakeOnEnergyDepletion = False
+				WarpToDaylight = False
+				StabilityControl = False
+				LimitAcceleration = False
+				UnlockParts = 
+				UnlockTechs = 
+				heading
+				{
+					ValConfig = 0
+					TextConfig = 0
+				}
+				speed
+				{
+					ValConfig = 10
+					TextConfig = 10
+				}
+			}
+			MechJebModuleRoverWindow
+			{
+				UnlockParts = 
+				UnlockTechs = 
+			}
+			MechJebModuleSettings
+			{
+				UnlockParts = 
+				UnlockTechs = 
+			}
+			MechJebModuleSmartASS
+			{
+				mode = ORBITAL
+				target = OFF
+				advReference = INERTIAL
+				advDirection = FORWARD
+				forceRol = False
+				forcePitch = True
+				forceYaw = True
+				UnlockParts = 
+				UnlockTechs = 
+				srfHdg
+				{
+					ValConfig = 90
+					TextConfig = 90
+				}
+				srfPit
+				{
+					ValConfig = 90
+					TextConfig = 90
+				}
+				srfRol
+				{
+					ValConfig = 0
+					TextConfig = 0
+				}
+				srfVelYaw
+				{
+					ValConfig = 0
+					TextConfig = 0
+				}
+				srfVelPit
+				{
+					ValConfig = 0
+					TextConfig = 0
+				}
+				srfVelRol
+				{
+					ValConfig = 0
+					TextConfig = 0
+				}
+				rol
+				{
+					ValConfig = 0
+					TextConfig = 0
+				}
+			}
+			MechJebModuleSmartRcs
+			{
+				UnlockParts = 
+				UnlockTechs = 
+			}
+			MechJebModuleSpaceplaneAutopilot
+			{
+				bBreakAsSoonAsLanded = False
+				UnlockParts = 
+				UnlockTechs = 
+				glideslope
+				{
+					ValConfig = 2.5
+					TextConfig = 2.5
+				}
+				approachSpeed
+				{
+					ValConfig = 80
+					TextConfig = 80
+				}
+				touchdownSpeed
+				{
+					ValConfig = 60
+					TextConfig = 60
+				}
+				maximumSafeBankAngle
+				{
+					ValConfig = 25
+					TextConfig = 25
+				}
+			}
+			MechJebModuleSpaceplaneGuidance
+			{
+				runwayIndex = 0
+				UnlockParts = 
+				UnlockTechs = 
+			}
+			MechJebModuleSpinupController
+			{
+				UnlockParts = 
+				UnlockTechs = 
+			}
+			MechJebModuleSuicideTimer
+			{
+				UnlockParts = 
+				UnlockTechs = 
+			}
+			MechJebModuleTargetController
+			{
+				UnlockParts = 
+				UnlockTechs = 
+			}
+			MechJebModuleThrustWindow
+			{
+				autostageSavedState = False
+				UnlockParts = 
+				UnlockTechs = 
+			}
+			MechJebModuleTranslatron
+			{
+				UnlockParts = 
+				UnlockTechs = 
+				trans_spd
+				{
+					ValConfig = 0
+					TextConfig = 0
+				}
+			}
+			MechJebModuleWarpHelper
+			{
+				UnlockParts = 
+				UnlockTechs = 
+				phaseAngle
+				{
+					ValConfig = 0
+					TextConfig = 0
+				}
+			}
+			MechJebModuleWaypointWindow
+			{
+				UnlockParts = 
+				UnlockTechs = 
+			}
+			MechJebModuleWaypointHelpWindow
+			{
+				UnlockParts = 
+				UnlockTechs = 
+			}
+			ModExtensionDemo
+			{
+				UnlockParts = 
+				UnlockTechs = 
+			}
+			MechJebModulePVGGlueBall
+			{
+				UnlockParts = 
+				UnlockTechs = 
+			}
+			MechJebModuleCustomInfoWindow
+			{
+			}
+			MechJebModuleCustomInfoWindow
+			{
+			}
+			MechJebModuleCustomInfoWindow
+			{
+			}
+			MechJebModuleCustomInfoWindow
+			{
+			}
+			MechJebModuleCustomInfoWindow
+			{
+			}
+			MechJebModuleCustomInfoWindow
+			{
+			}
+			MechJebModuleCustomInfoWindow
+			{
+			}
+			MechJebModuleCustomInfoWindow
+			{
+			}
+			MechJebModuleCustomInfoWindow
+			{
+			}
+			MechJebModuleWarpController
+			{
+				UnlockParts = 
+				UnlockTechs = 
+			}
+			MechJebModuleDeployableAntennaController
+			{
+				prev_shouldDeploy = False
+				UnlockParts = 
+				UnlockTechs = 
+			}
+			MechJebModuleSolarPanelController
+			{
+				prev_shouldDeploy = False
+				UnlockParts = 
+				UnlockTechs = 
+			}
+			MechJebModuleThrustController
+			{
+				LimitThrottle = False
+				LimiterMinThrottle = True
+				ElectricThrottle = False
+				UnlockParts = 
+				UnlockTechs = 
+				MaxThrottle
+				{
+					ValConfig = 1
+					TextConfig = 100
+				}
+				MinThrottle
+				{
+					ValConfig = 0.050000000000000003
+					TextConfig = 5
+				}
+				ElectricThrottleLo
+				{
+					ValConfig = 0.050000000000000003
+					TextConfig = 5
+				}
+				ElectricThrottleHi
+				{
+					ValConfig = 0.14999999999999999
+					TextConfig = 15
+				}
+			}
+			MechJebModuleRCSController
+			{
+				UnlockParts = 
+				UnlockTechs = 
+				Tf
+				{
+					ValConfig = 1
+					TextConfig = 1
+				}
+				Kp
+				{
+					ValConfig = 0.125
+					TextConfig = 0.125
+				}
+				Ki
+				{
+					ValConfig = 0.070000000000000007
+					TextConfig = 0.07
+				}
+				Kd
+				{
+					ValConfig = 0.53000000000000003
+					TextConfig = 0.53
+				}
+			}
+			MechJebModuleRCSBalancer
+			{
+				UnlockParts = 
+				UnlockTechs = 
+			}
+			MechJebModuleAttitudeController
+			{
+				UnlockParts = 
+				UnlockTechs = 
+				MJAttitudeController
+				{
+				}
+				KosAttitudeController
+				{
+				}
+				HybridController
+				{
+				}
+				BetterController
+				{
+				}
+				LQRController
+				{
+				}
+			}
+			MechJebModuleStagingController
+			{
+				UnlockParts = 
+				UnlockTechs = 
+			}
+			MechJebModuleFlightRecorder
+			{
+				MarkUT = 0
+				DeltaVExpended = 0
+				DragLosses = 0
+				GravityLosses = 0
+				SteeringLosses = 0
+				MarkLAN = 0
+				MarkLatitude = 0
+				MarkLongitude = 0
+				MarkAltitude = 0
+				MarkBodyIndex = 1
+				MaxDragGees = 0
+				UnlockParts = 
+				UnlockTechs = 
+			}
+			MechJebModuleFlightRecorderGraph
+			{
+				UnlockParts = 
+				UnlockTechs = 
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		type = stack
+		active = True
+		available = True
+		currentScale = 0.625
+		defaultScale = 0.625
+		defaultTransformScale = (0, 0, 0)
+		DryCost = 449.999786
+		OriginalCrewCapacity = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = AttachedOnEditor
+		isEnabled = True
+		active = True
+		originalPos = (0.0362495668, 16.7953148, -0.178410128)
+		originalRotation = (0, 0, 0, 1)
+		moduleVersion = 6
+		stagingEnabled = True
+		userReallyDeactivatedIt = False
+		originalAttachNodePos = (0.0, -0.2, 0.0)
+		originalAttachNodePos = (0.0, 0.2, 0.0)
+		originalAttachNodeSize = 0
+		originalAttachNodeSize = 0
+		originalAttachNodeOrientation = (0.0, -1.0, 0.0)
+		originalAttachNodeOrientation = (0.0, 1.0, 0.0)
+		originalAttachNodeOffset = (0.0, 0.0, 0.0)
+		originalAttachNodeOffset = (0.0, 0.0, 0.0)
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTripLogger
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		Log
+		{
+			flight = 0
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 10
+		maxAmount = 10
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = batteryBankMini_4293462558
+	partName = Part
+	persistentId = 1739062824
+	pos = 0.0362495668,16.4582329,-0.178410128
+	attPos = 0,0,0
+	attPos0 = 0,-0.287082672,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 0
+	sameVesselCollision = False
+	modCost = 854.999939
+	modMass = 0.0237499997
+	modSize = 0,0,0
+	link = science.module_4293489828
+	attN = top,probeCoreOcto.v2_4293529908_0|0.100000001|0_0|1|0_0|0.150000006|0_0|1|0
+	attN = bottom,science.module_4293489828_0|-0.100000001|0_0|-1|0_0|-0.150000006|0_0|-1|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		AutostrutOff
+		{
+			actionGroup = None
+		}
+		AutostrutRoot
+		{
+			actionGroup = None
+		}
+		AutostrutHeaviest
+		{
+			actionGroup = None
+		}
+		AutostrutGrandparent
+		{
+			actionGroup = None
+		}
+		ResourcesEnableFlow
+		{
+			actionGroup = None
+		}
+		ResourcesDisableFlow
+		{
+			actionGroup = None
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		packedVolume = 80
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FundsKeeper
+		isEnabled = True
+		OriginalCost = 1215.01340
+		OriginalResourcesCost = 0.01350
+		OriginalModulesCost = 854.9999
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = StealBackMyFunds
+		isEnabled = True
+		active = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		type = stack
+		active = True
+		available = True
+		currentScale = 0.9375
+		defaultScale = 0.625
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 1214.98645
+		OriginalCrewCapacity = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = AttachedOnEditor
+		isEnabled = True
+		active = True
+		originalPos = (0.0362495668, 16.4582329, -0.178410128)
+		originalRotation = (0, 0, 0, 1)
+		moduleVersion = 6
+		stagingEnabled = True
+		userReallyDeactivatedIt = False
+		originalAttachNodePos = (0.0, 0.2, 0.0)
+		originalAttachNodePos = (0.0, -0.2, 0.0)
+		originalAttachNodeSize = 1
+		originalAttachNodeSize = 1
+		originalAttachNodeOrientation = (0.0, 1.0, 0.0)
+		originalAttachNodeOrientation = (0.0, -1.0, 0.0)
+		originalAttachNodeOffset = (0.0, 0.0, 0.0)
+		originalAttachNodeOffset = (0.0, 0.0, 0.0)
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 675
+		maxAmount = 675
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = sasModule_4293449640
+	partName = Part
+	persistentId = 1202716590
+	pos = 0.0362495668,17.0735073,-0.178410128
+	attPos = 0,0,0
+	attPos0 = 0,0.27819252,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 0
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = HeatShield1_4293452700
+	attN = bottom,probeCoreOcto.v2_4293529908_0|-0.0911109|0_0|-0.5|0_0|-0.0911109|0_0|-0.5|0
+	attN = top,HeatShield1_4293452700_0|0.0911109|0_0|0.5|0_0|0.0911109|0_0|0.5|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		AutostrutOff
+		{
+			actionGroup = None
+		}
+		AutostrutRoot
+		{
+			actionGroup = None
+		}
+		AutostrutHeaviest
+		{
+			actionGroup = None
+		}
+		AutostrutGrandparent
+		{
+			actionGroup = None
+		}
+		ResourcesEnableFlow
+		{
+			actionGroup = None
+			active = False
+		}
+		ResourcesDisableFlow
+		{
+			actionGroup = None
+			active = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleReactionWheel
+		isEnabled = True
+		actuatorModeCycle = 0
+		authorityLimiter = 100
+		stateString = Active
+		stagingEnabled = True
+		WheelState = Active
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			CycleAction
+			{
+				actionGroup = None
+			}
+			Activate
+			{
+				actionGroup = None
+			}
+			Deactivate
+			{
+				actionGroup = None
+			}
+			Toggle
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		packedVolume = 70
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FundsKeeper
+		isEnabled = True
+		OriginalCost = 600
+		OriginalResourcesCost = 0
+		OriginalModulesCost = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = StealBackMyFunds
+		isEnabled = True
+		active = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		type = stack
+		active = True
+		available = True
+		currentScale = 0.625
+		defaultScale = 0.625
+		defaultTransformScale = (0, 0, 0)
+		DryCost = 600
+		OriginalCrewCapacity = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = AttachedOnEditor
+		isEnabled = True
+		active = True
+		originalPos = (0.0362495668, 17.0735073, -0.178410128)
+		originalRotation = (0, 0, 0, 1)
+		moduleVersion = 6
+		stagingEnabled = True
+		userReallyDeactivatedIt = False
+		originalAttachNodePos = (0.0, -0.1, 0.0)
+		originalAttachNodePos = (0.0, 0.1, 0.0)
+		originalAttachNodeSize = 0
+		originalAttachNodeSize = 0
+		originalAttachNodeOrientation = (0.0, -0.5, 0.0)
+		originalAttachNodeOrientation = (0.0, 0.5, 0.0)
+		originalAttachNodeOffset = (0.0, 0.0, 0.0)
+		originalAttachNodeOffset = (0.0, 0.0, 0.0)
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = HeatShield1_4293452700
+	partName = Part
+	persistentId = 3004521195
+	pos = 0.0362495668,17.1866169,-0.178410128
+	attPos = 0,0,0
+	attPos0 = 0,0.113109589,0
+	rot = -1,0,0,0
+	attRot = -0.99999994,0,0,0
+	attRot0 = -1,0,0,0
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 1
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 0
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = direct,Null_0_0|0|0_0|-1|0_0|0|0_0|-1|0
+	attN = bottom,Null_0_0|-0.170000002|0_0|-1|0_0|-0.170000002|0_0|-1|0
+	attN = top,sasModule_4293449640_0|0.0219999999|0_0|1|0_0|0.0219999999|0_0|1|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		AutostrutOff
+		{
+			actionGroup = None
+		}
+		AutostrutRoot
+		{
+			actionGroup = None
+		}
+		AutostrutHeaviest
+		{
+			actionGroup = None
+		}
+		AutostrutGrandparent
+		{
+			actionGroup = None
+		}
+		ResourcesEnableFlow
+		{
+			actionGroup = None
+			active = False
+		}
+		ResourcesDisableFlow
+		{
+			actionGroup = None
+			active = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleJettison
+		isEnabled = True
+		activejettisonName = fairing
+		isJettisoned = True
+		shroudHideOverride = False
+		stagingEnabled = False
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			JettisonAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAblator
+		isEnabled = True
+		nominalAmountRecip = -1
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleColorChanger
+		isEnabled = True
+		animState = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+				active = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDecouple
+		isEnabled = True
+		ejectionForcePercent = 100
+		isDecoupled = False
+		stagingEnabled = False
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleLiftingSurface
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		packedVolume = 550
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FundsKeeper
+		isEnabled = True
+		OriginalCost = 400.0
+		OriginalResourcesCost = 100.0
+		OriginalModulesCost = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = StealBackMyFunds
+		isEnabled = True
+		active = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		type = stack_square
+		active = True
+		available = True
+		currentScale = 1.25
+		defaultScale = 1.25
+		defaultTransformScale = (0, 0, 0)
+		DryCost = 200
+		OriginalCrewCapacity = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = tjs_DecouplerLight
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = AttachedOnEditor
+		isEnabled = True
+		active = True
+		originalPos = (0.0362495668, 17.1866169, -0.178410128)
+		originalRotation = (-1, 0, 0, 0)
+		moduleVersion = 6
+		stagingEnabled = True
+		userReallyDeactivatedIt = False
+		originalAttachNodePos = (0.0, 0.0, 0.0)
+		originalAttachNodePos = (0.0, -0.2, 0.0)
+		originalAttachNodePos = (0.0, 0.0, 0.0)
+		originalAttachNodeSize = 0
+		originalAttachNodeSize = 1
+		originalAttachNodeSize = 1
+		originalAttachNodeOrientation = (0.0, -1.0, 0.0)
+		originalAttachNodeOrientation = (0.0, -1.0, 0.0)
+		originalAttachNodeOrientation = (0.0, 1.0, 0.0)
+		originalAttachNodeOffset = (0.0, 0.0, 0.0)
+		originalAttachNodeOffset = (0.0, 0.0, 0.0)
+		originalAttachNodeOffset = (0.0, 0.0, 0.0)
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = Ablator
+		amount = 200
+		maxAmount = 200
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = science.module_4293489828
+	partName = Part
+	persistentId = 1949245902
+	pos = 0.0362495668,15.6957331,-0.178410128
+	attPos = 0,0,0
+	attPos0 = 0,-0.762499809,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 0
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = Decoupler.1_4293165548
+	link = parachuteRadial_4293157164
+	link = parachuteRadial_4293156514
+	attN = top,batteryBankMini_4293462558_0|0.612500012|0_0|0.125|0_0|0.612500012|0_0|0.125|0
+	attN = bottom,Decoupler.1_4293165548_0|-0.512499988|0_0|-0.125|0_0|-0.512499988|0_0|-0.125|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		AutostrutOff
+		{
+			actionGroup = None
+		}
+		AutostrutRoot
+		{
+			actionGroup = None
+		}
+		AutostrutHeaviest
+		{
+			actionGroup = None
+		}
+		AutostrutGrandparent
+		{
+			actionGroup = None
+		}
+		ResourcesEnableFlow
+		{
+			actionGroup = None
+			active = False
+		}
+		ResourcesDisableFlow
+		{
+			actionGroup = None
+			active = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleAnimateGeneric
+		isEnabled = True
+		aniState = LOCKED
+		animSwitch = True
+		animTime = 0
+		animSpeed = 1
+		deployPercent = 100
+		animationIsDisabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+		}
+		AXISGROUPS
+		{
+			deployPercent
+			{
+				axisGroup = None
+				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
+				axisInverted = None
+				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleScienceExperiment
+		isEnabled = True
+		Deployed = False
+		Inoperable = False
+		cooldownToGo = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			DeployAction
+			{
+				actionGroup = None
+			}
+			ResetAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		packedVolume = 2000
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FundsKeeper
+		isEnabled = True
+		OriginalCost = 1800
+		OriginalResourcesCost = 0
+		OriginalModulesCost = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = StealBackMyFunds
+		isEnabled = True
+		active = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		type = stack
+		active = True
+		available = True
+		currentScale = 1.25
+		defaultScale = 1.25
+		defaultTransformScale = (0, 0, 0)
+		DryCost = 1800
+		OriginalCrewCapacity = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = AttachedOnEditor
+		isEnabled = True
+		active = True
+		originalPos = (0.0362495668, 15.6957331, -0.178410128)
+		originalRotation = (0, 0, 0, 1)
+		moduleVersion = 6
+		stagingEnabled = True
+		userReallyDeactivatedIt = False
+		originalAttachNodePos = (0.0, 0.6, 0.0)
+		originalAttachNodePos = (0.0, -0.5, 0.0)
+		originalAttachNodeSize = 1
+		originalAttachNodeSize = 1
+		originalAttachNodeOrientation = (0.0, 0.1, 0.0)
+		originalAttachNodeOrientation = (0.0, -0.1, 0.0)
+		originalAttachNodeOffset = (0.0, 0.0, 0.0)
+		originalAttachNodeOffset = (0.0, 0.0, 0.0)
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = Decoupler.1_4293165548
+	partName = Part
+	persistentId = 83082083
+	pos = 0.0362495668,15.1332331,-0.178410128
+	attPos = 0,0,0
+	attPos0 = 0,-0.5625,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 0
+	resPri = 0
+	dstg = 1
+	sidx = 1
+	sqor = 0
+	sepI = 0
+	attm = 0
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = fairingSize2_4293524678
+	attN = top,science.module_4293489828_0|0.0500000007|0_0|1|0_0|0.0500000007|0_0|1|0
+	attN = bottom,fairingSize2_4293524678_0|-0.0500000007|0_0|-1|0_0|-0.0500000007|0_0|-1|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		AutostrutOff
+		{
+			actionGroup = None
+		}
+		AutostrutRoot
+		{
+			actionGroup = None
+		}
+		AutostrutHeaviest
+		{
+			actionGroup = None
+		}
+		AutostrutGrandparent
+		{
+			actionGroup = None
+		}
+		ResourcesEnableFlow
+		{
+			actionGroup = None
+			active = False
+		}
+		ResourcesDisableFlow
+		{
+			actionGroup = None
+			active = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleDecouple
+		isEnabled = True
+		ejectionForcePercent = 100
+		isDecoupled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleToggleCrossfeed
+		isEnabled = True
+		crossfeedStatus = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+			EnableAction
+			{
+				actionGroup = None
+			}
+			DisableAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		packedVolume = 260
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FundsKeeper
+		isEnabled = True
+		OriginalCost = 200
+		OriginalResourcesCost = 0
+		OriginalModulesCost = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = StealBackMyFunds
+		isEnabled = True
+		active = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		type = stack
+		active = True
+		available = True
+		currentScale = 1.25
+		defaultScale = 1.25
+		defaultTransformScale = (0, 0, 0)
+		DryCost = 200
+		OriginalCrewCapacity = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDecouplerShroud
+		isEnabled = True
+		nSides = 24
+		shroudEnabled = False
+		autoDetectSize = True
+		topWidth = 1.25
+		botWidth = 1.25
+		thickness = 0.100000001
+		height = 1.25
+		vertOffset = 0
+		segmentIndex = 0
+		textureName = Default
+		segments = 1
+		collPerSegment = 12
+		jettisoned = False
+		invisibleShroud = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = tjs_DecouplerLight
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleFreeIva
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = AttachedOnEditor
+		isEnabled = True
+		active = True
+		originalPos = (0.0362495668, 15.1332331, -0.178410128)
+		originalRotation = (0, 0, 0, 1)
+		moduleVersion = 6
+		stagingEnabled = True
+		userReallyDeactivatedIt = False
+		originalAttachNodePos = (0.0, 0.1, 0.0)
+		originalAttachNodePos = (0.0, -0.1, 0.0)
+		originalAttachNodeSize = 1
+		originalAttachNodeSize = 1
+		originalAttachNodeOrientation = (0.0, 1.0, 0.0)
+		originalAttachNodeOrientation = (0.0, -1.0, 0.0)
+		originalAttachNodeOffset = (0.0, 0.0, 0.0)
+		originalAttachNodeOffset = (0.0, 0.0, 0.0)
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = fairingSize2_4293524678
+	partName = Part
+	persistentId = 1257532393
+	pos = 0.0362495668,14.8632326,-0.178410128
+	attPos = 0,0,0
+	attPos0 = 0,-0.270000458,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 1
+	resPri = 0
+	dstg = 3
+	sidx = 0
+	sqor = 1
+	sepI = 0
+	attm = 0
+	sameVesselCollision = False
+	modCost = 224.455719
+	modMass = 0.224455714
+	modSize = 0,0,0
+	link = batteryPack_4293460288
+	link = batteryPack_4293459998
+	link = batteryPack_4293459950
+	link = batteryPack_4293459902
+	link = Rockomax8BW_4293499516
+	link = HighGainAntenna5.v2_4293480734
+	attN = interstage01a,Null_0_0|1.19000006|0_0|-1|0_0|1.19000006|0_0|-1|0
+	attN = interstage01b,Null_0_0|1.25|0_0|1|0_0|1.25|0_0|1|0
+	attN = interstage02a,Null_0_0|2.19000006|0_0|-1|0_0|2.19000006|0_0|-1|0
+	attN = interstage02b,Null_0_0|2.25|0_0|1|0_0|2.25|0_0|1|0
+	attN = interstage03a,Null_0_0|3.19000006|0_0|-1|0_0|3.19000006|0_0|-1|0
+	attN = interstage03b,Null_0_0|3.25|0_0|1|0_0|3.25|0_0|1|0
+	attN = interstage04a,Null_0_0|4.19000006|0_0|-1|0_0|4.19000006|0_0|-1|0
+	attN = interstage04b,Null_0_0|4.25|0_0|1|0_0|4.25|0_0|1|0
+	attN = interstage05a,Null_0_0|5.19000006|0_0|-1|0_0|5.19000006|0_0|-1|0
+	attN = interstage05b,Null_0_0|5.25|0_0|1|0_0|5.25|0_0|1|0
+	attN = interstage06a,Null_0_0|6.19000006|0_0|-1|0_0|6.19000006|0_0|-1|0
+	attN = interstage06b,Null_0_0|6.25|0_0|1|0_0|6.25|0_0|1|0
+	attN = top,Decoupler.1_4293165548_0|0.219999999|0_0|1|0_0|0.219999999|0_0|1|0
+	attN = bottom,Rockomax8BW_4293499516_0|-0.200000003|0_0|-1|0_0|-0.200000003|0_0|-1|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		AutostrutOff
+		{
+			actionGroup = None
+		}
+		AutostrutRoot
+		{
+			actionGroup = None
+		}
+		AutostrutHeaviest
+		{
+			actionGroup = None
+		}
+		AutostrutGrandparent
+		{
+			actionGroup = None
+		}
+		ResourcesEnableFlow
+		{
+			actionGroup = None
+			active = False
+		}
+		ResourcesDisableFlow
+		{
+			actionGroup = None
+			active = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleProceduralFairing
+		isEnabled = True
+		interstageCraftID = 0
+		nArcs = 3
+		ejectionForce = 100
+		useClamshell = False
+		isCapped = True
+		stagingEnabled = True
+		isFadeLocked = False
+		fsm = st_idle
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			DeployFairingAction
+			{
+				actionGroup = None
+			}
+		}
+		XSECTION
+		{
+			h = 0
+			r = 1.25
+			ATTACHEDFLAG
+			{
+				attachedFlagPartIDs = 
+				panelIndex = 0
+			}
+			ATTACHEDFLAG
+			{
+				attachedFlagPartIDs = 
+				panelIndex = 1
+			}
+			ATTACHEDFLAG
+			{
+				attachedFlagPartIDs = 
+				panelIndex = 2
+			}
+		}
+		XSECTION
+		{
+			h = 2.18146801
+			r = 0.716901898
+			ATTACHEDFLAG
+			{
+				attachedFlagPartIDs = 
+				panelIndex = 3
+			}
+			ATTACHEDFLAG
+			{
+				attachedFlagPartIDs = 
+				panelIndex = 4
+			}
+			ATTACHEDFLAG
+			{
+				attachedFlagPartIDs = 
+				panelIndex = 5
+			}
+		}
+		XSECTION
+		{
+			h = 3.29192829
+			r = 0.375
+			ATTACHEDFLAG
+			{
+				attachedFlagPartIDs = 
+				panelIndex = 6
+			}
+			ATTACHEDFLAG
+			{
+				attachedFlagPartIDs = 
+				panelIndex = 7
+			}
+			ATTACHEDFLAG
+			{
+				attachedFlagPartIDs = 
+				panelIndex = 8
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoBay
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleStructuralNode
+		isEnabled = True
+		spawnState = False
+		visibilityState = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleStructuralNode
+		isEnabled = True
+		spawnState = False
+		visibilityState = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleStructuralNode
+		isEnabled = True
+		spawnState = False
+		visibilityState = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleStructuralNode
+		isEnabled = True
+		spawnState = False
+		visibilityState = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleStructuralNode
+		isEnabled = True
+		spawnState = False
+		visibilityState = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleStructuralNode
+		isEnabled = True
+		spawnState = False
+		visibilityState = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleStructuralNode
+		isEnabled = True
+		spawnState = False
+		visibilityState = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleStructuralNode
+		isEnabled = True
+		spawnState = False
+		visibilityState = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleStructuralNode
+		isEnabled = True
+		spawnState = False
+		visibilityState = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleStructuralNode
+		isEnabled = True
+		spawnState = False
+		visibilityState = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleStructuralNode
+		isEnabled = True
+		spawnState = False
+		visibilityState = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleStructuralNode
+		isEnabled = True
+		spawnState = False
+		visibilityState = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleStructuralNodeToggle
+		isEnabled = True
+		showMesh = True
+		showNodes = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		packedVolume = -1
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FundsKeeper
+		isEnabled = True
+		OriginalCost = 824.4557
+		OriginalResourcesCost = 0
+		OriginalModulesCost = 224.4557
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = StealBackMyFunds
+		isEnabled = True
+		active = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = AttachedOnEditor
+		isEnabled = True
+		active = True
+		originalPos = (0.0362495668, 14.8632326, -0.178410128)
+		originalRotation = (0, 0, 0, 1)
+		moduleVersion = 6
+		stagingEnabled = True
+		userReallyDeactivatedIt = False
+		originalAttachNodePos = (0.0, 1.2, 0.0)
+		originalAttachNodePos = (0.0, 1.3, 0.0)
+		originalAttachNodePos = (0.0, 2.2, 0.0)
+		originalAttachNodePos = (0.0, 2.3, 0.0)
+		originalAttachNodePos = (0.0, 3.2, 0.0)
+		originalAttachNodePos = (0.0, 3.3, 0.0)
+		originalAttachNodePos = (0.0, 4.2, 0.0)
+		originalAttachNodePos = (0.0, 4.3, 0.0)
+		originalAttachNodePos = (0.0, 5.2, 0.0)
+		originalAttachNodePos = (0.0, 5.3, 0.0)
+		originalAttachNodePos = (0.0, 6.2, 0.0)
+		originalAttachNodePos = (0.0, 6.3, 0.0)
+		originalAttachNodePos = (0.0, 0.2, 0.0)
+		originalAttachNodePos = (0.0, -0.2, 0.0)
+		originalAttachNodeSize = 1
+		originalAttachNodeSize = 1
+		originalAttachNodeSize = 1
+		originalAttachNodeSize = 1
+		originalAttachNodeSize = 1
+		originalAttachNodeSize = 1
+		originalAttachNodeSize = 1
+		originalAttachNodeSize = 1
+		originalAttachNodeSize = 1
+		originalAttachNodeSize = 1
+		originalAttachNodeSize = 1
+		originalAttachNodeSize = 1
+		originalAttachNodeSize = 1
+		originalAttachNodeSize = 2
+		originalAttachNodeOrientation = (0.0, -1.0, 0.0)
+		originalAttachNodeOrientation = (0.0, 1.0, 0.0)
+		originalAttachNodeOrientation = (0.0, -1.0, 0.0)
+		originalAttachNodeOrientation = (0.0, 1.0, 0.0)
+		originalAttachNodeOrientation = (0.0, -1.0, 0.0)
+		originalAttachNodeOrientation = (0.0, 1.0, 0.0)
+		originalAttachNodeOrientation = (0.0, -1.0, 0.0)
+		originalAttachNodeOrientation = (0.0, 1.0, 0.0)
+		originalAttachNodeOrientation = (0.0, -1.0, 0.0)
+		originalAttachNodeOrientation = (0.0, 1.0, 0.0)
+		originalAttachNodeOrientation = (0.0, -1.0, 0.0)
+		originalAttachNodeOrientation = (0.0, 1.0, 0.0)
+		originalAttachNodeOrientation = (0.0, 1.0, 0.0)
+		originalAttachNodeOrientation = (0.0, -1.0, 0.0)
+		originalAttachNodeOffset = (0.0, 0.0, 0.0)
+		originalAttachNodeOffset = (0.0, 0.0, 0.0)
+		originalAttachNodeOffset = (0.0, 0.0, 0.0)
+		originalAttachNodeOffset = (0.0, 0.0, 0.0)
+		originalAttachNodeOffset = (0.0, 0.0, 0.0)
+		originalAttachNodeOffset = (0.0, 0.0, 0.0)
+		originalAttachNodeOffset = (0.0, 0.0, 0.0)
+		originalAttachNodeOffset = (0.0, 0.0, 0.0)
+		originalAttachNodeOffset = (0.0, 0.0, 0.0)
+		originalAttachNodeOffset = (0.0, 0.0, 0.0)
+		originalAttachNodeOffset = (0.0, 0.0, 0.0)
+		originalAttachNodeOffset = (0.0, 0.0, 0.0)
+		originalAttachNodeOffset = (0.0, 0.0, 0.0)
+		originalAttachNodeOffset = (0.0, 0.0, 0.0)
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = batteryPack_4293460288
+	partName = Part
+	persistentId = 2429376196
+	pos = -0.188453496,15.0907326,0.660193026
+	attPos = 0,0,0
+	attPos0 = -0.224703059,0.227499962,0.838603139
+	rot = 0,0.707106829,-0.707106709,2.12872031E-08
+	attRot = 0,0,0,1
+	attRot0 = 0,0.707106829,-0.707106709,2.12872031E-08
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 0
+	resPri = 0
+	dstg = 4
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = batteryPack_4293459998
+	sym = batteryPack_4293459950
+	sym = batteryPack_4293459902
+	srfN = srfAttach,fairingSize2_4293524678,Collider,0|0|0,0|0|-1,0|0|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		AutostrutOff
+		{
+			actionGroup = None
+			active = False
+		}
+		AutostrutRoot
+		{
+			actionGroup = None
+			active = False
+		}
+		AutostrutHeaviest
+		{
+			actionGroup = None
+			active = False
+		}
+		AutostrutGrandparent
+		{
+			actionGroup = None
+			active = False
+		}
+		ResourcesEnableFlow
+		{
+			actionGroup = None
+		}
+		ResourcesDisableFlow
+		{
+			actionGroup = None
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		packedVolume = 35
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FundsKeeper
+		isEnabled = True
+		OriginalCost = 80.00200
+		OriginalResourcesCost = 0.00200
+		OriginalModulesCost = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = StealBackMyFunds
+		isEnabled = True
+		active = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		type = free
+		active = True
+		available = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (0, 0, 0)
+		DryCost = 79.9980011
+		OriginalCrewCapacity = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = AttachedOnEditor
+		isEnabled = True
+		active = True
+		originalPos = (-0.188453496, 15.0907326, 0.660193026)
+		originalRotation = (0, 0.707106829, -0.707106709, 2.12872031E-08)
+		moduleVersion = 6
+		stagingEnabled = True
+		userReallyDeactivatedIt = False
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 100
+		maxAmount = 100
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = batteryPack_4293459998
+	partName = Part
+	persistentId = 1030432063
+	pos = 0.874852657,15.0907326,0.0462929606
+	attPos = 0,0,0
+	attPos0 = 0.838603079,0.227499962,0.224703088
+	rot = -0.49999997,0.500000119,-0.49999997,-0.50000006
+	attRot = 0,0,0,1
+	attRot0 = -0.49999997,0.500000119,-0.49999997,-0.50000006
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 0
+	resPri = 0
+	dstg = 4
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = batteryPack_4293459950
+	sym = batteryPack_4293459902
+	sym = batteryPack_4293460288
+	srfN = srfAttach,fairingSize2_4293524678,Collider,0|0|0,0|0|-1,0|0|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		AutostrutOff
+		{
+			actionGroup = None
+			active = False
+		}
+		AutostrutRoot
+		{
+			actionGroup = None
+			active = False
+		}
+		AutostrutHeaviest
+		{
+			actionGroup = None
+			active = False
+		}
+		AutostrutGrandparent
+		{
+			actionGroup = None
+			active = False
+		}
+		ResourcesEnableFlow
+		{
+			actionGroup = None
+		}
+		ResourcesDisableFlow
+		{
+			actionGroup = None
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		packedVolume = 35
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FundsKeeper
+		isEnabled = True
+		OriginalCost = 80.00200
+		OriginalResourcesCost = 0.00200
+		OriginalModulesCost = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = StealBackMyFunds
+		isEnabled = True
+		active = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		type = free
+		active = True
+		available = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (0, 0, 0)
+		DryCost = 79.9980011
+		OriginalCrewCapacity = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = AttachedOnEditor
+		isEnabled = True
+		active = True
+		originalPos = (0.874852657, 15.0907326, 0.0462929606)
+		originalRotation = (-0.49999997, 0.500000119, -0.49999997, -0.50000006)
+		moduleVersion = 6
+		stagingEnabled = True
+		userReallyDeactivatedIt = False
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 100
+		maxAmount = 100
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = batteryPack_4293459950
+	partName = Part
+	persistentId = 2011918981
+	pos = 0.260952562,15.0907326,-1.01701331
+	attPos = 0,0,0
+	attPos0 = 0.224702999,0.227499962,-0.838603199
+	rot = -0.707106709,-9.62141833E-09,3.09086161E-08,-0.707106829
+	attRot = 0,0,0,1
+	attRot0 = -0.707106709,-9.62141833E-09,3.09086161E-08,-0.707106829
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 0
+	resPri = 0
+	dstg = 4
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = batteryPack_4293459902
+	sym = batteryPack_4293460288
+	sym = batteryPack_4293459998
+	srfN = srfAttach,fairingSize2_4293524678,Collider,0|0|0,0|0|-1,0|0|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		AutostrutOff
+		{
+			actionGroup = None
+			active = False
+		}
+		AutostrutRoot
+		{
+			actionGroup = None
+			active = False
+		}
+		AutostrutHeaviest
+		{
+			actionGroup = None
+			active = False
+		}
+		AutostrutGrandparent
+		{
+			actionGroup = None
+			active = False
+		}
+		ResourcesEnableFlow
+		{
+			actionGroup = None
+		}
+		ResourcesDisableFlow
+		{
+			actionGroup = None
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		packedVolume = 35
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FundsKeeper
+		isEnabled = True
+		OriginalCost = 80.00200
+		OriginalResourcesCost = 0.00200
+		OriginalModulesCost = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = StealBackMyFunds
+		isEnabled = True
+		active = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		type = free
+		active = True
+		available = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (0, 0, 0)
+		DryCost = 79.9980011
+		OriginalCrewCapacity = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = AttachedOnEditor
+		isEnabled = True
+		active = True
+		originalPos = (0.260952562, 15.0907326, -1.01701331)
+		originalRotation = (-0.707106709, -9.62141833E-09, 3.09086161E-08, -0.707106829)
+		moduleVersion = 6
+		stagingEnabled = True
+		userReallyDeactivatedIt = False
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 100
+		maxAmount = 100
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = batteryPack_4293459902
+	partName = Part
+	persistentId = 3863923425
+	pos = -0.802353501,15.0907326,-0.403113127
+	attPos = 0,0,0
+	attPos0 = -0.838603079,0.227499962,-0.224702999
+	rot = -0.49999997,-0.50000006,0.49999997,-0.500000119
+	attRot = 0,0,0,1
+	attRot0 = -0.49999997,-0.50000006,0.49999997,-0.500000119
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 0
+	resPri = 0
+	dstg = 4
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = batteryPack_4293460288
+	sym = batteryPack_4293459998
+	sym = batteryPack_4293459950
+	srfN = srfAttach,fairingSize2_4293524678,Collider,0|0|0,0|0|-1,0|0|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		AutostrutOff
+		{
+			actionGroup = None
+			active = False
+		}
+		AutostrutRoot
+		{
+			actionGroup = None
+			active = False
+		}
+		AutostrutHeaviest
+		{
+			actionGroup = None
+			active = False
+		}
+		AutostrutGrandparent
+		{
+			actionGroup = None
+			active = False
+		}
+		ResourcesEnableFlow
+		{
+			actionGroup = None
+		}
+		ResourcesDisableFlow
+		{
+			actionGroup = None
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		packedVolume = 35
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FundsKeeper
+		isEnabled = True
+		OriginalCost = 80.00200
+		OriginalResourcesCost = 0.00200
+		OriginalModulesCost = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = StealBackMyFunds
+		isEnabled = True
+		active = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		type = free
+		active = True
+		available = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (0, 0, 0)
+		DryCost = 79.9980011
+		OriginalCrewCapacity = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = AttachedOnEditor
+		isEnabled = True
+		active = True
+		originalPos = (-0.802353501, 15.0907326, -0.403113127)
+		originalRotation = (-0.49999997, -0.50000006, 0.49999997, -0.500000119)
+		moduleVersion = 6
+		stagingEnabled = True
+		userReallyDeactivatedIt = False
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 100
+		maxAmount = 100
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = parachuteRadial_4293157164
+	partName = Part
+	persistentId = 2358060976
+	pos = -0.583510756,15.7495623,-0.178410098
+	attPos = 0,0,0
+	attPos0 = -0.619760334,0.0538291931,2.98023224E-08
+	rot = -8.42936885E-08,0.707106829,8.42936885E-08,0.707106829
+	attRot = 0,0,0,1
+	attRot0 = -8.42936885E-08,0.707106829,8.42936885E-08,0.707106829
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 0
+	resPri = 0
+	dstg = 0
+	sidx = 0
+	sqor = 0
+	sepI = -1
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = parachuteRadial_4293156514
+	srfN = srfAttach,science.module_4293489828,node_collider,0|0|0,0|0|-1,0|0|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		AutostrutOff
+		{
+			actionGroup = None
+		}
+		AutostrutRoot
+		{
+			actionGroup = None
+		}
+		AutostrutHeaviest
+		{
+			actionGroup = None
+		}
+		AutostrutGrandparent
+		{
+			actionGroup = None
+		}
+		ResourcesEnableFlow
+		{
+			actionGroup = None
+			active = False
+		}
+		ResourcesDisableFlow
+		{
+			actionGroup = None
+			active = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleParachute
+		isEnabled = True
+		persistentState = STOWED
+		animTime = 0
+		minAirPressureToOpen = 0.0399999991
+		deployAltitude = 1000
+		spreadAngle = 7
+		automateSafeDeploy = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			DeployAction
+			{
+				actionGroup = None
+			}
+			CutAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDragModifier
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDragModifier
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		packedVolume = 100
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FundsKeeper
+		isEnabled = True
+		OriginalCost = 400
+		OriginalResourcesCost = 0
+		OriginalModulesCost = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = StealBackMyFunds
+		isEnabled = True
+		active = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		type = free_square
+		active = True
+		available = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (0, 0, 0)
+		DryCost = 400
+		OriginalCrewCapacity = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = AttachedOnEditor
+		isEnabled = True
+		active = True
+		originalPos = (-0.583510756, 15.7495623, -0.178410098)
+		originalRotation = (-8.42936885E-08, 0.707106829, 8.42936885E-08, 0.707106829)
+		moduleVersion = 6
+		stagingEnabled = True
+		userReallyDeactivatedIt = False
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = parachuteRadial_4293156514
+	partName = Part
+	persistentId = 394811307
+	pos = 0.656009912,15.7495623,-0.178410217
+	attPos = 0,0,0
+	attPos0 = 0.619760334,0.0538291931,-8.94069672E-08
+	rot = 8.42936956E-08,0.707106769,8.42936814E-08,-0.707106888
+	attRot = 0,0,0,1
+	attRot0 = 8.42936956E-08,0.707106769,8.42936814E-08,-0.707106888
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 0
+	resPri = 0
+	dstg = 0
+	sidx = 0
+	sqor = 0
+	sepI = -1
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = parachuteRadial_4293157164
+	srfN = srfAttach,science.module_4293489828,node_collider,0|0|0,0|0|-1,0|0|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		AutostrutOff
+		{
+			actionGroup = None
+		}
+		AutostrutRoot
+		{
+			actionGroup = None
+		}
+		AutostrutHeaviest
+		{
+			actionGroup = None
+		}
+		AutostrutGrandparent
+		{
+			actionGroup = None
+		}
+		ResourcesEnableFlow
+		{
+			actionGroup = None
+			active = False
+		}
+		ResourcesDisableFlow
+		{
+			actionGroup = None
+			active = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleParachute
+		isEnabled = True
+		persistentState = STOWED
+		animTime = 0
+		minAirPressureToOpen = 0.0399999991
+		deployAltitude = 1000
+		spreadAngle = 7
+		automateSafeDeploy = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			DeployAction
+			{
+				actionGroup = None
+			}
+			CutAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDragModifier
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDragModifier
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		packedVolume = 100
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FundsKeeper
+		isEnabled = True
+		OriginalCost = 400
+		OriginalResourcesCost = 0
+		OriginalModulesCost = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = StealBackMyFunds
+		isEnabled = True
+		active = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		type = free_square
+		active = True
+		available = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (0, 0, 0)
+		DryCost = 400
+		OriginalCrewCapacity = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = AttachedOnEditor
+		isEnabled = True
+		active = True
+		originalPos = (0.656009912, 15.7495623, -0.178410217)
+		originalRotation = (8.42936956E-08, 0.707106769, 8.42936814E-08, -0.707106888)
+		moduleVersion = 6
+		stagingEnabled = True
+		userReallyDeactivatedIt = False
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = Rockomax8BW_4293499516
+	partName = Part
+	persistentId = 2952549053
+	pos = 0.0362495668,14.2082329,-0.178410128
+	attPos = 0,0,0
+	attPos0 = 0,-0.654999733,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 0
+	resPri = 0
+	dstg = 4
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	sameVesselCollision = False
+	modCost = 0
+	modMass = -1.11758709E-08
+	modSize = 0,0,0
+	link = liquidEngine3.v2_4293495858
+	link = GooExperiment_4293490268
+	link = ScienceBox_4293485950
+	link = sensorBarometer_4293484828
+	link = sensorThermometer_4293484400
+	link = strutConnector_4293412876
+	link = strutConnector_4293411174
+	link = strutConnector_4293411056
+	link = strutConnector_4293410938
+	link = solarPanels2_4293405148
+	link = solarPanels2_4293404670
+	attN = top,fairingSize2_4293524678_0|0.455000013|0_0|1|0_0|0.455000013|0_0|1|0
+	attN = bottom,liquidEngine3.v2_4293495858_0|-0.455000013|0_0|-1|0_0|-0.455000013|0_0|-1|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		AutostrutOff
+		{
+			actionGroup = None
+		}
+		AutostrutRoot
+		{
+			actionGroup = None
+		}
+		AutostrutHeaviest
+		{
+			actionGroup = None
+		}
+		AutostrutGrandparent
+		{
+			actionGroup = None
+		}
+		ResourcesEnableFlow
+		{
+			actionGroup = None
+		}
+		ResourcesDisableFlow
+		{
+			actionGroup = None
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FundsKeeper
+		isEnabled = True
+		OriginalCost = 1167.20
+		OriginalResourcesCost = 367.20
+		OriginalModulesCost = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = StealBackMyFunds
+		isEnabled = True
+		active = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		type = stack
+		active = True
+		available = True
+		currentScale = 2.5
+		defaultScale = 2.5
+		defaultTransformScale = (0, 0, 0)
+		DryCost = 432.799988
+		OriginalCrewCapacity = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = InterstellarFuelSwitch
+		isEnabled = True
+		selectedTankSetup = 11
+		configuredAmounts = 360,440,
+		configuredFlowStates = True,True,
+		selectedTankSetupTxt = LiquidFuel+Oxidizer
+		configLoaded = True
+		initialTankSetup = LiquidFuel;Oxidizer
+		storedFactorMultiplier = 1
+		storedSurfaceMultiplier = 1
+		storedVolumeMultiplier = 1
+		baseMassMultiplier = 1
+		initialMassMultiplier = 1
+		windowPositionX = 1200
+		windowPositionY = 150
+		dryMass = 0.4999999888241291
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleSwitchWindowAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleStorageCryostat
+		isEnabled = True
+		storedTemp = 0
+		isDisabled = False
+		epx = 0
+		epy = 0
+		whx = 0
+		why = 0
+		tpx = 0
+		tpy = 0
+		cpx = 0
+		cpy = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleStorageCryostat
+		isEnabled = True
+		storedTemp = 0
+		isDisabled = False
+		epx = 0
+		epy = 0
+		whx = 0
+		why = 0
+		tpx = 0
+		tpy = 0
+		cpx = 0
+		cpy = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleStorageCryostat
+		isEnabled = True
+		storedTemp = 0
+		isDisabled = False
+		epx = 0
+		epy = 0
+		whx = 0
+		why = 0
+		tpx = 0
+		tpy = 0
+		cpx = 0
+		cpy = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleStorageCryostat
+		isEnabled = True
+		storedTemp = 0
+		isDisabled = False
+		epx = 0
+		epy = 0
+		whx = 0
+		why = 0
+		tpx = 0
+		tpy = 0
+		cpx = 0
+		cpy = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleStorageCryostat
+		isEnabled = True
+		storedTemp = 0
+		isDisabled = False
+		epx = 0
+		epy = 0
+		whx = 0
+		why = 0
+		tpx = 0
+		tpy = 0
+		cpx = 0
+		cpy = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleStorageCryostat
+		isEnabled = True
+		storedTemp = 0
+		isDisabled = False
+		epx = 0
+		epy = 0
+		whx = 0
+		why = 0
+		tpx = 0
+		tpy = 0
+		cpx = 0
+		cpy = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleStorageCryostat
+		isEnabled = True
+		storedTemp = 0
+		isDisabled = False
+		epx = 0
+		epy = 0
+		whx = 0
+		why = 0
+		tpx = 0
+		tpy = 0
+		cpx = 0
+		cpy = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleFuelJettison
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			FuelJettisonAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleFreeIvaPartInfo
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = AttachedOnEditor
+		isEnabled = True
+		active = True
+		originalPos = (0.0362495668, 14.2082329, -0.178410128)
+		originalRotation = (0, 0, 0, 1)
+		moduleVersion = 6
+		stagingEnabled = True
+		userReallyDeactivatedIt = False
+		originalAttachNodePos = (0.0, 0.5, 0.0)
+		originalAttachNodePos = (0.0, -0.5, 0.0)
+		originalAttachNodeSize = 2
+		originalAttachNodeSize = 2
+		originalAttachNodeOrientation = (0.0, 1.0, 0.0)
+		originalAttachNodeOrientation = (0.0, -1.0, 0.0)
+		originalAttachNodeOffset = (0.0, 0.0, 0.0)
+		originalAttachNodeOffset = (0.0, 0.0, 0.0)
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 360
+		maxAmount = 360
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 440
+		maxAmount = 440
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = liquidEngine3.v2_4293495858
+	partName = Part
+	persistentId = 3179316531
+	pos = 0.0362495668,13.753233,-0.178410128
+	attPos = 0,0,0
+	attPos0 = 0,-0.454999924,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 4
+	sidx = 0
+	sqor = 2
+	sepI = 0
+	attm = 0
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = Decoupler.2_4293413736
+	attN = top,Rockomax8BW_4293499516_0|0|0_0|1|0_0|0|0_0|1|0
+	attN = bottom,Decoupler.2_4293413736_0|-0.800000012|0_0|-1|0_0|-0.800000012|0_0|-1|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		AutostrutOff
+		{
+			actionGroup = None
+		}
+		AutostrutRoot
+		{
+			actionGroup = None
+		}
+		AutostrutHeaviest
+		{
+			actionGroup = None
+		}
+		AutostrutGrandparent
+		{
+			actionGroup = None
+		}
+		ResourcesEnableFlow
+		{
+			actionGroup = None
+			active = False
+		}
+		ResourcesDisableFlow
+		{
+			actionGroup = None
+			active = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		independentThrottle = False
+		independentThrottlePercentage = 0
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		includeinDVCalcs = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+			ToggleThrottle
+			{
+				actionGroup = None
+			}
+		}
+		AXISGROUPS
+		{
+			independentThrottlePercentage
+			{
+				axisGroup = None
+				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
+				axisInverted = None
+				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+			}
+			thrustPercentage
+			{
+				axisGroup = None
+				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
+				axisInverted = None
+				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleGimbal
+		isEnabled = True
+		gimbalLock = False
+		gimbalLimiter = 100
+		currentShowToggles = False
+		enableYaw = True
+		enablePitch = True
+		enableRoll = True
+		gimbalActive = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+			LockAction
+			{
+				actionGroup = None
+			}
+			FreeAction
+			{
+				actionGroup = None
+			}
+			TogglePitchAction
+			{
+				actionGroup = None
+			}
+			ToggleYawAction
+			{
+				actionGroup = None
+			}
+			ToggleRollAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleJettison
+		isEnabled = True
+		activejettisonName = TallShroud
+		isJettisoned = False
+		shroudHideOverride = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			JettisonAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleSurfaceFX
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		selectedVariant = TrussMount
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FXModuleAnimateThrottle
+		isEnabled = True
+		animState = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		packedVolume = 1300
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FundsKeeper
+		isEnabled = True
+		OriginalCost = 390
+		OriginalResourcesCost = 0
+		OriginalModulesCost = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = StealBackMyFunds
+		isEnabled = True
+		active = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		type = stack
+		active = True
+		available = True
+		currentScale = 1.25
+		defaultScale = 1.25
+		defaultTransformScale = (0, 0, 0)
+		DryCost = 390
+		OriginalCrewCapacity = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = EngineLightEffect
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = AttachedOnEditor
+		isEnabled = True
+		active = True
+		originalPos = (0.0362495668, 13.753233, -0.178410128)
+		originalRotation = (0, 0, 0, 1)
+		moduleVersion = 6
+		stagingEnabled = True
+		userReallyDeactivatedIt = False
+		originalAttachNodePos = (0.0, 0.0, 0.0)
+		originalAttachNodePos = (0.0, -0.8, 0.0)
+		originalAttachNodeSize = 1
+		originalAttachNodeSize = 1
+		originalAttachNodeOrientation = (0.0, 1.0, 0.0)
+		originalAttachNodeOrientation = (0.0, -1.0, 0.0)
+		originalAttachNodeOffset = (0.0, 0.0, 0.0)
+		originalAttachNodeOffset = (0.0, 0.0, 0.0)
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = Decoupler.2_4293413736
+	partName = Part
+	persistentId = 2750208144
+	pos = 0.0362495668,12.8532324,-0.178410128
+	attPos = 0,0,0
+	attPos0 = 0,-0.91781044,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 5
+	sidx = 1
+	sqor = 2
+	sepI = 2
+	attm = 0
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = Rockomax32.BW_4293407500
+	attN = top,liquidEngine3.v2_4293495858_0|0.100000001|0_0|1|0_0|0.100000001|0_0|1|0
+	attN = bottom,Rockomax32.BW_4293407500_0|-0.100000001|0_0|-1|0_0|-0.100000001|0_0|-1|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		AutostrutOff
+		{
+			actionGroup = None
+		}
+		AutostrutRoot
+		{
+			actionGroup = None
+		}
+		AutostrutHeaviest
+		{
+			actionGroup = None
+		}
+		AutostrutGrandparent
+		{
+			actionGroup = None
+		}
+		ResourcesEnableFlow
+		{
+			actionGroup = None
+			active = False
+		}
+		ResourcesDisableFlow
+		{
+			actionGroup = None
+			active = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleDecouple
+		isEnabled = True
+		ejectionForcePercent = 100
+		isDecoupled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleToggleCrossfeed
+		isEnabled = True
+		crossfeedStatus = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+			EnableAction
+			{
+				actionGroup = None
+			}
+			DisableAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		packedVolume = -1
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FundsKeeper
+		isEnabled = True
+		OriginalCost = 300
+		OriginalResourcesCost = 0
+		OriginalModulesCost = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = StealBackMyFunds
+		isEnabled = True
+		active = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		type = stack
+		active = True
+		available = True
+		currentScale = 2.5
+		defaultScale = 2.5
+		defaultTransformScale = (0, 0, 0)
+		DryCost = 300
+		OriginalCrewCapacity = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDecouplerShroud
+		isEnabled = True
+		nSides = 24
+		shroudEnabled = False
+		autoDetectSize = True
+		topWidth = 1.25
+		botWidth = 1.25
+		thickness = 0.100000001
+		height = 1.25
+		vertOffset = 0
+		segmentIndex = 0
+		textureName = Default
+		segments = 1
+		collPerSegment = 12
+		jettisoned = False
+		invisibleShroud = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = tjs_DecouplerLight
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleFreeIva
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = AttachedOnEditor
+		isEnabled = True
+		active = True
+		originalPos = (0.0362495668, 12.8532324, -0.178410128)
+		originalRotation = (0, 0, 0, 1)
+		moduleVersion = 6
+		stagingEnabled = True
+		userReallyDeactivatedIt = False
+		originalAttachNodePos = (0.0, 0.1, 0.0)
+		originalAttachNodePos = (0.0, -0.1, 0.0)
+		originalAttachNodeSize = 2
+		originalAttachNodeSize = 2
+		originalAttachNodeOrientation = (0.0, 1.0, 0.0)
+		originalAttachNodeOrientation = (0.0, -1.0, 0.0)
+		originalAttachNodeOffset = (0.0, 0.0, 0.0)
+		originalAttachNodeOffset = (0.0, 0.0, 0.0)
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = Rockomax32.BW_4293407500
+	partName = Part
+	persistentId = 843075243
+	pos = 0.0362495668,10.8932333,-0.178410128
+	attPos = 0,0,0
+	attPos0 = 0,-1.95999908,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 0
+	sameVesselCollision = False
+	modCost = 0
+	modMass = -4.47034836E-08
+	modSize = 0,0,0
+	link = engineLargeSkipper.v2_4293408960
+	link = R8winglet_4293406104
+	link = R8winglet_4293405430
+	link = R8winglet_4293405376
+	attN = top,Decoupler.2_4293413736_0|1.86000001|0_0|1|0_0|1.86000001|0_0|1|0
+	attN = bottom,engineLargeSkipper.v2_4293408960_0|-1.86000001|0_0|-1|0_0|-1.86000001|0_0|-1|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		AutostrutOff
+		{
+			actionGroup = None
+		}
+		AutostrutRoot
+		{
+			actionGroup = None
+		}
+		AutostrutHeaviest
+		{
+			actionGroup = None
+		}
+		AutostrutGrandparent
+		{
+			actionGroup = None
+		}
+		ResourcesEnableFlow
+		{
+			actionGroup = None
+		}
+		ResourcesDisableFlow
+		{
+			actionGroup = None
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FundsKeeper
+		isEnabled = True
+		OriginalCost = 4468.80
+		OriginalResourcesCost = 1468.80
+		OriginalModulesCost = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = StealBackMyFunds
+		isEnabled = True
+		active = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		type = stack
+		active = True
+		available = True
+		currentScale = 2.5
+		defaultScale = 2.5
+		defaultTransformScale = (0, 0, 0)
+		DryCost = 1531.19995
+		OriginalCrewCapacity = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = InterstellarFuelSwitch
+		isEnabled = True
+		selectedTankSetup = 11
+		configuredAmounts = 1440,1760,
+		configuredFlowStates = True,True,
+		selectedTankSetupTxt = LiquidFuel+Oxidizer
+		configLoaded = True
+		initialTankSetup = LiquidFuel;Oxidizer
+		storedFactorMultiplier = 1
+		storedSurfaceMultiplier = 1
+		storedVolumeMultiplier = 1
+		baseMassMultiplier = 1
+		initialMassMultiplier = 1
+		windowPositionX = 1200
+		windowPositionY = 150
+		dryMass = 1.9999999552965164
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleSwitchWindowAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleStorageCryostat
+		isEnabled = True
+		storedTemp = 0
+		isDisabled = False
+		epx = 0
+		epy = 0
+		whx = 0
+		why = 0
+		tpx = 0
+		tpy = 0
+		cpx = 0
+		cpy = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleStorageCryostat
+		isEnabled = True
+		storedTemp = 0
+		isDisabled = False
+		epx = 0
+		epy = 0
+		whx = 0
+		why = 0
+		tpx = 0
+		tpy = 0
+		cpx = 0
+		cpy = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleStorageCryostat
+		isEnabled = True
+		storedTemp = 0
+		isDisabled = False
+		epx = 0
+		epy = 0
+		whx = 0
+		why = 0
+		tpx = 0
+		tpy = 0
+		cpx = 0
+		cpy = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleStorageCryostat
+		isEnabled = True
+		storedTemp = 0
+		isDisabled = False
+		epx = 0
+		epy = 0
+		whx = 0
+		why = 0
+		tpx = 0
+		tpy = 0
+		cpx = 0
+		cpy = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleStorageCryostat
+		isEnabled = True
+		storedTemp = 0
+		isDisabled = False
+		epx = 0
+		epy = 0
+		whx = 0
+		why = 0
+		tpx = 0
+		tpy = 0
+		cpx = 0
+		cpy = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleStorageCryostat
+		isEnabled = True
+		storedTemp = 0
+		isDisabled = False
+		epx = 0
+		epy = 0
+		whx = 0
+		why = 0
+		tpx = 0
+		tpy = 0
+		cpx = 0
+		cpy = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleStorageCryostat
+		isEnabled = True
+		storedTemp = 0
+		isDisabled = False
+		epx = 0
+		epy = 0
+		whx = 0
+		why = 0
+		tpx = 0
+		tpy = 0
+		cpx = 0
+		cpy = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleFuelJettison
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			FuelJettisonAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleFreeIvaPartInfo
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = AttachedOnEditor
+		isEnabled = True
+		active = True
+		originalPos = (0.0362495668, 10.8932333, -0.178410128)
+		originalRotation = (0, 0, 0, 1)
+		moduleVersion = 6
+		stagingEnabled = True
+		userReallyDeactivatedIt = False
+		originalAttachNodePos = (0.0, 1.9, 0.0)
+		originalAttachNodePos = (0.0, -1.9, 0.0)
+		originalAttachNodeSize = 2
+		originalAttachNodeSize = 2
+		originalAttachNodeOrientation = (0.0, 1.0, 0.0)
+		originalAttachNodeOrientation = (0.0, -1.0, 0.0)
+		originalAttachNodeOffset = (0.0, 0.0, 0.0)
+		originalAttachNodeOffset = (0.0, 0.0, 0.0)
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 1440
+		maxAmount = 1440
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 1760
+		maxAmount = 1760
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = engineLargeSkipper.v2_4293408960
+	partName = Part
+	persistentId = 3636436571
+	pos = 0.0362495668,8.02023315,-0.178410128
+	attPos = 0,0,0
+	attPos0 = 0,-2.87300014,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 3
+	resPri = 0
+	dstg = 6
+	sidx = 0
+	sqor = 3
+	sepI = 2
+	attm = 0
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = top,Rockomax32.BW_4293407500_0|1.01300001|0_0|1|0_0|1.01300001|0_0|1|0
+	attN = bottom,Null_0_0|-1.36199999|0_0|-1|0_0|-1.36199999|0_0|-1|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		AutostrutOff
+		{
+			actionGroup = None
+		}
+		AutostrutRoot
+		{
+			actionGroup = None
+		}
+		AutostrutHeaviest
+		{
+			actionGroup = None
+		}
+		AutostrutGrandparent
+		{
+			actionGroup = None
+		}
+		ResourcesEnableFlow
+		{
+			actionGroup = None
+			active = False
+		}
+		ResourcesDisableFlow
+		{
+			actionGroup = None
+			active = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		independentThrottle = False
+		independentThrottlePercentage = 0
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		includeinDVCalcs = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+			ToggleThrottle
+			{
+				actionGroup = None
+			}
+		}
+		AXISGROUPS
+		{
+			independentThrottlePercentage
+			{
+				axisGroup = None
+				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
+				axisInverted = None
+				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+			}
+			thrustPercentage
+			{
+				axisGroup = None
+				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
+				axisInverted = None
+				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleJettison
+		isEnabled = True
+		activejettisonName = fairing1
+		isJettisoned = True
+		shroudHideOverride = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			JettisonAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleGimbal
+		isEnabled = True
+		gimbalLock = False
+		gimbalLimiter = 100
+		currentShowToggles = False
+		enableYaw = True
+		enablePitch = True
+		enableRoll = True
+		gimbalActive = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+			LockAction
+			{
+				actionGroup = None
+			}
+			FreeAction
+			{
+				actionGroup = None
+			}
+			TogglePitchAction
+			{
+				actionGroup = None
+			}
+			ToggleYawAction
+			{
+				actionGroup = None
+			}
+			ToggleRollAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FXModuleAnimateThrottle
+		isEnabled = True
+		animState = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAlternator
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleSurfaceFX
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FundsKeeper
+		isEnabled = True
+		OriginalCost = 5300
+		OriginalResourcesCost = 0
+		OriginalModulesCost = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = StealBackMyFunds
+		isEnabled = True
+		active = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		type = stack
+		active = True
+		available = True
+		currentScale = 2.5
+		defaultScale = 2.5
+		defaultTransformScale = (0, 0, 0)
+		DryCost = 5300
+		OriginalCrewCapacity = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = EngineLightEffect
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = AttachedOnEditor
+		isEnabled = True
+		active = True
+		originalPos = (0.0362495668, 8.02023315, -0.178410128)
+		originalRotation = (0, 0, 0, 1)
+		moduleVersion = 6
+		stagingEnabled = True
+		userReallyDeactivatedIt = False
+		originalAttachNodePos = (0.0, 1.0, 0.0)
+		originalAttachNodePos = (0.0, -1.4, 0.0)
+		originalAttachNodeSize = 2
+		originalAttachNodeSize = 2
+		originalAttachNodeOrientation = (0.0, 1.0, 0.0)
+		originalAttachNodeOrientation = (0.0, -1.0, 0.0)
+		originalAttachNodeOffset = (0.0, 0.0, 0.0)
+		originalAttachNodeOffset = (0.0, 0.0, 0.0)
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = R8winglet_4293406104
+	partName = Part
+	persistentId = 3193361586
+	pos = -1.20534897,9.75352764,1.06318831
+	attPos = 0,0,0
+	attPos0 = -1.24159849,-1.13970566,1.24159849
+	rot = 2.1914266E-09,0.382683456,5.29057242E-09,0.923879623
+	attRot = 0,0,0,1
+	attRot0 = 2.1914266E-09,0.382683456,5.29057242E-09,0.923879623
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = R8winglet_4293405430
+	sym = R8winglet_4293405376
+	srfN = srfAttach,Rockomax32.BW_4293407500,collider,0.540501237|0.174731255|0,0.125|0|0,0.540501237|0.174731255|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		AutostrutOff
+		{
+			actionGroup = None
+		}
+		AutostrutRoot
+		{
+			actionGroup = None
+		}
+		AutostrutHeaviest
+		{
+			actionGroup = None
+		}
+		AutostrutGrandparent
+		{
+			actionGroup = None
+		}
+		ResourcesEnableFlow
+		{
+			actionGroup = None
+			active = False
+		}
+		ResourcesDisableFlow
+		{
+			actionGroup = None
+			active = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleControlSurface
+		isEnabled = True
+		mirrorDeploy = False
+		usesMirrorDeploy = True
+		ignorePitch = False
+		ignoreYaw = False
+		ignoreRoll = False
+		deploy = False
+		deployInvert = False
+		partDeployInvert = False
+		deployAngle = 15
+		authorityLimiter = 100
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ActionToggle
+			{
+				actionGroup = None
+			}
+			ActionExtend
+			{
+				actionGroup = None
+			}
+			ActionRetract
+			{
+				actionGroup = None
+			}
+			PitchActive
+			{
+				actionGroup = None
+			}
+			PitchInactive
+			{
+				actionGroup = None
+			}
+			TogglePitch
+			{
+				actionGroup = None
+			}
+			YawActive
+			{
+				actionGroup = None
+			}
+			YawInactive
+			{
+				actionGroup = None
+			}
+			ToggleYaw
+			{
+				actionGroup = None
+			}
+			RollActive
+			{
+				actionGroup = None
+			}
+			RollInactive
+			{
+				actionGroup = None
+			}
+			ToggleRoll
+			{
+				actionGroup = None
+			}
+			ActivateAllControls
+			{
+				actionGroup = None
+			}
+			DeactivateAllControls
+			{
+				actionGroup = None
+			}
+		}
+		AXISGROUPS
+		{
+			deployAngle
+			{
+				axisGroup = None
+				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
+				axisInverted = None
+				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+			}
+			authorityLimiter
+			{
+				axisGroup = None
+				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
+				axisInverted = None
+				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		packedVolume = 650
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FundsKeeper
+		isEnabled = True
+		OriginalCost = 640
+		OriginalResourcesCost = 0
+		OriginalModulesCost = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = StealBackMyFunds
+		isEnabled = True
+		active = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		type = free_square
+		active = True
+		available = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (0, 0, 0)
+		DryCost = 640
+		OriginalCrewCapacity = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = AttachedOnEditor
+		isEnabled = True
+		active = True
+		originalPos = (-1.20534897, 9.75352764, 1.06318831)
+		originalRotation = (2.1914266E-09, 0.382683456, 5.29057242E-09, 0.923879623)
+		moduleVersion = 6
+		stagingEnabled = True
+		userReallyDeactivatedIt = False
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = R8winglet_4293405430
+	partName = Part
+	persistentId = 1254713212
+	pos = 1.73230469,9.75352764,0.276046276
+	attPos = 0,0,0
+	attPos0 = 1.69605517,-1.13970566,0.454456389
+	rot = 5.67748248E-09,0.991444886,7.47454765E-10,0.130526155
+	attRot = 0,0,0,1
+	attRot0 = 5.67748248E-09,0.991444886,7.47454765E-10,0.130526155
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = R8winglet_4293405376
+	sym = R8winglet_4293406104
+	srfN = srfAttach,Rockomax32.BW_4293407500,collider,0.540501237|0.174731255|0,0.125|0|0,0.540501237|0.174731255|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		AutostrutOff
+		{
+			actionGroup = None
+		}
+		AutostrutRoot
+		{
+			actionGroup = None
+		}
+		AutostrutHeaviest
+		{
+			actionGroup = None
+		}
+		AutostrutGrandparent
+		{
+			actionGroup = None
+		}
+		ResourcesEnableFlow
+		{
+			actionGroup = None
+			active = False
+		}
+		ResourcesDisableFlow
+		{
+			actionGroup = None
+			active = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleControlSurface
+		isEnabled = True
+		mirrorDeploy = False
+		usesMirrorDeploy = True
+		ignorePitch = False
+		ignoreYaw = False
+		ignoreRoll = False
+		deploy = False
+		deployInvert = False
+		partDeployInvert = False
+		deployAngle = 15
+		authorityLimiter = 100
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ActionToggle
+			{
+				actionGroup = None
+			}
+			ActionExtend
+			{
+				actionGroup = None
+			}
+			ActionRetract
+			{
+				actionGroup = None
+			}
+			PitchActive
+			{
+				actionGroup = None
+			}
+			PitchInactive
+			{
+				actionGroup = None
+			}
+			TogglePitch
+			{
+				actionGroup = None
+			}
+			YawActive
+			{
+				actionGroup = None
+			}
+			YawInactive
+			{
+				actionGroup = None
+			}
+			ToggleYaw
+			{
+				actionGroup = None
+			}
+			RollActive
+			{
+				actionGroup = None
+			}
+			RollInactive
+			{
+				actionGroup = None
+			}
+			ToggleRoll
+			{
+				actionGroup = None
+			}
+			ActivateAllControls
+			{
+				actionGroup = None
+			}
+			DeactivateAllControls
+			{
+				actionGroup = None
+			}
+		}
+		AXISGROUPS
+		{
+			deployAngle
+			{
+				axisGroup = None
+				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
+				axisInverted = None
+			}
+			authorityLimiter
+			{
+				axisGroup = None
+				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
+				axisInverted = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		packedVolume = 650
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FundsKeeper
+		isEnabled = True
+		OriginalCost = 640
+		OriginalResourcesCost = 0
+		OriginalModulesCost = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = StealBackMyFunds
+		isEnabled = True
+		active = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		type = free_square
+		active = True
+		available = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (0, 0, 0)
+		DryCost = 640
+		OriginalCrewCapacity = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = AttachedOnEditor
+		isEnabled = True
+		active = True
+		originalPos = (1.73230469, 9.75352764, 0.276046276)
+		originalRotation = (5.67748248E-09, 0.991444886, 7.47454765E-10, 0.130526155)
+		moduleVersion = 6
+		stagingEnabled = True
+		userReallyDeactivatedIt = False
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = R8winglet_4293405376
+	partName = Part
+	persistentId = 2833927300
+	pos = -0.418207139,9.75352764,-1.87446535
+	attPos = 0,0,0
+	attPos0 = -0.454456717,-1.13970566,-1.69605517
+	rot = 3.48605655E-09,0.60876143,-4.54311744E-09,-0.793353438
+	attRot = 0,0,0,1
+	attRot0 = 3.48605655E-09,0.60876143,-4.54311744E-09,-0.793353438
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = R8winglet_4293406104
+	sym = R8winglet_4293405430
+	srfN = srfAttach,Rockomax32.BW_4293407500,collider,0.540501237|0.174731255|0,0.125|0|0,0.540501237|0.174731255|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		AutostrutOff
+		{
+			actionGroup = None
+		}
+		AutostrutRoot
+		{
+			actionGroup = None
+		}
+		AutostrutHeaviest
+		{
+			actionGroup = None
+		}
+		AutostrutGrandparent
+		{
+			actionGroup = None
+		}
+		ResourcesEnableFlow
+		{
+			actionGroup = None
+			active = False
+		}
+		ResourcesDisableFlow
+		{
+			actionGroup = None
+			active = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleControlSurface
+		isEnabled = True
+		mirrorDeploy = False
+		usesMirrorDeploy = True
+		ignorePitch = False
+		ignoreYaw = False
+		ignoreRoll = False
+		deploy = False
+		deployInvert = False
+		partDeployInvert = False
+		deployAngle = 15
+		authorityLimiter = 100
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ActionToggle
+			{
+				actionGroup = None
+			}
+			ActionExtend
+			{
+				actionGroup = None
+			}
+			ActionRetract
+			{
+				actionGroup = None
+			}
+			PitchActive
+			{
+				actionGroup = None
+			}
+			PitchInactive
+			{
+				actionGroup = None
+			}
+			TogglePitch
+			{
+				actionGroup = None
+			}
+			YawActive
+			{
+				actionGroup = None
+			}
+			YawInactive
+			{
+				actionGroup = None
+			}
+			ToggleYaw
+			{
+				actionGroup = None
+			}
+			RollActive
+			{
+				actionGroup = None
+			}
+			RollInactive
+			{
+				actionGroup = None
+			}
+			ToggleRoll
+			{
+				actionGroup = None
+			}
+			ActivateAllControls
+			{
+				actionGroup = None
+			}
+			DeactivateAllControls
+			{
+				actionGroup = None
+			}
+		}
+		AXISGROUPS
+		{
+			deployAngle
+			{
+				axisGroup = None
+				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
+				axisInverted = None
+			}
+			authorityLimiter
+			{
+				axisGroup = None
+				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
+				axisInverted = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		packedVolume = 650
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FundsKeeper
+		isEnabled = True
+		OriginalCost = 640
+		OriginalResourcesCost = 0
+		OriginalModulesCost = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = StealBackMyFunds
+		isEnabled = True
+		active = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		type = free_square
+		active = True
+		available = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (0, 0, 0)
+		DryCost = 640
+		OriginalCrewCapacity = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = AttachedOnEditor
+		isEnabled = True
+		active = True
+		originalPos = (-0.418207139, 9.75352764, -1.87446535)
+		originalRotation = (3.48605655E-09, 0.60876143, -4.54311744E-09, -0.793353438)
+		moduleVersion = 6
+		stagingEnabled = True
+		userReallyDeactivatedIt = False
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = GooExperiment_4293490268
+	partName = Part
+	persistentId = 3651512463
+	pos = -1.08116114,14.2471619,-0.178410023
+	attPos = 0,0,0
+	attPos0 = -1.11741066,0.0389289856,1.04308128E-07
+	rot = -2.53205101E-14,0.70710665,2.53204999E-14,0.707106888
+	attRot = 0,0,0,1
+	attRot0 = -2.53205101E-14,0.70710665,2.53204999E-14,0.707106888
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 0
+	resPri = 0
+	dstg = 4
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	srfN = srfAttach,Rockomax8BW_4293499516,collider,0|0|-0.0900000036,0|0|-0.600000024,0|0|-0.0900000036
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		AutostrutOff
+		{
+			actionGroup = None
+		}
+		AutostrutRoot
+		{
+			actionGroup = None
+		}
+		AutostrutHeaviest
+		{
+			actionGroup = None
+		}
+		AutostrutGrandparent
+		{
+			actionGroup = None
+		}
+		ResourcesEnableFlow
+		{
+			actionGroup = None
+			active = False
+		}
+		ResourcesDisableFlow
+		{
+			actionGroup = None
+			active = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleAnimateGeneric
+		isEnabled = True
+		aniState = LOCKED
+		animSwitch = True
+		animTime = 0
+		animSpeed = 1
+		deployPercent = 100
+		animationIsDisabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+		}
+		AXISGROUPS
+		{
+			deployPercent
+			{
+				axisGroup = None
+				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
+				axisInverted = None
+				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleScienceExperiment
+		isEnabled = True
+		Deployed = False
+		Inoperable = False
+		cooldownToGo = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			DeployAction
+			{
+				actionGroup = None
+			}
+			ResetAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		packedVolume = 75
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FundsKeeper
+		isEnabled = True
+		OriginalCost = 800
+		OriginalResourcesCost = 0
+		OriginalModulesCost = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = StealBackMyFunds
+		isEnabled = True
+		active = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		type = free
+		active = True
+		available = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (0, 0, 0)
+		DryCost = 800
+		OriginalCrewCapacity = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = AttachedOnEditor
+		isEnabled = True
+		active = True
+		originalPos = (-1.08116114, 14.2471619, -0.178410023)
+		originalRotation = (-2.53205101E-14, 0.70710665, 2.53204999E-14, 0.707106888)
+		moduleVersion = 6
+		stagingEnabled = True
+		userReallyDeactivatedIt = False
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = ScienceBox_4293485950
+	partName = Part
+	persistentId = 1048240520
+	pos = 1.23624945,14.2082329,-0.178410128
+	attPos = -0.257838726,-0.0807008743,-1.61584467E-07
+	attPos0 = 1.45783865,0.0807008743,1.61584467E-07
+	rot = -2.53205016E-14,0.707106888,-2.53205101E-14,-0.70710665
+	attRot = 0,0,0,1
+	attRot0 = -2.53205016E-14,0.707106888,-2.53205101E-14,-0.70710665
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 0
+	resPri = 0
+	dstg = 4
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	srfN = srfAttach,Rockomax8BW_4293499516,collider,0|0|0.25,0|0|-1,0|0|0.25
+	attN = top,Null_0_0|0.400000006|0_0|1|0_0|0.400000006|0_0|1|0
+	attN = bottom,Null_0_0|-0.400000006|0_0|-1|0_0|-0.400000006|0_0|-1|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		AutostrutOff
+		{
+			actionGroup = None
+		}
+		AutostrutRoot
+		{
+			actionGroup = None
+		}
+		AutostrutHeaviest
+		{
+			actionGroup = None
+		}
+		AutostrutGrandparent
+		{
+			actionGroup = None
+		}
+		ResourcesEnableFlow
+		{
+			actionGroup = None
+			active = False
+		}
+		ResourcesDisableFlow
+		{
+			actionGroup = None
+			active = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleConductionMultiplier
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleScienceContainer
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			CollectAllAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		packedVolume = 280
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FundsKeeper
+		isEnabled = True
+		OriginalCost = 1000
+		OriginalResourcesCost = 0
+		OriginalModulesCost = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = StealBackMyFunds
+		isEnabled = True
+		active = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleKISItemEvaTweaker
+		isEnabled = True
+		staticAttached = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		type = stack
+		active = True
+		available = True
+		currentScale = 0.625
+		defaultScale = 0.625
+		defaultTransformScale = (0, 0, 0)
+		DryCost = 1000
+		OriginalCrewCapacity = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = AttachedOnEditor
+		isEnabled = True
+		active = True
+		originalPos = (1.23624945, 14.2082329, -0.178410128)
+		originalRotation = (-2.53205016E-14, 0.707106888, -2.53205101E-14, -0.70710665)
+		moduleVersion = 6
+		stagingEnabled = True
+		userReallyDeactivatedIt = False
+		originalAttachNodePos = (0.0, 0.4, 0.0)
+		originalAttachNodePos = (0.0, -0.4, 0.0)
+		originalAttachNodeSize = 0
+		originalAttachNodeSize = 0
+		originalAttachNodeOrientation = (0.0, 1.0, 0.0)
+		originalAttachNodeOrientation = (0.0, -1.0, 0.0)
+		originalAttachNodeOffset = (0.0, 0.0, 0.0)
+		originalAttachNodeOffset = (0.0, 0.0, 0.0)
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = sensorBarometer_4293484828
+	partName = Part
+	persistentId = 2045478697
+	pos = 0.0362495668,14.3410349,1.02963841
+	attPos = 0,0,0
+	attPos0 = 0,0.13280201,1.20804858
+	rot = 1.19362011E-14,1,-6.4787649E-08,1.84235745E-07
+	attRot = 0,0,0,1
+	attRot0 = 1.19362011E-14,1,-6.4787649E-08,1.84235745E-07
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 0
+	resPri = 0
+	dstg = 4
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	srfN = srfAttach,Rockomax8BW_4293499516,collider,0|0|0,0|0|-1,0|0|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		AutostrutOff
+		{
+			actionGroup = None
+			active = False
+		}
+		AutostrutRoot
+		{
+			actionGroup = None
+			active = False
+		}
+		AutostrutHeaviest
+		{
+			actionGroup = None
+			active = False
+		}
+		AutostrutGrandparent
+		{
+			actionGroup = None
+			active = False
+		}
+		ResourcesEnableFlow
+		{
+			actionGroup = None
+			active = False
+		}
+		ResourcesDisableFlow
+		{
+			actionGroup = None
+			active = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEnviroSensor
+		isEnabled = True
+		sensorActive = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleScienceExperiment
+		isEnabled = True
+		Deployed = False
+		Inoperable = False
+		cooldownToGo = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			DeployAction
+			{
+				actionGroup = None
+			}
+			ResetAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		packedVolume = 4
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FundsKeeper
+		isEnabled = True
+		OriginalCost = 880
+		OriginalResourcesCost = 0
+		OriginalModulesCost = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = StealBackMyFunds
+		isEnabled = True
+		active = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = AttachedOnEditor
+		isEnabled = True
+		active = True
+		originalPos = (0.0362495668, 14.3410349, 1.02963841)
+		originalRotation = (1.19362011E-14, 1, -6.4787649E-08, 1.84235745E-07)
+		moduleVersion = 6
+		stagingEnabled = True
+		userReallyDeactivatedIt = False
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = sensorThermometer_4293484400
+	partName = Part
+	persistentId = 1118615670
+	pos = 0.0362495668,14.0506401,1.02900338
+	attPos = 0,0,0
+	attPos0 = 0,-0.157592773,1.20741355
+	rot = 1.19362011E-14,1,-6.4787649E-08,1.84235745E-07
+	attRot = 0,0,0,1
+	attRot0 = 1.19362011E-14,1,-6.4787649E-08,1.84235745E-07
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 0
+	resPri = 0
+	dstg = 4
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	srfN = srfAttach,Rockomax8BW_4293499516,collider,0|0|0,0|0|-1,0|0|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		AutostrutOff
+		{
+			actionGroup = None
+			active = False
+		}
+		AutostrutRoot
+		{
+			actionGroup = None
+			active = False
+		}
+		AutostrutHeaviest
+		{
+			actionGroup = None
+			active = False
+		}
+		AutostrutGrandparent
+		{
+			actionGroup = None
+			active = False
+		}
+		ResourcesEnableFlow
+		{
+			actionGroup = None
+			active = False
+		}
+		ResourcesDisableFlow
+		{
+			actionGroup = None
+			active = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEnviroSensor
+		isEnabled = True
+		sensorActive = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleScienceExperiment
+		isEnabled = True
+		Deployed = False
+		Inoperable = False
+		cooldownToGo = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			DeployAction
+			{
+				actionGroup = None
+			}
+			ResetAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		packedVolume = 1
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FundsKeeper
+		isEnabled = True
+		OriginalCost = 900
+		OriginalResourcesCost = 0
+		OriginalModulesCost = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = StealBackMyFunds
+		isEnabled = True
+		active = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = AttachedOnEditor
+		isEnabled = True
+		active = True
+		originalPos = (0.0362495668, 14.0506401, 1.02900338)
+		originalRotation = (1.19362011E-14, 1, -6.4787649E-08, 1.84235745E-07)
+		moduleVersion = 6
+		stagingEnabled = True
+		userReallyDeactivatedIt = False
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = strutConnector_4293412876
+	partName = CompoundPart
+	persistentId = 3773761551
+	pos = -0.865686715,13.7482328,-0.178410068
+	attPos = 0,0,0
+	attPos0 = -0.901936293,-0.460000038,5.96046448E-08
+	rot = 0.49999997,0.50000006,0.49999997,0.50000006
+	attRot = 0,0,0,1
+	attRot0 = 0.49999997,0.50000006,0.49999997,0.50000006
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 0
+	resPri = 0
+	dstg = 4
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = strutConnector_4293411174
+	sym = strutConnector_4293411056
+	sym = strutConnector_4293410938
+	srfN = srfAttach,Rockomax8BW_4293499516,collider,0|0|0,0.125|0|0,0|0|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		DisconnectAction
+		{
+			actionGroup = None
+		}
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		AutostrutOff
+		{
+			actionGroup = None
+			active = False
+		}
+		AutostrutRoot
+		{
+			actionGroup = None
+			active = False
+		}
+		AutostrutHeaviest
+		{
+			actionGroup = None
+			active = False
+		}
+		AutostrutGrandparent
+		{
+			actionGroup = None
+			active = False
+		}
+		ResourcesEnableFlow
+		{
+			actionGroup = None
+			active = False
+		}
+		ResourcesDisableFlow
+		{
+			actionGroup = None
+			active = False
+		}
+	}
+	PARTDATA
+	{
+		tgt = 4293413736
+		tpersID = 2750208144
+		pos = -0.795000076,-0.00932776928,-0.218289733
+		rot = 0,0,0,1
+		dir = -0.964247525,-0.0113126365,-0.264761657
+		col = COL0
+	}
+	MODULE
+	{
+		name = CModuleLinkedMesh
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = CModuleStrut
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		packedVolume = 10
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FundsKeeper
+		isEnabled = True
+		OriginalCost = 42
+		OriginalResourcesCost = 0
+		OriginalModulesCost = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = StealBackMyFunds
+		isEnabled = True
+		active = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = AttachedOnEditor
+		isEnabled = True
+		active = True
+		originalPos = (-0.865686715, 13.7482328, -0.178410068)
+		originalRotation = (0.49999997, 0.50000006, 0.49999997, 0.50000006)
+		moduleVersion = 6
+		stagingEnabled = True
+		userReallyDeactivatedIt = False
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = strutConnector_4293411174
+	partName = CompoundPart
+	persistentId = 2872555499
+	pos = 0.0362495743,13.7482328,0.72352612
+	attPos = 0,0,0
+	attPos0 = 7.4505806E-09,-0.460000038,0.901936233
+	rot = 0.707106709,0.707106829,0,0
+	attRot = 0,0,0,1
+	attRot0 = 0.707106709,0.707106829,0,0
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 0
+	resPri = 0
+	dstg = 4
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = strutConnector_4293411056
+	sym = strutConnector_4293410938
+	sym = strutConnector_4293412876
+	srfN = srfAttach,Rockomax8BW_4293499516,collider,0|0|0,0.125|0|0,0|0|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		DisconnectAction
+		{
+			actionGroup = None
+		}
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		AutostrutOff
+		{
+			actionGroup = None
+			active = False
+		}
+		AutostrutRoot
+		{
+			actionGroup = None
+			active = False
+		}
+		AutostrutHeaviest
+		{
+			actionGroup = None
+			active = False
+		}
+		AutostrutGrandparent
+		{
+			actionGroup = None
+			active = False
+		}
+		ResourcesEnableFlow
+		{
+			actionGroup = None
+			active = False
+		}
+		ResourcesDisableFlow
+		{
+			actionGroup = None
+			active = False
+		}
+	}
+	PARTDATA
+	{
+		tgt = 4293413736
+		tpersID = 2750208144
+		pos = -0.795000017,-0.00932705402,-0.218289077
+		rot = 0,0,0,1
+		dir = -0.964247525,-0.0113126365,-0.264761657
+		col = COL3
+	}
+	MODULE
+	{
+		name = CModuleLinkedMesh
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = CModuleStrut
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		packedVolume = 10
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FundsKeeper
+		isEnabled = True
+		OriginalCost = 42
+		OriginalResourcesCost = 0
+		OriginalModulesCost = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = StealBackMyFunds
+		isEnabled = True
+		active = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = AttachedOnEditor
+		isEnabled = True
+		active = True
+		originalPos = (0.0362495743, 13.7482328, 0.72352612)
+		originalRotation = (0.707106709, 0.707106829, 0, 0)
+		moduleVersion = 6
+		stagingEnabled = True
+		userReallyDeactivatedIt = False
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = strutConnector_4293411056
+	partName = CompoundPart
+	persistentId = 2261361416
+	pos = 0.938185871,13.7482328,-0.178410262
+	attPos = 0,0,0
+	attPos0 = 0.901936293,-0.460000038,-1.34110451E-07
+	rot = 0.49999994,0.50000006,-0.5,-0.50000006
+	attRot = 0,0,0,1
+	attRot0 = 0.49999994,0.50000006,-0.5,-0.50000006
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 0
+	resPri = 0
+	dstg = 4
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = strutConnector_4293410938
+	sym = strutConnector_4293412876
+	sym = strutConnector_4293411174
+	srfN = srfAttach,Rockomax8BW_4293499516,collider,0|0|0,0.125|0|0,0|0|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		DisconnectAction
+		{
+			actionGroup = None
+		}
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		AutostrutOff
+		{
+			actionGroup = None
+			active = False
+		}
+		AutostrutRoot
+		{
+			actionGroup = None
+			active = False
+		}
+		AutostrutHeaviest
+		{
+			actionGroup = None
+			active = False
+		}
+		AutostrutGrandparent
+		{
+			actionGroup = None
+			active = False
+		}
+		ResourcesEnableFlow
+		{
+			actionGroup = None
+			active = False
+		}
+		ResourcesDisableFlow
+		{
+			actionGroup = None
+			active = False
+		}
+	}
+	PARTDATA
+	{
+		tgt = 4293413736
+		tpersID = 2750208144
+		pos = -0.795000076,-0.00932621956,-0.218289807
+		rot = 0,0,0,1
+		dir = -0.964247525,-0.0113126365,-0.264761657
+		col = COL2
+	}
+	MODULE
+	{
+		name = CModuleLinkedMesh
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = CModuleStrut
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		packedVolume = 10
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FundsKeeper
+		isEnabled = True
+		OriginalCost = 42
+		OriginalResourcesCost = 0
+		OriginalModulesCost = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = StealBackMyFunds
+		isEnabled = True
+		active = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = AttachedOnEditor
+		isEnabled = True
+		active = True
+		originalPos = (0.938185871, 13.7482328, -0.178410262)
+		originalRotation = (0.49999994, 0.50000006, -0.5, -0.50000006)
+		moduleVersion = 6
+		stagingEnabled = True
+		userReallyDeactivatedIt = False
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = strutConnector_4293410938
+	partName = CompoundPart
+	persistentId = 1222446992
+	pos = 0.0362494551,13.7482328,-1.08034635
+	attPos = 0,0,0
+	attPos0 = -1.11758709E-07,-0.460000038,-0.901936233
+	rot = 0,0,-0.707106709,-0.707106829
+	attRot = 0,0,0,1
+	attRot0 = 0,0,-0.707106709,-0.707106829
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 0
+	resPri = 0
+	dstg = 4
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = strutConnector_4293412876
+	sym = strutConnector_4293411174
+	sym = strutConnector_4293411056
+	srfN = srfAttach,Rockomax8BW_4293499516,collider,0|0|0,0.125|0|0,0|0|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		DisconnectAction
+		{
+			actionGroup = None
+		}
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		AutostrutOff
+		{
+			actionGroup = None
+			active = False
+		}
+		AutostrutRoot
+		{
+			actionGroup = None
+			active = False
+		}
+		AutostrutHeaviest
+		{
+			actionGroup = None
+			active = False
+		}
+		AutostrutGrandparent
+		{
+			actionGroup = None
+			active = False
+		}
+		ResourcesEnableFlow
+		{
+			actionGroup = None
+			active = False
+		}
+		ResourcesDisableFlow
+		{
+			actionGroup = None
+			active = False
+		}
+	}
+	PARTDATA
+	{
+		tgt = 4293413736
+		tpersID = 2750208144
+		pos = -0.795000017,-0.00932699442,-0.218290627
+		rot = 0,0,0,1
+		dir = -0.964247525,-0.0113126365,-0.264761657
+		col = COL1
+	}
+	MODULE
+	{
+		name = CModuleLinkedMesh
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = CModuleStrut
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		packedVolume = 10
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FundsKeeper
+		isEnabled = True
+		OriginalCost = 42
+		OriginalResourcesCost = 0
+		OriginalModulesCost = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = StealBackMyFunds
+		isEnabled = True
+		active = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = AttachedOnEditor
+		isEnabled = True
+		active = True
+		originalPos = (0.0362494551, 13.7482328, -1.08034635)
+		originalRotation = (0, 0, -0.707106709, -0.707106829)
+		moduleVersion = 6
+		stagingEnabled = True
+		userReallyDeactivatedIt = False
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = solarPanels2_4293405148
+	partName = Part
+	persistentId = 18202294
+	pos = -0.832986772,14.2588444,0.690826058
+	attPos = 0,0,0
+	attPos0 = -0.86923635,0.050611496,0.869236171
+	rot = -1.85948323E-08,0.382683396,-4.48919053E-08,0.923879564
+	attRot = 0,0,0,1
+	attRot0 = -1.85948323E-08,0.382683396,-4.48919053E-08,0.923879564
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 0
+	resPri = 0
+	dstg = 4
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = solarPanels2_4293404670
+	srfN = srfAttach,Rockomax8BW_4293499516,collider,0|0|0,1|0|0,0|0|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		AutostrutOff
+		{
+			actionGroup = None
+		}
+		AutostrutRoot
+		{
+			actionGroup = None
+		}
+		AutostrutHeaviest
+		{
+			actionGroup = None
+		}
+		AutostrutGrandparent
+		{
+			actionGroup = None
+		}
+		ResourcesEnableFlow
+		{
+			actionGroup = None
+		}
+		ResourcesDisableFlow
+		{
+			actionGroup = None
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleDeployableSolarPanel
+		isEnabled = True
+		efficiencyMult = 1
+		launchUT = -1
+		currentRotation = (-0.707106829, 0, 0, 0.707106829)
+		storedAnimationTime = 0
+		storedAnimationSpeed = 0
+		deployState = RETRACTED
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ExtendPanelsAction
+			{
+				actionGroup = None
+			}
+			ExtendAction
+			{
+				actionGroup = None
+			}
+			RetractAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		packedVolume = 70
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FundsKeeper
+		isEnabled = True
+		OriginalCost = 440.00
+		OriginalResourcesCost = 0.00
+		OriginalModulesCost = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = StealBackMyFunds
+		isEnabled = True
+		active = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		type = free_square
+		active = True
+		available = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (0, 0, 0)
+		DryCost = 439.999969
+		OriginalCrewCapacity = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FNSolarPanelWasteHeatModule
+		isEnabled = True
+		epx = 0
+		epy = 0
+		whx = 0
+		why = 0
+		tpx = 0
+		tpy = 0
+		cpx = 0
+		cpy = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = KopernicusSolarPanel
+		isEnabled = True
+		nominalRate = 1.6399999856948853
+		state = Retracted
+		trackedSunIndex = 0
+		manualTracking = False
+		launchUT = -1
+		stagingEnabled = True
+		timeEfficCurve
+		{
+			key = 0 1 0 0
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = AttachedOnEditor
+		isEnabled = True
+		active = True
+		originalPos = (-0.832986772, 14.2588444, 0.690826058)
+		originalRotation = (-1.85948323E-08, 0.382683396, -4.48919053E-08, 0.923879564)
+		moduleVersion = 6
+		stagingEnabled = True
+		userReallyDeactivatedIt = False
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = Megajoules
+		amount = 0
+		maxAmount = 0.001
+		flowState = True
+		isTweakable = False
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = solarPanels2_4293404670
+	partName = Part
+	persistentId = 3525900586
+	pos = 0.905485868,14.2588444,-1.0476464
+	attPos = 0,0,0
+	attPos0 = 0.86923629,0.050611496,-0.86923629
+	rot = -4.48919053E-08,0.923879564,1.85948341E-08,-0.382683426
+	attRot = 0,0,0,1
+	attRot0 = -4.48919053E-08,0.923879564,1.85948341E-08,-0.382683426
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 0
+	resPri = 0
+	dstg = 4
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = solarPanels2_4293405148
+	srfN = srfAttach,Rockomax8BW_4293499516,collider,0|0|0,1|0|0,0|0|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		AutostrutOff
+		{
+			actionGroup = None
+		}
+		AutostrutRoot
+		{
+			actionGroup = None
+		}
+		AutostrutHeaviest
+		{
+			actionGroup = None
+		}
+		AutostrutGrandparent
+		{
+			actionGroup = None
+		}
+		ResourcesEnableFlow
+		{
+			actionGroup = None
+		}
+		ResourcesDisableFlow
+		{
+			actionGroup = None
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleDeployableSolarPanel
+		isEnabled = True
+		efficiencyMult = 1
+		launchUT = -1
+		currentRotation = (-0.707106829, 0, 0, 0.707106829)
+		storedAnimationTime = 0
+		storedAnimationSpeed = 0
+		deployState = RETRACTED
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ExtendPanelsAction
+			{
+				actionGroup = None
+			}
+			ExtendAction
+			{
+				actionGroup = None
+			}
+			RetractAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		packedVolume = 70
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FundsKeeper
+		isEnabled = True
+		OriginalCost = 440.00
+		OriginalResourcesCost = 0.00
+		OriginalModulesCost = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = StealBackMyFunds
+		isEnabled = True
+		active = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		type = free_square
+		active = True
+		available = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (0, 0, 0)
+		DryCost = 439.999969
+		OriginalCrewCapacity = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FNSolarPanelWasteHeatModule
+		isEnabled = True
+		epx = 0
+		epy = 0
+		whx = 0
+		why = 0
+		tpx = 0
+		tpy = 0
+		cpx = 0
+		cpy = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = KopernicusSolarPanel
+		isEnabled = True
+		nominalRate = 1.6399999856948853
+		state = Retracted
+		trackedSunIndex = 0
+		manualTracking = False
+		launchUT = -1
+		stagingEnabled = True
+		timeEfficCurve
+		{
+			key = 0 1 0 0
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = AttachedOnEditor
+		isEnabled = True
+		active = True
+		originalPos = (0.905485868, 14.2588444, -1.0476464)
+		originalRotation = (-4.48919053E-08, 0.923879564, 1.85948341E-08, -0.382683426)
+		moduleVersion = 6
+		stagingEnabled = True
+		userReallyDeactivatedIt = False
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = Megajoules
+		amount = 0
+		maxAmount = 0.001
+		flowState = True
+		isTweakable = False
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = HighGainAntenna5.v2_4293480734
+	partName = Part
+	persistentId = 703445207
+	pos = -0.593906999,14.8503857,-1.26987314
+	attPos = 0,0,0
+	attPos0 = -0.630156577,-0.0128469467,-1.09146297
+	rot = 0.183012784,-0.683012664,0.683012784,0.183012769
+	attRot = 0,0,0,-0.999999881
+	attRot0 = 0.183012784,-0.683012664,0.683012784,0.183012769
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 0
+	resPri = 0
+	dstg = 4
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	srfN = srfAttach,fairingSize2_4293524678,Collider,0|0|0,0|-1|0,0|0|0
+	attN = bottom,Null_0_0|0|0_0|-1|0_0|0|0_0|-1|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		AutostrutOff
+		{
+			actionGroup = None
+		}
+		AutostrutRoot
+		{
+			actionGroup = None
+		}
+		AutostrutHeaviest
+		{
+			actionGroup = None
+		}
+		AutostrutGrandparent
+		{
+			actionGroup = None
+		}
+		ResourcesEnableFlow
+		{
+			actionGroup = None
+			active = False
+		}
+		ResourcesDisableFlow
+		{
+			actionGroup = None
+			active = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleDeployableAntenna
+		isEnabled = True
+		currentRotation = (0, 0, 0, 1)
+		storedAnimationTime = 0
+		storedAnimationSpeed = 0
+		deployState = RETRACTED
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ExtendPanelsAction
+			{
+				actionGroup = None
+			}
+			ExtendAction
+			{
+				actionGroup = None
+			}
+			RetractAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDataTransmitter
+		isEnabled = True
+		xmitIncomplete = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			StartTransmissionAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		packedVolume = 60
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FundsKeeper
+		isEnabled = True
+		OriginalCost = 600
+		OriginalResourcesCost = 0
+		OriginalModulesCost = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = StealBackMyFunds
+		isEnabled = True
+		active = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		type = free_square
+		active = True
+		available = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (0, 0, 0)
+		DryCost = 600
+		OriginalCrewCapacity = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = AttachedOnEditor
+		isEnabled = True
+		active = True
+		originalPos = (-0.593906999, 14.8503857, -1.26987314)
+		originalRotation = (0.183012784, -0.683012664, 0.683012784, 0.183012769)
+		moduleVersion = 6
+		stagingEnabled = True
+		userReallyDeactivatedIt = False
+		originalAttachNodePos = (0.0, 0.0, 0.0)
+		originalAttachNodeSize = 0
+		originalAttachNodeOrientation = (0.0, -1.0, 0.0)
+		originalAttachNodeOffset = (0.0, 0.0, 0.0)
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTripLogger
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		Log
+		{
+			flight = 0
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
