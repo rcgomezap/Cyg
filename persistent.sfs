@@ -18,7 +18,7 @@ GAME
 	envInfo =  - Environment Info - Win32NT 7FFFFFFFFFFFFFFF  Args: KSP_x64.exe  - 
 	versionFull = 1.12.5.3190 (WindowsPlayer x64)
 	versionCreated = 1.12.5.3190 (WindowsPlayer x64)
-	persistentTimestamp = 2026-02-07T17:55:02.4743090Z
+	persistentTimestamp = 2026-02-07T20:34:02.8639465Z
 	CometNames
 	{
 	}
@@ -350,7 +350,7 @@ GAME
 	{
 		name = Funding
 		scene = 7, 8, 5, 6
-		funds = 1087778.4783624641
+		funds = 918308.47836246411
 	}
 	SCENARIO
 	{
@@ -705,7 +705,7 @@ GAME
 	{
 		name = ResearchAndDevelopment
 		scene = 7, 8, 5, 6
-		sci = 117.399811
+		sci = 32.1060791
 		Tech
 		{
 			id = start
@@ -1031,6 +1031,59 @@ GAME
 			part = LaunchEscapeSystem
 			part = parachuteLarge
 			part = SmallGearBay
+		}
+		Tech
+		{
+			id = precisionEngineering
+			state = Available
+			cost = 160
+			part = KIS.bomb1
+			part = scansat-recon-ikonos-1
+			part = probeCoreHex
+			part = probeCoreHex.v2
+			part = Decoupler.0
+			part = structuralMiniNode
+			part = strutCube
+			part = strutOcto
+			part = mediumDishAntenna
+			part = RelayAntenna5
+		}
+		Tech
+		{
+			id = advFuelSystems
+			state = Available
+			cost = 160
+			part = KAS.RTS1
+			part = adapterSize2-Size1
+			part = adapterSize2-Size1Slant
+			part = RCSTank1-2
+			part = rcsTankMini
+			part = RCSFuelTank
+			part = Rockomax64.BW
+			part = KspieNode
+		}
+		Tech
+		{
+			id = propulsionSystems
+			state = Available
+			cost = 90
+			part = smallRadialEngine.v2
+			part = radialEngineMini.v2
+			part = omsEngine
+			part = Mite
+		}
+		Tech
+		{
+			id = precisionPropulsion
+			state = Available
+			cost = 160
+			part = smallRadialEngine
+			part = radialLiquidEngine1-2
+			part = sepMotor1
+			part = Shrimp
+			part = externalTankCapsule
+			part = externalTankRound
+			part = externalTankToroid
 		}
 		Science
 		{
@@ -2341,7 +2394,7 @@ GAME
 	{
 		name = ContractSystem
 		scene = 7, 8, 5, 6
-		update = 2991406.7835769933
+		update = 2997324.766247666
 		version = 1.12.5
 		WEIGHTS
 		{
@@ -2416,6 +2469,31 @@ GAME
 		}
 		CONTRACTS
 		{
+			CONTRACT
+			{
+				guid = e54185b2-a9af-47c8-8596-61698927b255
+				type = ExplorationContract
+				prestige = 0
+				seed = 1453868592
+				state = Offered
+				viewed = Seen
+				agent = Kerbin World-Firsts Record-Keeping Society
+				agentName = Kerbin World-Firsts Record-Keeping Society
+				deadlineType = None
+				expiryType = Floating
+				ignoresWeight = True
+				values = 86400,0,37800,70200,37800,4,9,0,3039745.55959735,0,0,0
+				targetBody = 3
+				bodyRatio = 0.421052635
+				PARAM
+				{
+					name = ProgressTrackingParameter
+					state = Incomplete
+					values = 108000,0,4,9,0
+					targetBody = 3
+					targetType = LANDING
+				}
+			}
 			CONTRACT
 			{
 				guid = 96d3bca2-005c-4007-b51a-784d7f2a4a25
@@ -2520,6 +2598,43 @@ GAME
 			}
 			CONTRACT
 			{
+				guid = d2eb9629-14bd-4d75-8df9-00b0d2c8b82a
+				type = RecoverAsset
+				prestige = 0
+				seed = 1453868588
+				state = Offered
+				viewed = Seen
+				agent = Kerlington Model Rockets and Paper Products Inc
+				agentName = Kerlington Model Rockets and Paper Products Inc
+				deadlineType = Floating
+				expiryType = Floating
+				values = 129600,46008000,21060,48114,21060,0,9,14,3082945.55959735,0,0,0
+				targetBody = 1
+				kerbalName = Jenrie Kerman
+				partName = KKAOSS.airlock.end.g
+				partID = 0
+				recoveryLocation = 1
+				recoveryType = 1
+				PARAM
+				{
+					name = AcquireCrew
+					state = Incomplete
+					values = 5346,0,0,4,0
+					title = Save Jenrie Kerman
+					winOn = 0
+				}
+				PARAM
+				{
+					name = RecoverKerbal
+					state = Incomplete
+					values = 0,0,0,0,0
+					title = Recover Jenrie Kerman on Kerbin
+					failOn = All
+					winOn = All
+				}
+			}
+			CONTRACT
+			{
 				guid = c210a777-6d91-41b1-b252-b481d20bda7c
 				type = RecoverAsset
 				prestige = 0
@@ -2555,6 +2670,229 @@ GAME
 					failOn = All
 					winOn = All
 					kerbal = Lecas Kerman
+				}
+			}
+			CONTRACT
+			{
+				guid = a5ea766f-c26c-429c-b18a-90c14bde2a7e
+				type = CollectScience
+				prestige = 0
+				seed = 1453868587
+				state = Offered
+				viewed = Seen
+				agent = Rokea Inc
+				agentName = Rokea Inc
+				deadlineType = Floating
+				expiryType = Floating
+				values = 58780.8390668928,41734395.7374939,7375.21152461816,18929.7087201972,7446.12695501805,2,4.900602,4,3012126.39866424,0,0,0
+				body = 1
+				location = Space
+				PARAM
+				{
+					name = CollectScience
+					state = Incomplete
+					values = 0,0,0,0,0
+					body = 1
+					location = Space
+				}
+			}
+			CONTRACT
+			{
+				guid = 801c0052-81c8-4eaa-ba1d-59f7e9bcf000
+				type = TourismContract
+				prestige = 1
+				seed = 1365351483
+				state = Offered
+				viewed = Seen
+				agent = STEADLER Engineering Corps
+				agentName = STEADLER Engineering Corps
+				deadlineType = Floating
+				expiryType = Floating
+				values = 64800,115020000,0,0,0,0,24.48,22.8,3054411.99758563,0,0,0
+				preposition = right here on Kerbin
+				homeDestinations = False
+				isGeeAdventure = False
+				tourists = Lagan Kerman|Erzor Kerman|Henfrod Kerman|Liszor Kerman
+				PARAM
+				{
+					name = KerbalTourParameter
+					state = Incomplete
+					allowPartialFailure = True
+					values = 54844,0,0,0,0
+					kerbalName = Lagan Kerman
+					kerbalGender = Female
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 9141,0,0,0,0
+						targetBody = 3
+						targetType = Flyby
+						kerbalName = Lagan Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 9141,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Lagan Kerman
+					}
+				}
+				PARAM
+				{
+					name = KerbalTourParameter
+					state = Incomplete
+					allowPartialFailure = True
+					values = 21938,0,0,0,0
+					kerbalName = Erzor Kerman
+					kerbalGender = Male
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 3656,0,0,0,0
+						targetBody = 1
+						targetType = Orbit
+						kerbalName = Erzor Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 3656,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Erzor Kerman
+					}
+				}
+				PARAM
+				{
+					name = KerbalTourParameter
+					state = Incomplete
+					allowPartialFailure = True
+					values = 82266,0,0,0,0
+					kerbalName = Henfrod Kerman
+					kerbalGender = Male
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 9141,0,0,0,0
+						targetBody = 2
+						targetType = Orbit
+						kerbalName = Henfrod Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 9141,0,0,0,0
+						targetBody = 3
+						targetType = Orbit
+						kerbalName = Henfrod Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 9141,0,0,0,0
+						targetBody = 2
+						targetType = Land
+						kerbalName = Henfrod Kerman
+					}
+				}
+				PARAM
+				{
+					name = KerbalTourParameter
+					state = Incomplete
+					allowPartialFailure = True
+					values = 54844,0,0,0,0
+					kerbalName = Liszor Kerman
+					kerbalGender = Female
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 9141,0,0,0,0
+						targetBody = 3
+						targetType = Flyby
+						kerbalName = Liszor Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 9141,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Liszor Kerman
+					}
+				}
+			}
+			CONTRACT
+			{
+				guid = 6dbc1fd8-d940-4718-92f5-e41545a98498
+				type = SatelliteContract
+				prestige = 1
+				seed = 1453868591
+				state = Offered
+				viewed = Seen
+				agent = Integrated Integrals
+				agentName = Integrated Integrals
+				deadlineType = Floating
+				expiryType = Floating
+				values = 105882.353067398,45105882.4067116,10592.3078477933,29857.0683931018,11880.0002574921,0,3.781818,4,3059227.91266474,0,0,0
+				targetBody = 1
+				deviation = 5
+				orbitType = 6
+				placementMode = 1
+				PARAM
+				{
+					name = SpecificVesselParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					TargetBody = 1
+					targetVesselID = 456abbfd75094f1c8345df1d940ed28e
+					targetVesselPartCount = 13
+					targetVesselName = Kerbin - Satellite High Orbiter
+					targetVesselSituation = ORBITING
+					partIDs = 999880952|1720521273|1021355923|719185769|2542844781|3630221554|1014666971|3050143858|2281157671|954270875|1366224475|2897683657|3217485436
+				}
+				PARAM
+				{
+					name = VesselSystemsParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					typeString = probe
+					mannedStatus = 1
+					requireNew = False
+					checkModuleTypes = Antenna|Generator
+					checkModuleDescriptions = has an antenna|can generate power
+				}
+				PARAM
+				{
+					name = SpecificOrbitParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					TargetBody = 1
+					deviationWindow = 5
+					orbitType = 6
+					inclination = 0.0016494349448498359
+					eccentricity = 0.013053360781823887
+					sma = 8288811.2128514741
+					lan = 244.23563982052437
+					argumentOfPeriapsis = 358.50655699738206
+					meanAnomalyAtEpoch = 0.99871246096617239
+					epoch = 487044.26576653414
+				}
+				PARAM
+				{
+					name = StabilityParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					holdSeconds = 10
 				}
 			}
 			CONTRACT
@@ -2637,221 +2975,20 @@ GAME
 			}
 			CONTRACT
 			{
-				guid = 54d4c6d2-2598-4e4b-b0f9-7d0b9c8af8b7
-				type = SatelliteContract
-				prestige = 2
-				seed = -30097016
-				state = Active
-				viewed = Read
-				agent = Periapsis Rocket Supplies Co
-				agentName = Periapsis Rocket Supplies Co
-				deadlineType = Floating
-				expiryType = Floating
-				values = 108000,115020000,59535,152557,59535,15,15,14,422610.446230018,314648.106230053,115334648.10623,0
-				targetBody = 3
-				deviation = 3
-				orbitType = 6
-				placementMode = 0
-				PARAM
-				{
-					name = VesselSystemsParameter
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					typeString = probe
-					mannedStatus = 1
-					requireNew = True
-					checkModuleTypes = Antenna|Generator
-					checkModuleDescriptions = has an antenna|can generate power
-					launchID = 29
-				}
-				PARAM
-				{
-					name = SpecificOrbitParameter
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					TargetBody = 3
-					deviationWindow = 3
-					orbitType = 6
-					inclination = 8.725357823044444
-					eccentricity = 0.37321351195719715
-					sma = 911325.98324453982
-					lan = 287.56856087947682
-					argumentOfPeriapsis = 21.998813162557198
-					meanAnomalyAtEpoch = 1.0869547761840437
-					epoch = 0
-				}
-				PARAM
-				{
-					name = PartRequestParameter
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					article = a
-					partDescription = thermometer
-					vesselDescription = satellite
-					partNames = sensorThermometer
-				}
-				PARAM
-				{
-					name = PartRequestParameter
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					article = a
-					partDescription = SC-9001 Science Jr.
-					vesselDescription = satellite
-					partNames = science_module|KKAOSS_ScienceJr_Tank
-				}
-				PARAM
-				{
-					name = StabilityParameter
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					holdSeconds = 10
-				}
-			}
-			CONTRACT
-			{
-				guid = 9a521a50-176c-4ef2-97f5-f637eb551a44
-				type = SatelliteContract
-				prestige = 2
-				seed = -485010717
-				state = Active
-				viewed = Read
-				agent = Kerlington Model Rockets and Paper Products Inc
-				agentName = Kerlington Model Rockets and Paper Products Inc
-				deadlineType = Floating
-				expiryType = Floating
-				values = 129600,276048000,180031,461335,180031,22,19,16,1257514.68006621,1129732.31617989,277177732.31618,0
-				targetBody = 13
-				deviation = 3
-				orbitType = 1
-				placementMode = 0
-				PARAM
-				{
-					name = VesselSystemsParameter
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					typeString = probe
-					mannedStatus = 1
-					requireNew = True
-					checkModuleTypes = Antenna|Generator
-					checkModuleDescriptions = has an antenna|can generate power
-					launchID = 43
-				}
-				PARAM
-				{
-					name = SpecificOrbitParameter
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					TargetBody = 13
-					deviationWindow = 3
-					orbitType = 1
-					inclination = 0
-					eccentricity = 5.803459193364603E-16
-					sma = 55138.150913690275
-					lan = 0
-					argumentOfPeriapsis = 205.5081805877345
-					meanAnomalyAtEpoch = 6.0205540404396327
-					epoch = 0
-				}
-				PARAM
-				{
-					name = StationaryPointParameter
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					targetBody = 13
-					longitude = 0.46011147622955595
-					deviation = 3
-				}
-				PARAM
-				{
-					name = PartRequestParameter
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					article = a
-					partDescription = thermometer
-					vesselDescription = satellite
-					partNames = sensorThermometer
-				}
-				PARAM
-				{
-					name = PartRequestParameter
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					article = a
-					partDescription = SC-9001 Science Jr.
-					vesselDescription = satellite
-					partNames = science_module|KKAOSS_ScienceJr_Tank
-				}
-				PARAM
-				{
-					name = PartRequestParameter
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					article = a
-					partDescription = mystery goo unit
-					vesselDescription = satellite
-					partNames = GooExperiment
-				}
-				PARAM
-				{
-					name = StabilityParameter
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					holdSeconds = 10
-				}
-			}
-			CONTRACT
-			{
-				guid = a5ea766f-c26c-429c-b18a-90c14bde2a7e
-				type = CollectScience
-				prestige = 0
-				seed = 1453868587
-				state = Offered
-				viewed = Unseen
-				agent = Rokea Inc
-				agentName = Rokea Inc
-				deadlineType = Floating
-				expiryType = Floating
-				values = 58780.8390668928,41734395.7374939,7375.21152461816,18929.7087201972,7446.12695501805,2,4.900602,4,3012126.39866424,0,0,0
-				body = 1
-				location = Space
-				PARAM
-				{
-					name = CollectScience
-					state = Incomplete
-					values = 0,0,0,0,0
-					body = 1
-					location = Space
-				}
-			}
-			CONTRACT
-			{
-				guid = d2eb9629-14bd-4d75-8df9-00b0d2c8b82a
+				guid = d2f65522-0aee-4a60-b812-21681fda8b95
 				type = RecoverAsset
-				prestige = 0
-				seed = 1453868588
+				prestige = 1
+				seed = 1365351482
 				state = Offered
-				viewed = Unseen
-				agent = Kerlington Model Rockets and Paper Products Inc
-				agentName = Kerlington Model Rockets and Paper Products Inc
+				viewed = Seen
+				agent = Clamp-O-Tron
+				agentName = Clamp-O-Tron
 				deadlineType = Floating
 				expiryType = Floating
-				values = 129600,46008000,21060,48114,21060,0,9,14,3082945.55959735,0,0,0
-				targetBody = 1
-				kerbalName = Jenrie Kerman
-				partName = KKAOSS.airlock.end.g
+				values = 43200,115020000,65812,150356,65812,0,11,18,3032811.99758563,0,0,0
+				targetBody = 3
+				kerbalName = Hilzon Kerman
+				partName = cupola
 				partID = 0
 				recoveryLocation = 1
 				recoveryType = 1
@@ -2859,8 +2996,8 @@ GAME
 				{
 					name = AcquireCrew
 					state = Incomplete
-					values = 5346,0,0,4,0
-					title = Save Jenrie Kerman
+					values = 16706,0,0,5,0
+					title = Save Hilzon Kerman
 					winOn = 0
 				}
 				PARAM
@@ -2868,98 +3005,9 @@ GAME
 					name = RecoverKerbal
 					state = Incomplete
 					values = 0,0,0,0,0
-					title = Recover Jenrie Kerman on Kerbin
+					title = Recover Hilzon Kerman on Kerbin
 					failOn = All
 					winOn = All
-				}
-			}
-			CONTRACT
-			{
-				guid = 6dbc1fd8-d940-4718-92f5-e41545a98498
-				type = SatelliteContract
-				prestige = 1
-				seed = 1453868591
-				state = Offered
-				viewed = Unseen
-				agent = Integrated Integrals
-				agentName = Integrated Integrals
-				deadlineType = Floating
-				expiryType = Floating
-				values = 105882.353067398,45105882.4067116,10592.3078477933,29857.0683931018,11880.0002574921,0,3.781818,4,3059227.91266474,0,0,0
-				targetBody = 1
-				deviation = 5
-				orbitType = 6
-				placementMode = 1
-				PARAM
-				{
-					name = SpecificVesselParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					TargetBody = 1
-					targetVesselID = 456abbfd75094f1c8345df1d940ed28e
-					targetVesselPartCount = 13
-					targetVesselName = Kerbin - Satellite High Orbiter
-					targetVesselSituation = ORBITING
-					partIDs = 999880952|1720521273|1021355923|719185769|2542844781|3630221554|1014666971|3050143858|2281157671|954270875|1366224475|2897683657|3217485436
-				}
-				PARAM
-				{
-					name = VesselSystemsParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					typeString = probe
-					mannedStatus = 1
-					requireNew = False
-					checkModuleTypes = Antenna|Generator
-					checkModuleDescriptions = has an antenna|can generate power
-				}
-				PARAM
-				{
-					name = SpecificOrbitParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					TargetBody = 1
-					deviationWindow = 5
-					orbitType = 6
-					inclination = 0.0016494349448498359
-					eccentricity = 0.013053360781823887
-					sma = 8288811.2128514741
-					lan = 244.23563982052437
-					argumentOfPeriapsis = 358.50655699738206
-					meanAnomalyAtEpoch = 0.99871246096617239
-					epoch = 487044.26576653414
-				}
-				PARAM
-				{
-					name = StabilityParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					holdSeconds = 10
-				}
-			}
-			CONTRACT
-			{
-				guid = e54185b2-a9af-47c8-8596-61698927b255
-				type = ExplorationContract
-				prestige = 0
-				seed = 1453868592
-				state = Offered
-				viewed = Unseen
-				agent = Kerbin World-Firsts Record-Keeping Society
-				agentName = Kerbin World-Firsts Record-Keeping Society
-				deadlineType = None
-				expiryType = Floating
-				ignoresWeight = True
-				values = 86400,0,37800,70200,37800,4,9,0,3039745.55959735,0,0,0
-				targetBody = 3
-				bodyRatio = 0.421052635
-				PARAM
-				{
-					name = ProgressTrackingParameter
-					state = Incomplete
-					values = 108000,0,4,9,0
-					targetBody = 3
-					targetType = LANDING
 				}
 			}
 			CONTRACT
@@ -2969,7 +3017,7 @@ GAME
 				prestige = 1
 				seed = 1453868593
 				state = Offered
-				viewed = Unseen
+				viewed = Seen
 				agent = Kerbal Motion LLC
 				agentName = Kerbal Motion LLC
 				deadlineType = Floating
@@ -3006,7 +3054,7 @@ GAME
 				prestige = 2
 				seed = 1453868597
 				state = Offered
-				viewed = Unseen
+				viewed = Seen
 				agent = Ionic Symphonic Protonic Electronics
 				agentName = Ionic Symphonic Protonic Electronics
 				deadlineType = Floating
@@ -3145,174 +3193,80 @@ GAME
 			}
 			CONTRACT
 			{
-				guid = d2f65522-0aee-4a60-b812-21681fda8b95
-				type = RecoverAsset
-				prestige = 1
-				seed = 1365351482
-				state = Offered
-				viewed = Unseen
-				agent = Clamp-O-Tron
-				agentName = Clamp-O-Tron
+				guid = 54d4c6d2-2598-4e4b-b0f9-7d0b9c8af8b7
+				type = SatelliteContract
+				prestige = 2
+				seed = -30097016
+				state = Active
+				viewed = Read
+				agent = Periapsis Rocket Supplies Co
+				agentName = Periapsis Rocket Supplies Co
 				deadlineType = Floating
 				expiryType = Floating
-				values = 43200,115020000,65812,150356,65812,0,11,18,3032811.99758563,0,0,0
+				values = 108000,115020000,59535,152557,59535,15,15,14,422610.446230018,314648.106230053,115334648.10623,0
 				targetBody = 3
-				kerbalName = Hilzon Kerman
-				partName = cupola
-				partID = 0
-				recoveryLocation = 1
-				recoveryType = 1
+				deviation = 3
+				orbitType = 6
+				placementMode = 0
 				PARAM
 				{
-					name = AcquireCrew
+					name = VesselSystemsParameter
 					state = Incomplete
-					values = 16706,0,0,5,0
-					title = Save Hilzon Kerman
-					winOn = 0
-				}
-				PARAM
-				{
-					name = RecoverKerbal
-					state = Incomplete
+					disableOnStateChange = False
 					values = 0,0,0,0,0
-					title = Recover Hilzon Kerman on Kerbin
-					failOn = All
-					winOn = All
-				}
-			}
-			CONTRACT
-			{
-				guid = 801c0052-81c8-4eaa-ba1d-59f7e9bcf000
-				type = TourismContract
-				prestige = 1
-				seed = 1365351483
-				state = Offered
-				viewed = Unseen
-				agent = STEADLER Engineering Corps
-				agentName = STEADLER Engineering Corps
-				deadlineType = Floating
-				expiryType = Floating
-				values = 64800,115020000,0,0,0,0,24.48,22.8,3054411.99758563,0,0,0
-				preposition = right here on Kerbin
-				homeDestinations = False
-				isGeeAdventure = False
-				tourists = Lagan Kerman|Erzor Kerman|Henfrod Kerman|Liszor Kerman
-				PARAM
-				{
-					name = KerbalTourParameter
-					state = Incomplete
-					allowPartialFailure = True
-					values = 54844,0,0,0,0
-					kerbalName = Lagan Kerman
-					kerbalGender = Female
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 9141,0,0,0,0
-						targetBody = 3
-						targetType = Flyby
-						kerbalName = Lagan Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 9141,0,0,0,0
-						targetBody = 1
-						targetType = Suborbit
-						kerbalName = Lagan Kerman
-					}
+					typeString = probe
+					mannedStatus = 1
+					requireNew = True
+					checkModuleTypes = Antenna|Generator
+					checkModuleDescriptions = has an antenna|can generate power
+					launchID = 29
 				}
 				PARAM
 				{
-					name = KerbalTourParameter
+					name = SpecificOrbitParameter
 					state = Incomplete
-					allowPartialFailure = True
-					values = 21938,0,0,0,0
-					kerbalName = Erzor Kerman
-					kerbalGender = Male
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 3656,0,0,0,0
-						targetBody = 1
-						targetType = Orbit
-						kerbalName = Erzor Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 3656,0,0,0,0
-						targetBody = 1
-						targetType = Suborbit
-						kerbalName = Erzor Kerman
-					}
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					TargetBody = 3
+					deviationWindow = 3
+					orbitType = 6
+					inclination = 8.725357823044444
+					eccentricity = 0.37321351195719715
+					sma = 911325.98324453982
+					lan = 287.56856087947682
+					argumentOfPeriapsis = 21.998813162557198
+					meanAnomalyAtEpoch = 1.0869547761840437
+					epoch = 0
 				}
 				PARAM
 				{
-					name = KerbalTourParameter
+					name = PartRequestParameter
 					state = Incomplete
-					allowPartialFailure = True
-					values = 82266,0,0,0,0
-					kerbalName = Henfrod Kerman
-					kerbalGender = Male
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 9141,0,0,0,0
-						targetBody = 2
-						targetType = Orbit
-						kerbalName = Henfrod Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 9141,0,0,0,0
-						targetBody = 3
-						targetType = Orbit
-						kerbalName = Henfrod Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 9141,0,0,0,0
-						targetBody = 2
-						targetType = Land
-						kerbalName = Henfrod Kerman
-					}
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					article = a
+					partDescription = thermometer
+					vesselDescription = satellite
+					partNames = sensorThermometer
 				}
 				PARAM
 				{
-					name = KerbalTourParameter
+					name = PartRequestParameter
 					state = Incomplete
-					allowPartialFailure = True
-					values = 54844,0,0,0,0
-					kerbalName = Liszor Kerman
-					kerbalGender = Female
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 9141,0,0,0,0
-						targetBody = 3
-						targetType = Flyby
-						kerbalName = Liszor Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 9141,0,0,0,0
-						targetBody = 1
-						targetType = Suborbit
-						kerbalName = Liszor Kerman
-					}
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					article = a
+					partDescription = SC-9001 Science Jr.
+					vesselDescription = satellite
+					partNames = science_module|KKAOSS_ScienceJr_Tank
+				}
+				PARAM
+				{
+					name = StabilityParameter
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					holdSeconds = 10
 				}
 			}
 			CONTRACT
@@ -3322,7 +3276,7 @@ GAME
 				prestige = 2
 				seed = 1809893501
 				state = Offered
-				viewed = Unseen
+				viewed = Seen
 				agent = WinterOwl Aircraft Emporium
 				agentName = WinterOwl Aircraft Emporium
 				deadlineType = Floating
@@ -3384,6 +3338,105 @@ GAME
 				{
 					name = StabilityParameter
 					state = Incomplete
+					values = 0,0,0,0,0
+					holdSeconds = 10
+				}
+			}
+			CONTRACT
+			{
+				guid = 9a521a50-176c-4ef2-97f5-f637eb551a44
+				type = SatelliteContract
+				prestige = 2
+				seed = -485010717
+				state = Active
+				viewed = Read
+				agent = Kerlington Model Rockets and Paper Products Inc
+				agentName = Kerlington Model Rockets and Paper Products Inc
+				deadlineType = Floating
+				expiryType = Floating
+				values = 129600,276048000,180031,461335,180031,22,19,16,1257514.68006621,1129732.31617989,277177732.31618,0
+				targetBody = 13
+				deviation = 3
+				orbitType = 1
+				placementMode = 0
+				PARAM
+				{
+					name = VesselSystemsParameter
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					typeString = probe
+					mannedStatus = 1
+					requireNew = True
+					checkModuleTypes = Antenna|Generator
+					checkModuleDescriptions = has an antenna|can generate power
+					launchID = 43
+				}
+				PARAM
+				{
+					name = SpecificOrbitParameter
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					TargetBody = 13
+					deviationWindow = 3
+					orbitType = 1
+					inclination = 0
+					eccentricity = 5.803459193364603E-16
+					sma = 55138.150913690275
+					lan = 0
+					argumentOfPeriapsis = 205.5081805877345
+					meanAnomalyAtEpoch = 6.0205540404396327
+					epoch = 0
+				}
+				PARAM
+				{
+					name = StationaryPointParameter
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					targetBody = 13
+					longitude = 0.46011147622955595
+					deviation = 3
+				}
+				PARAM
+				{
+					name = PartRequestParameter
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					article = a
+					partDescription = thermometer
+					vesselDescription = satellite
+					partNames = sensorThermometer
+				}
+				PARAM
+				{
+					name = PartRequestParameter
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					article = a
+					partDescription = SC-9001 Science Jr.
+					vesselDescription = satellite
+					partNames = science_module|KKAOSS_ScienceJr_Tank
+				}
+				PARAM
+				{
+					name = PartRequestParameter
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					article = a
+					partDescription = mystery goo unit
+					vesselDescription = satellite
+					partNames = GooExperiment
+				}
+				PARAM
+				{
+					name = StabilityParameter
+					state = Incomplete
+					disableOnStateChange = False
 					values = 0,0,0,0,0
 					holdSeconds = 10
 				}
@@ -6690,617 +6743,6 @@ GAME
 		}
 		BACKGROUNDRESOURCES
 		{
-			INTERESTEDVESSEL
-			{
-				VesselGuid = 0885f093-a3f4-4470-b866-4b5fd17688a5
-				timeLastRefresh = 3719.91357421875
-				CACHERESOURCE
-				{
-					resourceName = ElectricCharge
-					amount = 4460.4980166666655
-					maxAmount = 4460.5
-					RESOURCE
-					{
-						craftID = 4290994384,ElectricCharge
-						name = ElectricCharge
-						amount = 9.9980166666648191
-						maxAmount = 10
-						flowState = True
-						isTweakable = True
-						hideFlow = False
-						isVisible = True
-						flowMode = Both
-					}
-					RESOURCE
-					{
-						craftID = 4290924032,ElectricCharge
-						name = ElectricCharge
-						amount = 1000
-						maxAmount = 1000
-						flowState = True
-						isTweakable = True
-						hideFlow = False
-						isVisible = True
-						flowMode = Both
-					}
-					RESOURCE
-					{
-						craftID = 4290923590,ElectricCharge
-						name = ElectricCharge
-						amount = 1000
-						maxAmount = 1000
-						flowState = True
-						isTweakable = True
-						hideFlow = False
-						isVisible = True
-						flowMode = Both
-					}
-					RESOURCE
-					{
-						craftID = 4290923242,ElectricCharge
-						name = ElectricCharge
-						amount = 1000
-						maxAmount = 1000
-						flowState = True
-						isTweakable = True
-						hideFlow = False
-						isVisible = True
-						flowMode = Both
-					}
-					RESOURCE
-					{
-						craftID = 4290746298,ElectricCharge
-						name = ElectricCharge
-						amount = 0.40000000000000002
-						maxAmount = 0.40000000000000002
-						flowState = True
-						isTweakable = True
-						hideFlow = False
-						isVisible = True
-						flowMode = Both
-					}
-					RESOURCE
-					{
-						craftID = 4293631210,ElectricCharge
-						name = ElectricCharge
-						amount = 1000
-						maxAmount = 1000
-						flowState = True
-						isTweakable = True
-						hideFlow = False
-						isVisible = True
-						flowMode = Both
-					}
-					RESOURCE
-					{
-						craftID = 4293707684,ElectricCharge
-						name = ElectricCharge
-						amount = 450
-						maxAmount = 450
-						flowState = True
-						isTweakable = True
-						hideFlow = False
-						isVisible = True
-						flowMode = Both
-					}
-					RESOURCE
-					{
-						craftID = 4293691400,ElectricCharge
-						name = ElectricCharge
-						amount = 0.10000000000000001
-						maxAmount = 0.10000000000000001
-						flowState = True
-						isTweakable = True
-						hideFlow = False
-						isVisible = True
-						flowMode = Both
-					}
-				}
-				CACHERESOURCE
-				{
-					resourceName = Oxygen
-					amount = 91292.806315729133
-					maxAmount = 106111.67599999999
-					RESOURCE
-					{
-						craftID = 4290956432,Oxygen
-						name = Oxygen
-						amount = 90905.382220608066
-						maxAmount = 105113.2
-						flowState = True
-						isTweakable = True
-						hideFlow = False
-						isVisible = True
-						flowMode = Both
-					}
-					RESOURCE
-					{
-						craftID = 4293707684,Oxygen
-						name = Oxygen
-						amount = 86.168914773717134
-						maxAmount = 222.07599999999999
-						flowState = True
-						isTweakable = True
-						hideFlow = False
-						isVisible = True
-						flowMode = Both
-					}
-					RESOURCE
-					{
-						craftID = 4293608584,Oxygen
-						name = Oxygen
-						amount = 301.25518034734222
-						maxAmount = 776.39999999999998
-						flowState = True
-						isTweakable = True
-						hideFlow = False
-						isVisible = True
-						flowMode = Both
-					}
-				}
-				CACHERESOURCE
-				{
-					resourceName = Food
-					amount = 901.70663967767643
-					maxAmount = 1048.0939999999998
-					RESOURCE
-					{
-						craftID = 4290956432,Food
-						name = Food
-						amount = 897.94881955512574
-						maxAmount = 1038.3
-						flowState = True
-						isTweakable = True
-						hideFlow = False
-						isVisible = True
-						flowMode = Both
-					}
-					RESOURCE
-					{
-						craftID = 4293707684,Food
-						name = Food
-						amount = 0.84180695821780327
-						maxAmount = 2.194
-						flowState = True
-						isTweakable = True
-						hideFlow = False
-						isVisible = True
-						flowMode = Both
-					}
-					RESOURCE
-					{
-						craftID = 4293608584,Food
-						name = Food
-						amount = 2.9160131643328508
-						maxAmount = 7.5999999999999996
-						flowState = True
-						isTweakable = True
-						hideFlow = False
-						isVisible = True
-						flowMode = Both
-					}
-				}
-				CACHERESOURCE
-				{
-					resourceName = Water
-					amount = 595.99420817079033
-					maxAmount = 692.75
-					RESOURCE
-					{
-						craftID = 4290956432,Water
-						name = Water
-						amount = 593.53384334736222
-						maxAmount = 686.29999999999995
-						flowState = True
-						isTweakable = True
-						hideFlow = False
-						isVisible = True
-						flowMode = Both
-					}
-					RESOURCE
-					{
-						craftID = 4293707684,Water
-						name = Water
-						amount = 0.55310527038243407
-						maxAmount = 1.45
-						flowState = True
-						isTweakable = True
-						hideFlow = False
-						isVisible = True
-						flowMode = Both
-					}
-					RESOURCE
-					{
-						craftID = 4293608584,Water
-						name = Water
-						amount = 1.9072595530456637
-						maxAmount = 5
-						flowState = True
-						isTweakable = True
-						hideFlow = False
-						isVisible = True
-						flowMode = Both
-					}
-				}
-				CACHERESOURCE
-				{
-					resourceName = CarbonDioxide
-					amount = 12800.324539255156
-					maxAmount = 173799.226
-					RESOURCE
-					{
-						craftID = 4290955646,CarbonDioxide
-						name = CarbonDioxide
-						amount = 12247.199510754457
-						maxAmount = 172334.5
-						flowState = True
-						isTweakable = True
-						hideFlow = False
-						isVisible = True
-						flowMode = Both
-					}
-					RESOURCE
-					{
-						craftID = 4293707684,CarbonDioxide
-						name = CarbonDioxide
-						amount = 72.43932429394097
-						maxAmount = 191.82599999999999
-						flowState = True
-						isTweakable = True
-						hideFlow = False
-						isVisible = True
-						flowMode = Both
-					}
-					RESOURCE
-					{
-						craftID = 4293608034,CarbonDioxide
-						name = CarbonDioxide
-						amount = 480.68570420675832
-						maxAmount = 1272.9000000000001
-						flowState = True
-						isTweakable = True
-						hideFlow = False
-						isVisible = True
-						flowMode = Both
-					}
-				}
-				CACHERESOURCE
-				{
-					resourceName = WasteWater
-					amount = 123.21561410837342
-					maxAmount = 1672.848
-					RESOURCE
-					{
-						craftID = 4290955646,WasteWater
-						name = WasteWater
-						amount = 117.89125137418365
-						maxAmount = 1658.8
-						flowState = True
-						isTweakable = True
-						hideFlow = False
-						isVisible = True
-						flowMode = Both
-					}
-					RESOURCE
-					{
-						craftID = 4293707684,WasteWater
-						name = WasteWater
-						amount = 0.70041445988532847
-						maxAmount = 1.8480000000000001
-						flowState = True
-						isTweakable = True
-						hideFlow = False
-						isVisible = True
-						flowMode = Both
-					}
-					RESOURCE
-					{
-						craftID = 4293608034,WasteWater
-						name = WasteWater
-						amount = 4.62394827430444
-						maxAmount = 12.199999999999999
-						flowState = True
-						isTweakable = True
-						hideFlow = False
-						isVisible = True
-						flowMode = Both
-					}
-				}
-				CACHERESOURCE
-				{
-					resourceName = Waste
-					amount = 13.312491916406289
-					maxAmount = 180.69999999999999
-					RESOURCE
-					{
-						craftID = 4290955646,Waste
-						name = Waste
-						amount = 12.737238165718791
-						maxAmount = 179.19999999999999
-						flowState = True
-						isTweakable = True
-						hideFlow = False
-						isVisible = True
-						flowMode = Both
-					}
-					RESOURCE
-					{
-						craftID = 4293707684,Waste
-						name = Waste
-						amount = 0.0767005000921058
-						maxAmount = 0.20000000000000001
-						flowState = True
-						isTweakable = True
-						hideFlow = False
-						isVisible = True
-						flowMode = Both
-					}
-					RESOURCE
-					{
-						craftID = 4293608034,Waste
-						name = Waste
-						amount = 0.49855325059539352
-						maxAmount = 1.3
-						flowState = True
-						isTweakable = True
-						hideFlow = False
-						isVisible = True
-						flowMode = Both
-					}
-				}
-				CACHERESOURCE
-				{
-					resourceName = LiquidFuel
-					amount = 395.14037247928354
-					maxAmount = 1800
-					RESOURCE
-					{
-						craftID = 4290746298,LiquidFuel
-						name = LiquidFuel
-						amount = 35.140372479283521
-						maxAmount = 1440
-						flowState = True
-						isTweakable = True
-						hideFlow = False
-						isVisible = True
-						flowMode = Both
-					}
-					RESOURCE
-					{
-						craftID = 4293691400,LiquidFuel
-						name = LiquidFuel
-						amount = 360
-						maxAmount = 360
-						flowState = True
-						isTweakable = True
-						hideFlow = False
-						isVisible = True
-						flowMode = Both
-					}
-				}
-				CACHERESOURCE
-				{
-					resourceName = Oxidizer
-					amount = 482.94926143908924
-					maxAmount = 2200
-					RESOURCE
-					{
-						craftID = 4290746298,Oxidizer
-						name = Oxidizer
-						amount = 42.949261439089248
-						maxAmount = 1760
-						flowState = True
-						isTweakable = True
-						hideFlow = False
-						isVisible = True
-						flowMode = Both
-					}
-					RESOURCE
-					{
-						craftID = 4293691400,Oxidizer
-						name = Oxidizer
-						amount = 440
-						maxAmount = 440
-						flowState = True
-						isTweakable = True
-						hideFlow = False
-						isVisible = True
-						flowMode = Both
-					}
-				}
-				CACHERESOURCE
-				{
-					resourceName = Megajoules
-					amount = 0.0010000000000000002
-					maxAmount = 0.0010000000000000002
-					RESOURCE
-					{
-						craftID = 4290895328,Megajoules
-						name = Megajoules
-						amount = 0.0001
-						maxAmount = 0.0001
-						flowState = True
-						isTweakable = False
-						hideFlow = False
-						isVisible = True
-						flowMode = Both
-					}
-					RESOURCE
-					{
-						craftID = 4290871984,Megajoules
-						name = Megajoules
-						amount = 0.0001
-						maxAmount = 0.0001
-						flowState = True
-						isTweakable = False
-						hideFlow = False
-						isVisible = True
-						flowMode = Both
-					}
-					RESOURCE
-					{
-						craftID = 4290871850,Megajoules
-						name = Megajoules
-						amount = 0.0001
-						maxAmount = 0.0001
-						flowState = True
-						isTweakable = False
-						hideFlow = False
-						isVisible = True
-						flowMode = Both
-					}
-					RESOURCE
-					{
-						craftID = 4290871716,Megajoules
-						name = Megajoules
-						amount = 0.0001
-						maxAmount = 0.0001
-						flowState = True
-						isTweakable = False
-						hideFlow = False
-						isVisible = True
-						flowMode = Both
-					}
-					RESOURCE
-					{
-						craftID = 4290871582,Megajoules
-						name = Megajoules
-						amount = 0.0001
-						maxAmount = 0.0001
-						flowState = True
-						isTweakable = False
-						hideFlow = False
-						isVisible = True
-						flowMode = Both
-					}
-					RESOURCE
-					{
-						craftID = 4290871448,Megajoules
-						name = Megajoules
-						amount = 0.0001
-						maxAmount = 0.0001
-						flowState = True
-						isTweakable = False
-						hideFlow = False
-						isVisible = True
-						flowMode = Both
-					}
-					RESOURCE
-					{
-						craftID = 4290871314,Megajoules
-						name = Megajoules
-						amount = 0.0001
-						maxAmount = 0.0001
-						flowState = True
-						isTweakable = False
-						hideFlow = False
-						isVisible = True
-						flowMode = Both
-					}
-					RESOURCE
-					{
-						craftID = 4290871180,Megajoules
-						name = Megajoules
-						amount = 0.0001
-						maxAmount = 0.0001
-						flowState = True
-						isTweakable = False
-						hideFlow = False
-						isVisible = True
-						flowMode = Both
-					}
-					RESOURCE
-					{
-						craftID = 4293628010,Megajoules
-						name = Megajoules
-						amount = 0.0001
-						maxAmount = 0.0001
-						flowState = True
-						isTweakable = False
-						hideFlow = False
-						isVisible = True
-						flowMode = Both
-					}
-					RESOURCE
-					{
-						craftID = 4293625924,Megajoules
-						name = Megajoules
-						amount = 0.0001
-						maxAmount = 0.0001
-						flowState = True
-						isTweakable = False
-						hideFlow = False
-						isVisible = True
-						flowMode = Both
-					}
-				}
-				CACHERESOURCE
-				{
-					resourceName = MonoPropellant
-					amount = 101.9445255060761
-					maxAmount = 120
-					RESOURCE
-					{
-						craftID = 4292210272,MonoPropellant
-						name = MonoPropellant
-						amount = 16.990754251012685
-						maxAmount = 20
-						flowState = True
-						isTweakable = True
-						hideFlow = False
-						isVisible = True
-						flowMode = Both
-					}
-					RESOURCE
-					{
-						craftID = 4292207392,MonoPropellant
-						name = MonoPropellant
-						amount = 16.990754251012685
-						maxAmount = 20
-						flowState = True
-						isTweakable = True
-						hideFlow = False
-						isVisible = True
-						flowMode = Both
-					}
-					RESOURCE
-					{
-						craftID = 4292207350,MonoPropellant
-						name = MonoPropellant
-						amount = 16.990754251012685
-						maxAmount = 20
-						flowState = True
-						isTweakable = True
-						hideFlow = False
-						isVisible = True
-						flowMode = Both
-					}
-					RESOURCE
-					{
-						craftID = 4292207308,MonoPropellant
-						name = MonoPropellant
-						amount = 16.990754251012685
-						maxAmount = 20
-						flowState = True
-						isTweakable = True
-						hideFlow = False
-						isVisible = True
-						flowMode = Both
-					}
-					RESOURCE
-					{
-						craftID = 4293707684,MonoPropellant
-						name = MonoPropellant
-						amount = 33.98150850202537
-						maxAmount = 40
-						flowState = True
-						isTweakable = True
-						hideFlow = False
-						isVisible = True
-						flowMode = Both
-					}
-				}
-			}
 		}
 	}
 	SCENARIO
@@ -7314,11 +6756,11 @@ GAME
 			CrewMemberInfo
 			{
 				name = Lecas Kerman
-				lastUpdate = 2991410.6635769969
+				lastUpdate = 2997324.7062476659
 				lastO2 = 396669.02674409037
 				lastEC = 396669.02674409037
-				lastFood = 2991410.6635769969
-				lastWater = 2991410.6635769969
+				lastFood = 2997324.7062476659
+				lastWater = 2997324.7062476659
 				vesselName = Lecas' Hulk
 				vesselId = 74315460-4753-45a5-b68d-1c034152c30f
 				vesselIsPreLaunch = False
@@ -7334,11 +6776,11 @@ GAME
 			CrewMemberInfo
 			{
 				name = Bob Kerman
-				lastUpdate = 2991410.6635769969
+				lastUpdate = 2997324.7062476659
 				lastO2 = 792240.87040824664
 				lastEC = 792240.87040824664
-				lastFood = 2991410.6635769969
-				lastWater = 2991410.6635769969
+				lastFood = 2997324.7062476659
+				lastWater = 2997324.7062476659
 				vesselName = Mimmus - Station 1
 				vesselId = 0885f093-a3f4-4470-b866-4b5fd17688a5
 				vesselIsPreLaunch = False
@@ -7354,11 +6796,11 @@ GAME
 			CrewMemberInfo
 			{
 				name = Nelgard Kerman
-				lastUpdate = 2991410.6635769969
+				lastUpdate = 2997324.7062476659
 				lastO2 = 792240.87040824664
 				lastEC = 792240.87040824664
-				lastFood = 2991410.6635769969
-				lastWater = 2991410.6635769969
+				lastFood = 2997324.7062476659
+				lastWater = 2997324.7062476659
 				vesselName = Mimmus - Station 1
 				vesselId = 0885f093-a3f4-4470-b866-4b5fd17688a5
 				vesselIsPreLaunch = False
@@ -7374,11 +6816,11 @@ GAME
 			CrewMemberInfo
 			{
 				name = Jebediah Kerman
-				lastUpdate = 2991410.6635769969
+				lastUpdate = 2997324.7062476659
 				lastO2 = 866510.5246697613
 				lastEC = 866510.5246697613
-				lastFood = 2991410.6635769969
-				lastWater = 2991410.6635769969
+				lastFood = 2997324.7062476659
+				lastWater = 2997324.7062476659
 				vesselName = Mimmus - Station 1
 				vesselId = 0885f093-a3f4-4470-b866-4b5fd17688a5
 				vesselIsPreLaunch = False
@@ -7394,11 +6836,11 @@ GAME
 			CrewMemberInfo
 			{
 				name = Bill Kerman
-				lastUpdate = 2991410.6635769969
+				lastUpdate = 2997324.7062476659
 				lastO2 = 866510.5246697613
 				lastEC = 866510.5246697613
-				lastFood = 2991410.6635769969
-				lastWater = 2991410.6635769969
+				lastFood = 2997324.7062476659
+				lastWater = 2997324.7062476659
 				vesselName = Mimmus - Station 1
 				vesselId = 0885f093-a3f4-4470-b866-4b5fd17688a5
 				vesselIsPreLaunch = False
@@ -7420,11 +6862,11 @@ GAME
 				numCrew = 1
 				numFrozenCrew = 0
 				numOccupiedParts = 1
-				lastUpdate = 2991410.6635769969
-				lastFood = 2991410.6635769969
-				lastWater = 2991410.6635769969
-				lastOxygen = 2991410.6635769969
-				lastElectricity = 2991410.6635769969
+				lastUpdate = 2997324.7062476659
+				lastFood = 2997324.7062476659
+				lastWater = 2997324.7062476659
+				lastOxygen = 2997324.7062476659
+				lastElectricity = 2997324.7062476659
 				remainingFood = 0
 				remainingWater = 0
 				remainingOxygen = 0
@@ -7451,18 +6893,18 @@ GAME
 				numCrew = 4
 				numFrozenCrew = 0
 				numOccupiedParts = 2
-				lastUpdate = 2991410.6635769969
-				lastFood = 2991410.6635769969
-				lastWater = 2991410.6635769969
-				lastOxygen = 2991410.6635769969
-				lastElectricity = 2991410.6635769969
-				remainingFood = 901.70664103184311
-				remainingWater = 595.9942090658368
-				remainingOxygen = 91292.806452812147
-				remainingElectricity = 4460.5000000000009
-				remainingCO2 = 12800.324420844841
-				remainingWaste = 13.312491793258141
-				remainingWasteWater = 123.21561296855867
+				lastUpdate = 2997324.7062476659
+				lastFood = 2997324.7062476659
+				lastWater = 2997324.7062476659
+				lastOxygen = 2997324.7062476659
+				lastElectricity = 2997324.7062476659
+				remainingFood = 901.30621106378533
+				remainingWater = 595.72954194469753
+				remainingOxygen = 91252.27071359531
+				remainingElectricity = 4460.499999989629
+				remainingCO2 = 12835.338603654085
+				remainingWaste = 13.348906963547584
+				remainingWasteWater = 123.55265862385919
 				maxFood = 1048.0939999999998
 				maxWater = 692.75
 				maxOxygen = 106111.67599999999
@@ -7477,8 +6919,8 @@ GAME
 		LifeSupportMonitoring
 		{
 			visible = False
-			x = 2170
-			y = 412
+			x = 1130
+			y = 75
 			width = 300
 			height = 300
 		}
@@ -7792,7 +7234,7 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.12.5
-		UT = 2991410.6635769969
+		UT = 2997325.3262476665
 		activeVessel = 0
 		mapViewFiltering = 13311
 		commNetUIModeTracking = Network
@@ -35072,10 +34514,10 @@ GAME
 				SMA = 299999.6012161547
 				ECC = 0.99999999999999989
 				INC = 89.709941780118825
-				LPE = 90
-				LAN = 84.351778950819948
+				LPE = 90.000000000000014
+				LAN = 183.21630750975729
 				MNA = 3.1415926207170166
-				EPH = 2991406.7435769932
+				EPH = 2997324.7262476659
 				REF = 1
 				IDENT = Squad/Kerbin
 			}
@@ -40277,13 +39719,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = 101404.38333822619
+				SMA = 101404.38333825121
 				ECC = 0.99999999999999989
-				INC = 90.198922377869479
+				INC = 90.198922377781145
 				LPE = 90
-				LAN = 315.47814089412304
+				LAN = 330.80701320310993
 				MNA = 3.1415926207170166
-				EPH = 2991406.7435769932
+				EPH = 2997324.7262476659
 				REF = 2
 				IDENT = Squad/Mun
 			}
@@ -42632,13 +42074,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = 101404.06114349757
-				ECC = 0.99999999999999978
+				SMA = NaN
+				ECC = 1
 				INC = 90.197983648253953
-				LPE = 90
-				LAN = 315.47802135580673
-				MNA = 3.1415926303452304
-				EPH = 2991406.7435769932
+				LPE = 89.999999999999986
+				LAN = 330.80689366470688
+				MNA = 0
+				EPH = 2997324.7262476659
 				REF = 2
 				IDENT = Squad/Mun
 			}
@@ -43332,18 +42774,18 @@ GAME
 			landedAt = 
 			displaylandedAt = 
 			splashed = False
-			met = 337577.58577172726
+			met = 2202857.2758373455
 			lct = 792247.31040825264
-			lastUT = 1129824.8961799799
-			distanceTraveled = 1423345.8017364079
+			lastUT = 2995104.5862455983
+			distanceTraveled = 1432120.4873454426
 			root = 0
-			lat = 3.6656686594576366
-			lon = 111.30237847811604
-			alt = 29428.910809075911
-			hgt = 29428.9102
-			nrm = -0.61251241,0.783932984,-0.101378784
-			rot = 0.359857231,-0.669816554,-0.554933429,-0.337487251
-			CoM = 0.00251078606,-3.4188385,0.0021109581
+			lat = -3.4323908312729126
+			lon = -117.72732120459638
+			alt = 28831.684726401902
+			hgt = 28831.6855
+			nrm = -0.176824242,-0.0900754035,-0.980112076
+			rot = -0.225724816,-0.163004935,-0.621541142,-0.732232392
+			CoM = 0.00250688195,-3.42175746,0.00211071968
 			stg = 0
 			prst = False
 			ref = 1346059242
@@ -43356,18 +42798,18 @@ GAME
 			OverrideAxisControl = 0,0,0,0
 			OverrideGroupNames = ,,,
 			altDispState = ASL
-			cPch = 0.08200003
-			cHdg = 1.09
+			cPch = 0.1939999
+			cHdg = 5.672
 			cMod = 0
 			ORBIT
 			{
-				SMA = 89164.991622953094
-				ECC = 0.0049533811049783938
-				INC = 3.7322029233824208
-				LPE = 334.35022248723038
-				LAN = 228.18439451811739
-				MNA = 2.1996937958582183
-				EPH = 1129824.8961799799
+				SMA = 89164.989576070468
+				ECC = 0.0049533908162757703
+				INC = 3.732202894039045
+				LPE = 334.34986067786667
+				LAN = 228.18439465303632
+				MNA = 5.5697066261727146
+				EPH = 2995104.5862455983
 				REF = 3
 				IDENT = Squad/Minmus
 			}
@@ -43397,8 +42839,8 @@ GAME
 				attN = top, 1
 				mass = 0.100000001
 				shielded = False
-				temp = 214.68017704651459
-				tempExt = 214.47538829171108
+				temp = 217.17213675754866
+				tempExt = 216.98817610532274
 				tempExtUnexp = 300.04547099903675
 				staticPressureAtm = 0
 				expt = 0
@@ -44282,7 +43724,7 @@ GAME
 							MarkUT = 792247.31040825264
 							DeltaVExpended = NaN
 							DragLosses = NaN
-							GravityLosses = 3440.7759571776824
+							GravityLosses = 3439.9821890985968
 							SteeringLosses = NaN
 							MarkLAN = 20.708517997538628
 							MarkLatitude = -0.09706015567611212
@@ -44418,8 +43860,8 @@ GAME
 				attN = bottom, 0
 				mass = 0.0199999996
 				shielded = False
-				temp = 214.58493647748952
-				tempExt = 214.433679587933
+				temp = 217.08176133452716
+				tempExt = 217.2029790466581
 				tempExtUnexp = 300.04547099903675
 				staticPressureAtm = 0
 				expt = 0.5
@@ -44731,8 +44173,8 @@ GAME
 				attN = bottom, 3
 				mass = 0.0500000007
 				shielded = False
-				temp = 214.67598615490132
-				tempExt = 214.50676747865751
+				temp = 216.78445910127013
+				tempExt = 216.72125780348242
 				tempExtUnexp = 300.04547099903675
 				staticPressureAtm = 0
 				expt = 0.5
@@ -44948,8 +44390,8 @@ GAME
 				attN = bottom, 4
 				mass = 0.0500000007
 				shielded = False
-				temp = 214.68386861643077
-				tempExt = 214.50760214499761
+				temp = 217.05983054480313
+				tempExt = 216.79885558201474
 				tempExtUnexp = 300.04547099903675
 				staticPressureAtm = 0
 				expt = 0.5
@@ -45165,8 +44607,8 @@ GAME
 				attN = bottom, 5
 				mass = 0.0500000007
 				shielded = False
-				temp = 214.69391074517924
-				tempExt = 214.54480082406207
+				temp = 217.0922287183098
+				tempExt = 216.78173118377333
 				tempExtUnexp = 300.04547099903675
 				staticPressureAtm = 0
 				expt = 0.5
@@ -45382,8 +44824,8 @@ GAME
 				attN = bottom, 6
 				mass = 0.100000001
 				shielded = False
-				temp = 214.70534100954549
-				tempExt = 214.61559889496309
+				temp = 217.13305124149022
+				tempExt = 216.80887593493262
 				tempExtUnexp = 300.04547099903675
 				staticPressureAtm = 0
 				expt = 0.5
@@ -45626,8 +45068,8 @@ GAME
 				attN = airlock, -1
 				mass = 2.06999993
 				shielded = False
-				temp = 214.71866712456534
-				tempExt = 214.70471920542849
+				temp = 217.19045270745858
+				tempExt = 216.37583618443119
 				tempExtUnexp = 300.04547099903675
 				staticPressureAtm = 0
 				expt = 0.5
@@ -46056,8 +45498,8 @@ GAME
 				attN = airlockL, -1
 				mass = 3.59800005
 				shielded = False
-				temp = 214.71489627318121
-				tempExt = 214.64435261480611
+				temp = 217.38512273476118
+				tempExt = 217.12928509285982
 				tempExtUnexp = 300.04547099903675
 				staticPressureAtm = 0
 				expt = 0.5
@@ -46143,8 +45585,8 @@ GAME
 				{
 					name = ModuleScienceLab
 					isEnabled = True
-					dataStored = 465.539703
-					storedScience = 0.0939442292
+					dataStored = 368.609344
+					storedScience = 0.745725632
 					stagingEnabled = True
 					EVENTS
 					{
@@ -46184,7 +45626,7 @@ GAME
 					EfficiencyBonus = 1
 					IsActivated = True
 					stagingEnabled = True
-					lastUpdateTime = 1129824.8961799799
+					lastUpdateTime = 2995104.5862455983
 					EVENTS
 					{
 					}
@@ -46519,8 +45961,8 @@ GAME
 				attN = bottom, 9
 				mass = 0.75
 				shielded = False
-				temp = 214.71775758052561
-				tempExt = 214.59602347852876
+				temp = 217.55050388698996
+				tempExt = 217.16737271380168
 				tempExtUnexp = 300.04547099903675
 				staticPressureAtm = 0
 				expt = 0.5
@@ -46715,7 +46157,7 @@ GAME
 				RESOURCE
 				{
 					name = Oxygen
-					amount = 90905.382220608066
+					amount = 90864.869457816851
 					maxAmount = 105113.2
 					flowState = True
 					isTweakable = True
@@ -46726,7 +46168,7 @@ GAME
 				RESOURCE
 				{
 					name = Food
-					amount = 897.94881955512574
+					amount = 897.54861247759618
 					maxAmount = 1038.3
 					flowState = True
 					isTweakable = True
@@ -46737,7 +46179,7 @@ GAME
 				RESOURCE
 				{
 					name = Water
-					amount = 593.53384334736222
+					amount = 593.26932215863337
 					maxAmount = 686.29999999999995
 					flowState = True
 					isTweakable = True
@@ -46772,8 +46214,8 @@ GAME
 				attN = bottom, 10
 				mass = 0.75
 				shielded = False
-				temp = 214.71416592826452
-				tempExt = 214.54021808527969
+				temp = 217.53668098336854
+				tempExt = 217.09145770517867
 				tempExtUnexp = 300.04547099903675
 				staticPressureAtm = 0
 				expt = 0.5
@@ -46916,7 +46358,7 @@ GAME
 				RESOURCE
 				{
 					name = CarbonDioxide
-					amount = 12247.199510754457
+					amount = 12282.187216376182
 					maxAmount = 172334.5
 					flowState = True
 					isTweakable = True
@@ -46927,7 +46369,7 @@ GAME
 				RESOURCE
 				{
 					name = WasteWater
-					amount = 117.89125137418365
+					amount = 118.22804363122255
 					maxAmount = 1658.8
 					flowState = True
 					isTweakable = True
@@ -46938,7 +46380,7 @@ GAME
 				RESOURCE
 				{
 					name = Waste
-					amount = 12.737238165718791
+					amount = 12.773626468469322
 					maxAmount = 179.19999999999999
 					flowState = True
 					isTweakable = True
@@ -46973,8 +46415,8 @@ GAME
 				attN = bottom, 9
 				mass = 0.0199999996
 				shielded = False
-				temp = 214.7085688896463
-				tempExt = 214.53017274548466
+				temp = 217.43595795658305
+				tempExt = 216.81249470556273
 				tempExtUnexp = 300.04547099903675
 				staticPressureAtm = 0
 				expt = 0.5
@@ -47276,8 +46718,8 @@ GAME
 				attN = bottom, 12
 				mass = 0.0199999996
 				shielded = False
-				temp = 214.71497267419502
-				tempExt = 214.645781579366
+				temp = 217.35001548137305
+				tempExt = 216.0391547396149
 				tempExtUnexp = 300.04547099903675
 				staticPressureAtm = 0
 				expt = 0.5
@@ -47591,8 +47033,8 @@ GAME
 				attN = bottom, 13
 				mass = 0.174999997
 				shielded = False
-				temp = 214.72032233385585
-				tempExt = 214.72868633641758
+				temp = 217.38086516462334
+				tempExt = 214.06008978772169
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -48102,8 +47544,8 @@ GAME
 				attN = bottom, 14
 				mass = 2
 				shielded = False
-				temp = 214.72258115517312
-				tempExt = 214.69026441305039
+				temp = 217.38621818627314
+				tempExt = 217.37150198620287
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -48272,7 +47714,7 @@ GAME
 				{
 					name = ModuleStorageCryostat
 					isEnabled = True
-					storedTemp = 214.72258115517312
+					storedTemp = 217.38621818627314
 					isDisabled = False
 					epx = 0
 					epy = 0
@@ -48297,7 +47739,7 @@ GAME
 				{
 					name = ModuleStorageCryostat
 					isEnabled = True
-					storedTemp = 214.72258115517312
+					storedTemp = 217.38621818627314
 					isDisabled = False
 					epx = 0
 					epy = 0
@@ -48322,7 +47764,7 @@ GAME
 				{
 					name = ModuleStorageCryostat
 					isEnabled = True
-					storedTemp = 214.72258115517312
+					storedTemp = 217.38621818627314
 					isDisabled = False
 					epx = 0
 					epy = 0
@@ -48347,7 +47789,7 @@ GAME
 				{
 					name = ModuleStorageCryostat
 					isEnabled = True
-					storedTemp = 214.72258115517312
+					storedTemp = 217.38621818627314
 					isDisabled = False
 					epx = 0
 					epy = 0
@@ -48372,7 +47814,7 @@ GAME
 				{
 					name = ModuleStorageCryostat
 					isEnabled = True
-					storedTemp = 214.72258115517312
+					storedTemp = 217.38621818627314
 					isDisabled = False
 					epx = 0
 					epy = 0
@@ -48397,7 +47839,7 @@ GAME
 				{
 					name = ModuleStorageCryostat
 					isEnabled = True
-					storedTemp = 214.72258115517312
+					storedTemp = 217.38621818627314
 					isDisabled = False
 					epx = 0
 					epy = 0
@@ -48422,7 +47864,7 @@ GAME
 				{
 					name = ModuleStorageCryostat
 					isEnabled = True
-					storedTemp = 214.72258115517312
+					storedTemp = 217.38621818627314
 					isDisabled = False
 					epx = 0
 					epy = 0
@@ -48565,8 +48007,8 @@ GAME
 				attN = bottom, -1
 				mass = 3
 				shielded = False
-				temp = 214.72874589343027
-				tempExt = 214.72083854298802
+				temp = 217.33793752160173
+				tempExt = 217.46008226198242
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -48968,8 +48410,8 @@ GAME
 				srfN = srfAttach, 9,MyContainer
 				mass = 0.0500000007
 				shielded = False
-				temp = 214.71843858198562
-				tempExt = 214.67021469949145
+				temp = 217.50922337799756
+				tempExt = 216.5821487193551
 				tempExtUnexp = 300.04547099903675
 				staticPressureAtm = 0
 				expt = 0
@@ -49191,8 +48633,8 @@ GAME
 				srfN = srfAttach, 9,MyContainer
 				mass = 0.0500000007
 				shielded = False
-				temp = 214.71843858198562
-				tempExt = 214.67021469949145
+				temp = 217.50922337799756
+				tempExt = 216.5821487193551
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0
@@ -49414,8 +48856,8 @@ GAME
 				srfN = srfAttach, 9,MyContainer
 				mass = 0.0500000007
 				shielded = False
-				temp = 214.71843858198562
-				tempExt = 214.67021469949145
+				temp = 217.50922337799756
+				tempExt = 216.5821487193551
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0
@@ -49637,8 +49079,8 @@ GAME
 				srfN = srfAttach, 9,MyContainer
 				mass = 0.0500000007
 				shielded = False
-				temp = 214.71843858198562
-				tempExt = 214.67021469949145
+				temp = 217.50922337799756
+				tempExt = 216.5821487193551
 				tempExtUnexp = 300.04547099903675
 				staticPressureAtm = 0
 				expt = 0
@@ -49865,8 +49307,8 @@ GAME
 				attN = bottom, -1
 				mass = 0.0700000003
 				shielded = False
-				temp = 214.70902659664694
-				tempExt = 214.63647893537427
+				temp = 217.16193720351006
+				tempExt = 216.8350391404407
 				tempExtUnexp = 300.04547099903675
 				staticPressureAtm = 0
 				expt = 0.5
@@ -50138,8 +49580,8 @@ GAME
 				attN = bottom, -1
 				mass = 0.0700000003
 				shielded = False
-				temp = 214.70907628536096
-				tempExt = 214.64886155978863
+				temp = 217.1863877949481
+				tempExt = 216.96493050444903
 				tempExtUnexp = 300.04547099903675
 				staticPressureAtm = 0
 				expt = 0.5
@@ -50411,8 +49853,8 @@ GAME
 				attN = bottom, -1
 				mass = 0.0700000003
 				shielded = False
-				temp = 214.7247920026507
-				tempExt = 214.67464810317927
+				temp = 217.15672999231745
+				tempExt = 216.80607035555897
 				tempExtUnexp = 300.04547099903675
 				staticPressureAtm = 0
 				expt = 0.5
@@ -50684,8 +50126,8 @@ GAME
 				attN = bottom, -1
 				mass = 0.0700000003
 				shielded = False
-				temp = 214.72179507089339
-				tempExt = 214.9776403317388
+				temp = 217.15904491320123
+				tempExt = 216.81959117767713
 				tempExtUnexp = 300.04547099903675
 				staticPressureAtm = 0
 				expt = 0.5
@@ -50957,8 +50399,8 @@ GAME
 				attN = bottom, -1
 				mass = 0.0700000003
 				shielded = False
-				temp = 214.72013902440517
-				tempExt = 214.64005382656353
+				temp = 217.15605696770058
+				tempExt = 216.78934223350453
 				tempExtUnexp = 300.04547099903675
 				staticPressureAtm = 0
 				expt = 0.5
@@ -51230,8 +50672,8 @@ GAME
 				attN = bottom, -1
 				mass = 0.0700000003
 				shielded = False
-				temp = 214.77350939794889
-				tempExt = 215.17846627421522
+				temp = 217.16887386548578
+				tempExt = 216.88065275734664
 				tempExtUnexp = 300.04547099903675
 				staticPressureAtm = 0
 				expt = 0.5
@@ -51503,8 +50945,8 @@ GAME
 				attN = bottom, -1
 				mass = 0.0700000003
 				shielded = False
-				temp = 214.70902659664694
-				tempExt = 214.63647893537427
+				temp = 217.15552537964282
+				tempExt = 216.78823657814175
 				tempExtUnexp = 300.04547099903675
 				staticPressureAtm = 0
 				expt = 0.5
@@ -51776,8 +51218,8 @@ GAME
 				attN = bottom, -1
 				mass = 0.0700000003
 				shielded = False
-				temp = 214.70902659664694
-				tempExt = 214.63647893537427
+				temp = 217.21386075504645
+				tempExt = 217.03281753017458
 				tempExtUnexp = 300.04547099903675
 				staticPressureAtm = 0
 				expt = 0.5
@@ -52048,8 +51490,8 @@ GAME
 				srfN = srfAttach, 6,collider
 				mass = 0.0250000004
 				shielded = False
-				temp = 214.66488213054652
-				tempExt = 214.29704729029336
+				temp = 216.77808970941015
+				tempExt = 215.2762070580138
 				tempExtUnexp = 300.04547099903675
 				staticPressureAtm = 0
 				expt = 0.5
@@ -52114,7 +51556,7 @@ GAME
 					isEnabled = True
 					efficiencyMult = 1
 					launchUT = 792247.31040825264
-					currentRotation = (-0.695507705, 0.126414731, -0.126188561, 0.695963323)
+					currentRotation = (-0.642412007, -0.294949293, 0.29485786, 0.64293915)
 					storedAnimationTime = 0
 					storedAnimationSpeed = 0
 					deployState = EXTENDED
@@ -52327,8 +51769,8 @@ GAME
 				srfN = srfAttach, 6,collider
 				mass = 0.0250000004
 				shielded = False
-				temp = 214.74676304407666
-				tempExt = 214.80787024657036
+				temp = 216.77395500120502
+				tempExt = 215.3709346738886
 				tempExtUnexp = 300.04547099903675
 				staticPressureAtm = 0
 				expt = 0.5
@@ -52393,7 +51835,7 @@ GAME
 					isEnabled = True
 					efficiencyMult = 1
 					launchUT = 792247.31040825264
-					currentRotation = (-0.671990573, 0.219506025, -0.219245464, 0.672441304)
+					currentRotation = (-0.685544431, -0.17222698, 0.17219986, 0.686085999)
 					storedAnimationTime = 0
 					storedAnimationSpeed = 0
 					deployState = EXTENDED
@@ -52606,8 +52048,8 @@ GAME
 				srfN = srfAttach, 6,collider
 				mass = 0.0250000004
 				shielded = False
-				temp = 214.85333154822663
-				tempExt = 215.64526939849898
+				temp = 216.77638246005588
+				tempExt = 215.37100237744889
 				tempExtUnexp = 300.04547099903675
 				staticPressureAtm = 0
 				expt = 0.5
@@ -52672,7 +52114,7 @@ GAME
 					isEnabled = True
 					efficiencyMult = 1
 					launchUT = 792247.31040825264
-					currentRotation = (-0.677115977, 0.202654451, -0.202626467, 0.677781403)
+					currentRotation = (-0.693785906, 0.134842098, -0.134871215, 0.694469869)
 					storedAnimationTime = 0
 					storedAnimationSpeed = 0
 					deployState = EXTENDED
@@ -52885,8 +52327,8 @@ GAME
 				srfN = srfAttach, 6,collider
 				mass = 0.0250000004
 				shielded = False
-				temp = 214.86606171011806
-				tempExt = 215.91917175502206
+				temp = 216.81582683126535
+				tempExt = 215.5612896551184
 				tempExtUnexp = 300.04547099903675
 				staticPressureAtm = 0
 				expt = 0.5
@@ -52951,7 +52393,7 @@ GAME
 					isEnabled = True
 					efficiencyMult = 1
 					launchUT = 792247.31040825264
-					currentRotation = (0.703532517, -0.0693450794, 0.069235675, -0.703874886)
+					currentRotation = (0.645996928, -0.287317902, 0.287098974, -0.646305323)
 					storedAnimationTime = 0
 					storedAnimationSpeed = 0
 					deployState = EXTENDED
@@ -53164,8 +52606,8 @@ GAME
 				srfN = srfAttach, 6,collider
 				mass = 0.0250000004
 				shielded = False
-				temp = 214.81847781623628
-				tempExt = 215.69228574422115
+				temp = 216.83853106478045
+				tempExt = 215.73191746180981
 				tempExtUnexp = 300.04547099903675
 				staticPressureAtm = 0
 				expt = 0.5
@@ -53230,7 +52672,7 @@ GAME
 					isEnabled = True
 					efficiencyMult = 1
 					launchUT = 792247.31040825264
-					currentRotation = (-0.695486307, -0.126174897, 0.126205057, 0.696025252)
+					currentRotation = (-0.642495334, 0.294978201, -0.294636607, 0.642943978)
 					storedAnimationTime = 0
 					storedAnimationSpeed = 0
 					deployState = EXTENDED
@@ -53443,8 +52885,8 @@ GAME
 				srfN = srfAttach, 6,collider
 				mass = 0.0250000004
 				shielded = False
-				temp = 214.74404580695798
-				tempExt = 215.2182322529178
+				temp = 216.87746226016964
+				tempExt = 216.15616521434268
 				tempExtUnexp = 300.04547099903675
 				staticPressureAtm = 0
 				expt = 0.5
@@ -53509,7 +52951,7 @@ GAME
 					isEnabled = True
 					efficiencyMult = 1
 					launchUT = 792247.31040825264
-					currentRotation = (-0.671931326, -0.219347537, 0.219311371, 0.672530711)
+					currentRotation = (-0.685606837, 0.172087297, -0.171795458, 0.686160028)
 					storedAnimationTime = 0
 					storedAnimationSpeed = 0
 					deployState = EXTENDED
@@ -53722,8 +53164,8 @@ GAME
 				srfN = srfAttach, 6,collider
 				mass = 0.0250000004
 				shielded = False
-				temp = 214.66499354917354
-				tempExt = 214.31004267081858
+				temp = 216.87418594846613
+				tempExt = 216.1015311294415
 				tempExtUnexp = 300.04547099903675
 				staticPressureAtm = 0
 				expt = 0.5
@@ -53788,7 +53230,7 @@ GAME
 					isEnabled = True
 					efficiencyMult = 1
 					launchUT = 792247.31040825264
-					currentRotation = (-0.677272856, -0.202861637, 0.202588186, 0.677574158)
+					currentRotation = (-0.69399184, -0.134764224, 0.134514093, 0.694348514)
 					storedAnimationTime = 0
 					storedAnimationSpeed = 0
 					deployState = EXTENDED
@@ -54001,8 +53443,8 @@ GAME
 				srfN = srfAttach, 6,collider
 				mass = 0.0250000004
 				shielded = False
-				temp = 214.66562494661071
-				tempExt = 214.30006523220055
+				temp = 216.86709541286558
+				tempExt = 216.02675599188902
 				tempExtUnexp = 300.04547099903675
 				staticPressureAtm = 0
 				expt = 0.5
@@ -54067,7 +53509,7 @@ GAME
 					isEnabled = True
 					efficiencyMult = 1
 					launchUT = 792247.31040825264
-					currentRotation = (-0.70333004, -0.0698140487, 0.069288604, 0.704025567)
+					currentRotation = (-0.645980716, -0.287373096, 0.286651641, 0.646495521)
 					storedAnimationTime = 0
 					storedAnimationSpeed = 0
 					deployState = EXTENDED
@@ -54275,8 +53717,8 @@ GAME
 				attN = bottom, 36
 				mass = 0.0199999996
 				shielded = False
-				temp = 214.64981153593379
-				tempExt = 214.45354096699714
+				temp = 218.40827193437465
+				tempExt = 217.77074999452162
 				tempExtUnexp = 307.48683219733147
 				staticPressureAtm = 0
 				expt = 0.5
@@ -54588,8 +54030,8 @@ GAME
 				attN = bottom, 37
 				mass = 0.0500000007
 				shielded = False
-				temp = 214.65999025554274
-				tempExt = 214.46495758864182
+				temp = 218.54125244783842
+				tempExt = 218.02402307698665
 				tempExtUnexp = 307.48683219733147
 				staticPressureAtm = 0
 				expt = 0.5
@@ -54805,8 +54247,8 @@ GAME
 				attN = bottom, 40
 				mass = 0.200000003
 				shielded = False
-				temp = 214.66760510917942
-				tempExt = 214.4825945464415
+				temp = 218.626142224559
+				tempExt = 217.90116095200835
 				tempExtUnexp = 307.48683219733147
 				staticPressureAtm = 0
 				expt = 0.5
@@ -55062,8 +54504,8 @@ GAME
 				srfN = srfAttach, 37,node_collider
 				mass = 0.0250000004
 				shielded = False
-				temp = 214.66470533486282
-				tempExt = 214.78324159446464
+				temp = 218.23186939182878
+				tempExt = 217.48181308519233
 				tempExtUnexp = 307.48683219733147
 				staticPressureAtm = 0
 				expt = 0.5
@@ -55128,7 +54570,7 @@ GAME
 					isEnabled = True
 					efficiencyMult = 1
 					launchUT = 866516.46466976684
-					currentRotation = (-0.218674511, 0.672714651, -0.672026217, 0.219128728)
+					currentRotation = (0.176184103, 0.685231149, -0.68438226, -0.176177487)
 					storedAnimationTime = 0
 					storedAnimationSpeed = 0
 					deployState = EXTENDED
@@ -55335,8 +54777,8 @@ GAME
 				srfN = srfAttach, 37,node_collider
 				mass = 0.0250000004
 				shielded = False
-				temp = 214.65814613811312
-				tempExt = 214.34445451370979
+				temp = 218.14383755495894
+				tempExt = 216.79461879072619
 				tempExtUnexp = 307.48683219733147
 				staticPressureAtm = 0
 				expt = 0.5
@@ -55401,7 +54843,7 @@ GAME
 					isEnabled = True
 					efficiencyMult = 1
 					launchUT = 866516.46466976684
-					currentRotation = (-0.218887731, -0.672529042, 0.672246814, 0.218808264)
+					currentRotation = (0.175846711, -0.684976995, 0.684750855, -0.176070347)
 					storedAnimationTime = 0
 					storedAnimationSpeed = 0
 					deployState = EXTENDED
@@ -55609,8 +55051,8 @@ GAME
 				attN = bottom, 49
 				mass = 0.100000001
 				shielded = False
-				temp = 214.68846864117242
-				tempExt = 214.53363138867454
+				temp = 219.02821864223094
+				tempExt = 218.523499513254
 				tempExtUnexp = 307.48683219733147
 				staticPressureAtm = 0
 				expt = 0.5
@@ -55880,8 +55322,8 @@ GAME
 				attN = bottom, -1
 				mass = 0.0500000007
 				shielded = False
-				temp = 214.70371263287976
-				tempExt = 214.27362745680398
+				temp = 218.96948051337247
+				tempExt = 216.93480097282895
 				tempExtUnexp = 307.48683219733147
 				staticPressureAtm = 0
 				expt = 0.5
@@ -56132,8 +55574,8 @@ GAME
 				srfN = srfAttach, 40,collider
 				mass = 0.00499999989
 				shielded = False
-				temp = 214.68644402931972
-				tempExt = 214.52303341822554
+				temp = 218.91870820471533
+				tempExt = 218.48110414476835
 				tempExtUnexp = 307.48683219733147
 				staticPressureAtm = 0
 				expt = 0.5
@@ -56342,8 +55784,8 @@ GAME
 				srfN = srfAttach, 40,collider
 				mass = 0.0500000007
 				shielded = False
-				temp = 214.68336334504878
-				tempExt = 214.51495824499324
+				temp = 218.88582111968691
+				tempExt = 218.52141845008802
 				tempExtUnexp = 307.48683219733147
 				staticPressureAtm = 0
 				expt = 0.5
@@ -56591,8 +56033,8 @@ GAME
 				srfN = srfAttach, 40,collider
 				mass = 0.00499999989
 				shielded = False
-				temp = 214.67743470391753
-				tempExt = 214.51355843960758
+				temp = 218.90252324371909
+				tempExt = 218.5185743888172
 				tempExtUnexp = 307.48683219733147
 				staticPressureAtm = 0
 				expt = 0.5
@@ -56815,8 +56257,8 @@ GAME
 				srfN = srfAttach, 40,collider
 				mass = 0.0199999996
 				shielded = False
-				temp = 214.70854819070598
-				tempExt = 214.61968335991904
+				temp = 219.07949560690852
+				tempExt = 218.72689395257802
 				tempExtUnexp = 307.48683219733147
 				staticPressureAtm = 0
 				expt = 0.5
@@ -57010,8 +56452,8 @@ GAME
 				srfN = srfAttach, 40,collider
 				mass = 0.0199999996
 				shielded = False
-				temp = 214.70432157671712
-				tempExt = 214.52099961821864
+				temp = 219.08806889348784
+				tempExt = 218.80372907301617
 				tempExtUnexp = 307.48683219733147
 				staticPressureAtm = 0
 				expt = 0.5
@@ -57205,8 +56647,8 @@ GAME
 				srfN = srfAttach, 40,collider
 				mass = 0.0199999996
 				shielded = False
-				temp = 214.70432157671712
-				tempExt = 214.52099961821864
+				temp = 219.10139889773183
+				tempExt = 218.81888608949276
 				tempExtUnexp = 307.48683219733147
 				staticPressureAtm = 0
 				expt = 0.5
@@ -57400,8 +56842,8 @@ GAME
 				srfN = srfAttach, 40,collider
 				mass = 0.0199999996
 				shielded = False
-				temp = 214.70448826226527
-				tempExt = 214.5292650406102
+				temp = 219.0812200669713
+				tempExt = 218.72860744551974
 				tempExtUnexp = 307.48683219733147
 				staticPressureAtm = 0
 				expt = 0.5
@@ -57596,8 +57038,8 @@ GAME
 				attN = top, 40
 				mass = 1.46700013
 				shielded = False
-				temp = 214.7146924090782
-				tempExt = 214.64434323965637
+				temp = 219.3088922921408
+				tempExt = 219.15301430738239
 				tempExtUnexp = 307.48683219733147
 				staticPressureAtm = 0
 				expt = 0.5
@@ -59140,7 +58582,7 @@ GAME
 				RESOURCE
 				{
 					name = Food
-					amount = 0.84180695821780327
+					amount = 0.84175702746171799
 					maxAmount = 2.194
 					flowState = True
 					isTweakable = True
@@ -59151,7 +58593,7 @@ GAME
 				RESOURCE
 				{
 					name = Water
-					amount = 0.55310527038243407
+					amount = 0.55307246387246412
 					maxAmount = 1.45
 					flowState = True
 					isTweakable = True
@@ -59162,7 +58604,7 @@ GAME
 				RESOURCE
 				{
 					name = Oxygen
-					amount = 86.168914773717134
+					amount = 86.163804472925548
 					maxAmount = 222.07599999999999
 					flowState = True
 					isTweakable = True
@@ -59173,7 +58615,7 @@ GAME
 				RESOURCE
 				{
 					name = CarbonDioxide
-					amount = 72.43932429394097
+					amount = 72.442791845545898
 					maxAmount = 191.82599999999999
 					flowState = True
 					isTweakable = True
@@ -59184,7 +58626,7 @@ GAME
 				RESOURCE
 				{
 					name = Waste
-					amount = 0.0767005000921058
+					amount = 0.076704082430580661
 					maxAmount = 0.20000000000000001
 					flowState = True
 					isTweakable = True
@@ -59195,7 +58637,7 @@ GAME
 				RESOURCE
 				{
 					name = WasteWater
-					amount = 0.70041445988532847
+					amount = 0.70044779416741154
 					maxAmount = 1.8480000000000001
 					flowState = True
 					isTweakable = True
@@ -59230,8 +58672,8 @@ GAME
 				attN = bottom, 51
 				mass = 0.5
 				shielded = False
-				temp = 214.72990606949557
-				tempExt = 214.86330553973968
+				temp = 219.48654853294599
+				tempExt = 219.51552670137261
 				tempExtUnexp = 307.48683219733147
 				staticPressureAtm = 0
 				expt = 0.5
@@ -59400,7 +58842,7 @@ GAME
 				{
 					name = ModuleStorageCryostat
 					isEnabled = True
-					storedTemp = 214.72990606949557
+					storedTemp = 219.48654853294599
 					isDisabled = False
 					epx = 0
 					epy = 0
@@ -59425,7 +58867,7 @@ GAME
 				{
 					name = ModuleStorageCryostat
 					isEnabled = True
-					storedTemp = 214.72990606949557
+					storedTemp = 219.48654853294599
 					isDisabled = False
 					epx = 0
 					epy = 0
@@ -59450,7 +58892,7 @@ GAME
 				{
 					name = ModuleStorageCryostat
 					isEnabled = True
-					storedTemp = 214.72990606949557
+					storedTemp = 219.48654853294599
 					isDisabled = False
 					epx = 0
 					epy = 0
@@ -59475,7 +58917,7 @@ GAME
 				{
 					name = ModuleStorageCryostat
 					isEnabled = True
-					storedTemp = 214.72990606949557
+					storedTemp = 219.48654853294599
 					isDisabled = False
 					epx = 0
 					epy = 0
@@ -59500,7 +58942,7 @@ GAME
 				{
 					name = ModuleStorageCryostat
 					isEnabled = True
-					storedTemp = 214.72990606949557
+					storedTemp = 219.48654853294599
 					isDisabled = False
 					epx = 0
 					epy = 0
@@ -59525,7 +58967,7 @@ GAME
 				{
 					name = ModuleStorageCryostat
 					isEnabled = True
-					storedTemp = 214.72990606949557
+					storedTemp = 219.48654853294599
 					isDisabled = False
 					epx = 0
 					epy = 0
@@ -59550,7 +58992,7 @@ GAME
 				{
 					name = ModuleStorageCryostat
 					isEnabled = True
-					storedTemp = 214.72990606949557
+					storedTemp = 219.48654853294599
 					isDisabled = False
 					epx = 0
 					epy = 0
@@ -59693,8 +59135,8 @@ GAME
 				attN = bottom, -1
 				mass = 0.5
 				shielded = False
-				temp = 214.75238995759614
-				tempExt = 215.06396355163781
+				temp = 219.14705745273483
+				tempExt = 219.1955293758067
 				tempExtUnexp = 307.48683219733147
 				staticPressureAtm = 0
 				expt = 0.5
@@ -60099,8 +59541,8 @@ GAME
 				attN = bottom, -1
 				mass = 0.0199999996
 				shielded = False
-				temp = 214.73165813071367
-				tempExt = 214.74952351515196
+				temp = 219.45704756143564
+				tempExt = 219.37631948969283
 				tempExtUnexp = 307.48683219733147
 				staticPressureAtm = 0
 				expt = 0.5
@@ -60403,8 +59845,8 @@ GAME
 				srfN = srfAttach, 50,collider
 				mass = 0.0149999997
 				shielded = False
-				temp = 214.72340766881871
-				tempExt = 214.68299764961347
+				temp = 219.4306810594579
+				tempExt = 219.73596614814596
 				tempExtUnexp = 307.48683219733147
 				staticPressureAtm = 0
 				expt = 0
@@ -60687,8 +60129,8 @@ GAME
 				srfN = srfAttach, 50,collider
 				mass = 0.0149999997
 				shielded = False
-				temp = 214.77740299243825
-				tempExt = 215.13983515558667
+				temp = 219.37679943747557
+				tempExt = 219.30445612942748
 				tempExtUnexp = 307.48683219733147
 				staticPressureAtm = 0
 				expt = 0
@@ -60971,8 +60413,8 @@ GAME
 				srfN = srfAttach, 50,collider
 				mass = 0.0149999997
 				shielded = False
-				temp = 214.74115787940198
-				tempExt = 214.69210232119704
+				temp = 219.37446066812467
+				tempExt = 219.28232353359215
 				tempExtUnexp = 307.48683219733147
 				staticPressureAtm = 0
 				expt = 0
@@ -61255,8 +60697,8 @@ GAME
 				srfN = srfAttach, 50,collider
 				mass = 0.0149999997
 				shielded = False
-				temp = 214.72340766881871
-				tempExt = 214.68299764961347
+				temp = 219.37382303245843
+				tempExt = 219.28006612775806
 				tempExtUnexp = 307.48683219733147
 				staticPressureAtm = 0
 				expt = 0
@@ -61541,8 +60983,8 @@ GAME
 				srfN = srfAttach, 50,collider
 				mass = 0.0500000007
 				shielded = False
-				temp = 214.73156743949781
-				tempExt = 214.79445563959169
+				temp = 219.48918966719637
+				tempExt = 219.48277496475356
 				tempExtUnexp = 307.48683219733147
 				staticPressureAtm = 0
 				expt = 0
@@ -61766,8 +61208,8 @@ GAME
 				srfN = srfAttach, 50,collider
 				mass = 0.0500000007
 				shielded = False
-				temp = 214.73156743949781
-				tempExt = 214.79445563959169
+				temp = 219.48918966719637
+				tempExt = 219.48277496475356
 				tempExtUnexp = 307.48683219733147
 				staticPressureAtm = 0
 				expt = 0
@@ -61991,8 +61433,8 @@ GAME
 				srfN = srfAttach, 50,collider
 				mass = 0.0500000007
 				shielded = False
-				temp = 214.73156743949781
-				tempExt = 214.79445563959169
+				temp = 219.48918966719637
+				tempExt = 219.48277496475356
 				tempExtUnexp = 307.48683219733147
 				staticPressureAtm = 0
 				expt = 0
@@ -62216,8 +61658,8 @@ GAME
 				srfN = srfAttach, 50,collider
 				mass = 0.0500000007
 				shielded = False
-				temp = 214.73156743949781
-				tempExt = 214.79445563959169
+				temp = 219.48918966719637
+				tempExt = 219.48277496475356
 				tempExtUnexp = 307.48683219733147
 				staticPressureAtm = 0
 				expt = 0
@@ -62441,8 +61883,8 @@ GAME
 				srfN = srfAttach, 50,collider
 				mass = 0.0500000007
 				shielded = False
-				temp = 214.73156743949781
-				tempExt = 214.79445563959169
+				temp = 219.48918966719637
+				tempExt = 219.48277496475356
 				tempExtUnexp = 307.48683219733147
 				staticPressureAtm = 0
 				expt = 0
@@ -62666,8 +62108,8 @@ GAME
 				srfN = srfAttach, 50,collider
 				mass = 0.0500000007
 				shielded = False
-				temp = 214.73156743949781
-				tempExt = 214.79445563959169
+				temp = 219.48918966719637
+				tempExt = 219.48277496475356
 				tempExtUnexp = 307.48683219733147
 				staticPressureAtm = 0
 				expt = 0
@@ -62889,8 +62331,8 @@ GAME
 				srfN = srfAttach, 50,collider
 				mass = 0.0399999991
 				shielded = False
-				temp = 214.72995702110339
-				tempExt = 214.75389754649032
+				temp = 219.45521102052527
+				tempExt = 219.38384888042015
 				tempExtUnexp = 307.48683219733147
 				staticPressureAtm = 0
 				expt = 0.5
@@ -63141,8 +62583,8 @@ GAME
 				srfN = srfAttach, 50,collider
 				mass = 0.0399999991
 				shielded = False
-				temp = 214.73152067657864
-				tempExt = 214.78109296370363
+				temp = 219.45521102052527
+				tempExt = 219.38384888042015
 				tempExtUnexp = 307.48683219733147
 				staticPressureAtm = 0
 				expt = 0.5
@@ -63393,8 +62835,8 @@ GAME
 				srfN = srfAttach, 50,collider
 				mass = 0.0399999991
 				shielded = False
-				temp = 214.73007773256484
-				tempExt = 214.75393588876119
+				temp = 219.45521103660741
+				tempExt = 219.38384888568339
 				tempExtUnexp = 307.48683219733147
 				staticPressureAtm = 0
 				expt = 0.5
@@ -63645,8 +63087,8 @@ GAME
 				srfN = srfAttach, 50,collider
 				mass = 0.0399999991
 				shielded = False
-				temp = 214.72995702110339
-				tempExt = 214.75389754649032
+				temp = 219.45521102052717
+				tempExt = 219.3838488804208
 				tempExtUnexp = 307.48683219733147
 				staticPressureAtm = 0
 				expt = 0.5
@@ -63897,8 +63339,8 @@ GAME
 				attN = bottom, -1
 				mass = 0.0299999993
 				shielded = False
-				temp = 214.71307163986643
-				tempExt = 214.60668219722646
+				temp = 219.25467488479583
+				tempExt = 219.06799629455816
 				tempExtUnexp = 307.48683219733147
 				staticPressureAtm = 0
 				expt = 0.5
@@ -64097,7 +63539,7 @@ GAME
 				RESOURCE
 				{
 					name = Oxygen
-					amount = 301.25518034734222
+					amount = 301.23731422252098
 					maxAmount = 776.39999999999998
 					flowState = True
 					isTweakable = True
@@ -64108,7 +63550,7 @@ GAME
 				RESOURCE
 				{
 					name = Food
-					amount = 2.9160131643328508
+					amount = 2.915840204560654
 					maxAmount = 7.5999999999999996
 					flowState = True
 					isTweakable = True
@@ -64119,7 +63561,7 @@ GAME
 				RESOURCE
 				{
 					name = Water
-					amount = 1.9072595530456637
+					amount = 1.9071464271451748
 					maxAmount = 5
 					flowState = True
 					isTweakable = True
@@ -64155,8 +63597,8 @@ GAME
 				attN = bottom, -1
 				mass = 0.0299999993
 				shielded = False
-				temp = 214.71079583384116
-				tempExt = 214.61535670365816
+				temp = 219.26574875610402
+				tempExt = 219.07188389238686
 				tempExtUnexp = 307.48683219733147
 				staticPressureAtm = 0
 				expt = 0.5
@@ -64303,7 +63745,7 @@ GAME
 				RESOURCE
 				{
 					name = Waste
-					amount = 0.49855325059539352
+					amount = 0.49857653579582911
 					maxAmount = 1.3
 					flowState = True
 					isTweakable = True
@@ -64314,7 +63756,7 @@ GAME
 				RESOURCE
 				{
 					name = WasteWater
-					amount = 4.62394827430444
+					amount = 4.6241683382839698
 					maxAmount = 12.199999999999999
 					flowState = True
 					isTweakable = True
@@ -64325,7 +63767,7 @@ GAME
 				RESOURCE
 				{
 					name = CarbonDioxide
-					amount = 480.68570420675832
+					amount = 480.70871384267252
 					maxAmount = 1272.9000000000001
 					flowState = True
 					isTweakable = True
@@ -64360,8 +63802,8 @@ GAME
 				attN = bottom, -1
 				mass = 0.0700000003
 				shielded = False
-				temp = 214.72179759546603
-				tempExt = 214.90183121110579
+				temp = 219.1888010553929
+				tempExt = 219.04639975102796
 				tempExtUnexp = 307.48683219733147
 				staticPressureAtm = 0
 				expt = 0.5
@@ -64626,8 +64068,8 @@ GAME
 				attN = bottom, -1
 				mass = 0.0700000003
 				shielded = False
-				temp = 214.71563163512357
-				tempExt = 214.71886815446331
+				temp = 219.18751940762505
+				tempExt = 219.07470478550377
 				tempExtUnexp = 307.48683219733147
 				staticPressureAtm = 0
 				expt = 0.5
@@ -64910,7 +64352,7 @@ GAME
 				trimPitch = 0
 				trimYaw = 0
 				trimRoll = 0
-				mainThrottle = 0.0499999523
+				mainThrottle = 0
 			}
 			VESSELMODULES
 			{
@@ -66410,13 +65852,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = 100396.16581237831
+				SMA = 100396.16581238346
 				ECC = 0.99999999999999989
-				INC = 122.48188441926098
+				INC = 122.48188441925981
 				LPE = 90
-				LAN = 328.65295239459738
-				MNA = 3.1415926864625696
-				EPH = 2991406.7435769932
+				LAN = 343.98182470349485
+				MNA = 3.1415926207170166
+				EPH = 2997324.7262476659
 				REF = 2
 				IDENT = Squad/Mun
 			}
@@ -91987,998 +91429,6 @@ GAME
 	MESSAGESYSTEM
 	{
 		flash = True
-		MESSAGE
-		{
-			title = Contract Complete
-			message = <b>Test AE-FF2 Airstream Protective Shell (2.5m) orbiting Kerbol.</b>~n~nTest Complete! We got some good data here. Thanks!~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  167,670 <color=#feb200>(-55,890)</color>  </color>~n<color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 12 <color=#caff00>(+5)</color>  </color>~n<color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 11   </color>~n~n
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Complete
-			message = <b>Position satellite in a specific orbit of Minmus.</b>~n~nYou have successfully deployed our satellite in orbit of Minmus.~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  105,963 <color=#feb200>(-35,321)</color>  </color>~n<color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 13 <color=#caff00>(+3)</color>  </color>~n<color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 9   </color>~n~n
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Complete
-			message = <b>Position satellite into a keostationary network around Kerbin.</b>~n~nYou have successfully increased the coverage of our keostationary satellite network above Kerbin.~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  105,706 <color=#feb200>(-35,235)</color>  </color>~n<color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 12 <color=#caff00>(+3)</color>  </color>~n<color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 24   </color>~n~n
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Complete
-			message = <b>Rescue Hanbro from orbit of The Mun.</b>~n~nWell done! Hanbro Kerman has been recovered in one piece and is now enjoying a thorough debriefing from the comfort of his quarantine cell.~n~n~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  97,289 <color=#feb200>(-32,430)</color>  </color>~n<color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> <color=#caff00>(+3)</color>  </color>~n<color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 12   </color>~n~n
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Complete
-			message = <b>Rescue Calble from orbit of The Mun.</b>~n~nWell done! Calble Kerman has been recovered in one piece and is now enjoying a thorough debriefing from the comfort of his quarantine cell.~n~n~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  124,495 <color=#feb200>(-41,498)</color>  </color>~n<color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> <color=#caff00>(+3)</color>  </color>~n<color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 11   </color>~n~n
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Calble Kerman was added to the crew!
-			message = <b>Rescue Calble from orbit of The Mun.</b>~n~nCalble Kerman is now part of the space program crew.
-			color = 2
-			icon = 5
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Rescue Calble from orbit of The Mun.</b>~n~n'Save Calble Kerman' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 12,029 <color=#feb200>(-4,010)</color>  </color><color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 0 <color=#caff00>(+0)</color>  </color><color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 5   </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Hanbro Kerman was added to the crew!
-			message = <b>Rescue Hanbro from orbit of The Mun.</b>~n~nHanbro Kerman is now part of the space program crew.
-			color = 2
-			icon = 5
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Rescue Hanbro from orbit of The Mun.</b>~n~n'Save Hanbro Kerman' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 10,024 <color=#feb200>(-3,341)</color>  </color><color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 0 <color=#caff00>(+0)</color>  </color><color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 5   </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Complete
-			message = <b>Test Mk2 Lander Can orbiting Minmus.</b>~n~nTest Complete! We got some good data here. Thanks!~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  114,225 <color=#feb200>(-38,075)</color>  </color>~n<color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 10 <color=#caff00>(+3)</color>  </color>~n<color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 11   </color>~n~n
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Complete
-			message = <b>Science data from surface of The Mun.</b>~n~nWe've just received experimental data from the surface of The Mun! Excellent.~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  42,694 <color=#feb200>(-14,231)</color>  </color>~n<color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 5 <color=#caff00>(+1)</color>  </color>~n<color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 8   </color>~n~n
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Complete
-			message = <b>Explore The Mun.</b>~n~nOur exploration of The Mun was successful, but who knows what other secrets it holds!~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  113,724 <color=#feb200>(-37,908)</color>  </color>~n<color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 15 <color=#caff00>(+3)</color>  </color>~n<color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 24   </color>~n~n
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Explore The Mun.</b>~n~nFantastic! Now one of you shake the flag so it looks like it is waving majestically!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 38,880 <color=#feb200>(-12,960)</color>  </color><color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 4 <color=#caff00>(+1)</color>  </color><color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 5   </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Explore The Mun.</b>~n~nThat's one small step for Kerbin, one giant leap for our budget!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 38,880 <color=#feb200>(-12,960)</color>  </color><color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 4 <color=#caff00>(+1)</color>  </color><color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 5   </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Explore The Mun.</b>~n~nTouchdown confirmed on The Mun! Any crash you can walk away from counts as a landing.~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 97,200 <color=#feb200>(-32,400)</color>  </color><color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 10 <color=#caff00>(+3)</color>  </color><color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 13   </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Complete
-			message = <b>Test Mk1 Cockpit on a sub-orbital trajectory over The Mun.</b>~n~nTest Complete! We got some good data here. Thanks!~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  83,531 <color=#feb200>(-27,844)</color>  </color>~n<color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 9 <color=#caff00>(+2)</color>  </color>~n<color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 13   </color>~n~n
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Complete
-			message = <b>Haul TS-06 Stack Separator into orbit of The Mun.</b>~n~nHaul Complete! This will help us a great deal. Thanks!~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  50,119 <color=#feb200>(-16,706)</color>  </color>~n<color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 5 <color=#caff00>(+1)</color>  </color>~n<color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 7   </color>~n~n
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Complete
-			message = <b>Position satellite in keostationary orbit of Kerbin.</b>~n~nYou have successfully placed our satellite in keostationary orbit of Kerbin.~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  126,318 <color=#feb200>(-42,106)</color>  </color>~n<color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 12 <color=#caff00>(+3)</color>  </color>~n<color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 17   </color>~n~n
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Complete
-			message = <b>Explore The Mun.</b>~n~nWe have taken our first steps towards exploring The Mun. Let's keep going and see where it takes us!~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  92,664 <color=#feb200>(-30,888)</color>  </color>~n<color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 14 <color=#caff00>(+3)</color>  </color>~n<color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 22   </color>~n~n
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Explore The Mun.</b>~n~nOur engineers are already repurposing parts of the vessel from The Mun for other missions! Good work!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 51,840 <color=#feb200>(-17,280)</color>  </color><color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 5 <color=#caff00>(+1)</color>  </color><color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 8   </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Explore The Mun.</b>~n~nExceptional work! Now get back into the vessel before this turns into a rescue mission.~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 38,880 <color=#feb200>(-12,960)</color>  </color><color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 4 <color=#caff00>(+1)</color>  </color><color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 5   </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Explore The Mun.</b>~n~nA stable orbit has been achieved! Mission control is still debating the best way to get you back home. You packed a toothbrush, right?~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 51,840 <color=#feb200>(-17,280)</color>  </color><color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 5 <color=#caff00>(+1)</color>  </color><color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 8   </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Complete
-			message = <b>Build a new orbital station around Kerbin.</b>~n~nYou have finished construction of a new orbital station around Kerbin.~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  82,812 <color=#feb200>(-27,604)</color>  </color>~n<color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> <color=#caff00>(+2)</color>  </color>~n<color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 19   </color>~n~n
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Complete
-			message = <b>Position satellite in an equatorial orbit of Kerbin.</b>~n~nYou have successfully deployed our satellite into equatorial orbit around Kerbin.~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  60,437 <color=#feb200>(-20,146)</color>  </color>~n<color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> <color=#caff00>(+2)</color>  </color>~n<color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 11   </color>~n~n
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Complete
-			message = <b>Ferry six tourists safely to their destination and back.</b>~n~nThe tour was a success! Wehrdos, Lingard, Magley, Rosgard, Lagerdan and Kerlorf had nothing but great things to say about the trip, and brought back plenty of photos.~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 27   </color>~n~n
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Ferry six tourists safely to their destination and back.</b>~n~n'Wehrdos' Travel Itinerary' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 19,744 <color=#feb200>(-6,581)</color>  </color><color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 <color=#caff00>(+1)</color>  </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Ferry six tourists safely to their destination and back.</b>~n~n'Lingard's Travel Itinerary' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 19,744 <color=#feb200>(-6,581)</color>  </color><color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 <color=#caff00>(+1)</color>  </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Ferry six tourists safely to their destination and back.</b>~n~n'Magley's Travel Itinerary' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 19,744 <color=#feb200>(-6,581)</color>  </color><color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 <color=#caff00>(+1)</color>  </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Ferry six tourists safely to their destination and back.</b>~n~n'Rosgard's Travel Itinerary' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 19,744 <color=#feb200>(-6,581)</color>  </color><color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 <color=#caff00>(+1)</color>  </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Ferry six tourists safely to their destination and back.</b>~n~n'Lagerdan's Travel Itinerary' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 19,744 <color=#feb200>(-6,581)</color>  </color><color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 <color=#caff00>(+1)</color>  </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Ferry six tourists safely to their destination and back.</b>~n~n'Kerlorf's Travel Itinerary' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 19,744 <color=#feb200>(-6,581)</color>  </color><color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 <color=#caff00>(+1)</color>  </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Ferry six tourists safely to their destination and back.</b>~n~n'Orbit around Kerbin' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 3,290 <color=#feb200>(-1,097)</color>  </color><color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 0 <color=#caff00>(+0)</color>  </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Ferry six tourists safely to their destination and back.</b>~n~n'Suborbital spaceflight on Kerbin' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 3,290 <color=#feb200>(-1,097)</color>  </color><color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 0 <color=#caff00>(+0)</color>  </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Complete
-			message = <b>Ferry four tourists safely to their destination.</b>~n~nThe tour was a success! Joery, Wiltrey, Kabal and Hilemy had nothing but great things to say about the trip, and brought back plenty of photos.~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 22   </color>~n~n
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Ferry four tourists safely to their destination.</b>~n~n'Joery's Travel Itinerary' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 49,359 <color=#feb200>(-16,453)</color>  </color><color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 <color=#caff00>(+1)</color>  </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Ferry four tourists safely to their destination.</b>~n~n'Wiltrey's Travel Itinerary' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 32,906 <color=#feb200>(-10,969)</color>  </color><color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 <color=#caff00>(+1)</color>  </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Ferry four tourists safely to their destination.</b>~n~n'Kabal's Travel Itinerary' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 49,359 <color=#feb200>(-16,453)</color>  </color><color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 <color=#caff00>(+1)</color>  </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Ferry four tourists safely to their destination.</b>~n~n'Hilemy's Travel Itinerary' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 32,906 <color=#feb200>(-10,969)</color>  </color><color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 <color=#caff00>(+1)</color>  </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Ferry four tourists safely to their destination.</b>~n~n'Fly by The Mun' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 5,484 <color=#feb200>(-1,828)</color>  </color><color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 0 <color=#caff00>(+0)</color>  </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Ferry four tourists safely to their destination.</b>~n~n'Orbit around Kerbin' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 5,484 <color=#feb200>(-1,828)</color>  </color><color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 0 <color=#caff00>(+0)</color>  </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Ferry four tourists safely to their destination.</b>~n~n'Suborbital spaceflight on Kerbin' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 5,484 <color=#feb200>(-1,828)</color>  </color><color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 0 <color=#caff00>(+0)</color>  </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Complete
-			message = <b>Science data from space around Kerbin.</b>~n~nWe've just received experimental data from space around Kerbin! Good work.~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  12,445 <color=#feb200>(-4,148)</color>  </color>~n<color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 <color=#caff00>(+0)</color>  </color>~n<color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 5   </color>~n~n
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Complete
-			message = <b>Explore The Mun.</b>~n~nWe have taken our first steps towards exploring The Mun. Let's keep going and see where it takes us!~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  56,160 <color=#feb200>(-18,720)</color>  </color>~n<color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 9 <color=#caff00>(+2)</color>  </color>~n<color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 12   </color>~n~n
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Explore The Mun.</b>~n~nYes! There's enough data on The Mun here to keep all of us employed for a good long while.~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 32,400 <color=#feb200>(-10,800)</color>  </color><color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 3 <color=#caff00>(+1)</color>  </color><color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4   </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Complete
-			message = <b>Haul TT-70 Radial Decoupler into an escape trajectory out of Kerbin.</b>~n~nHaul Complete! This will help us a great deal. Thanks!~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  34,457 <color=#feb200>(-11,486)</color>  </color>~n<color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 7 <color=#caff00>(+1)</color>  </color>~n<color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 10   </color>~n~n
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Explore The Mun.</b>~n~nTalk about close encounters! Any closer and there'd be paperwork.~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 54,000 <color=#feb200>(-18,000)</color>  </color><color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 5 <color=#caff00>(+1)</color>  </color><color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 8   </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Complete
-			message = <b>Ferry three tourists safely to their destination and back.</b>~n~nThe tour was a success! Mitald, Dilo and Adlie had nothing but great things to say about the trip, and brought back plenty of photos.~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 23   </color>~n~n
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Ferry three tourists safely to their destination and back.</b>~n~n'Mitald's Travel Itinerary' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 19,744 <color=#feb200>(-6,581)</color>  </color><color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 <color=#caff00>(+1)</color>  </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Ferry three tourists safely to their destination and back.</b>~n~n'Dilo's Travel Itinerary' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 19,744 <color=#feb200>(-6,581)</color>  </color><color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 <color=#caff00>(+1)</color>  </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Ferry three tourists safely to their destination and back.</b>~n~n'Adlie's Travel Itinerary' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 19,744 <color=#feb200>(-6,581)</color>  </color><color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 <color=#caff00>(+1)</color>  </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Ferry three tourists safely to their destination and back.</b>~n~n'Orbit around Kerbin' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 3,290 <color=#feb200>(-1,097)</color>  </color><color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 0 <color=#caff00>(+0)</color>  </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Ferry three tourists safely to their destination and back.</b>~n~n'Suborbital spaceflight on Kerbin' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 3,290 <color=#feb200>(-1,097)</color>  </color><color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 0 <color=#caff00>(+0)</color>  </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Complete
-			message = <b>Ferry four tourists safely to their destination and back.</b>~n~nThe tour was a success! Gralin, Gleney, Chadory and Roszon had nothing but great things to say about the trip, and brought back plenty of photos.~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 21   </color>~n~n
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Ferry four tourists safely to their destination and back.</b>~n~n'Roszon's Travel Itinerary' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 16,454 <color=#feb200>(-5,485)</color>  </color><color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 0 <color=#caff00>(+0)</color>  </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Complete
-			message = <b>Ferry three tourists safely to their destination and back.</b>~n~nThe tour was a success! Dudcott, Milwig and Beazon had nothing but great things to say about the trip, and brought back plenty of photos.~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 25   </color>~n~n
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Ferry three tourists safely to their destination and back.</b>~n~n'Dudcott's Travel Itinerary' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 16,454 <color=#feb200>(-5,485)</color>  </color><color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 0 <color=#caff00>(+0)</color>  </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Ferry three tourists safely to their destination and back.</b>~n~n'Milwig's Travel Itinerary' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 16,454 <color=#feb200>(-5,485)</color>  </color><color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 0 <color=#caff00>(+0)</color>  </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Complete
-			message = <b>Ferry five tourists safely to their destination and back.</b>~n~nThe tour was a success! Ansby, Katcott, Fredson, Johan and Alrod had nothing but great things to say about the trip, and brought back plenty of photos.~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 27   </color>~n~n
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Ferry five tourists safely to their destination and back.</b>~n~n'Alrod's Travel Itinerary' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 19,744 <color=#feb200>(-6,581)</color>  </color><color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 <color=#caff00>(+1)</color>  </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Ferry four tourists safely to their destination and back.</b>~n~n'Gralin's Travel Itinerary' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 16,454 <color=#feb200>(-5,485)</color>  </color><color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 0 <color=#caff00>(+0)</color>  </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Ferry four tourists safely to their destination and back.</b>~n~n'Gleney's Travel Itinerary' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 16,454 <color=#feb200>(-5,485)</color>  </color><color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 0 <color=#caff00>(+0)</color>  </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Ferry four tourists safely to their destination and back.</b>~n~n'Chadory's Travel Itinerary' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 16,454 <color=#feb200>(-5,485)</color>  </color><color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 0 <color=#caff00>(+0)</color>  </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Ferry three tourists safely to their destination and back.</b>~n~n'Beazon's Travel Itinerary' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 16,454 <color=#feb200>(-5,485)</color>  </color><color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 0 <color=#caff00>(+0)</color>  </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Ferry four tourists safely to their destination and back.</b>~n~n'Orbit around Kerbin' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 2,742 <color=#feb200>(-914)</color>  </color><color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 0 <color=#caff00>(+0)</color>  </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Ferry three tourists safely to their destination and back.</b>~n~n'Orbit around Kerbin' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 2,742 <color=#feb200>(-914)</color>  </color><color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 0 <color=#caff00>(+0)</color>  </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Ferry four tourists safely to their destination and back.</b>~n~n'Suborbital spaceflight on Kerbin' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 2,742 <color=#feb200>(-914)</color>  </color><color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 0 <color=#caff00>(+0)</color>  </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Ferry three tourists safely to their destination and back.</b>~n~n'Suborbital spaceflight on Kerbin' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 2,742 <color=#feb200>(-914)</color>  </color><color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 0 <color=#caff00>(+0)</color>  </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Ferry five tourists safely to their destination and back.</b>~n~n'Katcott's Travel Itinerary' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 19,744 <color=#feb200>(-6,581)</color>  </color><color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 <color=#caff00>(+1)</color>  </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Ferry five tourists safely to their destination and back.</b>~n~n'Johan's Travel Itinerary' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 19,744 <color=#feb200>(-6,581)</color>  </color><color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 <color=#caff00>(+1)</color>  </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Ferry five tourists safely to their destination and back.</b>~n~n'Ansby's Travel Itinerary' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 19,744 <color=#feb200>(-6,581)</color>  </color><color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 <color=#caff00>(+1)</color>  </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Ferry five tourists safely to their destination and back.</b>~n~n'Fredson's Travel Itinerary' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 19,744 <color=#feb200>(-6,581)</color>  </color><color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 <color=#caff00>(+1)</color>  </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Ferry five tourists safely to their destination and back.</b>~n~n'Orbit around Kerbin' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 3,290 <color=#feb200>(-1,097)</color>  </color><color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 0 <color=#caff00>(+0)</color>  </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Ferry five tourists safely to their destination and back.</b>~n~n'Suborbital spaceflight on Kerbin' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 3,290 <color=#feb200>(-1,097)</color>  </color><color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 0 <color=#caff00>(+0)</color>  </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Complete
-			message = <b>Test PPD-10 Hitchhiker Storage Container orbiting Kerbin.</b>~n~nTest Complete! We got some good data here. Thanks!~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  36,005 <color=#feb200>(-12,002)</color>  </color>~n<color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 8 <color=#caff00>(+1)</color>  </color>~n<color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 16   </color>~n~n
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Failed
-			message = <b>Test No situation report available.</b>~n~nWe have failed our contract for Jebediah Kerman's Junkyard and Spacecraft Parts Co: Test No situation report available.~n~n<b><color=#ED0B0B>Penalties for Failure:</color></b> <color=#ED0B0B><sprite="CurrencySpriteAsset" name="Funds" tint=1>  -2,835   </color><color=#ED0B0B><sprite="CurrencySpriteAsset" name="Reputation" tint=1> -2   </color>~n~n
-			color = 1
-			icon = 2
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Complete
-			message = <b>Ferry two tourists safely to their destination and back.</b>~n~nThe tour was a success! Milvan and Bobgar had nothing but great things to say about the trip, and brought back plenty of photos.~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 18   </color>~n~n
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Ferry two tourists safely to their destination and back.</b>~n~n'Milvan's Travel Itinerary' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 13,163 <color=#feb200>(-4,388)</color>  </color><color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 0 <color=#caff00>(+0)</color>  </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Ferry two tourists safely to their destination and back.</b>~n~n'Bobgar's Travel Itinerary' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 13,163 <color=#feb200>(-4,388)</color>  </color><color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 0 <color=#caff00>(+0)</color>  </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Ferry two tourists safely to their destination and back.</b>~n~n'Orbit around Kerbin' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 2,194 <color=#feb200>(-731)</color>  </color><color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 0 <color=#caff00>(+0)</color>  </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Ferry two tourists safely to their destination and back.</b>~n~n'Suborbital spaceflight on Kerbin' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 2,194 <color=#feb200>(-731)</color>  </color><color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 0 <color=#caff00>(+0)</color>  </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Complete
-			message = <b>Conduct a focused observational survey of Kerbin.</b>~n~nYour assistance in gathering theseobservational reports has been indispensable. Thank you!~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,675 <color=#feb200>(-3,225)</color>  </color>~n<color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> <color=#caff00>(+0)</color>  </color>~n<color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2   </color>~n~n
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Complete
-			message = <b>Conduct a focused observational survey of Kerbin.</b>~n~nYour assistance in gathering theseobservational reports has been indispensable. Thank you!~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  8,777 <color=#feb200>(-2,926)</color>  </color>~n<color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> <color=#caff00>(+0)</color>  </color>~n<color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2   </color>~n~n
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Complete
-			message = <b>Test Mk1 Cockpit landed at Kerbin.</b>~n~nTest Complete! We got some good data here. Thanks!~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  3,189 <color=#feb200>(-1,063)</color>  </color>~n<color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 <color=#caff00>(+0)</color>  </color>~n<color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 1   </color>~n~n
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Complete
-			message = <b>Test Heat Shield (2.5m) splashed down at Kerbin.</b>~n~nTest Complete! We got some good data here. Thanks!~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,568 <color=#feb200>(-3,189)</color>  </color>~n<color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 <color=#caff00>(+0)</color>  </color>~n<color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4   </color>~n~n
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Complete
-			message = <b>Haul AE-FF1 Airstream Protective Shell (1.25m) into flight above Kerbin.</b>~n~nHaul Complete! This will help us a great deal. Thanks!~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  11,961 <color=#feb200>(-3,987)</color>  </color>~n<color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 <color=#caff00>(+0)</color>  </color>~n<color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4   </color>~n~n
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Complete
-			message = <b>Conduct a focused observational survey of Kerbin.</b>~n~nYour assistance in gathering theseobservational reports has been indispensable. Thank you!~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  8,944 <color=#feb200>(-2,981)</color>  </color>~n<color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> <color=#caff00>(+0)</color>  </color>~n<color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2   </color>~n~n
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Complete
-			message = <b>Test TT-70 Radial Decoupler at the Launch Site.</b>~n~nTest Complete! We got some good data here. Thanks!~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  3,189 <color=#feb200>(-1,063)</color>  </color>~n<color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 <color=#caff00>(+0)</color>  </color>~n<color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 1   </color>~n~n
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Complete
-			message = <b>Conduct a focused observational survey of Kerbin.</b>~n~nYour assistance in gathering theseobservational reports has been indispensable. Thank you!~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  14,078 <color=#feb200>(-4,693)</color>  </color>~n<color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> <color=#caff00>(+0)</color>  </color>~n<color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2   </color>~n~n
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Complete
-			message = <b>Test Heat Shield (2.5m) at the Launch Site.</b>~n~nTest Complete! We got some good data here. Thanks!~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  3,189 <color=#feb200>(-1,063)</color>  </color>~n<color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 <color=#caff00>(+0)</color>  </color>~n<color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 1   </color>~n~n
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Complete
-			message = <b>Test J-20 "Juno" Basic Jet Engine in flight over Kerbin.</b>~n~nTest Complete! We got some good data here. Thanks!~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  20,882 <color=#feb200>(-6,961)</color>  </color>~n<color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 4 <color=#caff00>(+1)</color>  </color>~n<color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 6   </color>~n~n
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Complete
-			message = <b>Conduct a focused observational survey of Kerbin.</b>~n~nYour assistance in gathering theseobservational reports has been indispensable. Thank you!~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,485 <color=#feb200>(-3,162)</color>  </color>~n<color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> <color=#caff00>(+0)</color>  </color>~n<color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2   </color>~n~n
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Complete
-			message = <b>Science data from space around Kerbin.</b>~n~nWe've just received experimental data from space around Kerbin! Good work.~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  17,671   </color>~n<color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2   </color>~n<color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 5   </color>~n~n
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Complete
-			message = <b>Ferry two tourists safely to their destination and back.</b>~n~nThe tour was a success! Mitoly and Henfen had nothing but great things to say about the trip, and brought back plenty of photos.~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 20   </color>~n~n
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Ferry two tourists safely to their destination and back.</b>~n~n'Mitoly's Travel Itinerary' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 21,938   </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Ferry two tourists safely to their destination and back.</b>~n~n'Henfen's Travel Itinerary' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 21,938   </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Complete
-			message = <b>Ferry two tourists safely to their destination and back.</b>~n~nThe tour was a success! Fabien and Bobdan had nothing but great things to say about the trip, and brought back plenty of photos.~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 20   </color>~n~n
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Ferry two tourists safely to their destination and back.</b>~n~n'Fabien's Travel Itinerary' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 21,938   </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Ferry two tourists safely to their destination and back.</b>~n~n'Bobdan's Travel Itinerary' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 21,938   </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Ferry two tourists safely to their destination and back.</b>~n~n'Orbit around Kerbin' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 3,656   </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Ferry two tourists safely to their destination and back.</b>~n~n'Suborbital spaceflight on Kerbin' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 3,656   </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Complete
-			message = <b>Ferry four tourists safely to their destination and back.</b>~n~nThe tour was a success! Katwig, Lanbree, Rodul and Milwise had nothing but great things to say about the trip, and brought back plenty of photos.~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 22   </color>~n~n
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Ferry four tourists safely to their destination and back.</b>~n~n'Katwig's Travel Itinerary' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 10,969   </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Ferry four tourists safely to their destination and back.</b>~n~n'Lanbree's Travel Itinerary' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 10,969   </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Ferry four tourists safely to their destination and back.</b>~n~n'Rodul's Travel Itinerary' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 10,969   </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Ferry four tourists safely to their destination and back.</b>~n~n'Milwise's Travel Itinerary' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 10,969   </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Ferry four tourists safely to their destination and back.</b>~n~n'Suborbital spaceflight on Kerbin' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 3,656   </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Complete
-			message = <b>Ferry two tourists safely to their destination and back.</b>~n~nThe tour was a success! Dandrin and Johnsey had nothing but great things to say about the trip, and brought back plenty of photos.~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 18   </color>~n~n
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Ferry two tourists safely to their destination and back.</b>~n~n'Dandrin's Travel Itinerary' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 8,775   </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Ferry two tourists safely to their destination and back.</b>~n~n'Johnsey's Travel Itinerary' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 8,775   </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Ferry two tourists safely to their destination and back.</b>~n~n'Suborbital spaceflight on Kerbin' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 2,925   </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Complete
-			message = <b>Haul RT-5 "Flea" Solid Fuel Booster into a sub-orbital trajectory over Kerbin.</b>~n~nHaul Complete! This will help us a great deal. Thanks!~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  30,375   </color>~n<color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 4   </color>~n<color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 8   </color>~n~n
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Complete
-			message = <b>Test TT-38K Radial Decoupler in flight over Kerbin.</b>~n~nTest Complete! We got some good data here. Thanks!~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  27,843   </color>~n<color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 3   </color>~n<color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 6   </color>~n~n
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Complete
-			message = <b>Test LV-T45 "Swivel" Liquid Fuel Engine splashed down at Kerbin.</b>~n~nTest Complete! We got some good data here. Thanks!~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  11,812   </color>~n<color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2   </color>~n<color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4   </color>~n~n
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Complete
-			message = <b>Test Mk16 Parachute in flight over Kerbin.</b>~n~nTest Complete! We got some good data here. Thanks!~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  25,312   </color>~n<color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 3   </color>~n<color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 7   </color>~n~n
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Complete
-			message = <b>Orbit Kerbin!</b>~n~nWe didn't tell the recovery team that you'd be staying in space, so they're still looking! Great job!~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  28,080   </color>~n<color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 5   </color>~n<color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 9   </color>~n~n
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Orbit Kerbin!</b>~n~n'Achieve goal' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 43,200   </color><color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 5   </color><color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 9   </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Complete
-			message = <b>Test Mk1 Command Pod in flight over Kerbin.</b>~n~nTest Complete! We got some good data here. Thanks!~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  20,250   </color>~n<color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 3   </color>~n<color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 5   </color>~n~n
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Complete
-			message = <b>Escape the atmosphere!</b>~n~nWhat is it like up there? We hope it's fun because you're coming back very soon!~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  18,720   </color>~n<color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 3   </color>~n<color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 7   </color>~n~n
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Escape the atmosphere!</b>~n~n'Achieve goal' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 28,800   </color><color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 3   </color><color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 7   </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Complete
-			message = <b>Gather scientific data from Kerbin.</b>~n~nWhen we got to page nine of your report we thought you might be stalling! We are starting the launch countdown now.~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  3,744   </color>~n<color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1   </color>~n<color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2   </color>~n~n
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Gather scientific data from Kerbin.</b>~n~n'Achieve goal' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 5,760   </color><color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1   </color><color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2   </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Complete
-			message = <b>Launch our first vessel!</b>~n~nA very nominal launch! We couldn't have asked for more! Well, we could've, and we will at some point.~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  1,872   </color>~n<color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1   </color>~n<color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 1   </color>~n~n
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Launch our first vessel!</b>~n~n'Achieve goal' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 2,880   </color><color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1   </color><color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 1   </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = World First Milestones
-			message = The recent accomplishments of our space program have attracted contributions from numerous organizations!~n~nWe have broken a speed record of 25m/s.~n<color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 8,640 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have launched our first vessel.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  1,440 </color>~n~n We have broken a speed record of 80m/s.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  8,640 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have broken an altitude record of 500m.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  8,640 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have broken a speed record of 250m/s.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  8,640 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have broken a land distance record of 1,000m.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  8,640 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have broken an altitude record of 2,000m.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  8,640 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have broken a land distance record of 3,000m.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  8,640 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have broken an altitude record of 7,000m.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  8,640 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have broken a land distance record of 10km.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  8,640 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have splashed into the ocean.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  4,320 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 1 </color>~n~n We have recovered our first crew from a mission.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  1,440 </color>~n~n We have performed the first one of our experiments at home.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  2,880 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 1 </color>~n~n We have broken an altitude record of 22km.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  8,640 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have broken a speed record of 790m/s.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  8,640 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have broken a land distance record of 32km.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  8,640 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have broken an altitude record of 70km.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  8,640 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have reached space.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  14,400 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 3 </color>~n~n We have broken a land distance record of 100km.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  8,640 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have entered orbit.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  21,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n We have returned to the surface from orbit.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  21,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n We have returned to the surface.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  1,440 </color>~n~n We have performed an EVA test at home.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  2,880 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 1 </color>~n~n We have performed a spacewalk in orbit of Kerbin.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  8,100 <color=#feb200>(-2,700)</color> </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have broken a speed record of 2,500m/s.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  6,480 <color=#feb200>(-2,160)</color> </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have initiated the first fly by of The Mun.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  17,550 <color=#feb200>(-5,850)</color> </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n We have escaped the gravitational influence of Kerbin.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  17,820 <color=#feb200>(-5,940)</color> </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 5 </color>~n~n We have escaped the gravitational influence of The Mun.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  12,636 <color=#feb200>(-4,212)</color> </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 3 </color>~n~n We have initiated the first fly by of Kerbol.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  25,650 <color=#feb200>(-8,550)</color> </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 3 <color=#caff00>(+1)</color> </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n We have entered orbit of Kerbol.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  24,624 <color=#feb200>(-8,208)</color> </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 3 <color=#caff00>(+1)</color> </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 3 </color>~n~n We have returned home from a fly by of The Mun.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  17,550 <color=#feb200>(-5,850)</color> </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n We have gathered the first scientific data from The Mun.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  8,424 <color=#feb200>(-2,808)</color> </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have entered orbit of The Mun.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  16,848 <color=#feb200>(-5,616)</color> </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 3 </color>~n~n We have performed a spacewalk in orbit of The Mun.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  10,530 <color=#feb200>(-3,510)</color> </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have returned home from orbit of The Mun.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  16,848 <color=#feb200>(-5,616)</color> </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 3 </color>~n~n We have entered into suborbital spaceflight above The Mun.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  17,550 <color=#feb200>(-5,850)</color> </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n We have landed on the surface of The Mun.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  21,060 <color=#feb200>(-7,020)</color> </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 3 <color=#caff00>(+1)</color> </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n We have walked on the surface of The Mun.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  8,424 <color=#feb200>(-2,808)</color> </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have planted a flag on The Mun.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  8,424 <color=#feb200>(-2,808)</color> </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have returned home from the surface of The Mun.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  21,060 <color=#feb200>(-7,020)</color> </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 3 <color=#caff00>(+1)</color> </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n We have initiated the first fly by of Minmus.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  19,575 <color=#feb200>(-6,525)</color> </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 3 <color=#caff00>(+1)</color> </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n We have entered orbit of Minmus.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  18,792 <color=#feb200>(-6,264)</color> </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 3 <color=#caff00>(+1)</color> </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 3 </color>~n~n We have performed a spacewalk in orbit of Minmus.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  11,745 <color=#feb200>(-3,915)</color> </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have gathered the first scientific data from Minmus.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,396 <color=#feb200>(-3,132)</color> </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have performed a rendezvous maneuver around Minmus.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  18,792 <color=#feb200>(-6,264)</color> </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 3 <color=#caff00>(+1)</color> </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 3 </color>~n~n We have started constructing the first station around Minmus.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  28,188 <color=#feb200>(-9,396)</color> </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 4 <color=#caff00>(+1)</color> </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 5 </color>~n~n We have performed a docking maneuver on Minmus.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  12,528 <color=#feb200>(-4,176)</color> </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have performed a rendezvous maneuver around The Mun.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  16,848 <color=#feb200>(-5,616)</color> </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 3 </color>~n~n We have performed a crew transfer near The Mun.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  11,232 <color=#feb200>(-3,744)</color> </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have escaped the gravitational influence of Minmus.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  14,094 <color=#feb200>(-4,698)</color> </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 3 </color>~n~n We have gathered the first scientific data from Kerbol.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  12,312 <color=#feb200>(-4,104)</color> </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n
-			color = 3
-			icon = 6
-			read = False
-		}
 	}
 	VMSNode
 	{
