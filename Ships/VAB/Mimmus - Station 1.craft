@@ -2,7 +2,7 @@ ship = Mimmus - Station 1
 version = 1.12.5
 description = 
 type = VAB
-size = 4.42439032,26.6371918,7.71955776
+size = 4.42455196,26.637146,7.71957636
 steamPublishedFileId = 0
 persistentId = 972228021
 rot = 0,0,0,0
@@ -20,7 +20,7 @@ PART
 	pos = 1.08149719,44.1070175,1.55916822
 	attPos = 0,0,0
 	attPos0 = 1.08149719,44.1070175,1.55916822
-	rot = 0,0.707106769,0,0.707106769
+	rot = 0,0.707106829,0,0.707106829
 	attRot = 0,0.707106709,0,0.707106709
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
@@ -961,7 +961,7 @@ PART
 		isEnabled = True
 		active = True
 		originalPos = (1.08149719, 44.1070175, 1.55916822)
-		originalRotation = (0, 0.707106769, 0, 0.707106769)
+		originalRotation = (0, 0.707106829, 0, 0.707106829)
 		moduleVersion = 6
 		stagingEnabled = True
 		userReallyDeactivatedIt = False
@@ -1022,7 +1022,7 @@ PART
 	pos = 1.08149719,44.2940979,1.55916822
 	attPos = 0,0,0
 	attPos0 = 0,0.187082291,0
-	rot = 0,0.707106769,0,0.707106769
+	rot = 0,0.707106829,0,0.707106829
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
@@ -1285,7 +1285,7 @@ PART
 		isEnabled = True
 		active = True
 		originalPos = (1.08149719, 44.2940979, 1.55916822)
-		originalRotation = (0, 0.707106769, 0, 0.707106769)
+		originalRotation = (0, 0.707106829, 0, 0.707106829)
 		moduleVersion = 6
 		stagingEnabled = True
 		userReallyDeactivatedIt = False
@@ -1316,7 +1316,7 @@ PART
 	pos = 1.08149719,43.809082,1.55916822
 	attPos = 0,0,0
 	attPos0 = 0,-0.297935486,0
-	rot = 0,0,0,1
+	rot = 0,0,0,1.00000012
 	attRot = 0,0,0,1
 	attRot0 = 0,-0.707106829,0,0.707106829
 	mir = 1,1,1
@@ -1479,7 +1479,7 @@ PART
 		isEnabled = True
 		active = True
 		originalPos = (1.08149719, 43.809082, 1.55916822)
-		originalRotation = (0, 0, 0, 1)
+		originalRotation = (0, 0, 0, 1.00000012)
 		moduleVersion = 6
 		stagingEnabled = True
 		userReallyDeactivatedIt = False
@@ -1521,7 +1521,7 @@ PART
 	pos = 1.08149719,43.5873718,1.55916822
 	attPos = 0,0,0
 	attPos0 = 0,-0.221710205,0
-	rot = 0,0,0,1
+	rot = 0,0,0,1.00000012
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
@@ -1684,7 +1684,7 @@ PART
 		isEnabled = True
 		active = True
 		originalPos = (1.08149719, 43.5873718, 1.55916822)
-		originalRotation = (0, 0, 0, 1)
+		originalRotation = (0, 0, 0, 1.00000012)
 		moduleVersion = 6
 		stagingEnabled = True
 		userReallyDeactivatedIt = False
@@ -1726,7 +1726,7 @@ PART
 	pos = 1.08149719,43.3656616,1.55916822
 	attPos = 0,0,0
 	attPos0 = 0,-0.221710205,0
-	rot = 0,0,0,1
+	rot = 0,0,0,1.00000012
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
@@ -1889,7 +1889,7 @@ PART
 		isEnabled = True
 		active = True
 		originalPos = (1.08149719, 43.3656616, 1.55916822)
-		originalRotation = (0, 0, 0, 1)
+		originalRotation = (0, 0, 0, 1.00000012)
 		moduleVersion = 6
 		stagingEnabled = True
 		userReallyDeactivatedIt = False
@@ -1931,7 +1931,7 @@ PART
 	pos = 1.08149719,43.0557785,1.55916822
 	attPos = 0,0,0
 	attPos0 = 0,-0.30988121,0
-	rot = 0,0,0,1
+	rot = 0,0,0,1.00000012
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
@@ -2131,7 +2131,7 @@ PART
 		isEnabled = True
 		active = True
 		originalPos = (1.08149719, 43.0557785, 1.55916822)
-		originalRotation = (0, 0, 0, 1)
+		originalRotation = (0, 0, 0, 1.00000012)
 		moduleVersion = 6
 		stagingEnabled = True
 		userReallyDeactivatedIt = False
@@ -2162,7 +2162,7 @@ PART
 	pos = 1.08149719,41.869854,1.55916822
 	attPos = 0,0,0
 	attPos0 = 0,-1.18592453,0
-	rot = 0,0,0,1
+	rot = 0,0,0,1.00000012
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
@@ -2470,7 +2470,7 @@ PART
 		isEnabled = True
 		active = True
 		originalPos = (1.08149719, 41.869854, 1.55916822)
-		originalRotation = (0, 0, 0, 1)
+		originalRotation = (0, 0, 0, 1.00000012)
 		moduleVersion = 6
 		stagingEnabled = True
 		userReallyDeactivatedIt = False
@@ -2588,7 +2588,7 @@ PART
 	pos = 1.08149719,39.0579567,1.55916822
 	attPos = 0,0,0
 	attPos0 = 0,-2.81189823,0
-	rot = 0,0,0,1
+	rot = 0,0,0,1.00000012
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
@@ -2924,7 +2924,7 @@ PART
 		isEnabled = True
 		active = True
 		originalPos = (1.08149719, 39.0579567, 1.55916822)
-		originalRotation = (0, 0, 0, 1)
+		originalRotation = (0, 0, 0, 1.00000012)
 		moduleVersion = 6
 		stagingEnabled = True
 		userReallyDeactivatedIt = False
@@ -3014,7 +3014,7 @@ PART
 	pos = 1.08149719,36.9769554,1.55916822
 	attPos = 0,0,0
 	attPos0 = 0,-2.08100033,0
-	rot = 0,0,0,1
+	rot = 0,0,0,1.00000012
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
@@ -3191,7 +3191,7 @@ PART
 		isEnabled = True
 		active = True
 		originalPos = (1.08149719, 36.9769554, 1.55916822)
-		originalRotation = (0, 0, 0, 1)
+		originalRotation = (0, 0, 0, 1.00000012)
 		moduleVersion = 6
 		stagingEnabled = True
 		userReallyDeactivatedIt = False
@@ -3255,7 +3255,7 @@ PART
 	pos = 1.08149719,36.4769554,1.55916822
 	attPos = 0,0,0
 	attPos0 = 0,-0.5,0
-	rot = 0,0,0,1
+	rot = 0,0,0,1.00000012
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
@@ -3384,7 +3384,7 @@ PART
 		isEnabled = True
 		active = True
 		originalPos = (1.08149719, 36.4769554, 1.55916822)
-		originalRotation = (0, 0, 0, 1)
+		originalRotation = (0, 0, 0, 1.00000012)
 		moduleVersion = 6
 		stagingEnabled = True
 		userReallyDeactivatedIt = False
@@ -3448,7 +3448,7 @@ PART
 	pos = 1.08149719,36.2269554,1.55916822
 	attPos = 0,0,0
 	attPos0 = 0,-0.25,0
-	rot = 0,0,1,0
+	rot = 0,0,1.00000012,0
 	attRot = 0,0,0.99999994,0
 	attRot0 = 0,0,1,0
 	mir = 1,1,1
@@ -3708,7 +3708,7 @@ PART
 		isEnabled = True
 		active = True
 		originalPos = (1.08149719, 36.2269554, 1.55916822)
-		originalRotation = (0, 0, 1, 0)
+		originalRotation = (0, 0, 1.00000012, 0)
 		moduleVersion = 6
 		stagingEnabled = True
 		userReallyDeactivatedIt = False
@@ -3739,7 +3739,7 @@ PART
 	pos = 1.08149719,35.9321327,1.55916822
 	attPos = 0,0,0
 	attPos0 = 0,0.294822693,0
-	rot = 0,0,0,-1
+	rot = 0,0,0,-1.00000012
 	attRot = 0,0,0,-0.999999881
 	attRot0 = 0,0,1,0
 	mir = 1,1,1
@@ -3999,7 +3999,7 @@ PART
 		isEnabled = True
 		active = True
 		originalPos = (1.08149719, 35.9321327, 1.55916822)
-		originalRotation = (0, 0, 0, -1)
+		originalRotation = (0, 0, 0, -1.00000012)
 		moduleVersion = 6
 		stagingEnabled = True
 		userReallyDeactivatedIt = False
@@ -4030,7 +4030,7 @@ PART
 	pos = 1.08149719,35.7121315,1.55916822
 	attPos = 0,0,0
 	attPos0 = 0,-0.220001221,0
-	rot = 0,0,0,1
+	rot = 0,0,0,1.00000012
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,-1
 	mir = 1,1,1
@@ -4041,7 +4041,7 @@ PART
 	resPri = 0
 	dstg = 1
 	sidx = 0
-	sqor = 1
+	sqor = 0
 	sepI = 1
 	attm = 0
 	sameVesselCollision = False
@@ -4562,7 +4562,7 @@ PART
 		isEnabled = True
 		active = True
 		originalPos = (1.08149719, 35.7121315, 1.55916822)
-		originalRotation = (0, 0, 0, 1)
+		originalRotation = (0, 0, 0, 1.00000012)
 		moduleVersion = 6
 		stagingEnabled = True
 		userReallyDeactivatedIt = False
@@ -4641,7 +4641,7 @@ PART
 	pos = 1.08149719,33.6521301,1.55916822
 	attPos = 0,0,0
 	attPos0 = 0,-2.06000137,0
-	rot = 0,0,0,1
+	rot = 0,0,0,1.00000012
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
@@ -5028,7 +5028,7 @@ PART
 		isEnabled = True
 		active = True
 		originalPos = (1.08149719, 33.6521301, 1.55916822)
-		originalRotation = (0, 0, 0, 1)
+		originalRotation = (0, 0, 0, 1.00000012)
 		moduleVersion = 6
 		stagingEnabled = True
 		userReallyDeactivatedIt = False
@@ -5081,7 +5081,7 @@ PART
 	pos = 1.08149719,30.779129,1.55916822
 	attPos = 0,0,0
 	attPos0 = 0,-2.8730011,0
-	rot = 0,0,0,1
+	rot = 0,0,0,1.00000012
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
@@ -5439,7 +5439,7 @@ PART
 		isEnabled = True
 		active = True
 		originalPos = (1.08149719, 30.779129, 1.55916822)
-		originalRotation = (0, 0, 0, 1)
+		originalRotation = (0, 0, 0, 1.00000012)
 		moduleVersion = 6
 		stagingEnabled = True
 		userReallyDeactivatedIt = False
@@ -5470,7 +5470,7 @@ PART
 	pos = 1.08149719,29.317131,1.55916822
 	attPos = 0,0,0
 	attPos0 = 0,-1.46199799,0
-	rot = 0,0,0,1
+	rot = 0,0,0,1.00000012
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
@@ -5481,7 +5481,7 @@ PART
 	resPri = 0
 	dstg = 3
 	sidx = 1
-	sqor = 3
+	sqor = 1
 	sepI = 1
 	attm = 0
 	sameVesselCollision = False
@@ -5759,7 +5759,7 @@ PART
 		isEnabled = True
 		active = True
 		originalPos = (1.08149719, 29.317131, 1.55916822)
-		originalRotation = (0, 0, 0, 1)
+		originalRotation = (0, 0, 0, 1.00000012)
 		moduleVersion = 6
 		stagingEnabled = True
 		userReallyDeactivatedIt = False
@@ -5790,7 +5790,7 @@ PART
 	pos = 1.08149719,27.357132,1.55916822
 	attPos = 0,0,0
 	attPos0 = 0,-1.95999908,0
-	rot = 0,0,0,1
+	rot = 0,0,0,1.00000012
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
@@ -5811,6 +5811,8 @@ PART
 	link = Rockomax32.BW_4290654672
 	link = radialDecoupler1-2_4290632880
 	link = radialDecoupler1-2_4290628518
+	link = launchClamp1_4293076614
+	link = launchClamp1_4293075752
 	attN = top,Decoupler.2_4290656508_0|1.86000001|0_0|1|0_0|1.86000001|0_0|1|0
 	attN = bottom,Rockomax32.BW_4290654672_0|-1.86000001|0_0|-1|0_0|-1.86000001|0_0|-1|0
 	EVENTS
@@ -6179,7 +6181,7 @@ PART
 		isEnabled = True
 		active = True
 		originalPos = (1.08149719, 27.357132, 1.55916822)
-		originalRotation = (0, 0, 0, 1)
+		originalRotation = (0, 0, 0, 1.00000012)
 		moduleVersion = 6
 		stagingEnabled = True
 		userReallyDeactivatedIt = False
@@ -6232,7 +6234,7 @@ PART
 	pos = 1.08149719,23.6371307,1.55916822
 	attPos = 0,0,0
 	attPos0 = 0,-3.72000122,0
-	rot = 0,0,0,1
+	rot = 0,0,0,1.00000012
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
@@ -6623,7 +6625,7 @@ PART
 		isEnabled = True
 		active = True
 		originalPos = (1.08149719, 23.6371307, 1.55916822)
-		originalRotation = (0, 0, 0, 1)
+		originalRotation = (0, 0, 0, 1.00000012)
 		moduleVersion = 6
 		stagingEnabled = True
 		userReallyDeactivatedIt = False
@@ -6676,7 +6678,7 @@ PART
 	pos = 1.08149719,20.7641296,1.55916822
 	attPos = 0,0,0
 	attPos0 = 0,-2.8730011,0
-	rot = 0,0,0,1
+	rot = 0,0,0,1.00000012
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
@@ -6687,7 +6689,7 @@ PART
 	resPri = 0
 	dstg = 4
 	sidx = 1
-	sqor = 5
+	sqor = 3
 	sepI = 1
 	attm = 0
 	sameVesselCollision = False
@@ -7033,7 +7035,7 @@ PART
 		isEnabled = True
 		active = True
 		originalPos = (1.08149719, 20.7641296, 1.55916822)
-		originalRotation = (0, 0, 0, 1)
+		originalRotation = (0, 0, 0, 1.00000012)
 		moduleVersion = 6
 		stagingEnabled = True
 		userReallyDeactivatedIt = False
@@ -7061,10 +7063,10 @@ PART
 	part = R8winglet_4290622664
 	partName = Part
 	persistentId = 332247235
-	pos = -0.161080122,22.5404739,2.80174494
+	pos = -0.16108346,22.5404739,2.80174828
 	attPos = 0,0,0
 	attPos0 = -1.24257708,-1.0966568,1.24257696
-	rot = 2.1914266E-09,0.382683426,5.29057242E-09,0.923879623
+	rot = 2.19142682E-09,0.382683516,5.29057598E-09,0.923879623
 	attRot = 0,0,0,1
 	attRot0 = 2.1914266E-09,0.382683456,5.29057242E-09,0.923879623
 	mir = 1,1,1
@@ -7310,8 +7312,8 @@ PART
 		name = AttachedOnEditor
 		isEnabled = True
 		active = True
-		originalPos = (-0.161080122, 22.5404739, 2.80174494)
-		originalRotation = (2.1914266E-09, 0.382683426, 5.29057242E-09, 0.923879623)
+		originalPos = (-0.16108346, 22.5404739, 2.80174828)
+		originalRotation = (2.19142682E-09, 0.382683516, 5.29057598E-09, 0.923879623)
 		moduleVersion = 6
 		stagingEnabled = True
 		userReallyDeactivatedIt = False
@@ -7331,10 +7333,10 @@ PART
 	part = R8winglet_4290622552
 	partName = Part
 	persistentId = 582659176
-	pos = 2.32407451,22.5404739,0.316591382
+	pos = 2.32407784,22.5404739,0.316588044
 	attPos = 0,0,0
 	attPos0 = 1.24257708,-1.0966568,-1.24257708
-	rot = 5.29057287E-09,0.923879623,-2.19142704E-09,-0.382683426
+	rot = 5.29057598E-09,0.923879623,-2.19142682E-09,-0.382683516
 	attRot = 0,0,0,1
 	attRot0 = 5.29057242E-09,0.923879564,-2.19142682E-09,-0.382683456
 	mir = 1,1,1
@@ -7580,8 +7582,8 @@ PART
 		name = AttachedOnEditor
 		isEnabled = True
 		active = True
-		originalPos = (2.32407451, 22.5404739, 0.316591382)
-		originalRotation = (5.29057287E-09, 0.923879623, -2.19142704E-09, -0.382683426)
+		originalPos = (2.32407784, 22.5404739, 0.316588044)
+		originalRotation = (5.29057598E-09, 0.923879623, -2.19142682E-09, -0.382683516)
 		moduleVersion = 6
 		stagingEnabled = True
 		userReallyDeactivatedIt = False
@@ -7601,10 +7603,10 @@ PART
 	part = R8winglet_4290622084
 	partName = Part
 	persistentId = 34619103
-	pos = -0.154634833,22.5139484,0.323035598
+	pos = -0.154638171,22.5139484,0.32303226
 	attPos = 0,0,0
 	attPos0 = -1.23613226,-1.1231823,-1.23613238
-	rot = -6.57428023E-09,0.382683426,1.58717182E-08,-0.923879623
+	rot = -6.57427979E-09,0.382683516,1.58717199E-08,-0.923879623
 	attRot = 0,0,0,1
 	attRot0 = -6.57428023E-09,0.382683456,1.58717182E-08,-0.923879564
 	mir = 1,1,1
@@ -7850,8 +7852,8 @@ PART
 		name = AttachedOnEditor
 		isEnabled = True
 		active = True
-		originalPos = (-0.154634833, 22.5139484, 0.323035598)
-		originalRotation = (-6.57428023E-09, 0.382683426, 1.58717182E-08, -0.923879623)
+		originalPos = (-0.154638171, 22.5139484, 0.32303226)
+		originalRotation = (-6.57427979E-09, 0.382683516, 1.58717199E-08, -0.923879623)
 		moduleVersion = 6
 		stagingEnabled = True
 		userReallyDeactivatedIt = False
@@ -7871,10 +7873,10 @@ PART
 	part = R8winglet_4290621972
 	partName = Part
 	persistentId = 2342722380
-	pos = 2.31762934,22.5139484,2.79530072
+	pos = 2.31763268,22.5139484,2.79530406
 	attPos = 0,0,0
 	attPos0 = 1.23613238,-1.1231823,1.23613226
-	rot = 1.58717199E-08,-0.923879623,6.57427979E-09,-0.382683396
+	rot = 1.58717199E-08,-0.923879623,6.57427979E-09,-0.382683516
 	attRot = 0,0,0,1
 	attRot0 = 1.58717182E-08,-0.923879564,6.57427934E-09,-0.382683426
 	mir = 1,1,1
@@ -8120,8 +8122,8 @@ PART
 		name = AttachedOnEditor
 		isEnabled = True
 		active = True
-		originalPos = (2.31762934, 22.5139484, 2.79530072)
-		originalRotation = (1.58717199E-08, -0.923879623, 6.57427979E-09, -0.382683396)
+		originalPos = (2.31763268, 22.5139484, 2.79530406)
+		originalRotation = (1.58717199E-08, -0.923879623, 6.57427979E-09, -0.382683516)
 		moduleVersion = 6
 		stagingEnabled = True
 		userReallyDeactivatedIt = False
@@ -8141,10 +8143,10 @@ PART
 	part = radialDecoupler1-2_4290632880
 	partName = Part
 	persistentId = 589030562
-	pos = 1.08149719,27.5571327,2.75916815
+	pos = 1.08149719,27.5571327,2.75917149
 	attPos = 2.38418579E-07,0.665216446,-0.0230019093
 	attPos0 = 0,-0.465215683,1.22300184
-	rot = 2.21253984E-08,0.707106829,2.21253984E-08,0.707106829
+	rot = 2.21254002E-08,0.707106888,2.21254002E-08,0.707106888
 	attRot = 0,0,0,1
 	attRot0 = 2.21253966E-08,0.707106829,2.21253984E-08,0.707106829
 	mir = 1,1,1
@@ -8155,7 +8157,7 @@ PART
 	resPri = 0
 	dstg = 5
 	sidx = 0
-	sqor = 5
+	sqor = 2
 	sepI = 2
 	attm = 1
 	sameVesselCollision = False
@@ -8372,8 +8374,8 @@ PART
 		name = AttachedOnEditor
 		isEnabled = True
 		active = True
-		originalPos = (1.08149719, 27.5571327, 2.75916815)
-		originalRotation = (2.21253984E-08, 0.707106829, 2.21253984E-08, 0.707106829)
+		originalPos = (1.08149719, 27.5571327, 2.75917149)
+		originalRotation = (2.21254002E-08, 0.707106888, 2.21254002E-08, 0.707106888)
 		moduleVersion = 6
 		stagingEnabled = True
 		userReallyDeactivatedIt = False
@@ -8393,10 +8395,10 @@ PART
 	part = MassiveBooster_4290631516
 	partName = Part
 	persistentId = 2232023047
-	pos = 1.08149719,26.9571323,3.55916834
+	pos = 1.08149719,26.9571323,3.55917501
 	attPos = -0.00144469738,-0.405891418,3.5762784E-07
 	attPos0 = -0.798555136,-0.194108918,-2.38418579E-07
-	rot = -1.4901164E-07,-1.1920929E-07,-7.10542736E-15,1.00000012
+	rot = -1.49011669E-07,-1.1920929E-07,-2.13162821E-14,1.00000012
 	attRot = 0,0,0,1
 	attRot0 = -1.27492498E-07,-0.707106888,-1.27492513E-07,0.707106769
 	mir = 1,1,1
@@ -8407,7 +8409,7 @@ PART
 	resPri = 0
 	dstg = 6
 	sidx = 0
-	sqor = 6
+	sqor = 3
 	sepI = 2
 	attm = 1
 	sameVesselCollision = False
@@ -8673,8 +8675,8 @@ PART
 		name = AttachedOnEditor
 		isEnabled = True
 		active = True
-		originalPos = (1.08149719, 26.9571323, 3.55916834)
-		originalRotation = (-1.4901164E-07, -1.1920929E-07, -7.10542736E-15, 1.00000012)
+		originalPos = (1.08149719, 26.9571323, 3.55917501)
+		originalRotation = (-1.49011669E-07, -1.1920929E-07, -2.13162821E-14, 1.00000012)
 		moduleVersion = 6
 		stagingEnabled = True
 		userReallyDeactivatedIt = False
@@ -8728,10 +8730,10 @@ PART
 	part = noseCone_4290625616
 	partName = Part
 	persistentId = 667378226
-	pos = 1.08149719,34.3862915,3.55916834
+	pos = 1.08149719,34.3862915,3.55917501
 	attPos = 0,0,0
 	attPos0 = -8.03920244E-13,7.42915726,2.94792983E-07
-	rot = 7.10542736E-15,0,-2.13162821E-14,1.00000012
+	rot = -4.08562107E-14,0,-1.59872149E-14,1.00000012
 	attRot = 0,0,0,1
 	attRot0 = 1.49011612E-07,1.19209275E-07,7.10542651E-15,1
 	mir = 1,1,1
@@ -8896,8 +8898,8 @@ PART
 		name = AttachedOnEditor
 		isEnabled = True
 		active = True
-		originalPos = (1.08149719, 34.3862915, 3.55916834)
-		originalRotation = (7.10542736E-15, 0, -2.13162821E-14, 1.00000012)
+		originalPos = (1.08149719, 34.3862915, 3.55917501)
+		originalRotation = (-4.08562107E-14, 0, -1.59872149E-14, 1.00000012)
 		moduleVersion = 6
 		stagingEnabled = True
 		userReallyDeactivatedIt = False
@@ -8921,10 +8923,10 @@ PART
 	part = R8winglet_4290624796
 	partName = Part
 	persistentId = 4056628192
-	pos = 0.816935062,22.6436958,4.5464983
+	pos = 0.816934109,22.6436958,4.54650688
 	attPos = 0,0,0
 	attPos0 = -0.264561564,-4.31343699,0.987327933
-	rot = -1.18219546E-07,0.608755648,-9.07116799E-08,0.793357909
+	rot = -1.18219603E-07,0.608755708,-9.07117084E-08,0.793357968
 	attRot = 0,0,0,1
 	attRot0 = 0,0.608755708,5.32907009E-15,0.79335779
 	mir = 1,1,1
@@ -9178,8 +9180,8 @@ PART
 		name = AttachedOnEditor
 		isEnabled = True
 		active = True
-		originalPos = (0.816935062, 22.6436958, 4.5464983)
-		originalRotation = (-1.18219546E-07, 0.608755648, -9.07116799E-08, 0.793357909)
+		originalPos = (0.816934109, 22.6436958, 4.54650688)
+		originalRotation = (-1.18219603E-07, 0.608755708, -9.07117084E-08, 0.793357968)
 		moduleVersion = 6
 		stagingEnabled = True
 		userReallyDeactivatedIt = False
@@ -9199,10 +9201,10 @@ PART
 	part = radialDecoupler1-2_4290628518
 	partName = Part
 	persistentId = 957846030
-	pos = 1.08149707,27.5571327,0.359168291
+	pos = 1.08149707,27.5571327,0.359164953
 	attPos = -2.38418608E-07,0.665216446,0.0230019093
 	attPos0 = -1.1920929E-07,-0.465215683,-1.22300184
-	rot = 2.21253984E-08,0.707106769,-2.2125402E-08,-0.707106888
+	rot = 2.21254108E-08,0.707106769,-2.21254144E-08,-0.707106888
 	attRot = 0,0,0,1
 	attRot0 = 2.21253966E-08,0.707106769,-2.21253984E-08,-0.707106888
 	mir = 1,1,1
@@ -9213,7 +9215,7 @@ PART
 	resPri = 0
 	dstg = 5
 	sidx = 0
-	sqor = 5
+	sqor = 2
 	sepI = 2
 	attm = 1
 	sameVesselCollision = False
@@ -9430,8 +9432,8 @@ PART
 		name = AttachedOnEditor
 		isEnabled = True
 		active = True
-		originalPos = (1.08149707, 27.5571327, 0.359168291)
-		originalRotation = (2.21253984E-08, 0.707106769, -2.2125402E-08, -0.707106888)
+		originalPos = (1.08149707, 27.5571327, 0.359164953)
+		originalRotation = (2.21254108E-08, 0.707106769, -2.21254144E-08, -0.707106888)
 		moduleVersion = 6
 		stagingEnabled = True
 		userReallyDeactivatedIt = False
@@ -9451,10 +9453,10 @@ PART
 	part = MassiveBooster_4290628450
 	partName = Part
 	persistentId = 3019270632
-	pos = 1.08149719,26.9571323,-0.440832019
+	pos = 1.08149719,26.9571323,-0.44083941
 	attPos = -0.0014449358,-0.405891418,2.98023224E-07
 	attPos0 = -0.798555136,-0.194108918,-2.38418579E-07
-	rot = 0,1.00000012,1.49011655E-07,0
+	rot = 0,1.00000012,1.49011669E-07,0
 	attRot = 0,0,0,1
 	attRot0 = -1.27492498E-07,-0.707106888,-1.27492513E-07,0.707106769
 	mir = 1,1,1
@@ -9465,7 +9467,7 @@ PART
 	resPri = 0
 	dstg = 6
 	sidx = 0
-	sqor = 6
+	sqor = 3
 	sepI = 2
 	attm = 1
 	sameVesselCollision = False
@@ -9723,8 +9725,8 @@ PART
 		name = AttachedOnEditor
 		isEnabled = True
 		active = True
-		originalPos = (1.08149719, 26.9571323, -0.440832019)
-		originalRotation = (0, 1.00000012, 1.49011655E-07, 0)
+		originalPos = (1.08149719, 26.9571323, -0.44083941)
+		originalRotation = (0, 1.00000012, 1.49011669E-07, 0)
 		moduleVersion = 6
 		stagingEnabled = True
 		userReallyDeactivatedIt = False
@@ -9778,10 +9780,10 @@ PART
 	part = noseCone_4290625190
 	partName = Part
 	persistentId = 454545921
-	pos = 1.08149707,34.3862915,-0.440830946
+	pos = 1.08149695,34.3862915,-0.440837979
 	attPos = 0,0,0
 	attPos0 = -8.03920244E-13,7.42915726,2.94792983E-07
-	rot = -1.77635701E-14,1.00000012,2.66453543E-14,-1.1920929E-07
+	rot = -4.26325743E-14,1,3.90798606E-14,-8.94069672E-08
 	attRot = 0,0,0,1
 	attRot0 = 1.49011598E-07,1.19209275E-07,0,1
 	mir = 1,1,1
@@ -9946,8 +9948,8 @@ PART
 		name = AttachedOnEditor
 		isEnabled = True
 		active = True
-		originalPos = (1.08149707, 34.3862915, -0.440830946)
-		originalRotation = (-1.77635701E-14, 1.00000012, 2.66453543E-14, -1.1920929E-07)
+		originalPos = (1.08149695, 34.3862915, -0.440837979)
+		originalRotation = (-4.26325743E-14, 1, 3.90798606E-14, -8.94069672E-08)
 		moduleVersion = 6
 		stagingEnabled = True
 		userReallyDeactivatedIt = False
@@ -9971,10 +9973,10 @@ PART
 	part = R8winglet_4290623234
 	partName = Part
 	persistentId = 1838961873
-	pos = 1.34605932,22.6436958,-1.42816222
+	pos = 1.34606004,22.6436958,-1.42817056
 	attPos = 0,0,0
 	attPos0 = -0.264561743,-4.31343699,0.987328649
-	rot = -9.07116942E-08,0.793357909,1.1821956E-07,-0.608755887
+	rot = -9.07116231E-08,0.79335773,1.1821956E-07,-0.608755946
 	attRot = 0,0,0,1
 	attRot0 = -1.42108513E-14,0.608755708,-5.32906925E-15,0.79335773
 	mir = 1,1,1
@@ -10220,8 +10222,8 @@ PART
 		name = AttachedOnEditor
 		isEnabled = True
 		active = True
-		originalPos = (1.34605932, 22.6436958, -1.42816222)
-		originalRotation = (-9.07116942E-08, 0.793357909, 1.1821956E-07, -0.608755887)
+		originalPos = (1.34606004, 22.6436958, -1.42817056)
+		originalRotation = (-9.07116231E-08, 0.79335773, 1.1821956E-07, -0.608755946)
 		moduleVersion = 6
 		stagingEnabled = True
 		userReallyDeactivatedIt = False
@@ -10241,10 +10243,10 @@ PART
 	part = strutConnector_4290846170
 	partName = CompoundPart
 	persistentId = 996137422
-	pos = -0.119989157,36.2912369,1.8811053
+	pos = -0.119992495,36.2912369,1.88110614
 	attPos = 0,0,0
 	attPos0 = -1.20148635,-0.185718536,0.321937323
-	rot = -8.83844642E-09,0.130526245,-6.71346641E-08,0.991444886
+	rot = -8.83844642E-09,0.130526274,-6.71346712E-08,0.991444945
 	attRot = 0,0,0,1
 	attRot0 = -8.83844553E-09,0.130526274,-6.71346641E-08,0.991444886
 	mir = 1,1,1
@@ -10431,8 +10433,8 @@ PART
 		name = AttachedOnEditor
 		isEnabled = True
 		active = True
-		originalPos = (-0.119989157, 36.2912369, 1.8811053)
-		originalRotation = (-8.83844642E-09, 0.130526245, -6.71346641E-08, 0.991444886)
+		originalPos = (-0.119992495, 36.2912369, 1.88110614)
+		originalRotation = (-8.83844642E-09, 0.130526274, -6.71346712E-08, 0.991444945)
 		moduleVersion = 6
 		stagingEnabled = True
 		userReallyDeactivatedIt = False
@@ -10452,10 +10454,10 @@ PART
 	part = strutConnector_4290718170
 	partName = CompoundPart
 	persistentId = 1096787238
-	pos = 1.40343416,36.2912369,2.76065445
+	pos = 1.40343416,36.2912369,2.76065779
 	attPos = 0,0,0
 	attPos0 = 0.321937203,-0.185718536,1.20148635
-	rot = -5.37210987E-08,0.793353379,-4.12216501E-08,0.60876137
+	rot = -5.37211093E-08,0.793353438,-4.12216679E-08,0.608761549
 	attRot = 0,0,0,1
 	attRot0 = -5.37210987E-08,0.793353379,-4.12216501E-08,0.60876137
 	mir = 1,1,1
@@ -10642,8 +10644,8 @@ PART
 		name = AttachedOnEditor
 		isEnabled = True
 		active = True
-		originalPos = (1.40343416, 36.2912369, 2.76065445)
-		originalRotation = (-5.37210987E-08, 0.793353379, -4.12216501E-08, 0.60876137)
+		originalPos = (1.40343416, 36.2912369, 2.76065779)
+		originalRotation = (-5.37211093E-08, 0.793353438, -4.12216679E-08, 0.608761549)
 		moduleVersion = 6
 		stagingEnabled = True
 		userReallyDeactivatedIt = False
@@ -10663,10 +10665,10 @@ PART
 	part = strutConnector_4290718052
 	partName = CompoundPart
 	persistentId = 2476156355
-	pos = 2.28298354,36.2912369,1.23723102
+	pos = 2.28298688,36.2912369,1.23723018
 	attPos = 0,0,0
 	attPos0 = 1.20148635,-0.185718536,-0.321937442
-	rot = -6.71346641E-08,0.991444945,8.8384482E-09,-0.130526334
+	rot = -6.71346641E-08,0.991444945,8.8384553E-09,-0.130526274
 	attRot = 0,0,0,1
 	attRot0 = -6.71346641E-08,0.991444886,8.8384482E-09,-0.130526319
 	mir = 1,1,1
@@ -10853,8 +10855,8 @@ PART
 		name = AttachedOnEditor
 		isEnabled = True
 		active = True
-		originalPos = (2.28298354, 36.2912369, 1.23723102)
-		originalRotation = (-6.71346641E-08, 0.991444945, 8.8384482E-09, -0.130526334)
+		originalPos = (2.28298688, 36.2912369, 1.23723018)
+		originalRotation = (-6.71346641E-08, 0.991444945, 8.8384553E-09, -0.130526274)
 		moduleVersion = 6
 		stagingEnabled = True
 		userReallyDeactivatedIt = False
@@ -10874,10 +10876,10 @@ PART
 	part = strutConnector_4290717934
 	partName = CompoundPart
 	persistentId = 978552018
-	pos = 0.759559989,36.2912369,0.35768199
+	pos = 0.759559989,36.2912369,0.357678652
 	attPos = 0,0,0
 	attPos0 = -0.321937382,-0.185718536,-1.20148623
-	rot = -4.12216501E-08,0.60876137,5.37210987E-08,-0.793353379
+	rot = -4.12216679E-08,0.608761549,5.37211093E-08,-0.793353438
 	attRot = 0,0,0,1
 	attRot0 = -4.12216501E-08,0.60876137,5.37210987E-08,-0.793353379
 	mir = 1,1,1
@@ -11064,8 +11066,8 @@ PART
 		name = AttachedOnEditor
 		isEnabled = True
 		active = True
-		originalPos = (0.759559989, 36.2912369, 0.35768199)
-		originalRotation = (-4.12216501E-08, 0.60876137, 5.37210987E-08, -0.793353379)
+		originalPos = (0.759559989, 36.2912369, 0.357678652)
+		originalRotation = (-4.12216679E-08, 0.608761549, 5.37211093E-08, -0.793353438)
 		moduleVersion = 6
 		stagingEnabled = True
 		userReallyDeactivatedIt = False
@@ -11085,10 +11087,10 @@ PART
 	part = HighGainAntenna5.v2_4290937196
 	partName = Part
 	persistentId = 234502515
-	pos = 1.38148725,42.7195587,2.67874718
+	pos = 1.38148725,42.7195587,2.67875051
 	attPos = 0,0,0
 	attPos0 = 0.299990326,0.849704742,1.11957896
-	rot = -0.0922959745,-0.701057553,-0.701057315,0.0922959745
+	rot = -0.0922959745,-0.701057494,-0.701057434,0.0922959447
 	attRot = 0,-0.999999881,0,0
 	attRot0 = -0.0922959521,-0.701057553,-0.701057315,0.0922959819
 	mir = 1,1,1
@@ -11294,8 +11296,8 @@ PART
 		name = AttachedOnEditor
 		isEnabled = True
 		active = True
-		originalPos = (1.38148725, 42.7195587, 2.67874718)
-		originalRotation = (-0.0922959745, -0.701057553, -0.701057315, 0.0922959745)
+		originalPos = (1.38148725, 42.7195587, 2.67875051)
+		originalRotation = (-0.0922959745, -0.701057494, -0.701057434, 0.0922959447)
 		moduleVersion = 6
 		stagingEnabled = True
 		userReallyDeactivatedIt = False
@@ -11338,10 +11340,10 @@ PART
 	part = HighGainAntenna5.v2_4290876090
 	partName = Part
 	persistentId = 304955238
-	pos = 2.08528447,42.7195587,2.13870525
+	pos = 2.08528781,42.7195587,2.13870692
 	attPos = 0,0,0
 	attPos0 = 1.00378716,0.849704742,0.579536676
-	rot = -0.353553385,-0.612372637,-0.612372398,0.353553534
+	rot = -0.353553355,-0.612372696,-0.612372458,0.353553534
 	attRot = 0,0,-0.999999881,0
 	attRot0 = -0.353553385,-0.612372577,-0.612372339,0.353553504
 	mir = 1,1,1
@@ -11547,8 +11549,8 @@ PART
 		name = AttachedOnEditor
 		isEnabled = True
 		active = True
-		originalPos = (2.08528447, 42.7195587, 2.13870525)
-		originalRotation = (-0.353553385, -0.612372637, -0.612372398, 0.353553534)
+		originalPos = (2.08528781, 42.7195587, 2.13870692)
+		originalRotation = (-0.353553355, -0.612372696, -0.612372458, 0.353553534)
 		moduleVersion = 6
 		stagingEnabled = True
 		userReallyDeactivatedIt = False
@@ -11591,10 +11593,10 @@ PART
 	part = HighGainAntenna5.v2_4290875976
 	partName = Part
 	persistentId = 400616903
-	pos = 2.20107627,42.7195587,1.25917816
+	pos = 2.20107961,42.7195587,1.25917733
 	attPos = 0,0,0
 	attPos0 = 1.11957896,0.849704742,-0.299990237
-	rot = -0.560985446,-0.43045947,-0.430459321,0.560985744
+	rot = -0.560985506,-0.43045944,-0.43045935,0.560985804
 	attRot = 0,0,-0.999999881,0
 	attRot0 = -0.560985446,-0.43045944,-0.430459291,0.560985684
 	mir = 1,1,1
@@ -11800,8 +11802,8 @@ PART
 		name = AttachedOnEditor
 		isEnabled = True
 		active = True
-		originalPos = (2.20107627, 42.7195587, 1.25917816)
-		originalRotation = (-0.560985446, -0.43045947, -0.430459321, 0.560985744)
+		originalPos = (2.20107961, 42.7195587, 1.25917733)
+		originalRotation = (-0.560985506, -0.43045944, -0.43045935, 0.560985804)
 		moduleVersion = 6
 		stagingEnabled = True
 		userReallyDeactivatedIt = False
@@ -11844,10 +11846,10 @@ PART
 	part = HighGainAntenna5.v2_4290875862
 	partName = Part
 	persistentId = 2727214098
-	pos = 1.66103411,42.7195587,0.555381417
+	pos = 1.66103578,42.7195587,0.555378079
 	attPos = 0,0,0
 	attPos0 = 0.579536676,0.849704742,-1.00378704
-	rot = -0.683012605,-0.183012754,-0.183012694,0.683012962
+	rot = -0.683012664,-0.183012784,-0.183012739,0.683012962
 	attRot = 0,0,-0.999999881,0
 	attRot0 = -0.683012605,-0.183012739,-0.183012679,0.683012843
 	mir = 1,1,1
@@ -12053,8 +12055,8 @@ PART
 		name = AttachedOnEditor
 		isEnabled = True
 		active = True
-		originalPos = (1.66103411, 42.7195587, 0.555381417)
-		originalRotation = (-0.683012605, -0.183012754, -0.183012694, 0.683012962)
+		originalPos = (1.66103578, 42.7195587, 0.555378079)
+		originalRotation = (-0.683012664, -0.183012784, -0.183012739, 0.683012962)
 		moduleVersion = 6
 		stagingEnabled = True
 		userReallyDeactivatedIt = False
@@ -12097,10 +12099,10 @@ PART
 	part = HighGainAntenna5.v2_4290875748
 	partName = Part
 	persistentId = 752132575
-	pos = 0.781507015,42.7195587,0.439589262
+	pos = 0.781506896,42.7195587,0.439585924
 	attPos = 0,0,0
 	attPos0 = -0.299990416,0.849704742,-1.11957896
-	rot = -0.701057374,0.0922960341,0.0922960043,0.701057553
+	rot = -0.701057434,0.0922960043,0.0922959745,0.701057553
 	attRot = 0,0,-0.999999881,0
 	attRot0 = -0.701057315,0.0922960043,0.0922959819,0.701057494
 	mir = 1,1,1
@@ -12306,8 +12308,8 @@ PART
 		name = AttachedOnEditor
 		isEnabled = True
 		active = True
-		originalPos = (0.781507015, 42.7195587, 0.439589262)
-		originalRotation = (-0.701057374, 0.0922960341, 0.0922960043, 0.701057553)
+		originalPos = (0.781506896, 42.7195587, 0.439585924)
+		originalRotation = (-0.701057434, 0.0922960043, 0.0922959745, 0.701057553)
 		moduleVersion = 6
 		stagingEnabled = True
 		userReallyDeactivatedIt = False
@@ -12350,10 +12352,10 @@ PART
 	part = HighGainAntenna5.v2_4290875634
 	partName = Part
 	persistentId = 3262079480
-	pos = 0.0777101517,42.7195587,0.979631424
+	pos = 0.0777068138,42.7195587,0.979629755
 	attPos = 0,0,0
 	attPos0 = -1.00378716,0.849704742,-0.579536557
-	rot = -0.612372339,0.353553474,0.353553355,0.612372518
+	rot = -0.612372458,0.353553534,0.353553355,0.612372577
 	attRot = 0,0,-0.999999881,0
 	attRot0 = -0.612372339,0.353553534,0.353553414,0.612372577
 	mir = 1,1,1
@@ -12559,8 +12561,8 @@ PART
 		name = AttachedOnEditor
 		isEnabled = True
 		active = True
-		originalPos = (0.0777101517, 42.7195587, 0.979631424)
-		originalRotation = (-0.612372339, 0.353553474, 0.353553355, 0.612372518)
+		originalPos = (0.0777068138, 42.7195587, 0.979629755)
+		originalRotation = (-0.612372458, 0.353553534, 0.353553355, 0.612372577)
 		moduleVersion = 6
 		stagingEnabled = True
 		userReallyDeactivatedIt = False
@@ -12603,10 +12605,10 @@ PART
 	part = HighGainAntenna5.v2_4290875520
 	partName = Part
 	persistentId = 2654749378
-	pos = -0.038081646,42.7195587,1.8591584
+	pos = -0.0380849838,42.7195587,1.85915923
 	attPos = 0,0,0
 	attPos0 = -1.11957884,0.849704742,0.299990416
-	rot = -0.430459321,0.560985744,0.560985446,0.43045947
+	rot = -0.43045935,0.560985804,0.560985506,0.43045944
 	attRot = 0,0,-0.999999881,0
 	attRot0 = -0.430459291,0.560985684,0.560985446,0.43045944
 	mir = 1,1,1
@@ -12812,8 +12814,8 @@ PART
 		name = AttachedOnEditor
 		isEnabled = True
 		active = True
-		originalPos = (-0.038081646, 42.7195587, 1.8591584)
-		originalRotation = (-0.430459321, 0.560985744, 0.560985446, 0.43045947)
+		originalPos = (-0.0380849838, 42.7195587, 1.85915923)
+		originalRotation = (-0.43045935, 0.560985804, 0.560985506, 0.43045944)
 		moduleVersion = 6
 		stagingEnabled = True
 		userReallyDeactivatedIt = False
@@ -12856,10 +12858,10 @@ PART
 	part = HighGainAntenna5.v2_4290875406
 	partName = Part
 	persistentId = 531373361
-	pos = 0.501960576,42.7195587,2.56295538
+	pos = 0.501958907,42.7195587,2.56295872
 	attPos = 0,0,0
 	attPos0 = -0.579536378,0.849704742,1.00378728
-	rot = -0.183012575,0.683012903,0.683012724,0.183012605
+	rot = -0.183012545,0.683012962,0.683012724,0.183012784
 	attRot = 0,0,-0.999999881,0
 	attRot0 = -0.18301256,0.683012843,0.683012664,0.183012605
 	mir = 1,1,1
@@ -13065,8 +13067,8 @@ PART
 		name = AttachedOnEditor
 		isEnabled = True
 		active = True
-		originalPos = (0.501960576, 42.7195587, 2.56295538)
-		originalRotation = (-0.183012575, 0.683012903, 0.683012724, 0.183012605)
+		originalPos = (0.501958907, 42.7195587, 2.56295872)
+		originalRotation = (-0.183012545, 0.683012962, 0.683012724, 0.183012784)
 		moduleVersion = 6
 		stagingEnabled = True
 		userReallyDeactivatedIt = False
@@ -13109,10 +13111,10 @@ PART
 	part = solarPanels2_4290895328
 	partName = Part
 	persistentId = 3345142582
-	pos = 1.65561533,42.4842377,2.55357075
+	pos = 1.65561712,42.4842377,2.55357409
 	attPos = 0,0,0
 	attPos0 = 0.574118435,0.614385605,0.994402289
-	rot = -1.34110351E-07,0.866026342,-7.74283464E-08,0.49999851
+	rot = -1.3411038E-07,0.866026402,-7.74283677E-08,0.499998569
 	attRot = 0,0,0,1
 	attRot0 = -1.34110337E-07,0.866026282,-7.74283393E-08,0.49999854
 	mir = 1,1,1
@@ -13344,8 +13346,8 @@ PART
 		name = AttachedOnEditor
 		isEnabled = True
 		active = True
-		originalPos = (1.65561533, 42.4842377, 2.55357075)
-		originalRotation = (-1.34110351E-07, 0.866026342, -7.74283464E-08, 0.49999851)
+		originalPos = (1.65561712, 42.4842377, 2.55357409)
+		originalRotation = (-1.3411038E-07, 0.866026402, -7.74283677E-08, 0.499998569)
 		moduleVersion = 6
 		stagingEnabled = True
 		userReallyDeactivatedIt = False
@@ -13376,10 +13378,10 @@ PART
 	part = solarPanels2_4290871984
 	partName = Part
 	persistentId = 381091909
-	pos = 2.19060874,42.4842377,1.85635388
+	pos = 2.19061208,42.4842377,1.85635388
 	attPos = 0,0,0
 	attPos0 = 1.10911167,0.614385605,0.297185421
-	rot = -1.53532341E-07,0.991445184,-2.02126458E-08,0.130524516
+	rot = -1.53532341E-07,0.991445184,-2.02126387E-08,0.130524516
 	attRot = 0,0,0,1
 	attRot0 = -1.53532341E-07,0.991445124,-2.02126493E-08,0.130524486
 	mir = 1,1,1
@@ -13611,8 +13613,8 @@ PART
 		name = AttachedOnEditor
 		isEnabled = True
 		active = True
-		originalPos = (2.19060874, 42.4842377, 1.85635388)
-		originalRotation = (-1.53532341E-07, 0.991445184, -2.02126458E-08, 0.130524516)
+		originalPos = (2.19061208, 42.4842377, 1.85635388)
+		originalRotation = (-1.53532341E-07, 0.991445184, -2.02126387E-08, 0.130524516)
 		moduleVersion = 6
 		stagingEnabled = True
 		userReallyDeactivatedIt = False
@@ -13643,10 +13645,10 @@ PART
 	part = solarPanels2_4290871850
 	partName = Part
 	persistentId = 1299949689
-	pos = 2.0758996,42.4842377,0.985050082
+	pos = 2.07590294,42.4842377,0.985048413
 	attPos = 0,0,0
 	attPos0 = 0.99440223,0.614385605,-0.574118316
-	rot = -1.49580444E-07,0.965925395,4.00802271E-08,-0.258820713
+	rot = -1.49580501E-07,0.965925574,4.00802236E-08,-0.258820772
 	attRot = 0,0,0,1
 	attRot0 = -1.4958043E-07,0.965925395,4.00802236E-08,-0.258820713
 	mir = 1,1,1
@@ -13878,8 +13880,8 @@ PART
 		name = AttachedOnEditor
 		isEnabled = True
 		active = True
-		originalPos = (2.0758996, 42.4842377, 0.985050082)
-		originalRotation = (-1.49580444E-07, 0.965925395, 4.00802271E-08, -0.258820713)
+		originalPos = (2.07590294, 42.4842377, 0.985048413)
+		originalRotation = (-1.49580501E-07, 0.965925574, 4.00802236E-08, -0.258820772)
 		moduleVersion = 6
 		stagingEnabled = True
 		userReallyDeactivatedIt = False
@@ -13910,10 +13912,10 @@ PART
 	part = solarPanels2_4290871716
 	partName = Part
 	persistentId = 2433362997
-	pos = 1.37868309,42.4842377,0.450056672
+	pos = 1.37868392,42.4842377,0.450053334
 	attPos = 0,0,0
 	attPos0 = 0.2971856,0.614385605,-1.10911155
-	rot = -1.22856278E-07,0.793352365,9.42712433E-08,-0.60876286
+	rot = -1.22856321E-07,0.793352425,9.42712575E-08,-0.60876292
 	attRot = 0,0,0,1
 	attRot0 = -1.22856264E-07,0.793352306,9.42712433E-08,-0.608762801
 	mir = 1,1,1
@@ -14145,8 +14147,8 @@ PART
 		name = AttachedOnEditor
 		isEnabled = True
 		active = True
-		originalPos = (1.37868309, 42.4842377, 0.450056672)
-		originalRotation = (-1.22856278E-07, 0.793352365, 9.42712433E-08, -0.60876286)
+		originalPos = (1.37868392, 42.4842377, 0.450053334)
+		originalRotation = (-1.22856321E-07, 0.793352425, 9.42712575E-08, -0.60876292)
 		moduleVersion = 6
 		stagingEnabled = True
 		userReallyDeactivatedIt = False
@@ -14177,10 +14179,10 @@ PART
 	part = solarPanels2_4290871582
 	partName = Part
 	persistentId = 1984721702
-	pos = 0.507378876,42.4842377,0.564765811
+	pos = 0.507376432,42.4842377,0.564761639
 	attPos = 0,0,0
 	attPos0 = -0.574118495,0.614385605,-0.99440223
-	rot = -7.74283393E-08,0.49999851,1.34110351E-07,-0.866026342
+	rot = -7.74283677E-08,0.499998569,1.34110437E-07,-0.866026402
 	attRot = 0,0,0,1
 	attRot0 = -7.74283322E-08,0.49999851,1.34110337E-07,-0.866026282
 	mir = 1,1,1
@@ -14412,8 +14414,8 @@ PART
 		name = AttachedOnEditor
 		isEnabled = True
 		active = True
-		originalPos = (0.507378876, 42.4842377, 0.564765811)
-		originalRotation = (-7.74283393E-08, 0.49999851, 1.34110351E-07, -0.866026342)
+		originalPos = (0.507376432, 42.4842377, 0.564761639)
+		originalRotation = (-7.74283677E-08, 0.499998569, 1.34110437E-07, -0.866026402)
 		moduleVersion = 6
 		stagingEnabled = True
 		userReallyDeactivatedIt = False
@@ -14444,10 +14446,10 @@ PART
 	part = solarPanels2_4290871448
 	partName = Part
 	persistentId = 940806823
-	pos = -0.0276144743,42.4842377,1.26198256
+	pos = -0.0276178122,42.4842377,1.26198244
 	attPos = 0,0,0
 	attPos0 = -1.10911167,0.614385605,-0.297185421
-	rot = -2.02126458E-08,0.130524397,1.53532341E-07,-0.991445184
+	rot = -2.02126387E-08,0.130524427,1.53532341E-07,-0.991445184
 	attRot = 0,0,0,1
 	attRot0 = -2.02126405E-08,0.130524427,1.53532341E-07,-0.991445124
 	mir = 1,1,1
@@ -14679,8 +14681,8 @@ PART
 		name = AttachedOnEditor
 		isEnabled = True
 		active = True
-		originalPos = (-0.0276144743, 42.4842377, 1.26198256)
-		originalRotation = (-2.02126458E-08, 0.130524397, 1.53532341E-07, -0.991445184)
+		originalPos = (-0.0276178122, 42.4842377, 1.26198244)
+		originalRotation = (-2.02126387E-08, 0.130524427, 1.53532341E-07, -0.991445184)
 		moduleVersion = 6
 		stagingEnabled = True
 		userReallyDeactivatedIt = False
@@ -14711,10 +14713,10 @@ PART
 	part = solarPanels2_4290871314
 	partName = Part
 	persistentId = 437054760
-	pos = 0.0870948434,42.4842377,2.13328648
+	pos = 0.0870915055,42.4842377,2.13328815
 	attPos = 0,0,0
 	attPos0 = -0.99440217,0.614385605,0.574118376
-	rot = 4.00802271E-08,-0.258820713,1.49580444E-07,-0.965925395
+	rot = 4.00802236E-08,-0.258820772,1.49580501E-07,-0.965925574
 	attRot = 0,0,0,1
 	attRot0 = 4.00802236E-08,-0.258820713,1.4958043E-07,-0.965925395
 	mir = 1,1,1
@@ -14946,8 +14948,8 @@ PART
 		name = AttachedOnEditor
 		isEnabled = True
 		active = True
-		originalPos = (0.0870948434, 42.4842377, 2.13328648)
-		originalRotation = (4.00802271E-08, -0.258820713, 1.49580444E-07, -0.965925395)
+		originalPos = (0.0870915055, 42.4842377, 2.13328815)
+		originalRotation = (4.00802236E-08, -0.258820772, 1.49580501E-07, -0.965925574)
 		moduleVersion = 6
 		stagingEnabled = True
 		userReallyDeactivatedIt = False
@@ -14978,10 +14980,10 @@ PART
 	part = solarPanels2_4290871180
 	partName = Part
 	persistentId = 3018628503
-	pos = 0.784311652,42.4842377,2.66828012
+	pos = 0.784310818,42.4842377,2.66828346
 	attPos = 0,0,0
 	attPos0 = -0.297185242,0.614385605,1.10911179
-	rot = 9.42712788E-08,-0.60876298,1.2285625E-07,-0.793352246
+	rot = 9.42712859E-08,-0.608763039,1.2285625E-07,-0.793352306
 	attRot = 0,0,0,1
 	attRot0 = 9.42712646E-08,-0.60876292,1.22856235E-07,-0.793352187
 	mir = 1,1,1
@@ -15213,8 +15215,8 @@ PART
 		name = AttachedOnEditor
 		isEnabled = True
 		active = True
-		originalPos = (0.784311652, 42.4842377, 2.66828012)
-		originalRotation = (9.42712788E-08, -0.60876298, 1.2285625E-07, -0.793352246)
+		originalPos = (0.784310818, 42.4842377, 2.66828346)
+		originalRotation = (9.42712859E-08, -0.608763039, 1.2285625E-07, -0.793352306)
 		moduleVersion = 6
 		stagingEnabled = True
 		userReallyDeactivatedIt = False
@@ -15238,5 +15240,403 @@ PART
 		hideFlow = False
 		isVisible = True
 		flowMode = Both
+	}
+}
+PART
+{
+	part = launchClamp1_4293076614
+	partName = Part
+	persistentId = 942031395
+	pos = -0.960113049,26.6525097,1.55916846
+	attPos = 0,0,0
+	attPos0 = -2.04160929,-0.704622269,2.38418636E-07
+	rot = -1.48211732E-09,0.707106888,1.48211732E-09,0.707106888
+	attRot = 0,0,0,1
+	attRot0 = -1.4821171E-09,0.707106829,1.4821171E-09,0.707106829
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 3
+	resPri = 0
+	dstg = 4
+	sidx = 2
+	sqor = 3
+	sepI = 4
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = launchClamp1_4293075752
+	srfN = srfAttach,Rockomax32.BW_4290655472,collider,0|1.35443699|0.806919396,0|0|-1,0|1.35443699|0.806919396
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		AutostrutOff
+		{
+			actionGroup = None
+		}
+		AutostrutRoot
+		{
+			actionGroup = None
+		}
+		AutostrutHeaviest
+		{
+			actionGroup = None
+		}
+		AutostrutGrandparent
+		{
+			actionGroup = None
+		}
+		ResourcesEnableFlow
+		{
+			actionGroup = None
+			active = False
+		}
+		ResourcesDisableFlow
+		{
+			actionGroup = None
+			active = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = LaunchClamp
+		isEnabled = True
+		scaleFactor = 10.8246231
+		height = 27.3126602
+		stagingEnabled = True
+		towerRot = 1.4821171E-09,-0.707106829,-1.4821171E-09,0.707106829
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ReleaseClamp
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleGenerator
+		isEnabled = True
+		generatorIsActive = False
+		throttle = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+				active = False
+			}
+			ActivateAction
+			{
+				actionGroup = None
+				active = False
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+				active = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FundsKeeper
+		isEnabled = True
+		OriginalCost = 200
+		OriginalResourcesCost = 0
+		OriginalModulesCost = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = StealBackMyFunds
+		isEnabled = True
+		active = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = AttachedOnEditor
+		isEnabled = True
+		active = True
+		originalPos = (-0.960112095, 26.6525097, 1.55916846)
+		originalRotation = (-1.48211732E-09, 0.707106888, 1.48211732E-09, 0.707106888)
+		moduleVersion = 6
+		stagingEnabled = True
+		userReallyDeactivatedIt = False
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = launchClamp1_4293075752
+	partName = Part
+	persistentId = 2155708901
+	pos = 3.12310672,26.6525097,1.55916774
+	attPos = 0,0,0
+	attPos0 = 2.04160953,-0.704622269,-4.76837272E-07
+	rot = 1.48211743E-09,0.707106829,1.48211721E-09,-0.707106948
+	attRot = 0,0,0,1
+	attRot0 = 1.48211721E-09,0.707106769,1.48211698E-09,-0.707106888
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 3
+	resPri = 0
+	dstg = 4
+	sidx = 2
+	sqor = 3
+	sepI = 4
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = launchClamp1_4293076614
+	srfN = srfAttach,Rockomax32.BW_4290655472,collider,0|1.35443699|0.806919396,0|0|-1,0|1.35443699|0.806919396
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+		}
+		AutostrutOff
+		{
+			actionGroup = None
+		}
+		AutostrutRoot
+		{
+			actionGroup = None
+		}
+		AutostrutHeaviest
+		{
+			actionGroup = None
+		}
+		AutostrutGrandparent
+		{
+			actionGroup = None
+		}
+		ResourcesEnableFlow
+		{
+			actionGroup = None
+			active = False
+		}
+		ResourcesDisableFlow
+		{
+			actionGroup = None
+			active = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = LaunchClamp
+		isEnabled = True
+		scaleFactor = 10.8246231
+		height = 27.3126602
+		stagingEnabled = True
+		towerRot = -1.48211721E-09,-0.707106769,-1.48211698E-09,-0.707106888
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ReleaseClamp
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleGenerator
+		isEnabled = True
+		generatorIsActive = False
+		throttle = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+				active = False
+			}
+			ActivateAction
+			{
+				actionGroup = None
+				active = False
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+				active = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FundsKeeper
+		isEnabled = True
+		OriginalCost = 200
+		OriginalResourcesCost = 0
+		OriginalModulesCost = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = StealBackMyFunds
+		isEnabled = True
+		active = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = AttachedOnEditor
+		isEnabled = True
+		active = True
+		originalPos = (3.12310672, 26.6525097, 1.55916774)
+		originalRotation = (1.48211743E-09, 0.707106829, 1.48211721E-09, -0.707106948)
+		moduleVersion = 6
+		stagingEnabled = True
+		userReallyDeactivatedIt = False
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
 	}
 }
