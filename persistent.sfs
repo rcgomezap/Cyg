@@ -11,14 +11,14 @@ GAME
 	scene = 5
 	editor = None
 	flag = Squad/FlagsOrganization/electron
-	launchID = 52
+	launchID = 54
 	defaultVABLaunchSite = LaunchPad
 	defaultSPHLaunchSite = Runway
 	modded = True
-	envInfo =  - Environment Info - Win32NT 7FFFFFFFFFFFFFFF  Args: KSP_x64.exe  - 
+	envInfo =  - Environment Info - Win32NT 7FFFFFFFFFFFFFFF  Args: D:/EpicLibrary/KerbalSpaceProgram/English/KSP_x64.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=873d9df1adc1405ba6bce5fdb282e32e -AUTH_TYPE=exchangecode -epicapp=a1e2ce30defe4a9187ebc14fc9d2bd8b -epicenv=Prod -EpicPortal -epicusername="GiorgioGn" -epicuserid=bf18ab6af23244d59e63b575ffc0f8e3 -epiclocale=en -epicsandboxid=ca0530b485754032be50cb6f27be0c2c - 
 	versionFull = 1.12.5.3190 (WindowsPlayer x64)
 	versionCreated = 1.12.5.3190 (WindowsPlayer x64)
-	persistentTimestamp = 2026-02-13T03:07:33.8545876Z
+	persistentTimestamp = 2026-03-05T02:02:38.4197669Z
 	CometNames
 	{
 	}
@@ -366,7 +366,7 @@ GAME
 	{
 		name = Funding
 		scene = 7, 8, 5, 6
-		funds = 874210.05854858423
+		funds = 958250.88210381533
 	}
 	SCENARIO
 	{
@@ -514,6 +514,10 @@ GAME
 					{
 						crews = Jebediah Kerman
 					}
+				}
+				CelestialBodyTransfer
+				{
+					completed = 4559644.8214678513
 				}
 				ReturnFromOrbit
 				{
@@ -725,7 +729,7 @@ GAME
 	{
 		name = ResearchAndDevelopment
 		scene = 7, 8, 5, 6
-		sci = 54.9056396
+		sci = 57.6872597
 		Tech
 		{
 			id = start
@@ -1291,7 +1295,7 @@ GAME
 		Science
 		{
 			id = recovery@KerbinOrbited
-			title = Recovery of a vessel returned from orbit around Kerbin
+			title = Recovery of a vessel returned from Kerbin orbit.
 			dsc = 1
 			scv = 0
 			sbv = 10
@@ -2167,7 +2171,7 @@ GAME
 	{
 		name = Reputation
 		scene = 7, 8, 5, 6
-		rep = 652.219482
+		rep = 661.378357
 	}
 	SCENARIO
 	{
@@ -2498,12 +2502,12 @@ GAME
 	{
 		name = ContractSystem
 		scene = 7, 8, 5, 6
-		update = 4547429.5472594304
+		update = 4566929.7679924238
 		version = 1.12.5
 		WEIGHTS
 		{
 			CometDetectionContract = 30
-			VesselRepairContract = 29
+			VesselRepairContract = 41
 			RoverConstructionContract = 42
 			OrbitalConstructionContract = 53
 			RecoverAsset = 88
@@ -2600,6 +2604,51 @@ GAME
 			}
 			CONTRACT
 			{
+				guid = 2b0fe597-b290-46f9-ae36-42de18761c0d
+				type = TourismContract
+				prestige = 0
+				seed = 1952834088
+				state = Offered
+				viewed = Read
+				agent = Reaction Systems Ltd
+				agentName = Reaction Systems Ltd
+				deadlineType = Floating
+				expiryType = Floating
+				values = 108000,46008000,0,0,0,0,17.14286,15,4674929.76799242,0,0,0
+				preposition = right here on Kerbin
+				homeDestinations = True
+				isGeeAdventure = False
+				tourists = Nathan Kerman
+				PARAM
+				{
+					name = KerbalTourParameter
+					state = Incomplete
+					allowPartialFailure = True
+					values = 17550,0,0,0,0
+					kerbalName = Nathan Kerman
+					kerbalGender = Male
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 2925,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Nathan Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 2925,0,0,0,0
+						targetBody = 1
+						targetType = Orbit
+						kerbalName = Nathan Kerman
+					}
+				}
+			}
+			CONTRACT
+			{
 				guid = de0e0bd7-95d1-4bfe-957c-9e43735a36c4
 				type = SatelliteContract
 				prestige = 0
@@ -2667,80 +2716,47 @@ GAME
 			}
 			CONTRACT
 			{
-				guid = c210a777-6d91-41b1-b252-b481d20bda7c
-				type = RecoverAsset
+				guid = 47e3b690-ae70-4247-a5d7-73ba1d7f1d08
+				type = VesselRepairContract
 				prestige = 0
-				seed = -1672824431
+				seed = 1952834086
 				state = Active
 				viewed = Read
-				agent = Reaction Systems Ltd
-				agentName = Reaction Systems Ltd
+				agent = Probodobodyne Inc
+				agentName = Probodobodyne Inc
 				deadlineType = Floating
 				expiryType = Floating
-				values = 64800,46008000,21060,50519.6977057457,22112.9989957809,0,8.571429,14,419566.567036468,396669.02674409,46404669.0267441,0
-				targetBody = 1
-				kerbalName = Lecas Kerman
-				partName = MK1CrewCabin
-				partID = 3475429712
-				recoveryLocation = 1
-				recoveryType = 1
+				values = 21600,18403200,19800,36000,45000,0,2.16,2.16,4588529.76799242,4566936.28799228,22970136.2879923,0
+				bodyName = Kerbin
+				roverCraftDef = D:/EpicLibrary/KerbalSpaceProgram/English/KSP_x64_Data/../GameData/Squad/Contracts/PreBuiltCraft/RepairContract/Repair Contract Sat 3.craft
+				vesselName = Damaged Kerbin CMM Satellite 5KQ5
+				craftStartLat = 0
+				craftStartLon = 0
+				orbitEccentricity = 0.05000000074505806
+				orbitAltitudeFactor = 0.33000001311302185
+				orbitInclinationFactor = 0.25
+				repairVslId = 2557990187
+				repairPartName = HighGainAntenna5.v2
 				PARAM
 				{
-					name = AcquireCrew
+					name = CrewTraitParameter
 					state = Incomplete
-					values = 5346,0,0,4,0
-					title = Save Lecas Kerman
-					winOn = 0
-					kerbal = Lecas Kerman
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					targetTrait = Engineer
+					targetCount = 1
+					vesselDescription = Active Vessel
 				}
 				PARAM
 				{
-					name = RecoverKerbal
+					name = RepairPartParameter
 					state = Incomplete
 					values = 0,0,0,0,0
-					title = Recover Lecas Kerman on Kerbin
-					failOn = All
-					winOn = All
-					kerbal = Lecas Kerman
-				}
-			}
-			CONTRACT
-			{
-				guid = 8f4f2f46-826d-4ec1-8dc3-50e91322fc2d
-				type = RecoverAsset
-				prestige = 0
-				seed = 888646082
-				state = Active
-				viewed = Read
-				agent = Reaction Systems Ltd
-				agentName = Reaction Systems Ltd
-				deadlineType = Floating
-				expiryType = Floating
-				values = 86400,46008000,21060,50519.6977057457,22112.9989957809,0,8.571429,14,4335388.39924889,4251759.8427058,50259759.8427058,0
-				targetBody = 1
-				kerbalName = Zello Kerman
-				partName = KKAOSS.airlock.mid.g
-				partID = 465786984
-				recoveryLocation = 1
-				recoveryType = 1
-				PARAM
-				{
-					name = AcquireCrew
-					state = Incomplete
-					values = 5346,0,0,4,0
-					title = Save Zello Kerman
-					winOn = 0
-					kerbal = Zello Kerman
-				}
-				PARAM
-				{
-					name = RecoverKerbal
-					state = Incomplete
-					values = 0,0,0,0,0
-					title = Recover Zello Kerman on Kerbin
-					failOn = All
-					winOn = All
-					kerbal = Zello Kerman
+					bodyName = Kerbin
+					partName = HighGainAntenna5.v2
+					partPersistentId = 1237135069
+					vesselPersistentId = 2557990187
+					vesselName = Damaged Kerbin CMM Satellite 5KQ5
 				}
 			}
 			CONTRACT
@@ -6655,7 +6671,7 @@ GAME
 				expiryType = Floating
 				values = 95040.0020599365,40487040.877533,90000,309375.006705523,99000.0021457672,0,3.305785,3.636364,3313451.11585621,3309418.66513642,43796459.5426694,0
 				bodyName = Mun
-				constructionCraftDef = C:/Program Files (x86)/Steam/steamapps/common/Kerbal Space Program/KSP_x64_Data/../GameData/Squad/Contracts/PreBuiltCraft/OrbitalConstructionContract/Unfinished Contract Sat 3.craft
+				constructionCraftDef = D:/EpicLibrary/KerbalSpaceProgram/English/KSP_x64_Data/../GameData/Squad/Contracts/PreBuiltCraft/OrbitalConstructionContract/Unfinished Contract Sat 3.craft
 				constructionVslId = 2797931489
 				constructionPartName = rcsTankMini
 				orbitEccentricity = 0.05000000074505806
@@ -6698,7 +6714,7 @@ GAME
 				expiryType = Floating
 				values = 86400,36806400,57600,188999.991416931,60479.997253418,0,3.809524,3,1203178.33143339,1129732.31617989,37936132.3161799,0
 				bodyName = Mun
-				roverCraftDef = C:/Program Files (x86)/Steam/steamapps/common/Kerbal Space Program/KSP_x64_Data/../GameData/Squad/Contracts/PreBuiltCraft/RoverContract/Contract Rover 1c.craft
+				roverCraftDef = D:/EpicLibrary/KerbalSpaceProgram/English/KSP_x64_Data/../GameData/Squad/Contracts/PreBuiltCraft/RoverContract/Contract Rover 1c.craft
 				craftStartLat = -32.481890012810119
 				craftStartLon = 0.25356878352440654
 				craftEndLat = -32.302056927204994
@@ -6772,7 +6788,7 @@ GAME
 				expiryType = Floating
 				values = 85544.5547103882,18220990.1533127,28517.6468235465,93573.5243903013,30239.998626709,0,1.942857,2,4404601.00249306,4343308.34469612,22564298.4980088,0
 				bodyName = Kerbin
-				constructionCraftDef = C:/Program Files (x86)/Steam/steamapps/common/Kerbal Space Program/KSP_x64_Data/../GameData/Squad/Contracts/PreBuiltCraft/OrbitalConstructionContract/Unfinished Contract Sat 10.craft
+				constructionCraftDef = D:/EpicLibrary/KerbalSpaceProgram/English/KSP_x64_Data/../GameData/Squad/Contracts/PreBuiltCraft/OrbitalConstructionContract/Unfinished Contract Sat 10.craft
 				constructionVslId = 4172704171
 				constructionPartName = batteryBankMini
 				orbitEccentricity = 0.05000000074505806
@@ -6799,6 +6815,84 @@ GAME
 					partName = batteryBankMini
 					vesselName = Aging Kerbin AS-P Satellite L-B0F
 					vesselPersistentId = 4172704171
+				}
+			}
+			CONTRACT_FINISHED
+			{
+				guid = 8f4f2f46-826d-4ec1-8dc3-50e91322fc2d
+				type = RecoverAsset
+				prestige = 0
+				seed = 888646082
+				state = Completed
+				viewed = Read
+				agent = Reaction Systems Ltd
+				agentName = Reaction Systems Ltd
+				deadlineType = Floating
+				expiryType = Floating
+				values = 86400,46008000,21060,50519.6977057457,22112.9989957809,0,8.571429,14,4335388.39924889,4251759.8427058,50259759.8427058,4566929.76799242
+				targetBody = 1
+				kerbalName = Zello Kerman
+				partName = KKAOSS.airlock.mid.g
+				partID = 465786984
+				recoveryLocation = 1
+				recoveryType = 1
+				PARAM
+				{
+					name = AcquireCrew
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					title = Save Zello Kerman
+					winOn = 0
+				}
+				PARAM
+				{
+					name = RecoverKerbal
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					title = Recover Zello Kerman on Kerbin
+					failOn = All
+					winOn = All
+				}
+			}
+			CONTRACT_FINISHED
+			{
+				guid = c210a777-6d91-41b1-b252-b481d20bda7c
+				type = RecoverAsset
+				prestige = 0
+				seed = -1672824431
+				state = Completed
+				viewed = Read
+				agent = Reaction Systems Ltd
+				agentName = Reaction Systems Ltd
+				deadlineType = Floating
+				expiryType = Floating
+				values = 64800,46008000,21060,50519.6977057457,22112.9989957809,0,8.571429,14,419566.567036468,396669.02674409,46404669.0267441,4566929.76799242
+				targetBody = 1
+				kerbalName = Lecas Kerman
+				partName = MK1CrewCabin
+				partID = 3475429712
+				recoveryLocation = 1
+				recoveryType = 1
+				PARAM
+				{
+					name = AcquireCrew
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					title = Save Lecas Kerman
+					winOn = 0
+				}
+				PARAM
+				{
+					name = RecoverKerbal
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					title = Recover Lecas Kerman on Kerbin
+					failOn = All
+					winOn = All
 				}
 			}
 		}
@@ -6842,6 +6936,617 @@ GAME
 		}
 		BACKGROUNDRESOURCES
 		{
+			INTERESTEDVESSEL
+			{
+				VesselGuid = 0885f093-a3f4-4470-b866-4b5fd17688a5
+				timeLastRefresh = 6041.52001953125
+				CACHERESOURCE
+				{
+					resourceName = ElectricCharge
+					amount = 4460.4980166667128
+					maxAmount = 4460.5
+					RESOURCE
+					{
+						craftID = 4290994384,ElectricCharge
+						name = ElectricCharge
+						amount = 9.9980166667109973
+						maxAmount = 10
+						flowState = True
+						isTweakable = True
+						hideFlow = False
+						isVisible = True
+						flowMode = Both
+					}
+					RESOURCE
+					{
+						craftID = 4290924032,ElectricCharge
+						name = ElectricCharge
+						amount = 1000
+						maxAmount = 1000
+						flowState = True
+						isTweakable = True
+						hideFlow = False
+						isVisible = True
+						flowMode = Both
+					}
+					RESOURCE
+					{
+						craftID = 4290923590,ElectricCharge
+						name = ElectricCharge
+						amount = 1000
+						maxAmount = 1000
+						flowState = True
+						isTweakable = True
+						hideFlow = False
+						isVisible = True
+						flowMode = Both
+					}
+					RESOURCE
+					{
+						craftID = 4290923242,ElectricCharge
+						name = ElectricCharge
+						amount = 1000
+						maxAmount = 1000
+						flowState = True
+						isTweakable = True
+						hideFlow = False
+						isVisible = True
+						flowMode = Both
+					}
+					RESOURCE
+					{
+						craftID = 4290746298,ElectricCharge
+						name = ElectricCharge
+						amount = 0.40000000000000002
+						maxAmount = 0.40000000000000002
+						flowState = True
+						isTweakable = True
+						hideFlow = False
+						isVisible = True
+						flowMode = Both
+					}
+					RESOURCE
+					{
+						craftID = 4293631210,ElectricCharge
+						name = ElectricCharge
+						amount = 1000
+						maxAmount = 1000
+						flowState = True
+						isTweakable = True
+						hideFlow = False
+						isVisible = True
+						flowMode = Both
+					}
+					RESOURCE
+					{
+						craftID = 4293707684,ElectricCharge
+						name = ElectricCharge
+						amount = 450
+						maxAmount = 450
+						flowState = True
+						isTweakable = True
+						hideFlow = False
+						isVisible = True
+						flowMode = Both
+					}
+					RESOURCE
+					{
+						craftID = 4293691400,ElectricCharge
+						name = ElectricCharge
+						amount = 0.10000000000000001
+						maxAmount = 0.10000000000000001
+						flowState = True
+						isTweakable = True
+						hideFlow = False
+						isVisible = True
+						flowMode = Both
+					}
+				}
+				CACHERESOURCE
+				{
+					resourceName = Oxygen
+					amount = 80493.907354468654
+					maxAmount = 106111.67599999999
+					RESOURCE
+					{
+						craftID = 4290956432,Oxygen
+						name = Oxygen
+						amount = 80104.626395111904
+						maxAmount = 105113.2
+						flowState = True
+						isTweakable = True
+						hideFlow = False
+						isVisible = True
+						flowMode = Both
+					}
+					RESOURCE
+					{
+						craftID = 4293707684,Oxygen
+						name = Oxygen
+						amount = 86.581909159117686
+						maxAmount = 222.07599999999999
+						flowState = True
+						isTweakable = True
+						hideFlow = False
+						isVisible = True
+						flowMode = Both
+					}
+					RESOURCE
+					{
+						craftID = 4293608584,Oxygen
+						name = Oxygen
+						amount = 302.69905019763911
+						maxAmount = 776.39999999999998
+						flowState = True
+						isTweakable = True
+						hideFlow = False
+						isVisible = True
+						flowMode = Both
+					}
+				}
+				CACHERESOURCE
+				{
+					resourceName = Food
+					amount = 795.03033447287555
+					maxAmount = 1048.0939999999998
+					RESOURCE
+					{
+						craftID = 4290956432,Food
+						name = Food
+						amount = 791.25410022576705
+						maxAmount = 1038.3
+						flowState = True
+						isTweakable = True
+						hideFlow = False
+						isVisible = True
+						flowMode = Both
+					}
+					RESOURCE
+					{
+						craftID = 4293707684,Food
+						name = Food
+						amount = 0.84593199285845022
+						maxAmount = 2.194
+						flowState = True
+						isTweakable = True
+						hideFlow = False
+						isVisible = True
+						flowMode = Both
+					}
+					RESOURCE
+					{
+						craftID = 4293608584,Food
+						name = Food
+						amount = 2.9303022542500674
+						maxAmount = 7.5999999999999996
+						flowState = True
+						isTweakable = True
+						hideFlow = False
+						isVisible = True
+						flowMode = Both
+					}
+				}
+				CACHERESOURCE
+				{
+					resourceName = Water
+					amount = 525.48572728246222
+					maxAmount = 692.75
+					RESOURCE
+					{
+						craftID = 4290956432,Water
+						name = Water
+						amount = 523.01316724135143
+						maxAmount = 686.29999999999995
+						flowState = True
+						isTweakable = True
+						hideFlow = False
+						isVisible = True
+						flowMode = Both
+					}
+					RESOURCE
+					{
+						craftID = 4293707684,Water
+						name = Water
+						amount = 0.55584683094390042
+						maxAmount = 1.45
+						flowState = True
+						isTweakable = True
+						hideFlow = False
+						isVisible = True
+						flowMode = Both
+					}
+					RESOURCE
+					{
+						craftID = 4293608584,Water
+						name = Water
+						amount = 1.9167132101668678
+						maxAmount = 5
+						flowState = True
+						isTweakable = True
+						hideFlow = False
+						isVisible = True
+						flowMode = Both
+					}
+				}
+				CACHERESOURCE
+				{
+					resourceName = CarbonDioxide
+					amount = 22128.256714038449
+					maxAmount = 173799.226
+					RESOURCE
+					{
+						craftID = 4290955646,CarbonDioxide
+						name = CarbonDioxide
+						amount = 21575.054697643394
+						maxAmount = 172334.5
+						flowState = True
+						isTweakable = True
+						hideFlow = False
+						isVisible = True
+						flowMode = Both
+					}
+					RESOURCE
+					{
+						craftID = 4293707684,CarbonDioxide
+						name = CarbonDioxide
+						amount = 72.449406916865513
+						maxAmount = 191.82599999999999
+						flowState = True
+						isTweakable = True
+						hideFlow = False
+						isVisible = True
+						flowMode = Both
+					}
+					RESOURCE
+					{
+						craftID = 4293608034,CarbonDioxide
+						name = CarbonDioxide
+						amount = 480.75260947819123
+						maxAmount = 1272.9000000000001
+						flowState = True
+						isTweakable = True
+						hideFlow = False
+						isVisible = True
+						flowMode = Both
+					}
+				}
+				CACHERESOURCE
+				{
+					resourceName = WasteWater
+					amount = 213.00606065741837
+					maxAmount = 1672.848
+					RESOURCE
+					{
+						craftID = 4290955646,WasteWater
+						name = WasteWater
+						amount = 207.68096110056143
+						maxAmount = 1658.8
+						flowState = True
+						isTweakable = True
+						hideFlow = False
+						isVisible = True
+						flowMode = Both
+					}
+					RESOURCE
+					{
+						craftID = 4293707684,WasteWater
+						name = WasteWater
+						amount = 0.70051138815000857
+						maxAmount = 1.8480000000000001
+						flowState = True
+						isTweakable = True
+						hideFlow = False
+						isVisible = True
+						flowMode = Both
+					}
+					RESOURCE
+					{
+						craftID = 4293608034,WasteWater
+						name = WasteWater
+						amount = 4.6245881687069259
+						maxAmount = 12.199999999999999
+						flowState = True
+						isTweakable = True
+						hideFlow = False
+						isVisible = True
+						flowMode = Both
+					}
+				}
+				CACHERESOURCE
+				{
+					resourceName = Waste
+					amount = 23.013653595292446
+					maxAmount = 180.69999999999999
+					RESOURCE
+					{
+						craftID = 4290955646,Waste
+						name = Waste
+						amount = 22.438321719680829
+						maxAmount = 179.19999999999999
+						flowState = True
+						isTweakable = True
+						hideFlow = False
+						isVisible = True
+						flowMode = Both
+					}
+					RESOURCE
+					{
+						craftID = 4293707684,Waste
+						name = Waste
+						amount = 0.076710916749092792
+						maxAmount = 0.20000000000000001
+						flowState = True
+						isTweakable = True
+						hideFlow = False
+						isVisible = True
+						flowMode = Both
+					}
+					RESOURCE
+					{
+						craftID = 4293608034,Waste
+						name = Waste
+						amount = 0.49862095886252322
+						maxAmount = 1.3
+						flowState = True
+						isTweakable = True
+						hideFlow = False
+						isVisible = True
+						flowMode = Both
+					}
+				}
+				CACHERESOURCE
+				{
+					resourceName = LiquidFuel
+					amount = 395.14037247928354
+					maxAmount = 1800
+					RESOURCE
+					{
+						craftID = 4290746298,LiquidFuel
+						name = LiquidFuel
+						amount = 35.140372479283521
+						maxAmount = 1440
+						flowState = True
+						isTweakable = True
+						hideFlow = False
+						isVisible = True
+						flowMode = Both
+					}
+					RESOURCE
+					{
+						craftID = 4293691400,LiquidFuel
+						name = LiquidFuel
+						amount = 360
+						maxAmount = 360
+						flowState = True
+						isTweakable = True
+						hideFlow = False
+						isVisible = True
+						flowMode = Both
+					}
+				}
+				CACHERESOURCE
+				{
+					resourceName = Oxidizer
+					amount = 482.94926143908924
+					maxAmount = 2200
+					RESOURCE
+					{
+						craftID = 4290746298,Oxidizer
+						name = Oxidizer
+						amount = 42.949261439089248
+						maxAmount = 1760
+						flowState = True
+						isTweakable = True
+						hideFlow = False
+						isVisible = True
+						flowMode = Both
+					}
+					RESOURCE
+					{
+						craftID = 4293691400,Oxidizer
+						name = Oxidizer
+						amount = 440
+						maxAmount = 440
+						flowState = True
+						isTweakable = True
+						hideFlow = False
+						isVisible = True
+						flowMode = Both
+					}
+				}
+				CACHERESOURCE
+				{
+					resourceName = Megajoules
+					amount = 0.0010000000000000002
+					maxAmount = 0.0010000000000000002
+					RESOURCE
+					{
+						craftID = 4290895328,Megajoules
+						name = Megajoules
+						amount = 0.0001
+						maxAmount = 0.0001
+						flowState = True
+						isTweakable = False
+						hideFlow = False
+						isVisible = True
+						flowMode = Both
+					}
+					RESOURCE
+					{
+						craftID = 4290871984,Megajoules
+						name = Megajoules
+						amount = 0.0001
+						maxAmount = 0.0001
+						flowState = True
+						isTweakable = False
+						hideFlow = False
+						isVisible = True
+						flowMode = Both
+					}
+					RESOURCE
+					{
+						craftID = 4290871850,Megajoules
+						name = Megajoules
+						amount = 0.0001
+						maxAmount = 0.0001
+						flowState = True
+						isTweakable = False
+						hideFlow = False
+						isVisible = True
+						flowMode = Both
+					}
+					RESOURCE
+					{
+						craftID = 4290871716,Megajoules
+						name = Megajoules
+						amount = 0.0001
+						maxAmount = 0.0001
+						flowState = True
+						isTweakable = False
+						hideFlow = False
+						isVisible = True
+						flowMode = Both
+					}
+					RESOURCE
+					{
+						craftID = 4290871582,Megajoules
+						name = Megajoules
+						amount = 0.0001
+						maxAmount = 0.0001
+						flowState = True
+						isTweakable = False
+						hideFlow = False
+						isVisible = True
+						flowMode = Both
+					}
+					RESOURCE
+					{
+						craftID = 4290871448,Megajoules
+						name = Megajoules
+						amount = 0.0001
+						maxAmount = 0.0001
+						flowState = True
+						isTweakable = False
+						hideFlow = False
+						isVisible = True
+						flowMode = Both
+					}
+					RESOURCE
+					{
+						craftID = 4290871314,Megajoules
+						name = Megajoules
+						amount = 0.0001
+						maxAmount = 0.0001
+						flowState = True
+						isTweakable = False
+						hideFlow = False
+						isVisible = True
+						flowMode = Both
+					}
+					RESOURCE
+					{
+						craftID = 4290871180,Megajoules
+						name = Megajoules
+						amount = 0.0001
+						maxAmount = 0.0001
+						flowState = True
+						isTweakable = False
+						hideFlow = False
+						isVisible = True
+						flowMode = Both
+					}
+					RESOURCE
+					{
+						craftID = 4293628010,Megajoules
+						name = Megajoules
+						amount = 0.0001
+						maxAmount = 0.0001
+						flowState = True
+						isTweakable = False
+						hideFlow = False
+						isVisible = True
+						flowMode = Both
+					}
+					RESOURCE
+					{
+						craftID = 4293625924,Megajoules
+						name = Megajoules
+						amount = 0.0001
+						maxAmount = 0.0001
+						flowState = True
+						isTweakable = False
+						hideFlow = False
+						isVisible = True
+						flowMode = Both
+					}
+				}
+				CACHERESOURCE
+				{
+					resourceName = MonoPropellant
+					amount = 101.9445255060761
+					maxAmount = 120
+					RESOURCE
+					{
+						craftID = 4292210272,MonoPropellant
+						name = MonoPropellant
+						amount = 16.990754251012685
+						maxAmount = 20
+						flowState = True
+						isTweakable = True
+						hideFlow = False
+						isVisible = True
+						flowMode = Both
+					}
+					RESOURCE
+					{
+						craftID = 4292207392,MonoPropellant
+						name = MonoPropellant
+						amount = 16.990754251012685
+						maxAmount = 20
+						flowState = True
+						isTweakable = True
+						hideFlow = False
+						isVisible = True
+						flowMode = Both
+					}
+					RESOURCE
+					{
+						craftID = 4292207350,MonoPropellant
+						name = MonoPropellant
+						amount = 16.990754251012685
+						maxAmount = 20
+						flowState = True
+						isTweakable = True
+						hideFlow = False
+						isVisible = True
+						flowMode = Both
+					}
+					RESOURCE
+					{
+						craftID = 4292207308,MonoPropellant
+						name = MonoPropellant
+						amount = 16.990754251012685
+						maxAmount = 20
+						flowState = True
+						isTweakable = True
+						hideFlow = False
+						isVisible = True
+						flowMode = Both
+					}
+					RESOURCE
+					{
+						craftID = 4293707684,MonoPropellant
+						name = MonoPropellant
+						amount = 33.98150850202537
+						maxAmount = 40
+						flowState = True
+						isTweakable = True
+						hideFlow = False
+						isVisible = True
+						flowMode = Both
+					}
+				}
+			}
 		}
 	}
 	SCENARIO
@@ -6854,32 +7559,12 @@ GAME
 			IsNewSave = False
 			CrewMemberInfo
 			{
-				name = Lecas Kerman
-				lastUpdate = 4547428.2072594604
-				lastO2 = 396669.02674409037
-				lastEC = 396669.02674409037
-				lastFood = 4547428.2072594604
-				lastWater = 4547428.2072594604
-				vesselName = Lecas' Hulk
-				vesselId = 74315460-4753-45a5-b68d-1c034152c30f
-				vesselIsPreLaunch = False
-				hibernating = False
-				lackofEC = False
-				lackofO2 = False
-				lackofFood = False
-				lackofWater = False
-				DFFrozen = False
-				recoverykerbal = True
-				crewType = Unowned
-			}
-			CrewMemberInfo
-			{
 				name = Bob Kerman
-				lastUpdate = 4547428.2072594604
+				lastUpdate = 4566937.6679922473
 				lastO2 = 792240.87040824664
 				lastEC = 792240.87040824664
-				lastFood = 4547428.2072594604
-				lastWater = 4547428.2072594604
+				lastFood = 4566937.6679922473
+				lastWater = 4566937.6679922473
 				vesselName = Mimmus - Station 1
 				vesselId = 0885f093-a3f4-4470-b866-4b5fd17688a5
 				vesselIsPreLaunch = False
@@ -6895,11 +7580,11 @@ GAME
 			CrewMemberInfo
 			{
 				name = Nelgard Kerman
-				lastUpdate = 4547428.2072594604
+				lastUpdate = 4566937.6679922473
 				lastO2 = 792240.87040824664
 				lastEC = 792240.87040824664
-				lastFood = 4547428.2072594604
-				lastWater = 4547428.2072594604
+				lastFood = 4566937.6679922473
+				lastWater = 4566937.6679922473
 				vesselName = Mimmus - Station 1
 				vesselId = 0885f093-a3f4-4470-b866-4b5fd17688a5
 				vesselIsPreLaunch = False
@@ -6915,11 +7600,11 @@ GAME
 			CrewMemberInfo
 			{
 				name = Jebediah Kerman
-				lastUpdate = 4547428.2072594604
+				lastUpdate = 4566937.6679922473
 				lastO2 = 866510.5246697613
 				lastEC = 866510.5246697613
-				lastFood = 4547428.2072594604
-				lastWater = 4547428.2072594604
+				lastFood = 4566937.6679922473
+				lastWater = 4566937.6679922473
 				vesselName = Mimmus - Station 1
 				vesselId = 0885f093-a3f4-4470-b866-4b5fd17688a5
 				vesselIsPreLaunch = False
@@ -6935,11 +7620,11 @@ GAME
 			CrewMemberInfo
 			{
 				name = Bill Kerman
-				lastUpdate = 4547428.2072594604
+				lastUpdate = 4566937.6679922473
 				lastO2 = 866510.5246697613
 				lastEC = 866510.5246697613
-				lastFood = 4547428.2072594604
-				lastWater = 4547428.2072594604
+				lastFood = 4566937.6679922473
+				lastWater = 4566937.6679922473
 				vesselName = Mimmus - Station 1
 				vesselId = 0885f093-a3f4-4470-b866-4b5fd17688a5
 				vesselIsPreLaunch = False
@@ -6955,11 +7640,11 @@ GAME
 			CrewMemberInfo
 			{
 				name = Theocal Kerman
-				lastUpdate = 4547428.2072594604
+				lastUpdate = 4566937.6679922473
 				lastO2 = 4251661.1427080082
 				lastEC = 4251661.1427080082
-				lastFood = 4547428.2072594604
-				lastWater = 4547428.2072594604
+				lastFood = 4566937.6679922473
+				lastWater = 4566937.6679922473
 				vesselName = Theocal's Wreckage
 				vesselId = 17398135-123a-42ef-b649-ea4a60121df1
 				vesselIsPreLaunch = False
@@ -6972,57 +7657,6 @@ GAME
 				recoverykerbal = True
 				crewType = Unowned
 			}
-			CrewMemberInfo
-			{
-				name = Zello Kerman
-				lastUpdate = 4547428.2072594604
-				lastO2 = 4251759.8427058021
-				lastEC = 4251759.8427058021
-				lastFood = 4547428.2072594604
-				lastWater = 4547428.2072594604
-				vesselName = Zello's Wreckage
-				vesselId = c426bd5a-df14-4beb-a607-b402a7c1bac6
-				vesselIsPreLaunch = False
-				hibernating = False
-				lackofEC = False
-				lackofO2 = False
-				lackofFood = False
-				lackofWater = False
-				DFFrozen = False
-				recoverykerbal = True
-				crewType = Unowned
-			}
-			VesselInfo
-			{
-				vesselName = Lecas' Hulk
-				vesselType = Ship
-				vesselSituation = ORBITING
-				vesselIsPreLaunch = False
-				numCrew = 1
-				numFrozenCrew = 0
-				numOccupiedParts = 1
-				lastUpdate = 4547428.2072594604
-				lastFood = 4547428.2072594604
-				lastWater = 4547428.2072594604
-				lastOxygen = 4547428.2072594604
-				lastElectricity = 4547428.2072594604
-				remainingFood = 0
-				remainingWater = 0
-				remainingOxygen = 0
-				remainingElectricity = 0
-				remainingCO2 = 0
-				remainingWaste = 0
-				remainingWasteWater = 0
-				maxFood = 0
-				maxWater = 0
-				maxOxygen = 0
-				maxElectricity = 0
-				estimatedElectricityConsumptionRate = 0.035416666666666666
-				hibernating = False
-				recoveryvessel = True
-				windowOpen = False
-				Guid = 74315460-4753-45a5-b68d-1c034152c30f
-			}
 			VesselInfo
 			{
 				vesselName = Mimmus - Station 1
@@ -7032,19 +7666,19 @@ GAME
 				numCrew = 4
 				numFrozenCrew = 0
 				numOccupiedParts = 2
-				lastUpdate = 4547428.2072594604
-				lastFood = 4547428.2072594604
-				lastWater = 4547428.2072594604
-				lastOxygen = 4547428.2072594604
-				lastElectricity = 4547428.2072594604
-				remainingFood = 796.35128888158761
-				remainingWater = 526.35882173385255
-				remainingOxygen = 80627.628273359107
-				remainingElectricity = 4460.5
-				remainingCO2 = 22012.750525719475
-				remainingWaste = 22.893525773502905
-				remainingWasteWater = 211.89420095295156
-				maxFood = 1048.0940000000001
+				lastUpdate = 4566937.6679922473
+				lastFood = 4566937.6679922473
+				lastWater = 4566937.6679922473
+				lastOxygen = 4566937.6679922473
+				lastElectricity = 4566937.6679922473
+				remainingFood = 795.03033582704222
+				remainingWater = 525.48572817750869
+				remainingOxygen = 80493.907491551668
+				remainingElectricity = 4460.5000000000018
+				remainingCO2 = 22128.256595628136
+				remainingWaste = 23.013653472144306
+				remainingWasteWater = 213.00605951760369
+				maxFood = 1048.0939999999998
 				maxWater = 692.75
 				maxOxygen = 106111.67599999999
 				maxElectricity = 4460.5
@@ -7063,11 +7697,11 @@ GAME
 				numCrew = 1
 				numFrozenCrew = 0
 				numOccupiedParts = 1
-				lastUpdate = 4547428.2072594604
-				lastFood = 4547428.2072594604
-				lastWater = 4547428.2072594604
-				lastOxygen = 4547428.2072594604
-				lastElectricity = 4547428.2072594604
+				lastUpdate = 4566937.6679922473
+				lastFood = 4566937.6679922473
+				lastWater = 4566937.6679922473
+				lastOxygen = 4566937.6679922473
+				lastElectricity = 4566937.6679922473
 				remainingFood = 0
 				remainingWater = 0
 				remainingOxygen = 0
@@ -7085,42 +7719,11 @@ GAME
 				windowOpen = False
 				Guid = 17398135-123a-42ef-b649-ea4a60121df1
 			}
-			VesselInfo
-			{
-				vesselName = Zello's Wreckage
-				vesselType = Ship
-				vesselSituation = ORBITING
-				vesselIsPreLaunch = False
-				numCrew = 1
-				numFrozenCrew = 0
-				numOccupiedParts = 1
-				lastUpdate = 4547428.2072594604
-				lastFood = 4547428.2072594604
-				lastWater = 4547428.2072594604
-				lastOxygen = 4547428.2072594604
-				lastElectricity = 4547428.2072594604
-				remainingFood = 0
-				remainingWater = 0
-				remainingOxygen = 0
-				remainingElectricity = 0
-				remainingCO2 = 0
-				remainingWaste = 0
-				remainingWasteWater = 0
-				maxFood = 0
-				maxWater = 0
-				maxOxygen = 0
-				maxElectricity = 0
-				estimatedElectricityConsumptionRate = 0.035416666666666666
-				hibernating = False
-				recoveryvessel = True
-				windowOpen = False
-				Guid = c426bd5a-df14-4beb-a607-b402a7c1bac6
-			}
 		}
 		LifeSupportMonitoring
 		{
 			visible = False
-			x = 1130
+			x = 810
 			y = 75
 			width = 300
 			height = 300
@@ -7128,8 +7731,8 @@ GAME
 		LifeSupportCrewRoster
 		{
 			visible = False
-			x = 1095
-			y = 620
+			x = 775
+			y = 440
 			width = 370
 			height = 200
 		}
@@ -7463,9 +8066,9 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.12.5
-		UT = 4547431.3272593906
+		UT = 4566937.6679922473
 		activeVessel = 0
-		mapViewFiltering = 15579
+		mapViewFiltering = 11339
 		commNetUIModeTracking = Network
 		commNetUIModeFlight = Path
 		VESSEL
@@ -7478,25 +8081,25 @@ GAME
 			landed = False
 			skipGroundPositioning = False
 			skipGroundPositioningForDroppedPart = False
-			vesselSpawning = True
+			vesselSpawning = False
 			launchedFrom = 
 			landedAt = 
 			displaylandedAt = 
 			splashed = False
-			met = 396669.02674409037
+			met = 4169285.9522968144
 			lct = 396669.02674409037
-			lastUT = -1
-			distanceTraveled = 0
+			lastUT = 4565954.9790409049
+			distanceTraveled = 1908296.5095199367
 			root = 0
-			lat = 0.00012826104364023862
-			lon = 109.61689645513496
-			alt = 83987.093098262907
-			hgt = -1
-			nrm = 0,1,0
-			rot = -0.570964098,0.500151396,-0.64951849,0.0444335639
+			lat = -0.0067112253788878407
+			lon = -2.6756930158961731
+			alt = 84032.337311727111
+			hgt = 84032.3359
+			nrm = 0.0597018003,0.29063642,0.954969347
+			rot = -0.28046456,0.837316811,0.0224574562,-0.468760014
 			CoM = 0,0,0
 			stg = 0
-			prst = True
+			prst = False
 			ref = 0
 			ctrl = False
 			PQSMin = 0
@@ -7506,16 +8109,19 @@ GAME
 			OverrideActionControl = 0,0,0,0
 			OverrideAxisControl = 0,0,0,0
 			OverrideGroupNames = ,,,
-			altDispState = DEFAULT
+			altDispState = ASL
+			cPch = 0.03491926
+			cHdg = -2.628684
+			cMod = 0
 			ORBIT
 			{
-				SMA = 686022.9375
-				ECC = 0.003082124050706625
-				INC = -0.0005049040773883462
-				LPE = 0.99939113855361938
-				LAN = 0.99934196472167969
-				MNA = 4.397892407370767
-				EPH = 0.99901396036148071
+				SMA = 685750.3790586578
+				ECC = 0.003471822168092868
+				INC = 0.0091604189306289403
+				LPE = 183.15831950294401
+				LAN = 178.06536389732446
+				MNA = 4.1153782159769081
+				EPH = 4565069.57943686
 				REF = 1
 				IDENT = Squad/Kerbin
 			}
@@ -7532,22 +8138,22 @@ GAME
 				rotation = 0,0,0,1
 				mirror = 1,1,1
 				symMethod = Radial
-				istg = 0
+				istg = -1
 				resPri = 0
 				dstg = 0
 				sqor = 0
-				sepI = 0
+				sepI = -1
 				sidx = 0
 				attm = 0
 				sameVesselCollision = False
-				srfN = None, -1
+				srfN = , -1
 				attN = top, -1
 				attN = bottom, -1
 				mass = 0.909999967
 				shielded = False
-				temp = -1
-				tempExt = 0
-				tempExtUnexp = 0
+				temp = 287.75689864250137
+				tempExt = 286.93713830403601
+				tempExtUnexp = 311.15973912198888
 				staticPressureAtm = 0
 				expt = 0.5
 				state = 0
@@ -7555,19 +8161,379 @@ GAME
 				autostrutMode = Off
 				rigidAttachment = False
 				flag = Squad/Agencies/ReactionSystemsLtd
-				rTrf = 
+				rTrf = MK1CrewCabin (Lecas' Hulk)
 				modCost = 0
 				modMass = 0
 				moduleVariantName = 
 				moduleCargoStackableQuantity = 1
-				crew = Lecas Kerman
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+					}
+					AutostrutOff
+					{
+						actionGroup = None
+					}
+					AutostrutRoot
+					{
+						actionGroup = None
+					}
+					AutostrutHeaviest
+					{
+						actionGroup = None
+					}
+					AutostrutGrandparent
+					{
+						actionGroup = None
+					}
+					ResourcesEnableFlow
+					{
+						actionGroup = None
+						active = False
+					}
+					ResourcesDisableFlow
+					{
+						actionGroup = None
+						active = False
+					}
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleScienceExperiment
+					isEnabled = True
+					Deployed = False
+					Inoperable = False
+					cooldownToGo = 0
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						DeployAction
+						{
+							actionGroup = None
+						}
+						ResetAction
+						{
+							actionGroup = None
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleScienceContainer
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						CollectAllAction
+						{
+							actionGroup = None
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleDataTransmitter
+					isEnabled = True
+					xmitIncomplete = False
+					stagingEnabled = True
+					canComm = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						StartTransmissionAction
+						{
+							actionGroup = None
+							active = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleColorChanger
+					isEnabled = True
+					animState = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleCargoPart
+					isEnabled = True
+					packedVolume = -1
+					beingAttached = False
+					beingSettled = False
+					reinitResourcesOnStoreInVessel = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleInventoryPart
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					STOREDPARTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = FundsKeeper
+					isEnabled = True
+					OriginalCost = 550
+					OriginalResourcesCost = 550
+					OriginalModulesCost = 0
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = StealBackMyFunds
+					isEnabled = True
+					active = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					type = NULL
+					active = True
+					available = True
+					currentScale = 1.25
+					defaultScale = 1.25
+					defaultTransformScale = (0, 0, 0)
+					DryCost = 550
+					OriginalCrewCapacity = 2
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleFreeIva
+					isEnabled = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = SCANRPMStorage
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = LifeSupportModule
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = AttachedOnEditor
+					isEnabled = True
+					active = True
+					originalPos = (0, 0, 0)
+					originalRotation = (0, 0, 0, 0)
+					moduleVersion = 0
+					stagingEnabled = True
+					userReallyDeactivatedIt = False
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTripLogger
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					Log
+					{
+						flight = 0
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISInventory
+					isEnabled = True
+					invName = 
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISInventory
+					isEnabled = True
+					invName = 
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
 			}
 			ACTIONGROUPS
 			{
+				Stage = False, 0
+				Gear = False, 0
+				Light = False, 0
+				RCS = False, 0
+				SAS = False, 0
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
 			}
 			DISCOVERY
 			{
-				state = 21
+				state = -1
 				lastObservedTime = 4094278.236623751
 				lifetime = 92016000
 				refTime = 92016000
@@ -7578,6 +8544,13 @@ GAME
 			}
 			CTRLSTATE
 			{
+				pitch = 0
+				yaw = 0
+				roll = 0
+				trimPitch = 0
+				trimYaw = 0
+				trimRoll = 0
+				mainThrottle = 0
 			}
 			VESSELMODULES
 			{
@@ -7593,7 +8566,7 @@ GAME
 				CommNetVessel
 				{
 					controlState = None
-					canComm = True
+					canComm = False
 				}
 				BetterBurnTimeData
 				{
@@ -32046,13 +33019,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = 101404.06114349763
-				ECC = 0.99999999999999989
+				SMA = 101404.06114349802
+				ECC = 0.99999999999999978
 				INC = 90.197983648253953
-				LPE = 90
-				LAN = 25.918051609910719
-				MNA = 3.1415926207170166
-				EPH = 4547429.5072594313
+				LPE = 90.000000000000014
+				LAN = 76.427276005487442
+				MNA = 3.1415926303452304
+				EPH = 4566929.4879924301
 				REF = 2
 				IDENT = Squad/Mun
 			}
@@ -33368,7 +34341,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 10
+					amount = 9.9980166667109973
 					maxAmount = 10
 					flowState = True
 					isTweakable = True
@@ -35700,7 +36673,7 @@ GAME
 				RESOURCE
 				{
 					name = Oxygen
-					amount = 80238.347176919342
+					amount = 80104.626395111904
 					maxAmount = 105113.2
 					flowState = True
 					isTweakable = True
@@ -35711,7 +36684,7 @@ GAME
 				RESOURCE
 				{
 					name = Food
-					amount = 792.57505328031255
+					amount = 791.25410022576705
 					maxAmount = 1038.3
 					flowState = True
 					isTweakable = True
@@ -35722,7 +36695,7 @@ GAME
 				RESOURCE
 				{
 					name = Water
-					amount = 523.8862607976954
+					amount = 523.01316724135143
 					maxAmount = 686.29999999999995
 					flowState = True
 					isTweakable = True
@@ -35901,7 +36874,7 @@ GAME
 				RESOURCE
 				{
 					name = CarbonDioxide
-					amount = 21459.54862773473
+					amount = 21575.054697643394
 					maxAmount = 172334.5
 					flowState = True
 					isTweakable = True
@@ -35912,7 +36885,7 @@ GAME
 				RESOURCE
 				{
 					name = WasteWater
-					amount = 206.56910253590939
+					amount = 207.68096110056143
 					maxAmount = 1658.8
 					flowState = True
 					isTweakable = True
@@ -35923,7 +36896,7 @@ GAME
 				RESOURCE
 				{
 					name = Waste
-					amount = 22.318194021039432
+					amount = 22.438321719680829
 					maxAmount = 179.19999999999999
 					flowState = True
 					isTweakable = True
@@ -54008,13 +54981,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = 100438.88975218874
-				ECC = 0.99999999999999989
-				INC = 122.30073669485488
-				LPE = 90
-				LAN = 38.87301538337158
-				MNA = 3.1415926207170166
-				EPH = 4547429.5072594313
+				SMA = NaN
+				ECC = 1
+				INC = 122.30073669485625
+				LPE = 90.000000000000014
+				LAN = 89.382239778949952
+				MNA = 0
+				EPH = 4566929.4879924301
 				REF = 2
 				IDENT = Squad/Mun
 			}
@@ -85554,25 +86527,25 @@ GAME
 			landed = False
 			skipGroundPositioning = False
 			skipGroundPositioningForDroppedPart = False
-			vesselSpawning = True
+			vesselSpawning = False
 			launchedFrom = 
 			landedAt = 
 			displaylandedAt = 
 			splashed = False
-			met = 4251759.8427058021
+			met = 312199.21253718156
 			lct = 4251759.8427058021
-			lastUT = -1
-			distanceTraveled = 0
+			lastUT = 4563959.0552429836
+			distanceTraveled = 1114344.5985176354
 			root = 0
-			lat = 8.3875624985693196E-05
-			lon = -3.5144454299157726
-			alt = 82756.170785896364
-			hgt = -1
-			nrm = 0,1,0
-			rot = 0.180536687,-0.606106818,0.55198282,0.543466687
+			lat = -2.0606079658663792E-05
+			lon = 11.356820803247096
+			alt = 72140.290374663542
+			hgt = 72140.2891
+			nrm = 0.78433013,-0.231230393,-0.575637698
+			rot = -0.369250834,0.173582688,0.482774496,0.774888158
 			CoM = 0,0,0
 			stg = 0
-			prst = True
+			prst = False
 			ref = 0
 			ctrl = False
 			PQSMin = 0
@@ -85582,16 +86555,19 @@ GAME
 			OverrideActionControl = 0,0,0,0
 			OverrideAxisControl = 0,0,0,0
 			OverrideGroupNames = ,,,
-			altDispState = DEFAULT
+			altDispState = ASL
+			cPch = 0
+			cHdg = 0
+			cMod = 0
 			ORBIT
 			{
-				SMA = 677305.6875
-				ECC = 0.0082784118130803108
-				INC = -0.00033592595718801022
-				LPE = 0.99942570924758911
-				LAN = 0.99987006187438965
-				MNA = 1.0584437188193814
-				EPH = 0.99939018487930298
+				SMA = 677262.89725701255
+				ECC = 0.0082312733318185231
+				INC = 0.00036935442214468988
+				LPE = 159.77672091184806
+				LAN = 202.6638401058832
+				MNA = 5.5071409572802796
+				EPH = 4563609.5828015767
 				REF = 1
 				IDENT = Squad/Kerbin
 			}
@@ -85608,22 +86584,22 @@ GAME
 				rotation = 0,0,0,1
 				mirror = 1,1,1
 				symMethod = Radial
-				istg = 0
+				istg = -1
 				resPri = 0
 				dstg = 0
 				sqor = 0
-				sepI = 0
+				sepI = -1
 				sidx = 0
 				attm = 0
 				sameVesselCollision = False
-				srfN = None, -1
+				srfN = , -1
 				attN = top, -1
 				attN = bottom, -1
 				mass = 0.0849999934
 				shielded = False
-				temp = -1
-				tempExt = 0
-				tempExtUnexp = 0
+				temp = 175.18549670530291
+				tempExt = 174.366365911554
+				tempExtUnexp = 298.46200267234974
 				staticPressureAtm = 0
 				expt = 0.5
 				state = 0
@@ -85631,19 +86607,304 @@ GAME
 				autostrutMode = Off
 				rigidAttachment = False
 				flag = Squad/Agencies/ReactionSystemsLtd
-				rTrf = 
+				rTrf = KKAOSS.airlock.mid.g (Zello's Wreckage)
 				modCost = 0
 				modMass = 0
 				moduleVariantName = 
 				moduleCargoStackableQuantity = 1
-				crew = Zello Kerman
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+					}
+					AutostrutOff
+					{
+						actionGroup = None
+					}
+					AutostrutRoot
+					{
+						actionGroup = None
+					}
+					AutostrutHeaviest
+					{
+						actionGroup = None
+					}
+					AutostrutGrandparent
+					{
+						actionGroup = None
+					}
+					ResourcesEnableFlow
+					{
+						actionGroup = None
+						active = False
+					}
+					ResourcesDisableFlow
+					{
+						actionGroup = None
+						active = False
+					}
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleScienceExperiment
+					isEnabled = True
+					Deployed = False
+					Inoperable = False
+					cooldownToGo = 0
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						DeployAction
+						{
+							actionGroup = None
+						}
+						ResetAction
+						{
+							actionGroup = None
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleScienceContainer
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						CollectAllAction
+						{
+							actionGroup = None
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleColorChanger
+					isEnabled = True
+					animState = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleInventoryPart
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					STOREDPARTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = FundsKeeper
+					isEnabled = True
+					OriginalCost = 450
+					OriginalResourcesCost = 450
+					OriginalModulesCost = 0
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = StealBackMyFunds
+					isEnabled = True
+					active = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISInventory
+					isEnabled = True
+					invName = 
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = SCANRPMStorage
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = LifeSupportModule
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleFreeIvaPartInfo
+					isEnabled = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = AttachedOnEditor
+					isEnabled = True
+					active = True
+					originalPos = (74.2852249, -9.75033474, 19.0788574)
+					originalRotation = (0.146863371, 0.0185610615, 0.575396597, 0.804366529)
+					moduleVersion = 6
+					stagingEnabled = True
+					userReallyDeactivatedIt = False
+					originalAttachNodePos = (0.0, 0.4, 0.0)
+					originalAttachNodePos = (0.0, -0.4, 0.0)
+					originalAttachNodeSize = 1
+					originalAttachNodeSize = 1
+					originalAttachNodeOrientation = (0.0, 1.0, 0.0)
+					originalAttachNodeOrientation = (0.0, -1.0, 0.0)
+					originalAttachNodeOffset = (0.0, 0.0, 0.0)
+					originalAttachNodeOffset = (0.0, 0.0, 0.0)
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISInventory
+					isEnabled = True
+					invName = 
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
 			}
 			ACTIONGROUPS
 			{
+				Stage = False, 0
+				Gear = False, 0
+				Light = False, 0
+				RCS = False, 0
+				SAS = False, 0
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
 			}
 			DISCOVERY
 			{
-				state = 29
+				state = -1
 				lastObservedTime = 4251759.8427058021
 				lifetime = 92016000
 				refTime = 92016000
@@ -85654,6 +86915,13 @@ GAME
 			}
 			CTRLSTATE
 			{
+				pitch = 0
+				yaw = 0
+				roll = 0
+				trimPitch = 0
+				trimYaw = 0
+				trimRoll = 0
+				mainThrottle = 0
 			}
 			VESSELMODULES
 			{
@@ -85669,7 +86937,7 @@ GAME
 				CommNetVessel
 				{
 					controlState = None
-					canComm = True
+					canComm = False
 				}
 				BetterBurnTimeData
 				{
@@ -101063,6 +102331,3949 @@ GAME
 				}
 			}
 		}
+		VESSEL
+		{
+			pid = 29ed1e5ec8cf4ae28995c3c79f1516eb
+			persistentId = 2557990187
+			name = Damaged Kerbin CMM Satellite 5KQ5
+			type = Probe
+			sit = ORBITING
+			landed = False
+			skipGroundPositioning = False
+			skipGroundPositioningForDroppedPart = False
+			vesselSpawning = True
+			launchedFrom = 
+			landedAt = 
+			displaylandedAt = 
+			splashed = False
+			met = 0
+			lct = 4566936.2879922781
+			lastUT = -1
+			distanceTraveled = 0
+			root = 0
+			lat = -0.095477619993879492
+			lon = -74.600388643070389
+			alt = 42.640500383335166
+			hgt = -0.0249959696
+			nrm = -0.444820464,-0.00166639802,-0.8956182
+			rot = 0,-0.356831789,0,0.934168637
+			CoM = 0,0,0
+			stg = 1
+			prst = False
+			ref = 3734081976
+			ctrl = False
+			PQSMin = 2
+			PQSMax = 10
+			GroupOverride = 0
+			OverrideDefault = False,False,False,False
+			OverrideActionControl = 0,0,0,0
+			OverrideAxisControl = 0,0,0,0
+			OverrideGroupNames = ,,,
+			altDispState = DEFAULT
+			cPch = 0
+			cHdg = 0
+			cMod = -1
+			ORBIT
+			{
+				SMA = 16323853.170721695
+				ECC = 0.10874375995402387
+				INC = 18.919285570233733
+				LPE = 141.83646771211036
+				LAN = 94.854214142474518
+				MNA = -129.52562936144179
+				EPH = 0
+				REF = 1
+				IDENT = Squad/Kerbin
+			}
+			PART
+			{
+				name = probeCoreSphere.v2
+				cid = 4294662684
+				uid = 3734081976
+				mid = 3108918488
+				persistentId = 1909132110
+				launchID = 53
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = -1
+				sidx = -1
+				attm = 0
+				sameVesselCollision = False
+				srfN = , -1
+				attN = bottom, 1
+				mass = 0.0500000007
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				staticPressureAtm = 0
+				expt = 0
+				state = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Agencies/DinkelsteinKermansConstructionEmporium
+				rTrf = probeCoreSphere.v2
+				modCost = 0
+				modMass = 0
+				moduleVariantName = 
+				moduleCargoStackableQuantity = 1
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+					}
+					AutostrutOff
+					{
+						actionGroup = None
+					}
+					AutostrutRoot
+					{
+						actionGroup = None
+					}
+					AutostrutHeaviest
+					{
+						actionGroup = None
+					}
+					AutostrutGrandparent
+					{
+						actionGroup = None
+					}
+					ResourcesEnableFlow
+					{
+						actionGroup = None
+					}
+					ResourcesDisableFlow
+					{
+						actionGroup = None
+					}
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleCommand
+					isEnabled = True
+					hibernation = False
+					hibernateOnWarp = False
+					activeControlPointName = _default
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						MakeReferenceToggle
+						{
+							actionGroup = None
+						}
+						HibernateToggle
+						{
+							actionGroup = None
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKerbNetAccess
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						OpenKerbNetAction
+						{
+							actionGroup = None
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleDataTransmitter
+					isEnabled = True
+					xmitIncomplete = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						StartTransmissionAction
+						{
+							actionGroup = None
+							active = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleCargoPart
+					isEnabled = True
+					packedVolume = 750
+					beingAttached = False
+					beingSettled = False
+					reinitResourcesOnStoreInVessel = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = FundsKeeper
+					isEnabled = True
+					OriginalCost = 0
+					OriginalResourcesCost = 0
+					OriginalModulesCost = 0
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = StealBackMyFunds
+					isEnabled = True
+					active = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = MechJebCore
+					isEnabled = True
+					running = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						OnOrbitProgradeAction
+						{
+							actionGroup = None
+						}
+						OnOrbitRetrogradeAction
+						{
+							actionGroup = None
+						}
+						OnOrbitNormalAction
+						{
+							actionGroup = None
+						}
+						OnOrbitAntinormalAction
+						{
+							actionGroup = None
+						}
+						OnOrbitRadialInAction
+						{
+							actionGroup = None
+						}
+						OnOrbitRadialOutAction
+						{
+							actionGroup = None
+						}
+						OnKillRotationAction
+						{
+							actionGroup = None
+						}
+						OnDeactivateSmartASSAction
+						{
+							actionGroup = None
+						}
+						OnLandsomewhereAction
+						{
+							actionGroup = None
+						}
+						OnLandTargetAction
+						{
+							actionGroup = None
+						}
+						OnPanicAction
+						{
+							actionGroup = None
+						}
+						OnTranslatronOffAction
+						{
+							actionGroup = None
+						}
+						OnTranslatronKeepVertAction
+						{
+							actionGroup = None
+						}
+						OnTranslatronZeroSpeedAction
+						{
+							actionGroup = None
+						}
+						OnTranslatronPlusOneSpeedAction
+						{
+							actionGroup = None
+						}
+						OnTranslatronMinusOneSpeedAction
+						{
+							actionGroup = None
+						}
+						OnTranslatronToggleHSAction
+						{
+							actionGroup = None
+						}
+						OnAscentAPToggleAction
+						{
+							actionGroup = None
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					type = NULL
+					active = True
+					available = True
+					currentScale = 0.625
+					defaultScale = 0.625
+					defaultTransformScale = (0, 0, 0)
+					DryCost = 299.999786
+					OriginalCrewCapacity = 0
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = AttachedOnEditor
+					isEnabled = True
+					active = True
+					originalPos = (0, 0, 0)
+					originalRotation = (0, 0, 0, 0)
+					moduleVersion = 0
+					stagingEnabled = True
+					userReallyDeactivatedIt = False
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTripLogger
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					Log
+					{
+						flight = 0
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = ElectricCharge
+					amount = 10
+					maxAmount = 10
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					isVisible = True
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = adapterSmallMiniTall
+				cid = 4294645274
+				uid = 2891664845
+				mid = 3108918488
+				persistentId = 249045724
+				launchID = 53
+				parent = 0
+				position = 0,-0.58697986602783203,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = -1
+				sidx = -1
+				attm = 0
+				sameVesselCollision = False
+				srfN = , -1
+				attN = top, 0
+				attN = bottom, 2
+				mass = 0.0500000007
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				staticPressureAtm = 0
+				expt = 0.5
+				state = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Agencies/DinkelsteinKermansConstructionEmporium
+				rTrf = adapterSmallMiniTall
+				modCost = 0
+				modMass = 0
+				moduleVariantName = Orange
+				moduleCargoStackableQuantity = 1
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+					}
+					AutostrutOff
+					{
+						actionGroup = None
+					}
+					AutostrutRoot
+					{
+						actionGroup = None
+					}
+					AutostrutHeaviest
+					{
+						actionGroup = None
+					}
+					AutostrutGrandparent
+					{
+						actionGroup = None
+					}
+					ResourcesEnableFlow
+					{
+						actionGroup = None
+						active = False
+					}
+					ResourcesDisableFlow
+					{
+						actionGroup = None
+						active = False
+					}
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModulePartVariants
+					isEnabled = True
+					useVariantMass = True
+					stagingEnabled = True
+					selectedVariant = Orange
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleCargoPart
+					isEnabled = True
+					packedVolume = 1100
+					beingAttached = False
+					beingSettled = False
+					reinitResourcesOnStoreInVessel = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = FundsKeeper
+					isEnabled = True
+					OriginalCost = 0
+					OriginalResourcesCost = 0
+					OriginalModulesCost = 0
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = StealBackMyFunds
+					isEnabled = True
+					active = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					type = NULL
+					active = True
+					available = True
+					currentScale = 1.25
+					defaultScale = 1.25
+					defaultTransformScale = (0, 0, 0)
+					DryCost = 150
+					OriginalCrewCapacity = 0
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ThermalPowerTransport
+					isEnabled = True
+					thermalCost = 0.25
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleFreeIva
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = SCANRPMStorage
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = AttachedOnEditor
+					isEnabled = True
+					active = True
+					originalPos = (0, 0, 0)
+					originalRotation = (0, 0, 0, 0)
+					moduleVersion = 0
+					stagingEnabled = True
+					userReallyDeactivatedIt = False
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = advSasModule
+				cid = 4294636192
+				uid = 432750635
+				mid = 3108918488
+				persistentId = 1383156253
+				launchID = 53
+				parent = 1
+				position = 0,-1.1610069274902344,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = -1
+				sidx = -1
+				attm = 0
+				sameVesselCollision = False
+				srfN = , -1
+				attN = top, 1
+				attN = bottom, 3
+				mass = 0.100000001
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				staticPressureAtm = 0
+				expt = 0.5
+				state = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Agencies/DinkelsteinKermansConstructionEmporium
+				rTrf = advSasModule
+				modCost = 0
+				modMass = 0
+				moduleVariantName = 
+				moduleCargoStackableQuantity = 1
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+					}
+					AutostrutOff
+					{
+						actionGroup = None
+					}
+					AutostrutRoot
+					{
+						actionGroup = None
+					}
+					AutostrutHeaviest
+					{
+						actionGroup = None
+					}
+					AutostrutGrandparent
+					{
+						actionGroup = None
+					}
+					ResourcesEnableFlow
+					{
+						actionGroup = None
+						active = False
+					}
+					ResourcesDisableFlow
+					{
+						actionGroup = None
+						active = False
+					}
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleReactionWheel
+					isEnabled = True
+					actuatorModeCycle = 0
+					authorityLimiter = 100
+					stateString = Active
+					stagingEnabled = True
+					WheelState = Active
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						CycleAction
+						{
+							actionGroup = None
+						}
+						Activate
+						{
+							actionGroup = None
+						}
+						Deactivate
+						{
+							actionGroup = None
+						}
+						Toggle
+						{
+							actionGroup = None
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleCargoPart
+					isEnabled = True
+					packedVolume = 650
+					beingAttached = False
+					beingSettled = False
+					reinitResourcesOnStoreInVessel = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = FundsKeeper
+					isEnabled = True
+					OriginalCost = 0
+					OriginalResourcesCost = 0
+					OriginalModulesCost = 0
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = StealBackMyFunds
+					isEnabled = True
+					active = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					type = NULL
+					active = True
+					available = True
+					currentScale = 1.25
+					defaultScale = 1.25
+					defaultTransformScale = (0, 0, 0)
+					DryCost = 1200
+					OriginalCrewCapacity = 0
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleFreeIva
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = AttachedOnEditor
+					isEnabled = True
+					active = True
+					originalPos = (0, 0, 0)
+					originalRotation = (0, 0, 0, 0)
+					moduleVersion = 0
+					stagingEnabled = True
+					userReallyDeactivatedIt = False
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = adapterSmallMiniTall
+				cid = 4294644316
+				uid = 1656222163
+				mid = 3108918488
+				persistentId = 3203408669
+				launchID = 53
+				parent = 2
+				position = 0,-1.7350339889526367,0
+				rotation = 1,0,0,0
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = -1
+				sidx = -1
+				attm = 0
+				sameVesselCollision = False
+				srfN = , -1
+				attN = top, 4
+				attN = bottom, 2
+				mass = 0.0500000007
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				staticPressureAtm = 0
+				expt = 0.5
+				state = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Agencies/DinkelsteinKermansConstructionEmporium
+				rTrf = adapterSmallMiniTall
+				modCost = 0
+				modMass = 0
+				moduleVariantName = Orange
+				moduleCargoStackableQuantity = 1
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+					}
+					AutostrutOff
+					{
+						actionGroup = None
+					}
+					AutostrutRoot
+					{
+						actionGroup = None
+					}
+					AutostrutHeaviest
+					{
+						actionGroup = None
+					}
+					AutostrutGrandparent
+					{
+						actionGroup = None
+					}
+					ResourcesEnableFlow
+					{
+						actionGroup = None
+						active = False
+					}
+					ResourcesDisableFlow
+					{
+						actionGroup = None
+						active = False
+					}
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModulePartVariants
+					isEnabled = True
+					useVariantMass = True
+					stagingEnabled = True
+					selectedVariant = Orange
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleCargoPart
+					isEnabled = True
+					packedVolume = 1100
+					beingAttached = False
+					beingSettled = False
+					reinitResourcesOnStoreInVessel = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = FundsKeeper
+					isEnabled = True
+					OriginalCost = 0
+					OriginalResourcesCost = 0
+					OriginalModulesCost = 0
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = StealBackMyFunds
+					isEnabled = True
+					active = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					type = NULL
+					active = True
+					available = True
+					currentScale = 1.25
+					defaultScale = 1.25
+					defaultTransformScale = (0, 0, 0)
+					DryCost = 150
+					OriginalCrewCapacity = 0
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ThermalPowerTransport
+					isEnabled = True
+					thermalCost = 0.25
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleFreeIva
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = SCANRPMStorage
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = AttachedOnEditor
+					isEnabled = True
+					active = True
+					originalPos = (0, 0, 0)
+					originalRotation = (0, 0, 0, 0)
+					moduleVersion = 0
+					stagingEnabled = True
+					userReallyDeactivatedIt = False
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = OrbitalScanner
+				cid = 4294642252
+				uid = 3462256629
+				mid = 3108918488
+				persistentId = 3200237233
+				launchID = 53
+				parent = 3
+				position = 0,-2.0475339889526367,0
+				rotation = 1,0,0,0
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = -1
+				sidx = -1
+				attm = 0
+				sameVesselCollision = False
+				srfN = srfAttach, -1
+				attN = bottom, 3
+				mass = 0.100000001
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				staticPressureAtm = 0
+				expt = 0.5
+				state = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Agencies/DinkelsteinKermansConstructionEmporium
+				rTrf = OrbitalScanner
+				modCost = 0
+				modMass = 0
+				moduleVariantName = 
+				moduleCargoStackableQuantity = 1
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+					}
+					AutostrutOff
+					{
+						actionGroup = None
+					}
+					AutostrutRoot
+					{
+						actionGroup = None
+					}
+					AutostrutHeaviest
+					{
+						actionGroup = None
+					}
+					AutostrutGrandparent
+					{
+						actionGroup = None
+					}
+					ResourcesEnableFlow
+					{
+						actionGroup = None
+						active = False
+					}
+					ResourcesDisableFlow
+					{
+						actionGroup = None
+						active = False
+					}
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleGPS
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleResourceScanner
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKerbNetAccess
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						OpenKerbNetAction
+						{
+							actionGroup = None
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAnimationGroup
+					isEnabled = True
+					isDeployed = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						DeployModuleAction
+						{
+							actionGroup = None
+						}
+						RetractModuleAction
+						{
+							actionGroup = None
+						}
+						ToggleModuleAction
+						{
+							actionGroup = None
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleCargoPart
+					isEnabled = True
+					packedVolume = 600
+					beingAttached = False
+					beingSettled = False
+					reinitResourcesOnStoreInVessel = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = FundsKeeper
+					isEnabled = True
+					OriginalCost = 0
+					OriginalResourcesCost = 0
+					OriginalModulesCost = 0
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = StealBackMyFunds
+					isEnabled = True
+					active = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					type = NULL
+					active = True
+					available = True
+					currentScale = 0.625
+					defaultScale = 0.625
+					defaultTransformScale = (0, 0, 0)
+					DryCost = 1000
+					OriginalCrewCapacity = 0
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = SCANresourceDisplay
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = SCANresourceDisplay
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = SCANresourceDisplay
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = SCANresourceDisplay
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = SCANresourceDisplay
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = SCANresourceDisplay
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = SCANresourceDisplay
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = SCANresourceDisplay
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = SCANresourceDisplay
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = SCANresourceDisplay
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = SCANresourceDisplay
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleSCANresourceScanner
+					isEnabled = True
+					scanning = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						startResourceScanAction
+						{
+							actionGroup = None
+						}
+						stopResourceScanAction
+						{
+							actionGroup = None
+						}
+						toggleResourceScanAction
+						{
+							actionGroup = None
+						}
+						startScanAction
+						{
+							actionGroup = None
+						}
+						stopScanAction
+						{
+							actionGroup = None
+						}
+						toggleScanAction
+						{
+							actionGroup = None
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = SCANresourceDisplay
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = SCANresourceDisplay
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = SCANresourceDisplay
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = SCANresourceDisplay
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = SCANresourceDisplay
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = SCANresourceDisplay
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleResourceScanner
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleResourceScanner
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleResourceScanner
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleResourceScanner
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleResourceScanner
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleResourceScanner
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleResourceScanner
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleResourceScanner
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleResourceScanner
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleResourceScanner
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleResourceScanner
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = AttachedOnEditor
+					isEnabled = True
+					active = True
+					originalPos = (0, 0, 0)
+					originalRotation = (0, 0, 0, 0)
+					moduleVersion = 0
+					stagingEnabled = True
+					userReallyDeactivatedIt = False
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = batteryPack
+				cid = 4294638570
+				uid = 2270780059
+				mid = 3108918488
+				persistentId = 3779060304
+				launchID = 53
+				parent = 3
+				position = 0,-1.7693767547607422,-0.45488652586936951
+				rotation = 2.15897544E-09,0.235088304,0.971974015,-5.22184573E-10
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = -1
+				sidx = -1
+				attm = 1
+				sameVesselCollision = False
+				sym = 6
+				srfN = srfAttach, 3,node_collider
+				mass = 0.00499999989
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				staticPressureAtm = 0
+				expt = 0.5
+				state = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Agencies/DinkelsteinKermansConstructionEmporium
+				rTrf = batteryPack
+				modCost = 0
+				modMass = 0
+				moduleVariantName = 
+				moduleCargoStackableQuantity = 1
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+					}
+					AutostrutOff
+					{
+						actionGroup = None
+					}
+					AutostrutRoot
+					{
+						actionGroup = None
+					}
+					AutostrutHeaviest
+					{
+						actionGroup = None
+					}
+					AutostrutGrandparent
+					{
+						actionGroup = None
+					}
+					ResourcesEnableFlow
+					{
+						actionGroup = None
+					}
+					ResourcesDisableFlow
+					{
+						actionGroup = None
+					}
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleCargoPart
+					isEnabled = True
+					packedVolume = 35
+					beingAttached = False
+					beingSettled = False
+					reinitResourcesOnStoreInVessel = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = FundsKeeper
+					isEnabled = True
+					OriginalCost = 0
+					OriginalResourcesCost = 0
+					OriginalModulesCost = 0
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = StealBackMyFunds
+					isEnabled = True
+					active = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					type = NULL
+					active = True
+					available = True
+					currentScale = 100
+					defaultScale = 100
+					defaultTransformScale = (0, 0, 0)
+					DryCost = 79.9980011
+					OriginalCrewCapacity = 0
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = AttachedOnEditor
+					isEnabled = True
+					active = True
+					originalPos = (0, 0, 0)
+					originalRotation = (0, 0, 0, 0)
+					moduleVersion = 0
+					stagingEnabled = True
+					userReallyDeactivatedIt = False
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = ElectricCharge
+					amount = 100
+					maxAmount = 100
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					isVisible = True
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = batteryPack
+				cid = 4294638364
+				uid = 3621182784
+				mid = 3108918488
+				persistentId = 2354920767
+				launchID = 53
+				parent = 3
+				position = -3.9767442672200559E-08,-1.7693767547607422,0.45488652586936951
+				rotation = -0.971974015,-9.75385195E-09,-4.03273575E-08,0.235088304
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = -1
+				sidx = -1
+				attm = 1
+				sameVesselCollision = False
+				sym = 5
+				srfN = srfAttach, 3,node_collider
+				mass = 0.00499999989
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				staticPressureAtm = 0
+				expt = 0.5
+				state = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Agencies/DinkelsteinKermansConstructionEmporium
+				rTrf = batteryPack
+				modCost = 0
+				modMass = 0
+				moduleVariantName = 
+				moduleCargoStackableQuantity = 1
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+					}
+					AutostrutOff
+					{
+						actionGroup = None
+					}
+					AutostrutRoot
+					{
+						actionGroup = None
+					}
+					AutostrutHeaviest
+					{
+						actionGroup = None
+					}
+					AutostrutGrandparent
+					{
+						actionGroup = None
+					}
+					ResourcesEnableFlow
+					{
+						actionGroup = None
+					}
+					ResourcesDisableFlow
+					{
+						actionGroup = None
+					}
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleCargoPart
+					isEnabled = True
+					packedVolume = 35
+					beingAttached = False
+					beingSettled = False
+					reinitResourcesOnStoreInVessel = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = FundsKeeper
+					isEnabled = True
+					OriginalCost = 0
+					OriginalResourcesCost = 0
+					OriginalModulesCost = 0
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = StealBackMyFunds
+					isEnabled = True
+					active = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					type = NULL
+					active = True
+					available = True
+					currentScale = 100
+					defaultScale = 100
+					defaultTransformScale = (0, 0, 0)
+					DryCost = 79.9980011
+					OriginalCrewCapacity = 0
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = AttachedOnEditor
+					isEnabled = True
+					active = True
+					originalPos = (0, 0, 0)
+					originalRotation = (0, 0, 0, 0)
+					moduleVersion = 0
+					stagingEnabled = True
+					userReallyDeactivatedIt = False
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = ElectricCharge
+					amount = 100
+					maxAmount = 100
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					isVisible = True
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = solarPanels3
+				cid = 4294639122
+				uid = 1999218793
+				mid = 3108918488
+				persistentId = 2573625144
+				launchID = 53
+				parent = 2
+				position = -0.60822069644927979,-1.0362462997436523,3.625278210961369E-08
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = -1
+				sidx = -1
+				attm = 1
+				sameVesselCollision = False
+				sym = 8
+				sym = 9
+				sym = 10
+				srfN = srfAttach, 2,collider
+				mass = 0.0175000001
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				staticPressureAtm = 0
+				expt = 0.5
+				state = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Agencies/DinkelsteinKermansConstructionEmporium
+				rTrf = solarPanels3
+				modCost = 0
+				modMass = 0
+				moduleVariantName = 
+				moduleCargoStackableQuantity = 1
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+					}
+					AutostrutOff
+					{
+						actionGroup = None
+					}
+					AutostrutRoot
+					{
+						actionGroup = None
+					}
+					AutostrutHeaviest
+					{
+						actionGroup = None
+					}
+					AutostrutGrandparent
+					{
+						actionGroup = None
+					}
+					ResourcesEnableFlow
+					{
+						actionGroup = None
+					}
+					ResourcesDisableFlow
+					{
+						actionGroup = None
+					}
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDeployableSolarPanel
+					isEnabled = True
+					efficiencyMult = 1
+					launchUT = -1
+					currentRotation = (-0.707106829, 0, 0, 0.707106829)
+					storedAnimationTime = 1
+					storedAnimationSpeed = 0
+					deployState = EXTENDED
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ExtendPanelsAction
+						{
+							actionGroup = None
+							active = False
+						}
+						ExtendAction
+						{
+							actionGroup = None
+						}
+						RetractAction
+						{
+							actionGroup = None
+							active = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleCargoPart
+					isEnabled = True
+					packedVolume = 50
+					beingAttached = False
+					beingSettled = False
+					reinitResourcesOnStoreInVessel = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = FundsKeeper
+					isEnabled = True
+					OriginalCost = 0
+					OriginalResourcesCost = 0
+					OriginalModulesCost = 0
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = StealBackMyFunds
+					isEnabled = True
+					active = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					type = NULL
+					active = True
+					available = True
+					currentScale = 100
+					defaultScale = 100
+					defaultTransformScale = (0, 0, 0)
+					DryCost = 379.999969
+					OriginalCrewCapacity = 0
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = FNSolarPanelWasteHeatModule
+					isEnabled = True
+					epx = 0
+					epy = 0
+					whx = 0
+					why = 0
+					tpx = 0
+					tpy = 0
+					cpx = 0
+					cpy = 0
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = KopernicusSolarPanel
+					isEnabled = True
+					nominalRate = 10
+					state = Unknown
+					trackedSunIndex = 0
+					manualTracking = False
+					launchUT = -1
+					stagingEnabled = True
+					timeEfficCurve
+					{
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = AttachedOnEditor
+					isEnabled = True
+					active = True
+					originalPos = (0, 0, 0)
+					originalRotation = (0, 0, 0, 0)
+					moduleVersion = 0
+					stagingEnabled = True
+					userReallyDeactivatedIt = False
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = Megajoules
+					amount = 0
+					maxAmount = 0.001
+					flowState = True
+					isTweakable = False
+					hideFlow = False
+					isVisible = True
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = solarPanels3
+				cid = 4294635138
+				uid = 3404860189
+				mid = 3108918488
+				persistentId = 2729678862
+				launchID = 53
+				parent = 2
+				position = 1.3918794790373406E-15,-1.0362462997436523,0.60822063684463501
+				rotation = 0,0.707106829,0,0.707106829
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = -1
+				sidx = -1
+				attm = 1
+				sameVesselCollision = False
+				sym = 7
+				sym = 9
+				sym = 10
+				srfN = srfAttach, 2,collider
+				mass = 0.0175000001
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				staticPressureAtm = 0
+				expt = 0.5
+				state = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Agencies/DinkelsteinKermansConstructionEmporium
+				rTrf = solarPanels3
+				modCost = 0
+				modMass = 0
+				moduleVariantName = 
+				moduleCargoStackableQuantity = 1
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+					}
+					AutostrutOff
+					{
+						actionGroup = None
+					}
+					AutostrutRoot
+					{
+						actionGroup = None
+					}
+					AutostrutHeaviest
+					{
+						actionGroup = None
+					}
+					AutostrutGrandparent
+					{
+						actionGroup = None
+					}
+					ResourcesEnableFlow
+					{
+						actionGroup = None
+					}
+					ResourcesDisableFlow
+					{
+						actionGroup = None
+					}
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDeployableSolarPanel
+					isEnabled = True
+					efficiencyMult = 1
+					launchUT = -1
+					currentRotation = (-0.707106829, 0, 0, 0.707106829)
+					storedAnimationTime = 1
+					storedAnimationSpeed = 0
+					deployState = EXTENDED
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ExtendPanelsAction
+						{
+							actionGroup = None
+							active = False
+						}
+						ExtendAction
+						{
+							actionGroup = None
+						}
+						RetractAction
+						{
+							actionGroup = None
+							active = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleCargoPart
+					isEnabled = True
+					packedVolume = 50
+					beingAttached = False
+					beingSettled = False
+					reinitResourcesOnStoreInVessel = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = FundsKeeper
+					isEnabled = True
+					OriginalCost = 0
+					OriginalResourcesCost = 0
+					OriginalModulesCost = 0
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = StealBackMyFunds
+					isEnabled = True
+					active = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					type = NULL
+					active = True
+					available = True
+					currentScale = 100
+					defaultScale = 100
+					defaultTransformScale = (0, 0, 0)
+					DryCost = 379.999969
+					OriginalCrewCapacity = 0
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = FNSolarPanelWasteHeatModule
+					isEnabled = True
+					epx = 0
+					epy = 0
+					whx = 0
+					why = 0
+					tpx = 0
+					tpy = 0
+					cpx = 0
+					cpy = 0
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = KopernicusSolarPanel
+					isEnabled = True
+					nominalRate = 10
+					state = Unknown
+					trackedSunIndex = 0
+					manualTracking = False
+					launchUT = -1
+					stagingEnabled = True
+					timeEfficCurve
+					{
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = AttachedOnEditor
+					isEnabled = True
+					active = True
+					originalPos = (0, 0, 0)
+					originalRotation = (0, 0, 0, 0)
+					moduleVersion = 0
+					stagingEnabled = True
+					userReallyDeactivatedIt = False
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = Megajoules
+					amount = 0
+					maxAmount = 0.001
+					flowState = True
+					isTweakable = False
+					hideFlow = False
+					isVisible = True
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = solarPanels3
+				cid = 4294635032
+				uid = 638016606
+				mid = 3108918488
+				persistentId = 4065081870
+				launchID = 53
+				parent = 2
+				position = 0.60822069644927979,-1.0362462997436523,-8.9425121529984608E-08
+				rotation = 0,1,0,-4.37113883E-08
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = -1
+				sidx = -1
+				attm = 1
+				sameVesselCollision = False
+				sym = 7
+				sym = 8
+				sym = 10
+				srfN = srfAttach, 2,collider
+				mass = 0.0175000001
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				staticPressureAtm = 0
+				expt = 0.5
+				state = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Agencies/DinkelsteinKermansConstructionEmporium
+				rTrf = solarPanels3
+				modCost = 0
+				modMass = 0
+				moduleVariantName = 
+				moduleCargoStackableQuantity = 1
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+					}
+					AutostrutOff
+					{
+						actionGroup = None
+					}
+					AutostrutRoot
+					{
+						actionGroup = None
+					}
+					AutostrutHeaviest
+					{
+						actionGroup = None
+					}
+					AutostrutGrandparent
+					{
+						actionGroup = None
+					}
+					ResourcesEnableFlow
+					{
+						actionGroup = None
+					}
+					ResourcesDisableFlow
+					{
+						actionGroup = None
+					}
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDeployableSolarPanel
+					isEnabled = True
+					efficiencyMult = 1
+					launchUT = -1
+					currentRotation = (-0.707106829, 0, 0, 0.707106829)
+					storedAnimationTime = 1
+					storedAnimationSpeed = 0
+					deployState = EXTENDED
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ExtendPanelsAction
+						{
+							actionGroup = None
+							active = False
+						}
+						ExtendAction
+						{
+							actionGroup = None
+						}
+						RetractAction
+						{
+							actionGroup = None
+							active = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleCargoPart
+					isEnabled = True
+					packedVolume = 50
+					beingAttached = False
+					beingSettled = False
+					reinitResourcesOnStoreInVessel = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = FundsKeeper
+					isEnabled = True
+					OriginalCost = 0
+					OriginalResourcesCost = 0
+					OriginalModulesCost = 0
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = StealBackMyFunds
+					isEnabled = True
+					active = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					type = NULL
+					active = True
+					available = True
+					currentScale = 100
+					defaultScale = 100
+					defaultTransformScale = (0, 0, 0)
+					DryCost = 379.999969
+					OriginalCrewCapacity = 0
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = FNSolarPanelWasteHeatModule
+					isEnabled = True
+					epx = 0
+					epy = 0
+					whx = 0
+					why = 0
+					tpx = 0
+					tpy = 0
+					cpx = 0
+					cpy = 0
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = KopernicusSolarPanel
+					isEnabled = True
+					nominalRate = 10
+					state = Unknown
+					trackedSunIndex = 0
+					manualTracking = False
+					launchUT = -1
+					stagingEnabled = True
+					timeEfficCurve
+					{
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = AttachedOnEditor
+					isEnabled = True
+					active = True
+					originalPos = (0, 0, 0)
+					originalRotation = (0, 0, 0, 0)
+					moduleVersion = 0
+					stagingEnabled = True
+					userReallyDeactivatedIt = False
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = Megajoules
+					amount = 0
+					maxAmount = 0.001
+					flowState = True
+					isTweakable = False
+					hideFlow = False
+					isVisible = True
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = solarPanels3
+				cid = 4294634926
+				uid = 3607595878
+				mid = 3108918488
+				persistentId = 1871186066
+				launchID = 53
+				parent = 2
+				position = -7.2505557113800023E-08,-1.0362462997436523,-0.60822063684463501
+				rotation = 0,0.707106829,0,-0.707106829
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = -1
+				sidx = -1
+				attm = 1
+				sameVesselCollision = False
+				sym = 7
+				sym = 8
+				sym = 9
+				srfN = srfAttach, 2,collider
+				mass = 0.0175000001
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				staticPressureAtm = 0
+				expt = 0.5
+				state = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Agencies/DinkelsteinKermansConstructionEmporium
+				rTrf = solarPanels3
+				modCost = 0
+				modMass = 0
+				moduleVariantName = 
+				moduleCargoStackableQuantity = 1
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+					}
+					AutostrutOff
+					{
+						actionGroup = None
+					}
+					AutostrutRoot
+					{
+						actionGroup = None
+					}
+					AutostrutHeaviest
+					{
+						actionGroup = None
+					}
+					AutostrutGrandparent
+					{
+						actionGroup = None
+					}
+					ResourcesEnableFlow
+					{
+						actionGroup = None
+					}
+					ResourcesDisableFlow
+					{
+						actionGroup = None
+					}
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDeployableSolarPanel
+					isEnabled = True
+					efficiencyMult = 1
+					launchUT = -1
+					currentRotation = (-0.707106829, 0, 0, 0.707106829)
+					storedAnimationTime = 0
+					storedAnimationSpeed = 10
+					deployState = EXTENDED
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ExtendPanelsAction
+						{
+							actionGroup = None
+							active = False
+						}
+						ExtendAction
+						{
+							actionGroup = None
+						}
+						RetractAction
+						{
+							actionGroup = None
+							active = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleCargoPart
+					isEnabled = True
+					packedVolume = 50
+					beingAttached = False
+					beingSettled = False
+					reinitResourcesOnStoreInVessel = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = FundsKeeper
+					isEnabled = True
+					OriginalCost = 0
+					OriginalResourcesCost = 0
+					OriginalModulesCost = 0
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = StealBackMyFunds
+					isEnabled = True
+					active = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					type = NULL
+					active = True
+					available = True
+					currentScale = 100
+					defaultScale = 100
+					defaultTransformScale = (0, 0, 0)
+					DryCost = 379.999969
+					OriginalCrewCapacity = 0
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = FNSolarPanelWasteHeatModule
+					isEnabled = True
+					epx = 0
+					epy = 0
+					whx = 0
+					why = 0
+					tpx = 0
+					tpy = 0
+					cpx = 0
+					cpy = 0
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = KopernicusSolarPanel
+					isEnabled = True
+					nominalRate = 10
+					state = Unknown
+					trackedSunIndex = 0
+					manualTracking = False
+					launchUT = -1
+					stagingEnabled = True
+					timeEfficCurve
+					{
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = AttachedOnEditor
+					isEnabled = True
+					active = True
+					originalPos = (0, 0, 0)
+					originalRotation = (0, 0, 0, 0)
+					moduleVersion = 0
+					stagingEnabled = True
+					userReallyDeactivatedIt = False
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = Megajoules
+					amount = 0
+					maxAmount = 0.001
+					flowState = True
+					isTweakable = False
+					hideFlow = False
+					isVisible = True
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = HighGainAntenna5.v2
+				cid = 4294559174
+				uid = 926520350
+				mid = 3108918488
+				persistentId = 1237135069
+				launchID = 53
+				parent = 2
+				position = -0.43944072723388672,-1.131770133972168,-0.43944069743156433
+				rotation = 0.65328151,-0.270598143,-0.270598084,-0.65328145
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = -1
+				sidx = -1
+				attm = 1
+				sameVesselCollision = False
+				sym = 12
+				srfN = srfAttach, 2,collider
+				attN = bottom, -1
+				mass = 0.0700000003
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				staticPressureAtm = 0
+				expt = 0.5
+				state = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Agencies/DinkelsteinKermansConstructionEmporium
+				rTrf = HighGainAntenna5.v2
+				modCost = 0
+				modMass = 0
+				moduleVariantName = 
+				moduleCargoStackableQuantity = 1
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+					}
+					AutostrutOff
+					{
+						actionGroup = None
+					}
+					AutostrutRoot
+					{
+						actionGroup = None
+					}
+					AutostrutHeaviest
+					{
+						actionGroup = None
+					}
+					AutostrutGrandparent
+					{
+						actionGroup = None
+					}
+					ResourcesEnableFlow
+					{
+						actionGroup = None
+						active = False
+					}
+					ResourcesDisableFlow
+					{
+						actionGroup = None
+						active = False
+					}
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDeployableAntenna
+					isEnabled = True
+					currentRotation = (0, 0, 0, 1)
+					storedAnimationTime = 0
+					storedAnimationSpeed = 10
+					deployState = BROKEN
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ExtendPanelsAction
+						{
+							actionGroup = None
+						}
+						ExtendAction
+						{
+							actionGroup = None
+						}
+						RetractAction
+						{
+							actionGroup = None
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleDataTransmitter
+					isEnabled = True
+					xmitIncomplete = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						StartTransmissionAction
+						{
+							actionGroup = None
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleCargoPart
+					isEnabled = True
+					packedVolume = 60
+					beingAttached = False
+					beingSettled = False
+					reinitResourcesOnStoreInVessel = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = FundsKeeper
+					isEnabled = True
+					OriginalCost = 0
+					OriginalResourcesCost = 0
+					OriginalModulesCost = 0
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = StealBackMyFunds
+					isEnabled = True
+					active = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					type = NULL
+					active = True
+					available = True
+					currentScale = 100
+					defaultScale = 100
+					defaultTransformScale = (0, 0, 0)
+					DryCost = 600
+					OriginalCrewCapacity = 0
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = AttachedOnEditor
+					isEnabled = True
+					active = True
+					originalPos = (0, 0, 0)
+					originalRotation = (0, 0, 0, 0)
+					moduleVersion = 0
+					stagingEnabled = True
+					userReallyDeactivatedIt = False
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTripLogger
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					Log
+					{
+						flight = 0
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = HighGainAntenna5.v2
+				cid = 4294558268
+				uid = 2261854298
+				mid = 3108918488
+				persistentId = 3068011749
+				launchID = 53
+				parent = 2
+				position = 0.43944075703620911,-1.131770133972168,0.43944066762924194
+				rotation = -0.270598114,-0.65328145,-0.65328151,0.270598173
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = -1
+				sidx = -1
+				attm = 1
+				sameVesselCollision = False
+				sym = 11
+				srfN = srfAttach, 2,collider
+				attN = bottom, -1
+				mass = 0.0700000003
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				staticPressureAtm = 0
+				expt = 0.5
+				state = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Agencies/DinkelsteinKermansConstructionEmporium
+				rTrf = HighGainAntenna5.v2
+				modCost = 0
+				modMass = 0
+				moduleVariantName = 
+				moduleCargoStackableQuantity = 1
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+					}
+					AutostrutOff
+					{
+						actionGroup = None
+					}
+					AutostrutRoot
+					{
+						actionGroup = None
+					}
+					AutostrutHeaviest
+					{
+						actionGroup = None
+					}
+					AutostrutGrandparent
+					{
+						actionGroup = None
+					}
+					ResourcesEnableFlow
+					{
+						actionGroup = None
+						active = False
+					}
+					ResourcesDisableFlow
+					{
+						actionGroup = None
+						active = False
+					}
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDeployableAntenna
+					isEnabled = True
+					currentRotation = (0, 0, 0, 1)
+					storedAnimationTime = 0
+					storedAnimationSpeed = 10
+					deployState = EXTENDED
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ExtendPanelsAction
+						{
+							actionGroup = None
+						}
+						ExtendAction
+						{
+							actionGroup = None
+						}
+						RetractAction
+						{
+							actionGroup = None
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleDataTransmitter
+					isEnabled = True
+					xmitIncomplete = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						StartTransmissionAction
+						{
+							actionGroup = None
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleCargoPart
+					isEnabled = True
+					packedVolume = 60
+					beingAttached = False
+					beingSettled = False
+					reinitResourcesOnStoreInVessel = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = FundsKeeper
+					isEnabled = True
+					OriginalCost = 0
+					OriginalResourcesCost = 0
+					OriginalModulesCost = 0
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = StealBackMyFunds
+					isEnabled = True
+					active = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					type = NULL
+					active = True
+					available = True
+					currentScale = 100
+					defaultScale = 100
+					defaultTransformScale = (0, 0, 0)
+					DryCost = 600
+					OriginalCrewCapacity = 0
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = AttachedOnEditor
+					isEnabled = True
+					active = True
+					originalPos = (0, 0, 0)
+					originalRotation = (0, 0, 0, 0)
+					moduleVersion = 0
+					stagingEnabled = True
+					userReallyDeactivatedIt = False
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTripLogger
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					Log
+					{
+						flight = 0
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = False, 0
+				Gear = False, 0
+				Light = False, 0
+				RCS = False, 0
+				SAS = False, 0
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+				pitch = 0
+				yaw = 0
+				roll = 0
+				trimPitch = 0
+				trimYaw = 0
+				trimRoll = 0
+				mainThrottle = 0
+			}
+			VESSELMODULES
+			{
+				ModularFlightIntegrator
+				{
+				}
+				AxisGroupsModule
+				{
+				}
+				SuspensionLoadBalancer
+				{
+				}
+				CommNetVessel
+				{
+					controlState = None
+					canComm = True
+				}
+				BetterBurnTimeData
+				{
+				}
+				RPMVesselComputer
+				{
+					PERSISTENT_VARS
+					{
+					}
+				}
+				VesselModuleSave
+				{
+				}
+			}
+		}
 	}
 	LoaderInfo
 	{
@@ -101084,13 +106295,13 @@ GAME
 		Unity.Collections v0.0.0.0 = True
 		Unity.Jobs v0.0.0.0 = True
 		Unity.Mathematics v1.0.0.0 = True
-		Kopernicus.Parser v1.0.0.0 / v1.0.0.0+1874caddcf6f0c5b1769915bc8eb06aad212bab2 = True
+		Kopernicus.Parser v1.0.0.0 / v1.0.0.0+1874caddcf6f0c5b1769915bc8eb06aad212bab2 = False
 		ModularFlightIntegrator v1.0.0.0 / v1.2.10.0 = True
 		SharpDX v4.2.0.0 / v4.2.0+8e5df9f17b1d328c595a9df5851dbb2537b55621 / v4.2.0 = True
 		SharpDX.DXGI v4.2.0.0 / v4.2.0+8e5df9f17b1d328c595a9df5851dbb2537b55621 / v4.2.0 = True
 		SharpDX.Direct3D11 v4.2.0.0 / v4.2.0+8e5df9f17b1d328c595a9df5851dbb2537b55621 / v4.2.0 = True
 		KSPTextureLoader v0.0.22.0 / v0.0.22+4ddc1b8325c2bbbe7a9a93d61d699b4fa5dc96f4 = True
-		Kopernicus v1.0.0.0 / v1.0.0+1874caddcf6f0c5b1769915bc8eb06aad212bab2 / v1.12.235.0 = True
+		Kopernicus v1.0.0.0 / v1.0.0+1874caddcf6f0c5b1769915bc8eb06aad212bab2 / v1.12.235.0 = False
 		VertexMitchellNetravaliHeightMap v0.3.0.0 = True
 		BlendshapeModelLoader v1.6.4.30 = True
 		TexturesUnlimited v1.6.4.30 = True
@@ -101245,8 +106456,8 @@ GAME
 		ModuleManager.ConfigSHA = True
 		ModuleManager.Physics = True
 		ModuleManager.TechTree = True
-		Kopernicus.Parser v1.0.0.0 / v1.0.0.0+2b674a151ef591354c9a742211b118de6a915d82 = False
-		Kopernicus v1.0.0.0 / v1.0.0+2b674a151ef591354c9a742211b118de6a915d82 / v1.12.236.0 = False
+		Kopernicus.Parser v1.0.0.0 / v1.0.0.0+2b674a151ef591354c9a742211b118de6a915d82 = True
+		Kopernicus v1.0.0.0 / v1.0.0+2b674a151ef591354c9a742211b118de6a915d82 / v1.12.236.0 = True
 		ASETPropsIdentifier v1.5.0.0 = True
 		FreeIva v0.2.20.2 / v0.2.20.2+c013cb43ae19a8e0486cf472a68287d18f2f85f4 = True
 		RasterPropMonitor v1.0.2.0 = True
@@ -102805,16 +108016,7 @@ GAME
 			}
 			INVENTORY
 			{
-				name = ModuleInventoryPart
-				isEnabled = True
-				stagingEnabled = True
 				inventory = evaChute,evaJetpack
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
 				STOREDPARTS
 				{
 					STOREDPART
@@ -102827,10 +108029,10 @@ GAME
 						PART
 						{
 							name = evaChute
-							cid = 4294659806
+							cid = 4294651348
 							uid = 0
 							mid = 0
-							persistentId = 3419831229
+							persistentId = 0
 							launchID = 0
 							parent = 0
 							position = 0,0,0
@@ -102995,10 +108197,10 @@ GAME
 						PART
 						{
 							name = evaJetpack
-							cid = 4294659880
+							cid = 4294651424
 							uid = 0
 							mid = 0
-							persistentId = 2661844449
+							persistentId = 0
 							launchID = 0
 							parent = 0
 							position = 0,0,0
@@ -103164,9 +108366,6 @@ GAME
 							}
 						}
 					}
-				}
-				UPGRADESAPPLIED
-				{
 				}
 			}
 			CAREER_LOG
@@ -103330,7 +108529,16 @@ GAME
 			}
 			INVENTORY
 			{
+				name = ModuleInventoryPart
+				isEnabled = True
+				stagingEnabled = True
 				inventory = evaChute,evaJetpack
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
 				STOREDPARTS
 				{
 					STOREDPART
@@ -103343,10 +108551,10 @@ GAME
 						PART
 						{
 							name = evaChute
-							cid = 4294659806
+							cid = 4294651348
 							uid = 0
 							mid = 0
-							persistentId = 0
+							persistentId = 2934763021
 							launchID = 0
 							parent = 0
 							position = 0,0,0
@@ -103511,10 +108719,10 @@ GAME
 						PART
 						{
 							name = evaJetpack
-							cid = 4294659880
+							cid = 4294651424
 							uid = 0
 							mid = 0
-							persistentId = 0
+							persistentId = 4262370141
 							launchID = 0
 							parent = 0
 							position = 0,0,0
@@ -103681,10 +108889,13 @@ GAME
 						}
 					}
 				}
+				UPGRADESAPPLIED
+				{
+				}
 			}
 			CAREER_LOG
 			{
-				flight = 5
+				flight = 6
 				0 = Flight,Kerbin
 				0 = Land,Kerbin
 				0 = ExitVessel,Kerbin
@@ -103710,43 +108921,97 @@ GAME
 				4 = Orbit,Kerbin
 				4 = Land,Kerbin
 				4 = Recover
+				5 = Flight,Kerbin
+				5 = Suborbit,Kerbin
+				5 = Orbit,Kerbin
+				5 = Land,Kerbin
+				5 = Recover
 			}
 			FLIGHT_LOG
 			{
-				flight = 5
+				flight = 6
 			}
 		}
 		KERBAL
 		{
 			name = Lecas Kerman
 			gender = Female
-			type = Unowned
+			type = Crew
 			trait = Pilot
 			brave = 0.0374202989
 			dumb = 0.115992092
 			badS = False
 			veteran = False
 			tour = False
-			state = Assigned
+			state = Available
 			inactive = False
 			inactiveTimeEnd = 0
 			gExperienced = 0
 			outDueToG = False
 			ToD = 0
-			idx = 0
+			idx = 2
 			extraXP = 0
-			hasHelmetOn = False
-			hasNeckRingOn = False
+			hasHelmetOn = True
+			hasNeckRingOn = True
 			hasVisorDown = False
 			lightR = 1
 			lightG = 0.5176
 			lightB = 0
-			completedFirstEVA = False
+			completedFirstEVA = True
 			suit = Default
 			hero = False
+			EVACHUTE
+			{
+				name = ModuleEvaChute
+				isEnabled = True
+				chuteYawRateAtMaxSpeed = 1
+				chuteMaxSpeedForYawRate = 50
+				chuteYawRateAtMinSpeed = 1
+				chuteMinSpeedForYawRate = 1
+				chuteRollRate = 1
+				chutePitchRate = 1
+				chuteDefaultForwardPitch = 9
+				semiDeployedChuteForwardPitch = 25
+				chutePitchRateDivisorWhenTurning = 1
+				chuteRollRateDivisorWhenPitching = 1
+				chuteYawRateDivisorWhenPitching = 1
+				persistentState = STOWED
+				animTime = 0
+				minAirPressureToOpen = 0.0399999991
+				deployAltitude = 1000
+				spreadAngle = 7
+				automateSafeDeploy = 0
+				stagingEnabled = False
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+					DeployAction
+					{
+						actionGroup = None
+					}
+					CutAction
+					{
+						actionGroup = None
+					}
+				}
+				UPGRADESAPPLIED
+				{
+				}
+			}
 			INVENTORY
 			{
+				name = ModuleInventoryPart
+				isEnabled = True
+				stagingEnabled = True
 				inventory = evaChute,evaJetpack
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
 				STOREDPARTS
 				{
 					STOREDPART
@@ -103762,7 +109027,7 @@ GAME
 							cid = 4294711650
 							uid = 0
 							mid = 0
-							persistentId = 0
+							persistentId = 1822943129
 							launchID = 0
 							parent = 0
 							position = 0,0,0
@@ -103930,7 +109195,7 @@ GAME
 							cid = 4294711724
 							uid = 0
 							mid = 0
-							persistentId = 0
+							persistentId = 731363965
 							launchID = 0
 							parent = 0
 							position = 0,0,0
@@ -104097,14 +109362,24 @@ GAME
 						}
 					}
 				}
+				UPGRADESAPPLIED
+				{
+				}
 			}
 			CAREER_LOG
 			{
-				flight = 0
+				flight = 1
+				0 = ExitVessel,Kerbin
+				0 = Orbit,Kerbin
+				0 = BoardVessel,Kerbin
+				0 = Suborbit,Kerbin
+				0 = Flight,Kerbin
+				0 = Land,Kerbin
+				0 = Recover
 			}
 			FLIGHT_LOG
 			{
-				flight = 0
+				flight = 1
 			}
 		}
 		KERBAL
@@ -104190,7 +109465,7 @@ GAME
 						PART
 						{
 							name = evaChute
-							cid = 4294659806
+							cid = 4294651348
 							uid = 0
 							mid = 0
 							persistentId = 0
@@ -104358,7 +109633,7 @@ GAME
 						PART
 						{
 							name = evaJetpack
-							cid = 4294659880
+							cid = 4294651424
 							uid = 0
 							mid = 0
 							persistentId = 0
@@ -111147,33 +116422,82 @@ GAME
 		{
 			name = Zello Kerman
 			gender = Female
-			type = Unowned
+			type = Crew
 			trait = Scientist
 			brave = 0.351941437
 			dumb = 0.129929647
 			badS = True
 			veteran = False
 			tour = False
-			state = Assigned
+			state = Available
 			inactive = False
 			inactiveTimeEnd = 0
 			gExperienced = 0
 			outDueToG = False
 			ToD = 0
-			idx = 0
+			idx = 1
 			extraXP = 0
-			hasHelmetOn = False
-			hasNeckRingOn = False
+			hasHelmetOn = True
+			hasNeckRingOn = True
 			hasVisorDown = False
 			lightR = 1
 			lightG = 0.5176
 			lightB = 0
-			completedFirstEVA = False
+			completedFirstEVA = True
 			suit = Default
 			hero = False
+			EVACHUTE
+			{
+				name = ModuleEvaChute
+				isEnabled = True
+				chuteYawRateAtMaxSpeed = 1
+				chuteMaxSpeedForYawRate = 50
+				chuteYawRateAtMinSpeed = 1
+				chuteMinSpeedForYawRate = 1
+				chuteRollRate = 1
+				chutePitchRate = 1
+				chuteDefaultForwardPitch = 9
+				semiDeployedChuteForwardPitch = 25
+				chutePitchRateDivisorWhenTurning = 1
+				chuteRollRateDivisorWhenPitching = 1
+				chuteYawRateDivisorWhenPitching = 1
+				persistentState = STOWED
+				animTime = 0
+				minAirPressureToOpen = 0.0399999991
+				deployAltitude = 1000
+				spreadAngle = 7
+				automateSafeDeploy = 0
+				stagingEnabled = False
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+					DeployAction
+					{
+						actionGroup = None
+					}
+					CutAction
+					{
+						actionGroup = None
+					}
+				}
+				UPGRADESAPPLIED
+				{
+				}
+			}
 			INVENTORY
 			{
+				name = ModuleInventoryPart
+				isEnabled = True
+				stagingEnabled = True
 				inventory = evaChute,evaJetpack
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
 				STOREDPARTS
 				{
 					STOREDPART
@@ -111189,7 +116513,7 @@ GAME
 							cid = 4294659826
 							uid = 0
 							mid = 0
-							persistentId = 0
+							persistentId = 2098429434
 							launchID = 0
 							parent = 0
 							position = 0,0,0
@@ -111357,7 +116681,7 @@ GAME
 							cid = 4294659900
 							uid = 0
 							mid = 0
-							persistentId = 0
+							persistentId = 3320405691
 							launchID = 0
 							parent = 0
 							position = 0,0,0
@@ -111524,14 +116848,24 @@ GAME
 						}
 					}
 				}
+				UPGRADESAPPLIED
+				{
+				}
 			}
 			CAREER_LOG
 			{
-				flight = 0
+				flight = 1
+				0 = ExitVessel,Kerbin
+				0 = Orbit,Kerbin
+				0 = BoardVessel,Kerbin
+				0 = Suborbit,Kerbin
+				0 = Flight,Kerbin
+				0 = Land,Kerbin
+				0 = Recover
 			}
 			FLIGHT_LOG
 			{
-				flight = 0
+				flight = 1
 			}
 		}
 		KERBAL
@@ -112770,10 +118104,449 @@ GAME
 				flight = 0
 			}
 		}
+		KERBAL
+		{
+			name = Nathan Kerman
+			gender = Male
+			type = Unowned
+			trait = Tourist
+			brave = 0.550938368
+			dumb = 0.911180854
+			badS = False
+			veteran = False
+			tour = False
+			state = Assigned
+			inactive = False
+			inactiveTimeEnd = 0
+			gExperienced = 0
+			outDueToG = False
+			ToD = 0
+			idx = -1
+			extraXP = 0
+			hasHelmetOn = False
+			hasNeckRingOn = False
+			hasVisorDown = False
+			lightR = 1
+			lightG = 0.5176
+			lightB = 0
+			completedFirstEVA = False
+			suit = Default
+			hero = False
+			INVENTORY
+			{
+				inventory = evaChute,evaJetpack
+				STOREDPARTS
+				{
+					STOREDPART
+					{
+						slotIndex = 0
+						partName = evaChute
+						quantity = 1
+						stackCapacity = 1
+						variantName = 
+						PART
+						{
+							name = evaChute
+							cid = 4294651348
+							uid = 0
+							mid = 0
+							persistentId = 0
+							launchID = 0
+							parent = 0
+							position = 0,0,0
+							rotation = 0,0,0,0
+							mirror = 1,1,1
+							symMethod = Radial
+							istg = 0
+							resPri = 0
+							dstg = 0
+							sqor = -1
+							sepI = 0
+							sidx = -1
+							attm = 0
+							sameVesselCollision = False
+							srfN = None, -1
+							mass = 0.00400000019
+							shielded = False
+							temp = -1
+							tempExt = 0
+							tempExtUnexp = 0
+							staticPressureAtm = 0
+							expt = 0.5
+							state = 0
+							attached = True
+							autostrutMode = Off
+							rigidAttachment = False
+							flag = 
+							rTrf = evaChute
+							modCost = 0
+							modMass = 0
+							moduleVariantName = 
+							moduleCargoStackableQuantity = 1
+							EVENTS
+							{
+							}
+							ACTIONS
+							{
+								ToggleSameVesselInteraction
+								{
+									actionGroup = None
+								}
+								SetSameVesselInteraction
+								{
+									actionGroup = None
+								}
+								RemoveSameVesselInteraction
+								{
+									actionGroup = None
+								}
+								AutostrutOff
+								{
+									actionGroup = None
+								}
+								AutostrutRoot
+								{
+									actionGroup = None
+								}
+								AutostrutHeaviest
+								{
+									actionGroup = None
+								}
+								AutostrutGrandparent
+								{
+									actionGroup = None
+								}
+								ResourcesEnableFlow
+								{
+									actionGroup = None
+									active = False
+								}
+								ResourcesDisableFlow
+								{
+									actionGroup = None
+									active = False
+								}
+							}
+							PARTDATA
+							{
+							}
+							MODULE
+							{
+								name = ModuleCargoPart
+								isEnabled = True
+								packedVolume = 10
+								beingAttached = False
+								beingSettled = False
+								reinitResourcesOnStoreInVessel = False
+								stagingEnabled = True
+								EVENTS
+								{
+								}
+								ACTIONS
+								{
+								}
+								UPGRADESAPPLIED
+								{
+								}
+							}
+							MODULE
+							{
+								name = FundsKeeper
+								isEnabled = True
+								OriginalCost = 0
+								OriginalResourcesCost = 0
+								OriginalModulesCost = 0
+								stagingEnabled = True
+								EVENTS
+								{
+								}
+								ACTIONS
+								{
+								}
+								UPGRADESAPPLIED
+								{
+								}
+							}
+							MODULE
+							{
+								name = StealBackMyFunds
+								isEnabled = True
+								active = True
+								stagingEnabled = True
+								EVENTS
+								{
+								}
+								ACTIONS
+								{
+								}
+								UPGRADESAPPLIED
+								{
+								}
+							}
+							MODULE
+							{
+								name = AttachedOnEditor
+								isEnabled = True
+								active = True
+								originalPos = (0, 0, 0)
+								originalRotation = (0, 0, 0, 1)
+								moduleVersion = 6
+								stagingEnabled = True
+								userReallyDeactivatedIt = False
+								EVENTS
+								{
+								}
+								ACTIONS
+								{
+								}
+								UPGRADESAPPLIED
+								{
+								}
+							}
+						}
+					}
+					STOREDPART
+					{
+						slotIndex = 1
+						partName = evaJetpack
+						quantity = 1
+						stackCapacity = 1
+						variantName = 
+						PART
+						{
+							name = evaJetpack
+							cid = 4294651424
+							uid = 0
+							mid = 0
+							persistentId = 0
+							launchID = 0
+							parent = 0
+							position = 0,0,0
+							rotation = 0,0,0,0
+							mirror = 1,1,1
+							symMethod = Radial
+							istg = 0
+							resPri = 2
+							dstg = 0
+							sqor = -1
+							sepI = 0
+							sidx = -1
+							attm = 0
+							sameVesselCollision = False
+							srfN = None, -1
+							mass = 0.0199999996
+							shielded = False
+							temp = -1
+							tempExt = 0
+							tempExtUnexp = 0
+							staticPressureAtm = 0
+							expt = 0.5
+							state = 0
+							attached = True
+							autostrutMode = Off
+							rigidAttachment = False
+							flag = 
+							rTrf = evaJetpack
+							modCost = 0
+							modMass = 0
+							moduleVariantName = 
+							moduleCargoStackableQuantity = 1
+							EVENTS
+							{
+							}
+							ACTIONS
+							{
+								ToggleSameVesselInteraction
+								{
+									actionGroup = None
+								}
+								SetSameVesselInteraction
+								{
+									actionGroup = None
+								}
+								RemoveSameVesselInteraction
+								{
+									actionGroup = None
+								}
+								AutostrutOff
+								{
+									actionGroup = None
+								}
+								AutostrutRoot
+								{
+									actionGroup = None
+								}
+								AutostrutHeaviest
+								{
+									actionGroup = None
+								}
+								AutostrutGrandparent
+								{
+									actionGroup = None
+								}
+								ResourcesEnableFlow
+								{
+									actionGroup = None
+									active = False
+								}
+								ResourcesDisableFlow
+								{
+									actionGroup = None
+									active = False
+								}
+							}
+							PARTDATA
+							{
+							}
+							MODULE
+							{
+								name = ModuleCargoPart
+								isEnabled = True
+								packedVolume = 17
+								beingAttached = False
+								beingSettled = False
+								reinitResourcesOnStoreInVessel = True
+								stagingEnabled = True
+								EVENTS
+								{
+								}
+								ACTIONS
+								{
+								}
+								UPGRADESAPPLIED
+								{
+								}
+							}
+							MODULE
+							{
+								name = FundsKeeper
+								isEnabled = True
+								OriginalCost = 0
+								OriginalResourcesCost = 0
+								OriginalModulesCost = 0
+								stagingEnabled = True
+								EVENTS
+								{
+								}
+								ACTIONS
+								{
+								}
+								UPGRADESAPPLIED
+								{
+								}
+							}
+							MODULE
+							{
+								name = StealBackMyFunds
+								isEnabled = True
+								active = True
+								stagingEnabled = True
+								EVENTS
+								{
+								}
+								ACTIONS
+								{
+								}
+								UPGRADESAPPLIED
+								{
+								}
+							}
+							MODULE
+							{
+								name = AttachedOnEditor
+								isEnabled = True
+								active = True
+								originalPos = (0, 0, 0)
+								originalRotation = (0, 0, 0, 1)
+								moduleVersion = 6
+								stagingEnabled = True
+								userReallyDeactivatedIt = False
+								EVENTS
+								{
+								}
+								ACTIONS
+								{
+								}
+								UPGRADESAPPLIED
+								{
+								}
+							}
+							RESOURCE
+							{
+								name = EVA Propellant
+								amount = 5
+								maxAmount = 5
+								flowState = True
+								isTweakable = False
+								hideFlow = False
+								isVisible = True
+								flowMode = Both
+							}
+						}
+					}
+				}
+			}
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
 	}
 	MESSAGESYSTEM
 	{
 		flash = True
+		MESSAGE
+		{
+			title = Contract Complete
+			message = <b>Rescue Lecas from orbit of Kerbin.</b>~n~nWell done! Lecas Kerman has been recovered in one piece and is now enjoying a thorough debriefing from the comfort of her quarantine cell.~n~n~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  37,890 <color=#feb200>(-12,630)</color>  </color>~n<color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> <color=#caff00>(+1)</color>  </color>~n<color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 9   </color>~n~n
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Contract Complete
+			message = <b>Rescue Zello from orbit of Kerbin.</b>~n~nWell done! Zello Kerman has been recovered in one piece and is now enjoying a thorough debriefing from the comfort of her quarantine cell.~n~n~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  37,890 <color=#feb200>(-12,630)</color>  </color>~n<color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> <color=#caff00>(+1)</color>  </color>~n<color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 9   </color>~n~n
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Lecas Kerman was added to the crew!
+			message = <b>Rescue Lecas from orbit of Kerbin.</b>~n~nLecas Kerman is now part of the space program crew.
+			color = 2
+			icon = 5
+			read = False
+		}
+		MESSAGE
+		{
+			title = Contract Parameter Complete
+			message = <b>Rescue Lecas from orbit of Kerbin.</b>~n~n'Save Lecas Kerman' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 4,010 <color=#feb200>(-1,337)</color>  </color><color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 0 <color=#caff00>(+0)</color>  </color><color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4   </color>
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Zello Kerman was added to the crew!
+			message = <b>Rescue Zello from orbit of Kerbin.</b>~n~nZello Kerman is now part of the space program crew.
+			color = 2
+			icon = 5
+			read = False
+		}
+		MESSAGE
+		{
+			title = Contract Parameter Complete
+			message = <b>Rescue Zello from orbit of Kerbin.</b>~n~n'Save Zello Kerman' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 4,010 <color=#feb200>(-1,337)</color>  </color><color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> 0 <color=#caff00>(+0)</color>  </color><color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4   </color>
+			color = 2
+			icon = 3
+			read = False
+		}
 		MESSAGE
 		{
 			title = Contract Complete
@@ -112785,7 +118558,7 @@ GAME
 		MESSAGE
 		{
 			title = World First Milestones
-			message = The recent accomplishments of our space program have attracted contributions from numerous organizations!~n~nWe have performed a rendezvous maneuver around Kerbin.~n<color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 16,200 <color=#feb200>(-5,400)</color> </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n
+			message = The recent accomplishments of our space program have attracted contributions from numerous organizations!~n~nWe have performed a rendezvous maneuver around Kerbin.~n<color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 16,200 <color=#feb200>(-5,400)</color> </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n We have performed a crew transfer near Kerbin.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  3,240 <color=#feb200>(-1,080)</color> </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 1 </color>~n
 			color = 3
 			icon = 6
 			read = False
@@ -112959,6 +118732,9 @@ GAME
 			{
 			}
 			825923d9-e3b3-4b77-8359-205c6ab30284
+			{
+			}
+			29ed1e5e-c8cf-4ae2-8995-c3c79f1516eb
 			{
 			}
 		}
